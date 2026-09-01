@@ -1,5 +1,8 @@
 User-agent: *
 Allow: /
+# منع زواحف جوجل من أرشفة مجلدات التنسيقات والسكربتات إذا وجدت
+Disallow: /css/
+Disallow: /js/
 
-Sitemap: https://srhalmmaraldhary-igtm.github.io/Kialin-for/sitemap.xml
-
+# توجيه جوجل إلى ملف خريطة الموقع الجديد
+Sitemap: https://klalin-for.vercel.app/sitemap.xml
