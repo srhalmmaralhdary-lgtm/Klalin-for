@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>شركة تنظيف الأبراج والمباني السكنية والتجارية</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background-color: #f8f9fa;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        /* الهيدر وشريط التنقل */
+        header {
+            background-color: #0b3c5d;
+            color: white;
+            padding: 1rem 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        header h1 {
+            font-size: 1.5rem;
+            color: #328cc1;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin-right: 1.5rem;
+            font-weight: 500;
+            transition: color 0.3s;
+        }
+
+        nav a:hover {
+            color: #d9b310;
+        }
+
+        /* القسم الرئيسي / البانر */
+        .hero {
+            background: linear-gradient(rgba(11, 60, 93, 0.8), rgba(11, 60, 93, 0.8)), 
+                        url('https://images.unsplash.com/photo-1527515637462-cff94eecc1ac?auto=format&fit=crop&w=1350&q=80') center/cover no-repeat;
+            color: white;
+            text-align: center;
+            padding: 100px 20px;
+        }
+
+        .hero h2 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .hero p {
+            font-size: 1.2rem;
+            max-width: 600px;
+            margin: 0 auto 2rem auto;
+        }
+
+        .btn {
+            background-color: #d9b310;
+            color: #0b3c5d;
+            padding: 12px 30px;
+            border: none;
+            border-radius: 5px;
+            font-weight: bold;
+            text-decoration: none;
+            cursor: pointer;
+            transition: background 0.3s;
+        }
+
+        .btn:hover {
+            background-color: #e6c200;
+        }
+
+        /* قسم الخدمات */
+        .services {
+            padding: 60px 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        .services h3 {
+            font-size: 2rem;
+            color: #0b3c5d;
+            margin-bottom: 40px;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 20px;
+        }
+
+        .card {
+            background: white;
+            padding: 25px;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+        }
+
+        .card h4 {
+            color: #1d2731;
+            margin-bottom: 15px;
+        }
+
+        /* قسم اتصل بنا */
+        .contact {
+            background-color: #0b3c5d;
+            color: white;
+            text-align: center;
+            padding: 50px 20px;
+        }
+
+        .contact h3 {
+            margin-bottom: 15px;
+        }
+
+        /* الفوتر */
+        footer {
+            background-color: #1d2731;
+            color: #aaa;
+            text-align: center;
+            padding: 15px;
+            font-size: 0.9rem;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- هيدر الموقع -->
+    <header>
+        <h1>خدمات تنظيف الأبراج</h1>
+        <nav>
+            <a href="#home">الرئيسية</a>
+            <a href="#services">خدماتنا</a>
+            <a href="#about">عن الشركة</a>
+            <a href="#contact">تواصل معنا</a>
+        </nav>
+    </header>
+
+    <!-- البانر الرئيسي -->
+    <section class="hero" id="home">
+        <h2>أفضل حلول تنظيف الأبراج الواجهات الزجاجية</h2>
+        <p>نوفر لكم أحدث التقنيات وأفضل فرق العمل المدربة لتنظيف وصيانة واجهات الأبراج والمباني العالية بأمان وجودة عالية.</p>
+        <a href="#contact" class="btn">احصل على استشارة مجانية</a>
+    </section>
+
+    <!-- قسم الخدمات -->
+    <section class="services" id="services">
+        <h3>خدماتنا المتخصصة</h3>
+        <div class="grid">
+            <div class="card">
+                <h4>تنظيف الواجهات الزجاجية</h4>
+                <p>تلميع وتنظيف زجاج الأبراج العالية باستخدام تقنيات الرافعات والأحبال بأعلى معايير الأمان.</p>
+            </div>
+            <div class="card">
+                <h4>غسيل الكادينج والكلادينج</h4>
+                <p>إزالة الأتربة والعوالق عن الواجهات المعدنية والكلادينج لاستعادة مظهر المبنى الجديد.</p>
+            </div>
+            <div class="card">
+                <h4>الصيانة الدورية للمباني</h4>
+                <p>عقود صيانة وتنظيف دورية للأبراج والشركات لضمان النظافة الدائمة على مدار العام.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- قسم التواصل -->
+    <section class="contact" id="contact">
+        <h3>هل تحتاج لخدمة تنظيف مخصصة برجك؟</h3>
+        <p>تواصل معنا اليوم وانسحب من عناء التنظيف!</p>
+        <br>
+        <a href="tel:+966000000000" class="btn">اتصل بنا الآن</a>
+    </section>
+
+    <!-- الفوتر -->
+    <footer>
+        <p>&copy; 2026 جميع الحقوق محفوظة لـ شركة تنظيف الأبراج والمباني.</p>
+    </footer>
+
+</body>
+</html>
