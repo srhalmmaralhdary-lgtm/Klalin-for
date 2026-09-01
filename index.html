@@ -21,7 +21,7 @@
     <meta name="googlebot"
           content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
 
-    <meta name="theme-color" content="#0a0d12">
+    <meta name="theme-color" content="#10b981">
 
     <meta name="geo.region" content="SA-01">
     <meta name="geo.placename" content="Riyadh">
@@ -32,7 +32,7 @@
     <link rel="sitemap" type="application/xml" title="Sitemap" href="/sitemap.xml">
 
     <link rel="icon"
-          href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='24' fill='%230a0d12'/%3E%3Ctext x='50' y='65' font-size='45' text-anchor='middle' fill='%23ffffff' font-family='Arial'%3EK%3C/text%3E%3C/svg%3E">
+          href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='24' fill='%2310b981'/%3E%3Ctext x='50' y='65' font-size='45' text-anchor='middle' fill='%23ffffff' font-family='Arial'%3EK%3C/text%3E%3C/svg%3E">
 
     <!-- Open Graph -->
     <meta property="og:type" content="website">
@@ -56,11 +56,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;500;600;700;800;900&display=swap"
           rel="stylesheet">
 
-    <!--
-        ============================================================
-        JSON-LD LOCAL BUSINESS
-        ============================================================
-    -->
+    <!-- JSON-LD LOCAL BUSINESS -->
     <script type="application/ld+json">
     {
         "@context": "https://schema.org",
@@ -111,11 +107,7 @@
     }
     </script>
 
-    <!--
-        ============================================================
-        FAQ SCHEMA
-        ============================================================
-    -->
+    <!-- FAQ SCHEMA -->
     <script type="application/ld+json">
     {
         "@context": "https://schema.org",
@@ -166,40 +158,28 @@
     </script>
 
     <style>
-
         /* ============================================================
-           ROOT
+           ROOT - LIGHT GREEN & WHITE THEME (LIGHTWEIGHT)
         ============================================================ */
-
         :root {
-            --bg: #06110d;
-            --bg-soft: #0a1a14;
-            --card: rgba(16, 185, 129, 0.05);
-            --card-hover: rgba(16, 185, 129, 0.1);
-            --border: rgba(16, 185, 129, 0.2);
+            --bg: #ffffff;
+            --bg-soft: #f4fbf7;
+            --card: #ffffff;
+            --border: #e2e8f0;
 
-            --text: #f0fdf4;
-            --text-soft: #a7f3d0;
-            --text-dark: #064e3b;
+            --text: #1f2937;
+            --text-soft: #4b5563;
 
             --primary: #10b981;
-            --accent: #34d399;
-            --accent-2: #059669;
+            --primary-dark: #059669;
+            --accent: #059669;
 
-            --success: #25d366;
-
-            --shadow: 0 20px 70px rgba(0, 0, 0, 0.5);
-
-            --radius: 24px;
+            --shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+            --radius: 16px;
             --container: 1200px;
-
-            --transition: 0.35s ease;
         }
 
-        /* ============================================================
-           RESET
-        ============================================================ */
-
+        /* RESET & BASE PERFORMANCE */
         * {
             margin: 0;
             padding: 0;
@@ -208,26 +188,14 @@
 
         html {
             scroll-behavior: smooth;
-            scroll-padding-top: 90px;
+            scroll-padding-top: 80px;
         }
 
         body {
             font-family: "Cairo", sans-serif;
-            background:
-                radial-gradient(
-                    circle at 10% 10%,
-                    rgba(16, 185, 129, 0.15),
-                    transparent 30%
-                ),
-                radial-gradient(
-                    circle at 90% 20%,
-                    rgba(52, 211, 153, 0.1),
-                    transparent 25%
-                ),
-                var(--bg);
-
+            background: var(--bg);
             color: var(--text);
-            line-height: 1.8;
+            line-height: 1.6;
             overflow-x: hidden;
         }
 
@@ -235,524 +203,275 @@
             overflow: hidden;
         }
 
-        a {
-            color: inherit;
-            text-decoration: none;
-        }
-
-        button,
-        input,
-        textarea,
-        select {
-            font-family: inherit;
-        }
-
-        button {
-            border: none;
-            cursor: pointer;
-        }
-
-        img {
-            max-width: 100%;
-            display: block;
-        }
-
-        ::selection {
-            background: rgba(52, 211, 153, 0.3);
-        }
-
-        /* ============================================================
-           UTILITIES
-        ============================================================ */
+        a { color: inherit; text-decoration: none; }
+        button, input, textarea, select { font-family: inherit; }
+        button { border: none; cursor: pointer; }
+        img { max-width: 100%; display: block; }
 
         .container {
-            width: min(var(--container), calc(100% - 40px));
+            width: min(var(--container), calc(100% - 32px));
             margin-inline: auto;
         }
 
         .section {
-            padding: 110px 0;
-            position: relative;
+            padding: 60px 0;
         }
 
         .section-header {
             text-align: center;
-            max-width: 780px;
-            margin: 0 auto 55px;
+            max-width: 700px;
+            margin: 0 auto 35px;
         }
 
         .section-label {
-            display: inline-flex;
-            align-items: center;
-            gap: 8px;
-
-            padding: 7px 15px;
-            margin-bottom: 16px;
-
-            border: 1px solid var(--border);
-            background: rgba(16, 185, 129, 0.1);
-
-            border-radius: 100px;
-
-            color: var(--accent);
+            display: inline-block;
+            padding: 4px 14px;
+            margin-bottom: 12px;
+            background: #e6f4ea;
+            border-radius: 50px;
+            color: var(--primary-dark);
             font-size: 13px;
             font-weight: 700;
         }
 
-        .section-label::before {
-            content: "";
-            width: 7px;
-            height: 7px;
-            background: var(--accent);
-            border-radius: 50%;
-            box-shadow: 0 0 14px var(--accent);
-        }
-
         .section-title {
-            font-size: clamp(30px, 5vw, 48px);
-            line-height: 1.25;
-            font-weight: 900;
-            margin-bottom: 16px;
-            letter-spacing: -1px;
+            font-size: clamp(24px, 4vw, 36px);
+            font-weight: 800;
+            margin-bottom: 10px;
+            color: #111827;
         }
 
         .section-description {
             color: var(--text-soft);
-            font-size: 16px;
-            max-width: 650px;
-            margin: auto;
+            font-size: 15px;
         }
 
-        .glass {
-            background: var(--card);
-            border: 1px solid var(--border);
-            backdrop-filter: blur(18px);
-            -webkit-backdrop-filter: blur(18px);
-            box-shadow: var(--shadow);
-        }
-
-        /* ============================================================
-           TOP BAR
-        ============================================================ */
-
+        /* TOPBAR */
         .topbar {
-            background: rgba(10, 26, 20, 0.8);
-            border-bottom: 1px solid var(--border);
-            color: var(--text-soft);
+            background: #059669;
+            color: #ffffff;
             font-size: 13px;
+            padding: 6px 0;
         }
 
         .topbar-inner {
-            min-height: 38px;
             display: flex;
             justify-content: space-between;
             align-items: center;
-            gap: 15px;
+            flex-wrap: wrap;
+            gap: 10px;
         }
 
         .topbar-items {
             display: flex;
             align-items: center;
-            gap: 20px;
-            flex-wrap: wrap;
+            gap: 15px;
         }
 
         .topbar-item {
             display: flex;
             align-items: center;
-            gap: 7px;
+            gap: 5px;
         }
 
-        /* ============================================================
-           HEADER
-        ============================================================ */
-
+        /* HEADER */
         header {
             position: sticky;
             top: 0;
             z-index: 1000;
-
-            background: rgba(6, 17, 13, 0.85);
+            background: #ffffff;
             border-bottom: 1px solid var(--border);
-
-            backdrop-filter: blur(20px);
-            -webkit-backdrop-filter: blur(20px);
+            box-shadow: 0 2px 10px rgba(0,0,0,0.03);
         }
 
         .navbar {
-            min-height: 76px;
-
+            min-height: 70px;
             display: flex;
             align-items: center;
             justify-content: space-between;
-            gap: 25px;
         }
 
         .logo {
             display: flex;
             align-items: center;
-            gap: 12px;
-
-            font-weight: 900;
-            font-size: 23px;
-            letter-spacing: -0.5px;
-            white-space: nowrap;
+            gap: 10px;
+            font-weight: 800;
+            font-size: 22px;
+            color: var(--primary-dark);
         }
 
         .logo-mark {
-            width: 42px;
-            height: 42px;
-
+            width: 38px;
+            height: 38px;
             display: grid;
             place-items: center;
-
-            border-radius: 13px;
-
-            background: linear-gradient(135deg, var(--primary), var(--accent-2));
+            border-radius: 10px;
+            background: var(--primary);
             color: #ffffff;
-            border: 1px solid var(--accent);
-            box-shadow: 0 0 15px rgba(16, 185, 129, 0.4);
-        }
-
-        .logo-mark span {
-            font-size: 21px;
             font-weight: 900;
         }
 
         .logo-text small {
             display: block;
             font-size: 9px;
-            line-height: 1;
-            color: var(--accent);
-            letter-spacing: 2px;
-            margin-top: 1px;
+            color: #6b7280;
         }
 
         .nav-links {
             display: flex;
             align-items: center;
-            gap: 5px;
+            gap: 10px;
         }
 
         .nav-links a {
-            color: #d1fae5;
+            color: var(--text);
             font-size: 14px;
             font-weight: 600;
-
-            padding: 9px 12px;
-            border-radius: 10px;
-
-            transition: var(--transition);
+            padding: 8px 12px;
+            border-radius: 8px;
         }
 
         .nav-links a:hover {
-            color: white;
-            background: rgba(16, 185, 129, 0.15);
+            background: var(--bg-soft);
+            color: var(--primary-dark);
         }
 
         .header-actions {
             display: flex;
             align-items: center;
-            gap: 9px;
+            gap: 10px;
         }
 
         .btn {
-            min-height: 46px;
-
+            min-height: 42px;
             display: inline-flex;
             justify-content: center;
             align-items: center;
-            gap: 9px;
-
-            padding: 0 22px;
-
-            border-radius: 13px;
-
+            gap: 8px;
+            padding: 0 18px;
+            border-radius: 10px;
             font-size: 14px;
-            font-weight: 800;
-
-            transition: var(--transition);
-        }
-
-        .btn:hover {
-            transform: translateY(-2px);
+            font-weight: 700;
+            transition: background 0.2s ease;
         }
 
         .btn-primary {
-            color: #042f2e;
-            background: linear-gradient(135deg, #34d399, #10b981);
-            box-shadow: 0 8px 25px rgba(16, 185, 129, 0.3);
+            color: #ffffff;
+            background: var(--primary);
         }
 
         .btn-primary:hover {
-            background: linear-gradient(135deg, #6ee7b7, #34d399);
-            box-shadow: 0 12px 30px rgba(16, 185, 129, 0.5);
+            background: var(--primary-dark);
         }
 
         .btn-outline {
-            color: #ffffff;
-            background: rgba(16, 185, 129, 0.1);
+            color: var(--primary-dark);
+            background: #ffffff;
             border: 1px solid var(--primary);
         }
 
         .btn-outline:hover {
-            background: rgba(16, 185, 129, 0.25);
-            border-color: var(--accent);
-        }
-
-        .btn-whatsapp {
-            color: white;
-            background: rgba(37,211,102,0.14);
-            border: 1px solid rgba(37,211,102,0.28);
-        }
-
-        .btn-whatsapp:hover {
-            background: rgba(37,211,102,0.22);
+            background: var(--bg-soft);
         }
 
         .menu-toggle {
             display: none;
-
-            width: 44px;
-            height: 44px;
-
-            background: rgba(16, 185, 129, 0.1);
-            color: white;
-
-            border: 1px solid var(--border);
-            border-radius: 12px;
-
-            font-size: 21px;
+            width: 40px;
+            height: 40px;
+            background: var(--bg-soft);
+            color: var(--text);
+            border-radius: 8px;
+            font-size: 20px;
         }
 
-        /* ============================================================
-           HERO (مُعدلة ومطورة بالكامل)
-        ============================================================ */
-
+        /* HERO SECTION */
         .hero {
-            position: relative;
-            padding: 110px 0 90px;
-            overflow: hidden;
-            background: radial-gradient(circle at top right, rgba(16, 185, 129, 0.12), transparent 45%);
-        }
-
-        .hero-glow {
-            position: absolute;
-            width: 500px;
-            height: 500px;
-            border-radius: 50%;
-            background: rgba(16, 185, 129, 0.15);
-            filter: blur(100px);
-            top: -100px;
-            right: -100px;
-            pointer-events: none;
-        }
-
-        .hero-glow-two {
-            position: absolute;
-            width: 400px;
-            height: 400px;
-            border-radius: 50%;
-            background: rgba(52, 211, 153, 0.08);
-            filter: blur(90px);
-            bottom: -150px;
-            left: -100px;
-            pointer-events: none;
+            padding: 50px 0;
+            background: linear-gradient(180deg, var(--bg-soft) 0%, #ffffff 100%);
         }
 
         .hero-content {
-            position: relative;
-            z-index: 2;
             display: grid;
             grid-template-columns: 1.1fr 0.9fr;
             align-items: center;
-            gap: 60px;
+            gap: 40px;
         }
 
         .hero-badge {
-            display: inline-flex;
-            align-items: center;
-            gap: 10px;
-            padding: 8px 16px;
-            background: rgba(16, 185, 129, 0.12);
-            border: 1px solid rgba(52, 211, 153, 0.3);
-            border-radius: 100px;
-            color: var(--accent);
+            display: inline-block;
+            padding: 6px 12px;
+            background: #ffffff;
+            border: 1px solid var(--border);
+            border-radius: 50px;
+            color: var(--primary-dark);
             font-size: 13px;
             font-weight: 700;
-            margin-bottom: 24px;
-        }
-
-        .pulse-dot {
-            width: 8px;
-            height: 8px;
-            border-radius: 50%;
-            background: var(--accent);
-            box-shadow: 0 0 0 0 rgba(52, 211, 153, 0.6);
-            animation: pulse 2s infinite;
-        }
-
-        @keyframes pulse {
-            0% { box-shadow: 0 0 0 0 rgba(52, 211, 153, 0.6); }
-            70% { box-shadow: 0 0 0 10px rgba(52, 211, 153, 0); }
-            100% { box-shadow: 0 0 0 0 rgba(52, 211, 153, 0); }
+            margin-bottom: 15px;
         }
 
         .hero-title {
-            font-size: clamp(38px, 5.5vw, 64px);
-            line-height: 1.2;
+            font-size: clamp(30px, 4.5vw, 48px);
             font-weight: 900;
-            color: #ffffff;
-            margin-bottom: 24px;
+            color: #111827;
+            margin-bottom: 15px;
+            line-height: 1.2;
         }
 
         .hero-title .highlight {
-            color: var(--accent);
-            position: relative;
-            display: inline-block;
+            color: var(--primary);
         }
 
         .hero-description {
-            color: #a7f3d0;
-            font-size: 17px;
-            line-height: 1.8;
-            max-width: 600px;
-            margin-bottom: 35px;
+            color: var(--text-soft);
+            font-size: 16px;
+            margin-bottom: 25px;
         }
 
         .hero-buttons {
             display: flex;
+            gap: 12px;
             flex-wrap: wrap;
-            gap: 14px;
-            margin-bottom: 40px;
-        }
-
-        .hero-trust {
-            display: flex;
-            align-items: center;
-            gap: 14px;
-            color: #d1fae5;
-            font-size: 13px;
-            font-weight: 600;
-        }
-
-        .trust-avatars {
-            display: flex;
-            direction: ltr;
-        }
-
-        .trust-avatar {
-            width: 34px;
-            height: 34px;
-            margin-left: -8px;
-            display: grid;
-            place-items: center;
-            background: linear-gradient(135deg, #10b981, #042f2e);
-            color: #ffffff;
-            border-radius: 50%;
-            border: 2px solid var(--bg);
-            font-size: 11px;
-            font-weight: 900;
-        }
-
-        .hero-visual {
-            position: relative;
         }
 
         .hero-image-card {
-            position: relative;
-            padding: 10px;
-            border-radius: 28px;
-            background: rgba(16, 185, 129, 0.08);
-            border: 1px solid rgba(52, 211, 153, 0.25);
-            box-shadow: 0 30px 80px rgba(0, 0, 0, 0.6);
+            border-radius: var(--radius);
+            overflow: hidden;
+            box-shadow: var(--shadow);
+            border: 1px solid var(--border);
         }
 
         .hero-image {
-            height: 480px;
+            height: 380px;
             width: 100%;
             object-fit: cover;
-            border-radius: 20px;
-            filter: brightness(0.95) contrast(1.05);
         }
 
-        .hero-floating {
-            position: absolute;
-            padding: 14px 20px;
-            border-radius: 18px;
-            background: rgba(6, 17, 13, 0.9);
-            border: 1px solid rgba(52, 211, 153, 0.3);
-            backdrop-filter: blur(15px);
-            box-shadow: 0 20px 40px rgba(0,0,0,0.5);
-        }
-
-        .hero-floating.top {
-            top: 30px;
-            right: -25px;
-        }
-
-        .hero-floating.bottom {
-            bottom: 30px;
-            left: -25px;
-        }
-
-        .floating-number {
-            font-size: 24px;
-            font-weight: 900;
-            color: var(--accent);
-        }
-
-        .floating-text {
-            color: #d1fae5;
-            font-size: 12px;
-            font-weight: 600;
-        }
-
-        /* ============================================================
-           STATS
-        ============================================================ */
-
+        /* STATS SECTION */
         .stats {
-            position: relative;
-            z-index: 4;
-            margin-top: -50px;
+            padding: 20px 0 40px;
         }
 
         .stats-grid {
             display: grid;
             grid-template-columns: repeat(4, 1fr);
-
-            border-radius: 23px;
-            overflow: hidden;
+            background: #ffffff;
+            border: 1px solid var(--border);
+            border-radius: var(--radius);
+            box-shadow: var(--shadow);
         }
 
         .stat {
-            padding: 28px 20px;
+            padding: 20px;
             text-align: center;
-
             border-left: 1px solid var(--border);
-
-            transition: var(--transition);
         }
 
-        .stat:last-child {
-            border-left: none;
-        }
-
-        .stat:hover {
-            background: rgba(255,255,255,0.055);
-        }
+        .stat:last-child { border-left: none; }
 
         .stat-number {
-            font-size: 34px;
+            font-size: 28px;
             font-weight: 900;
-            line-height: 1.2;
-
-            margin-bottom: 5px;
-        }
-
-        .stat-number span {
-            color: var(--accent);
+            color: var(--primary-dark);
         }
 
         .stat-title {
@@ -760,119 +479,76 @@
             font-size: 13px;
         }
 
-        /* ============================================================
-           SERVICES
-        ============================================================ */
+        /* HORIZONTAL SCROLL FOR SERVICES & GALLERIES (طلب الصور 1 و 2) */
+        .horizontal-scroll-container {
+            display: flex;
+            gap: 16px;
+            overflow-x: auto;
+            scroll-snap-type: x mandatory;
+            padding-bottom: 15px;
+            -webkit-overflow-scrolling: touch;
+        }
 
-        .services-grid {
-            display: grid;
+        .horizontal-scroll-container::-webkit-scrollbar {
+            height: 6px;
+        }
 
-            grid-template-columns:
-                repeat(3, minmax(0, 1fr));
+        .horizontal-scroll-container::-webkit-scrollbar-thumb {
+            background: var(--primary);
+            border-radius: 10px;
+        }
 
-            gap: 18px;
+        .horizontal-scroll-container::-webkit-scrollbar-track {
+            background: var(--border);
         }
 
         .service-card {
-            position: relative;
-
-            overflow: hidden;
-
+            flex: 0 0 300px;
+            scroll-snap-align: start;
             border-radius: var(--radius);
-
-            min-height: 430px;
-
-            background: #0c1017;
-
             border: 1px solid var(--border);
-
-            transition:
-                transform var(--transition),
-                border-color var(--transition),
-                box-shadow var(--transition);
+            background: #ffffff;
+            overflow: hidden;
+            box-shadow: var(--shadow);
+            display: flex;
+            flex-direction: column;
         }
 
-        .service-card:hover {
-            transform: translateY(-7px);
-            border-color: rgba(125,211,252,0.28);
-
-            box-shadow:
-                0 30px 70px rgba(0,0,0,0.4);
+        .service-image-wrapper {
+            height: 200px;
+            position: relative;
         }
 
         .service-image {
-            position: absolute;
-            inset: 0;
-
             width: 100%;
             height: 100%;
-
             object-fit: cover;
-
-            opacity: 0.72;
-
-            transition:
-                transform 0.7s ease,
-                opacity 0.5s ease;
-        }
-
-        .service-card:hover .service-image {
-            transform: scale(1.06);
-            opacity: 0.84;
-        }
-
-        .service-overlay {
-            position: absolute;
-            inset: 0;
-
-            background:
-                linear-gradient(
-                    to top,
-                    rgba(4,7,11,0.98) 5%,
-                    rgba(4,7,11,0.67) 45%,
-                    rgba(4,7,11,0.08) 100%
-                );
         }
 
         .service-content {
-            position: absolute;
-
-            left: 0;
-            right: 0;
-            bottom: 0;
-
-            padding: 25px;
+            padding: 18px;
+            display: flex;
+            flex-direction: column;
+            flex: 1;
         }
 
         .service-icon {
-            width: 45px;
-            height: 45px;
-
-            display: grid;
-            place-items: center;
-
-            margin-bottom: 15px;
-
-            border-radius: 13px;
-
-            background: rgba(255,255,255,0.08);
-            border: 1px solid rgba(255,255,255,0.12);
-
-            font-size: 20px;
-        }
-
-        .service-title {
-            font-size: 22px;
-            font-weight: 900;
-
+            font-size: 24px;
             margin-bottom: 8px;
         }
 
-        .service-description {
-            color: #b6bdc8;
-            font-size: 13px;
+        .service-title {
+            font-size: 18px;
+            font-weight: 700;
+            margin-bottom: 8px;
+            color: #111827;
+        }
 
-            margin-bottom: 18px;
+        .service-description {
+            color: var(--text-soft);
+            font-size: 13px;
+            margin-bottom: 15px;
+            flex: 1;
         }
 
         .service-actions {
@@ -881,413 +557,76 @@
         }
 
         .service-btn {
-            min-height: 39px;
-
-            display: inline-flex;
-            align-items: center;
-            justify-content: center;
-
-            padding: 0 14px;
-
-            border-radius: 10px;
-
+            flex: 1;
+            padding: 8px;
+            text-align: center;
+            border-radius: 6px;
             font-size: 12px;
-            font-weight: 800;
-
-            background: rgba(255,255,255,0.08);
-            border: 1px solid rgba(255,255,255,0.12);
-
-            transition: var(--transition);
-        }
-
-        .service-btn:hover {
-            background: rgba(255,255,255,0.15);
+            font-weight: 700;
+            background: var(--bg-soft);
+            color: var(--primary-dark);
+            border: 1px solid var(--border);
         }
 
         .service-btn.primary {
-            color: #071018;
-            background: white;
+            background: var(--primary);
+            color: #ffffff;
+            border: none;
         }
 
-        /* ============================================================
-           ABOUT
-        ============================================================ */
-
-        .about-grid {
-            display: grid;
-
-            grid-template-columns: 0.95fr 1.05fr;
-
-            gap: 70px;
-
-            align-items: center;
+        /* BOOKING FORM (الصورة رقم 3 - نقلت مباشرة بعد خدماتنا) */
+        .booking-section {
+            background: var(--bg-soft);
+            border-top: 1px solid var(--border);
+            border-bottom: 1px solid var(--border);
         }
-
-        .about-images {
-            position: relative;
-
-            min-height: 570px;
-        }
-
-        .about-image-main {
-            position: absolute;
-
-            width: 75%;
-            height: 480px;
-
-            right: 0;
-            top: 0;
-
-            object-fit: cover;
-
-            border-radius: 25px;
-
-            border: 1px solid var(--border);
-
-            box-shadow:
-                0 30px 80px rgba(0,0,0,0.4);
-        }
-
-        .about-image-small {
-            position: absolute;
-
-            width: 53%;
-            height: 270px;
-
-            left: 0;
-            bottom: 0;
-
-            object-fit: cover;
-
-            border-radius: 23px;
-
-            border: 9px solid var(--bg);
-
-            box-shadow:
-                0 30px 70px rgba(0,0,0,0.45);
-        }
-
-        .experience-card {
-            position: absolute;
-
-            right: 30px;
-            bottom: 55px;
-
-            padding: 18px 20px;
-
-            border-radius: 18px;
-
-            background: rgba(9,12,17,0.8);
-
-            border: 1px solid var(--border);
-
-            backdrop-filter: blur(15px);
-        }
-
-        .experience-card strong {
-            display: block;
-
-            font-size: 30px;
-            font-weight: 900;
-
-            color: var(--accent);
-        }
-
-        .experience-card span {
-            color: var(--text-soft);
-            font-size: 11px;
-        }
-
-        .about-text .section-label {
-            margin-bottom: 18px;
-        }
-
-        .about-text h2 {
-            font-size: clamp(32px, 4vw, 50px);
-            line-height: 1.2;
-            font-weight: 900;
-            margin-bottom: 20px;
-        }
-
-        .about-text > p {
-            color: var(--text-soft);
-            margin-bottom: 30px;
-        }
-
-        .features {
-            display: grid;
-            grid-template-columns: repeat(2, 1fr);
-            gap: 13px;
-        }
-
-        .feature {
-            padding: 18px;
-
-            border-radius: 18px;
-
-            background: rgba(255,255,255,0.035);
-            border: 1px solid var(--border);
-
-            transition: var(--transition);
-        }
-
-        .feature:hover {
-            background: rgba(255,255,255,0.065);
-            transform: translateY(-3px);
-        }
-
-        .feature-icon {
-            width: 40px;
-            height: 40px;
-
-            display: grid;
-            place-items: center;
-
-            margin-bottom: 12px;
-
-            border-radius: 12px;
-
-            background: rgba(125,211,252,0.09);
-            color: var(--accent);
-        }
-
-        .feature h3 {
-            font-size: 15px;
-            margin-bottom: 5px;
-        }
-
-        .feature p {
-            color: var(--text-soft);
-            font-size: 12px;
-        }
-
-        /* ============================================================
-           PROCESS
-        ============================================================ */
-
-        .process-grid {
-            display: grid;
-            grid-template-columns: repeat(4, 1fr);
-            gap: 15px;
-        }
-
-        .process-card {
-            padding: 25px;
-
-            border-radius: 22px;
-
-            text-align: center;
-
-            transition: var(--transition);
-        }
-
-        .process-card:hover {
-            transform: translateY(-5px);
-            background: rgba(255,255,255,0.075);
-        }
-
-        .process-number {
-            width: 52px;
-            height: 52px;
-
-            margin: 0 auto 18px;
-
-            display: grid;
-            place-items: center;
-
-            border-radius: 16px;
-
-            background: rgba(255,255,255,0.08);
-            border: 1px solid var(--border);
-
-            font-size: 17px;
-            font-weight: 900;
-
-            color: var(--accent);
-        }
-
-        .process-card h3 {
-            font-size: 17px;
-            margin-bottom: 8px;
-        }
-
-        .process-card p {
-            color: var(--text-soft);
-            font-size: 12px;
-        }
-
-        /* ============================================================
-           TESTIMONIALS
-        ============================================================ */
-
-        .testimonials-grid {
-            display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            gap: 17px;
-        }
-
-        .testimonial {
-            padding: 27px;
-
-            border-radius: 23px;
-
-            transition: var(--transition);
-        }
-
-        .testimonial:hover {
-            transform: translateY(-5px);
-            background: rgba(255,255,255,0.075);
-        }
-
-        .stars {
-            color: #facc15;
-            letter-spacing: 3px;
-            margin-bottom: 17px;
-        }
-
-        .testimonial p {
-            color: #c5cbd4;
-
-            font-size: 14px;
-
-            min-height: 100px;
-
-            margin-bottom: 20px;
-        }
-
-        .customer {
-            display: flex;
-            align-items: center;
-            gap: 11px;
-        }
-
-        .customer-avatar {
-            width: 42px;
-            height: 42px;
-
-            display: grid;
-            place-items: center;
-
-            border-radius: 50%;
-
-            background:
-                linear-gradient(
-                    145deg,
-                    #ffffff,
-                    #687482
-                );
-
-            color: #0b0f14;
-
-            font-weight: 900;
-        }
-
-        .customer strong {
-            display: block;
-            font-size: 13px;
-        }
-
-        .customer span {
-            color: var(--text-soft);
-            font-size: 10px;
-        }
-
-        /* ============================================================
-           BOOKING
-        ============================================================ */
 
         .booking-wrapper {
             display: grid;
             grid-template-columns: 0.8fr 1.2fr;
-
-            overflow: hidden;
-
-            border-radius: 30px;
-
+            background: #ffffff;
+            border-radius: var(--radius);
             border: 1px solid var(--border);
-
-            background:
-                linear-gradient(
-                    135deg,
-                    rgba(255,255,255,0.065),
-                    rgba(255,255,255,0.025)
-                );
-
+            overflow: hidden;
             box-shadow: var(--shadow);
         }
 
         .booking-info {
-            padding: 45px;
-
-            background:
-                radial-gradient(
-                    circle at 10% 10%,
-                    rgba(125,211,252,0.10),
-                    transparent 40%
-                );
+            padding: 35px;
+            background: #f0fdf4;
+            border-left: 1px solid var(--border);
         }
 
         .booking-info h2 {
-            font-size: 36px;
-            line-height: 1.25;
-            font-weight: 900;
-
-            margin-bottom: 15px;
+            font-size: 26px;
+            font-weight: 800;
+            margin-bottom: 12px;
+            color: #111827;
         }
 
-        .booking-info > p {
+        .booking-info p {
             color: var(--text-soft);
             font-size: 14px;
-
-            margin-bottom: 30px;
+            margin-bottom: 25px;
         }
 
         .contact-list {
             display: grid;
-            gap: 11px;
+            gap: 12px;
         }
 
         .contact-item {
             display: flex;
             align-items: center;
             gap: 12px;
-
-            padding: 14px;
-
-            border-radius: 15px;
-
-            background: rgba(255,255,255,0.04);
-            border: 1px solid rgba(255,255,255,0.07);
-        }
-
-        .contact-icon {
-            width: 40px;
-            height: 40px;
-
-            display: grid;
-            place-items: center;
-
-            border-radius: 11px;
-
-            background: rgba(255,255,255,0.07);
-
-            font-size: 17px;
-        }
-
-        .contact-item span {
-            display: block;
-
-            color: var(--text-soft);
-            font-size: 10px;
-        }
-
-        .contact-item strong {
-            font-size: 13px;
+            padding: 12px;
+            background: #ffffff;
+            border-radius: 8px;
+            border: 1px solid var(--border);
         }
 
         .booking-form {
-            padding: 45px;
-            background: rgba(0,0,0,0.13);
+            padding: 35px;
         }
 
         .form-grid {
@@ -1299,7 +638,7 @@
         .form-group {
             display: flex;
             flex-direction: column;
-            gap: 7px;
+            gap: 6px;
         }
 
         .form-group.full {
@@ -1307,68 +646,32 @@
         }
 
         .form-group label {
-            color: #d8dde5;
-            font-size: 12px;
+            color: #374151;
+            font-size: 13px;
             font-weight: 700;
         }
 
         .form-control {
             width: 100%;
-
-            min-height: 50px;
-
-            padding: 0 15px;
-
-            border-radius: 13px;
-
+            min-height: 45px;
+            padding: 0 12px;
+            border-radius: 8px;
+            border: 1px solid var(--border);
+            background: #ffffff;
             outline: none;
-
-            color: white;
-
-            background: rgba(255,255,255,0.045);
-
-            border: 1px solid rgba(255,255,255,0.11);
-
-            transition: var(--transition);
+            color: var(--text);
+            font-size: 14px;
         }
 
         textarea.form-control {
-            min-height: 130px;
-            padding-top: 13px;
+            min-height: 100px;
+            padding-top: 10px;
             resize: vertical;
         }
 
-        .form-control::placeholder {
-            color: #69717d;
-        }
-
         .form-control:focus {
-            border-color: rgba(125,211,252,0.45);
-
-            background: rgba(255,255,255,0.065);
-
-            box-shadow:
-                0 0 0 4px rgba(125,211,252,0.07);
-        }
-
-        select.form-control {
-            appearance: none;
-
-            background-image:
-                linear-gradient(45deg, transparent 50%, #8b949e 50%),
-                linear-gradient(135deg, #8b949e 50%, transparent 50%);
-
-            background-position:
-                calc(100% - 20px) 21px,
-                calc(100% - 14px) 21px;
-
-            background-size: 6px 6px;
-            background-repeat: no-repeat;
-        }
-
-        select.form-control option {
-            background: #10141b;
-            color: white;
+            border-color: var(--primary);
+            box-shadow: 0 0 0 3px rgba(16, 185, 129, 0.1);
         }
 
         .form-submit {
@@ -1377,2619 +680,761 @@
         }
 
         .form-note {
-            color: #747d89;
-            font-size: 10px;
+            color: #6b7280;
+            font-size: 11px;
             text-align: center;
-            margin-top: 10px;
+            margin-top: 8px;
         }
 
-        /* ============================================================
-           FAQ
-        ============================================================ */
+        /* ABOUT SECTION */
+        .about-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 40px;
+            align-items: center;
+        }
 
+        .about-images {
+            position: relative;
+        }
+
+        .about-image-main {
+            width: 100%;
+            height: 350px;
+            object-fit: cover;
+            border-radius: var(--radius);
+            border: 1px solid var(--border);
+        }
+
+        .features {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 12px;
+            margin-top: 20px;
+        }
+
+        .feature {
+            padding: 15px;
+            border-radius: 10px;
+            background: var(--bg-soft);
+            border: 1px solid var(--border);
+        }
+
+        .feature h3 { font-size: 14px; margin-bottom: 4px; }
+        .feature p { font-size: 12px; color: var(--text-soft); }
+
+        /* PROCESS */
+        .process-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 15px;
+        }
+
+        .process-card {
+            padding: 20px;
+            border-radius: var(--radius);
+            border: 1px solid var(--border);
+            background: #ffffff;
+            text-align: center;
+            box-shadow: var(--shadow);
+        }
+
+        .process-number {
+            width: 40px;
+            height: 40px;
+            margin: 0 auto 12px;
+            display: grid;
+            place-items: center;
+            border-radius: 50%;
+            background: var(--bg-soft);
+            color: var(--primary-dark);
+            font-weight: 800;
+        }
+
+        /* TESTIMONIALS */
+        .testimonials-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 15px;
+        }
+
+        .testimonial {
+            padding: 20px;
+            border-radius: var(--radius);
+            border: 1px solid var(--border);
+            background: #ffffff;
+            box-shadow: var(--shadow);
+        }
+
+        .stars { color: #f59e0b; margin-bottom: 10px; }
+        .testimonial p { font-size: 13px; color: var(--text-soft); margin-bottom: 15px; }
+
+        /* FAQ */
         .faq-wrapper {
-            max-width: 850px;
+            max-width: 800px;
             margin: auto;
             display: grid;
             gap: 10px;
         }
 
         .faq-item {
-            overflow: hidden;
-
-            border-radius: 17px;
-
             border: 1px solid var(--border);
-
-            background: rgba(255,255,255,0.035);
+            border-radius: 10px;
+            background: #ffffff;
         }
 
         .faq-question {
             width: 100%;
-
-            min-height: 65px;
-
-            padding: 0 20px;
-
+            padding: 15px 20px;
             display: flex;
             justify-content: space-between;
             align-items: center;
-
-            gap: 20px;
-
-            color: white;
-
-            background: transparent;
-
+            background: none;
             text-align: right;
-
-            font-size: 14px;
-            font-weight: 800;
-        }
-
-        .faq-icon {
-            width: 30px;
-            height: 30px;
-
-            flex: 0 0 30px;
-
-            display: grid;
-            place-items: center;
-
-            border-radius: 9px;
-
-            background: rgba(255,255,255,0.06);
-
-            transition: transform var(--transition);
-        }
-
-        .faq-item.active .faq-icon {
-            transform: rotate(45deg);
+            font-weight: 700;
+            color: var(--text);
         }
 
         .faq-answer {
-            max-height: 0;
-
-            overflow: hidden;
-
-            transition:
-                max-height 0.4s ease,
-                padding 0.4s ease;
-        }
-
-        .faq-answer p {
+            display: none;
+            padding: 0 20px 15px;
             color: var(--text-soft);
             font-size: 13px;
-            padding: 0 20px 0;
         }
 
         .faq-item.active .faq-answer {
-            max-height: 250px;
-            padding-bottom: 20px;
+            display: block;
         }
 
-        /* ============================================================
-           CTA
-        ============================================================ */
-
-        .cta {
-            padding: 90px 0;
-        }
-
+        /* CTA */
         .cta-box {
-            position: relative;
-
-            overflow: hidden;
-
-            padding: 65px 40px;
-
+            padding: 40px 20px;
             text-align: center;
-
-            border-radius: 30px;
-
-            background:
-                radial-gradient(
-                    circle at 50% 0,
-                    rgba(125,211,252,0.15),
-                    transparent 45%
-                ),
-                rgba(255,255,255,0.045);
-
+            border-radius: var(--radius);
+            background: var(--bg-soft);
             border: 1px solid var(--border);
-
-            box-shadow: var(--shadow);
         }
 
-        .cta-box::before,
-        .cta-box::after {
-            content: "";
-
-            position: absolute;
-
-            width: 180px;
-            height: 180px;
-
-            border-radius: 50%;
-
-            border: 1px solid rgba(255,255,255,0.06);
-        }
-
-        .cta-box::before {
-            top: -80px;
-            right: -80px;
-        }
-
-        .cta-box::after {
-            bottom: -100px;
-            left: -70px;
-        }
-
-        .cta-box h2 {
-            position: relative;
-            z-index: 2;
-
-            font-size: clamp(30px, 5vw, 48px);
-            line-height: 1.25;
-
-            font-weight: 900;
-
-            margin-bottom: 12px;
-        }
-
-        .cta-box p {
-            position: relative;
-            z-index: 2;
-
-            color: var(--text-soft);
-
-            max-width: 620px;
-
-            margin: 0 auto 25px;
-        }
-
-        .cta-buttons {
-            position: relative;
-            z-index: 2;
-
-            display: flex;
-            justify-content: center;
-            flex-wrap: wrap;
-            gap: 10px;
-        }
-
-        /* ============================================================
-           FOOTER
-        ============================================================ */
-
+        /* FOOTER */
         footer {
-            border-top: 1px solid rgba(255,255,255,0.07);
-
-            background: rgba(0,0,0,0.2);
+            background: #f9fafb;
+            border-top: 1px solid var(--border);
+            padding: 40px 0 20px;
         }
 
         .footer-main {
-            padding: 65px 0 40px;
-
             display: grid;
-
-            grid-template-columns: 1.3fr 0.8fr 0.8fr 0.9fr;
-
-            gap: 40px;
+            grid-template-columns: 1.2fr 0.8fr 0.8fr 1fr;
+            gap: 30px;
+            margin-bottom: 30px;
         }
 
-        .footer-brand p {
-            color: var(--text-soft);
-
-            font-size: 12px;
-
-            max-width: 340px;
-
-            margin: 15px 0 20px;
-        }
-
-        .footer-title {
-            font-size: 14px;
-            font-weight: 900;
-
-            margin-bottom: 15px;
-        }
-
-        .footer-links {
-            display: grid;
-            gap: 8px;
-        }
-
-        .footer-links a {
-            color: var(--text-soft);
-            font-size: 12px;
-
-            transition: var(--transition);
-        }
-
-        .footer-links a:hover {
-            color: white;
-            transform: translateX(-3px);
-        }
-
-        .footer-contact {
-            display: grid;
-            gap: 10px;
-        }
-
-        .footer-contact a,
-        .footer-contact div {
-            color: var(--text-soft);
-            font-size: 12px;
-        }
-
-        .socials {
-            display: flex;
-            gap: 8px;
-            flex-wrap: wrap;
-        }
-
-        .social {
-            width: 39px;
-            height: 39px;
-
-            display: grid;
-            place-items: center;
-
-            border-radius: 11px;
-
-            background: rgba(255,255,255,0.05);
-            border: 1px solid var(--border);
-
-            transition: var(--transition);
-        }
-
-        .social:hover {
-            transform: translateY(-3px);
-            background: rgba(255,255,255,0.10);
-        }
+        .footer-title { font-weight: 700; margin-bottom: 12px; }
+        .footer-links { display: grid; gap: 6px; font-size: 13px; color: var(--text-soft); }
 
         .footer-bottom {
-            padding: 18px 0;
-
-            border-top: 1px solid rgba(255,255,255,0.06);
-
+            border-top: 1px solid var(--border);
+            padding-top: 20px;
             display: flex;
             justify-content: space-between;
-            align-items: center;
-            gap: 15px;
-
-            color: #737c88;
-            font-size: 10px;
+            font-size: 12px;
+            color: #6b7280;
         }
 
-        /* ============================================================
-           FLOATING BUTTONS
-        ============================================================ */
-
+        /* FLOATING ACTION */
         .floating-actions {
             position: fixed;
-
-            left: 18px;
-            bottom: 18px;
-
+            left: 15px;
+            bottom: 15px;
             z-index: 900;
-
             display: flex;
             flex-direction: column;
-
             gap: 10px;
         }
 
         .floating-btn {
-            width: 52px;
-            height: 52px;
-
+            width: 48px;
+            height: 48px;
+            border-radius: 50%;
             display: grid;
             place-items: center;
-
-            border-radius: 50%;
-
-            border: 1px solid rgba(255,255,255,0.15);
-
-            backdrop-filter: blur(15px);
-
-            box-shadow:
-                0 15px 40px rgba(0,0,0,0.35);
-
-            transition: var(--transition);
-        }
-
-        .floating-btn:hover {
-            transform: scale(1.08);
-        }
-
-        .floating-whatsapp {
             color: white;
-            background: #25d366;
-            border-color: rgba(255,255,255,0.2);
+            box-shadow: 0 4px 10px rgba(0,0,0,0.15);
         }
 
-        .floating-top {
-            color: white;
-            background: rgba(255,255,255,0.08);
-
-            opacity: 0;
-            pointer-events: none;
-
-            transform: translateY(15px);
-        }
-
-        .floating-top.show {
-            opacity: 1;
-            pointer-events: auto;
-            transform: translateY(0);
-        }
-
-        /* ============================================================
-           TOAST
-        ============================================================ */
+        .floating-whatsapp { background: #25d366; }
+        .floating-top { background: var(--primary); opacity: 0; pointer-events: none; }
+        .floating-top.show { opacity: 1; pointer-events: auto; }
 
         .toast {
             position: fixed;
-
-            top: 90px;
+            top: 80px;
             right: 20px;
-
             z-index: 2000;
-
-            max-width: 350px;
-
-            padding: 15px 18px;
-
-            border-radius: 15px;
-
-            background: rgba(15,19,26,0.92);
-            border: 1px solid rgba(125,211,252,0.25);
-
-            backdrop-filter: blur(18px);
-
-            box-shadow: 0 20px 60px rgba(0,0,0,0.4);
-
+            padding: 12px 20px;
+            border-radius: 8px;
+            background: #111827;
             color: white;
-            font-size: 12px;
-
-            transform: translateY(-20px);
-            opacity: 0;
-            pointer-events: none;
-
-            transition: var(--transition);
+            font-size: 13px;
+            display: none;
         }
 
-        .toast.show {
-            transform: translateY(0);
-            opacity: 1;
-        }
+        .toast.show { display: block; }
 
-        /* ============================================================
-           REVEAL ANIMATION
-        ============================================================ */
-
-        .reveal {
-            opacity: 0;
-            transform: translateY(30px);
-
-            transition:
-                opacity 0.7s ease,
-                transform 0.7s ease;
-        }
-
-        .reveal.visible {
-            opacity: 1;
-            transform: translateY(0);
-        }
-
-        /* ============================================================
-           RESPONSIVE TABLET
-        ============================================================ */
-
-        @media (max-width: 1050px) {
-
-            .nav-links {
-                gap: 0;
+        /* RESPONSIVE */
+        @media (max-width: 768px) {
+            .hero-content, .about-grid, .booking-wrapper, .footer-main {
+                grid-template-columns: 1fr;
             }
-
-            .nav-links a {
-                padding: 8px 8px;
-                font-size: 12px;
-            }
-
-            .hero-content {
-                gap: 40px;
-            }
-
-            .hero-title {
-                font-size: 53px;
-            }
-
-            .services-grid {
+            .stats-grid, .process-grid, .testimonials-grid {
                 grid-template-columns: repeat(2, 1fr);
             }
-
-            .footer-main {
-                grid-template-columns: repeat(2, 1fr);
-            }
-        }
-
-        /* ============================================================
-           RESPONSIVE MOBILE
-        ============================================================ */
-
-        @media (max-width: 780px) {
-
-            .container {
-                width: min(100% - 28px, var(--container));
-            }
-
-            .section {
-                padding: 75px 0;
-            }
-
-            .topbar {
-                display: none;
-            }
-
-            header {
-                position: sticky;
-            }
-
-            .navbar {
-                min-height: 68px;
-            }
-
-            .header-actions {
-                display: none;
-            }
-
-            .menu-toggle {
-                display: block;
-            }
-
+            .menu-toggle { display: block; }
+            .header-actions { display: none; }
             .nav-links {
                 position: fixed;
-
-                top: 69px;
-                right: 14px;
-                left: 14px;
-
-                padding: 15px;
-
-                display: none;
-                flex-direction: column;
-
-                background: rgba(10,13,18,0.97);
-
+                top: 70px; right: 15px; left: 15px;
+                background: #ffffff;
                 border: 1px solid var(--border);
-
-                border-radius: 20px;
-
-                box-shadow: 0 30px 80px rgba(0,0,0,0.5);
-
-                backdrop-filter: blur(20px);
-            }
-
-            .nav-links.active {
-                display: flex;
-            }
-
-            .nav-links a {
-                width: 100%;
-                padding: 13px;
-
-                border-radius: 12px;
-
-                font-size: 14px;
-            }
-
-            .hero {
-                min-height: auto;
-                padding: 75px 0 60px;
-            }
-
-            .hero-content {
-                grid-template-columns: 1fr;
-                gap: 45px;
-            }
-
-            .hero-title {
-                font-size: clamp(39px, 12vw, 58px);
-                letter-spacing: -1.5px;
-            }
-
-            .hero-description {
-                font-size: 15px;
-            }
-
-            .hero-buttons {
-                display: grid;
-                grid-template-columns: 1fr 1fr;
-            }
-
-            .hero-buttons .btn {
-                width: 100%;
-                padding: 0 10px;
-            }
-
-            .hero-image {
-                height: 400px;
-            }
-
-            .hero-floating.top {
-                right: 8px;
-                top: 25px;
-            }
-
-            .hero-floating.bottom {
-                left: 8px;
-                bottom: 25px;
-            }
-
-            .stats {
-                margin-top: 0;
-            }
-
-            .stats-grid {
-                grid-template-columns: repeat(2, 1fr);
-            }
-
-            .stat {
-                border-left: 1px solid var(--border);
-                border-bottom: 1px solid var(--border);
-            }
-
-            .stat:nth-child(2),
-            .stat:nth-child(4) {
-                border-left: none;
-            }
-
-            .stat:nth-child(3),
-            .stat:nth-child(4) {
-                border-bottom: none;
-            }
-
-            .stat-number {
-                font-size: 27px;
-            }
-
-            .services-grid {
-                grid-template-columns: 1fr;
-            }
-
-            .service-card {
-                min-height: 390px;
-            }
-
-            .about-grid {
-                grid-template-columns: 1fr;
-                gap: 50px;
-            }
-
-            .about-images {
-                min-height: 500px;
-            }
-
-            .about-image-main {
-                width: 80%;
-                height: 410px;
-            }
-
-            .about-image-small {
-                width: 58%;
-                height: 230px;
-            }
-
-            .features {
-                grid-template-columns: 1fr;
-            }
-
-            .process-grid {
-                grid-template-columns: repeat(2, 1fr);
-            }
-
-            .testimonials-grid {
-                grid-template-columns: 1fr;
-            }
-
-            .testimonial p {
-                min-height: auto;
-            }
-
-            .booking-wrapper {
-                grid-template-columns: 1fr;
-            }
-
-            .booking-info,
-            .booking-form {
-                padding: 30px 20px;
-            }
-
-            .booking-info h2 {
-                font-size: 30px;
-            }
-
-            .form-grid {
-                grid-template-columns: 1fr;
-            }
-
-            .form-group.full {
-                grid-column: auto;
-            }
-
-            .footer-main {
-                grid-template-columns: 1fr 1fr;
-                gap: 30px 20px;
-            }
-
-            .footer-brand {
-                grid-column: 1 / -1;
-            }
-
-            .footer-bottom {
                 flex-direction: column;
-                text-align: center;
+                padding: 15px;
+                display: none;
+                box-shadow: var(--shadow);
+                border-radius: 12px;
             }
-
-            .floating-actions {
-                left: 13px;
-                bottom: 13px;
-            }
-
-            .floating-btn {
-                width: 48px;
-                height: 48px;
-            }
+            .nav-links.active { display: flex; }
+            .booking-info { border-left: none; border-bottom: 1px solid var(--border); }
         }
 
-        @media (max-width: 430px) {
-
-            .hero-buttons {
-                grid-template-columns: 1fr;
-            }
-
-            .stats-grid {
-                grid-template-columns: 1fr 1fr;
-            }
-
-            .stat {
-                padding: 21px 10px;
-            }
-
-            .stat-number {
-                font-size: 23px;
-            }
-
-            .stat-title {
-                font-size: 10px;
-            }
-
-            .about-images {
-                min-height: 420px;
-            }
-
-            .about-image-main {
-                height: 350px;
-            }
-
-            .about-image-small {
-                height: 190px;
-            }
-
-            .experience-card {
-                right: 10px;
-                bottom: 35px;
-            }
-
-            .process-grid {
-                grid-template-columns: 1fr;
-            }
-
-            .footer-main {
-                grid-template-columns: 1fr;
-            }
-
-            .footer-brand {
-                grid-column: auto;
-            }
+        @media (max-width: 480px) {
+            .stats-grid, .process-grid, .testimonials-grid { grid-template-columns: 1fr; }
+            .form-grid { grid-template-columns: 1fr; }
         }
-
-        /* ============================================================
-           REDUCED MOTION
-        ============================================================ */
-
-        @media (prefers-reduced-motion: reduce) {
-
-            html {
-                scroll-behavior: auto;
-            }
-
-            *,
-            *::before,
-            *::after {
-                animation-duration: 0.01ms !important;
-                animation-iteration-count: 1 !important;
-                transition-duration: 0.01ms !important;
-            }
-        }
-
     </style>
 </head>
 
 <body>
 
-    <!-- ============================================================
-         TOP BAR
-    ============================================================ -->
-
+    <!-- TOP BAR -->
     <div class="topbar">
         <div class="container topbar-inner">
-
             <div class="topbar-items">
-
-                <div class="topbar-item">
-                    <span>📍</span>
-                    <span>الرياض - المملكة العربية السعودية</span>
-                </div>
-
-                <div class="topbar-item">
-                    <span>🕐</span>
-                    <span>السبت - الخميس: 8 ص - 10 م</span>
-                </div>
-
+                <div class="topbar-item">📍 الرياض - المملكة العربية السعودية</div>
+                <div class="topbar-item">🕐 السبت - الخميس: 8 ص - 10 م</div>
             </div>
-
             <div class="topbar-items">
-
-                <a href="tel:0570471168" class="topbar-item">
-                    <span>☎</span>
-                    <span>0570471168</span>
-                </a>
-
-                <a href="https://wa.me/966508218878"
-                   target="_blank"
-                   rel="noopener noreferrer"
-                   class="topbar-item">
-                    <span>💬</span>
-                    <span>واتساب</span>
-                </a>
-
+                <a href="tel:0570471168" class="topbar-item">☎ 0570471168</a>
+                <a href="https://wa.me/966508218878" target="_blank" rel="noopener noreferrer" class="topbar-item">💬 واتساب</a>
             </div>
-
         </div>
     </div>
 
-
-    <!-- ============================================================
-         HEADER
-    ============================================================ -->
-
+    <!-- HEADER -->
     <header id="header">
-
         <div class="container navbar">
-
             <a href="/" class="logo" aria-label="kalin للنظافة العامة">
-
-                <div class="logo-mark">
-                    <span>K</span>
-                </div>
-
+                <div class="logo-mark">K</div>
                 <div class="logo-text">
                     kalin
                     <small>GENERAL CLEANING</small>
                 </div>
-
             </a>
 
-
             <nav class="nav-links" id="navLinks" aria-label="القائمة الرئيسية">
-
                 <a href="#home">الرئيسية</a>
-
                 <a href="#services">خدماتنا</a>
-
-                <a href="#about">من نحن</a>
-
-                <a href="#testimonials">آراء العملاء</a>
-
                 <a href="#booking">احجز الآن</a>
-
+                <a href="#about">من نحن</a>
+                <a href="#testimonials">آراء العملاء</a>
                 <a href="/blog">المدونة</a>
-
             </nav>
 
-
             <div class="header-actions">
-
-                <a href="tel:0570471168"
-                   class="btn btn-outline">
-                    ☎ اتصل الآن
-                </a>
-
-                <a href="#booking"
-                   class="btn btn-primary">
-                    احجز الآن
-                </a>
-
+                <a href="tel:0570471168" class="btn btn-outline">☎ اتصل الآن</a>
+                <a href="#booking" class="btn btn-primary">احجز الآن</a>
             </div>
 
-
-            <button
-                class="menu-toggle"
-                id="menuToggle"
-                type="button"
-                aria-label="فتح القائمة"
-                aria-expanded="false">
-                ☰
-            </button>
-
+            <button class="menu-toggle" id="menuToggle" type="button" aria-label="فتح القائمة" aria-expanded="false">☰</button>
         </div>
-
     </header>
 
-
-    <!-- ============================================================
-         HERO (المقدمة الاحترافية المُعدلة)
-    ============================================================ -->
-
     <main>
-
+        <!-- HERO -->
         <section class="hero" id="home">
-
-            <div class="hero-glow"></div>
-            <div class="hero-glow-two"></div>
-
             <div class="container hero-content">
-
-                <div class="hero-copy reveal">
-
-                    <div class="hero-badge">
-                        <span class="pulse-dot"></span>
-                        خدمات النظافة المتكاملة والاحترافية بالرياض
-                    </div>
-
+                <div class="hero-copy">
+                    <div class="hero-badge">خدمات النظافة المتكاملة والاحترافية بالرياض</div>
                     <h1 class="hero-title">
-                        نظافة فائقة الجودة
-                        <br>
+                        نظافة فائقة الجودة <br>
                         تُبرز جمال <span class="highlight">منشأتك</span>
                     </h1>
-
                     <p class="hero-description">
                         في <strong>kalin للنظافة العامة</strong>، نقدم حلول تنظيف متخصصة للمباني، الواجهات، والفلل بالرياض بأحدث المعدات وأعلى معايير الأمان والالتزام بالوقت.
                     </p>
-
                     <div class="hero-buttons">
-
-                        <a href="https://wa.me/966508218878?text=السلام%20عليكم،%20أرغب%20في%20طلب%20عرض%20سعر"
-                           target="_blank"
-                           rel="noopener noreferrer"
-                           class="btn btn-primary">
-                            💬 اطلب عرض سعر
-                        </a>
-
-                        <a href="tel:0570471168"
-                           class="btn btn-outline">
-                            ☎ اتصل الآن
-                        </a>
-
+                        <a href="https://wa.me/966508218878?text=السلام%20عليكم،%20أرغب%20في%20طلب%20عرض%20سعر" target="_blank" rel="noopener noreferrer" class="btn btn-primary">💬 اطلب عرض سعر</a>
+                        <a href="tel:0570471168" class="btn btn-outline">☎ اتصل الآن</a>
                     </div>
-
-                    <div class="hero-trust">
-
-                        <div class="trust-avatars">
-                            <div class="trust-avatar">K</div>
-                            <div class="trust-avatar">✓</div>
-                            <div class="trust-avatar">★</div>
-                            <div class="trust-avatar">+</div>
-                        </div>
-
-                        <span>
-                            جودة عالية • كادر متخصص • إتقان في العمل
-                        </span>
-
-                    </div>
-
                 </div>
 
-                <div class="hero-visual reveal">
-
+                <div class="hero-visual">
                     <div class="hero-image-card">
-                        <img
-                            src="https://images.unsplash.com/photo-1581578731548-c64695cc6952?q=80&w=1000&auto=format&fit=crop"
-                            alt="خدمات التنظيف الاحترافية في الرياض من kalin"
-                            class="hero-image"
-                            loading="eager"
-                            fetchpriority="high">
+                        <img src="https://images.unsplash.com/photo-1581578731548-c64695cc6952?q=80&w=1000&auto=format&fit=crop" alt="خدمات التنظيف الاحترافية في الرياض من kalin" class="hero-image" loading="eager">
                     </div>
-
-                    <div class="hero-floating top">
-                        <div class="floating-number">+500</div>
-                        <div class="floating-text">مشروع تم إنجازه</div>
-                    </div>
-
-                    <div class="hero-floating bottom">
-                        <div class="floating-number">10+</div>
-                        <div class="floating-text">سنوات خبرة متواصلة</div>
-                    </div>
-
                 </div>
-
             </div>
-
         </section>
 
-
-        <!-- ========================================================
-             STATS
-        ========================================================= -->
-
+        <!-- STATS -->
         <section class="stats">
-
             <div class="container">
-
-                <div class="stats-grid glass">
-
+                <div class="stats-grid">
                     <div class="stat">
-
-                        <div class="stat-number">
-                            +500<span>+</span>
-                        </div>
-
-                        <div class="stat-title">
-                            مبنى تم تنظيفه
-                        </div>
-
+                        <div class="stat-number">+500</div>
+                        <div class="stat-title">مبنى تم تنظيفه</div>
                     </div>
-
-
                     <div class="stat">
-
-                        <div class="stat-number">
-                            10<span>+</span>
-                        </div>
-
-                        <div class="stat-title">
-                            سنوات خبرة
-                        </div>
-
+                        <div class="stat-number">10+</div>
+                        <div class="stat-title">سنوات خبرة</div>
                     </div>
-
-
                     <div class="stat">
-
-                        <div class="stat-number">
-                            100<span>%</span>
-                        </div>
-
-                        <div class="stat-title">
-                            رضا العملاء
-                        </div>
-
+                        <div class="stat-number">100%</div>
+                        <div class="stat-title">رضا العملاء</div>
                     </div>
-
-
                     <div class="stat">
-
-                        <div class="stat-number">
-                            +50<span>+</span>
-                        </div>
-
-                        <div class="stat-title">
-                            فريق محترف
-                        </div>
-
+                        <div class="stat-number">+50</div>
+                        <div class="stat-title">فريق محترف</div>
                     </div>
-
                 </div>
-
             </div>
-
         </section>
 
-
-        <!-- ========================================================
-             SERVICES
-        ========================================================= -->
-
+        <!-- SERVICES (تمرير أفقي بناءً على ملاحظتك) -->
         <section class="section" id="services">
-
             <div class="container">
-
-                <div class="section-header reveal">
-
-                    <div class="section-label">
-                        خدماتنا
-                    </div>
-
-                    <h2 class="section-title">
-                        حلول تنظيف متخصصة لكل احتياج
-                    </h2>
-
-                    <p class="section-description">
-                        خدمات احترافية مصممة للمباني والواجهات والمنازل
-                        والمنشآت، مع الحرص على الجودة والسلامة والنتيجة النهائية.
-                    </p>
-
+                <div class="section-header">
+                    <div class="section-label">خدماتنا</div>
+                    <h2 class="section-title">حلول تنظيف متخصصة لكل احتياج</h2>
+                    <p class="section-description">مرر أفقياً للاطلاع على كافة الخدمات المتاحة</p>
                 </div>
 
-
-                <div class="services-grid">
-
-
+                <!-- HORIZONTAL SCROLL CONTAINER -->
+                <div class="horizontal-scroll-container">
                     <!-- SERVICE 1 -->
-
-                    <article class="service-card reveal">
-
-                        <img
-                            src="images/IMG-20240929-WA0006.jpg"
-                            alt="تنظيف واجهات الكلادينج بالرياض"
-                            class="service-image"
-                            loading="lazy">
-
-                        <div class="service-overlay"></div>
-
-                        <div class="service-content">
-
-                            <div class="service-icon">🏢</div>
-
-                            <h3 class="service-title">
-                                تنظيف واجهات الكلادينج
-                            </h3>
-
-                            <p class="service-description">
-                                تنظيف احترافي لواجهات الكلادينج وإزالة
-                                الأوساخ والغبار وآثار العوامل الجوية.
-                            </p>
-
-                            <div class="service-actions">
-
-                                <a href="/riyadh/cladding-cleaning"
-                                   class="service-btn primary">
-                                    معاينة الخدمة
-                                </a>
-
-                                <a href="https://wa.me/966508218878?text=أرغب%20في%20طلب%20خدمة%20تنظيف%20واجهات%20الكلادينج"
-                                   target="_blank"
-                                   rel="noopener noreferrer"
-                                   class="service-btn">
-                                    اطلب الآن
-                                </a>
-
-                            </div>
-
+                    <article class="service-card">
+                        <div class="service-image-wrapper">
+                            <img src="images/IMG-20240929-WA0006.jpg" alt="تنظيف واجهات الكلادينج بالرياض" class="service-image" loading="lazy">
                         </div>
-
+                        <div class="service-content">
+                            <div class="service-icon">🏢</div>
+                            <h3 class="service-title">تنظيف واجهات الكلادينج</h3>
+                            <p class="service-description">تنظيف احترافي لواجهات الكلادينج وإزالة الأوساخ والغبار وآثار العوامل الجوية.</p>
+                            <div class="service-actions">
+                                <a href="/riyadh/cladding-cleaning" class="service-btn">معاينة</a>
+                                <a href="https://wa.me/966508218878?text=أرغب%20في%20طلب%20خدمة%20تنظيف%20واجهات%20الكلادينج" target="_blank" rel="noopener noreferrer" class="service-btn primary">اطلب الآن</a>
+                            </div>
+                        </div>
                     </article>
-
 
                     <!-- SERVICE 2 -->
-
-                    <article class="service-card reveal">
-
-                        <img
-                            src="images/IMG_20221030_111321378498532225596.jpg"
-                            alt="تنظيف واجهات الأبراج بالرياض"
-                            class="service-image"
-                            loading="lazy">
-
-                        <div class="service-overlay"></div>
-
-                        <div class="service-content">
-
-                            <div class="service-icon">🏙️</div>
-
-                            <h3 class="service-title">
-                                تنظيف واجهات الأبراج
-                            </h3>
-
-                            <p class="service-description">
-                                حلول تنظيف متخصصة للمباني العالية والأبراج
-                                مع الاهتمام بالسلامة وجودة التنفيذ.
-                            </p>
-
-                            <div class="service-actions">
-
-                                <a href="/riyadh/towers-cleaning"
-                                   class="service-btn primary">
-                                    معاينة الخدمة
-                                </a>
-
-                                <a href="https://wa.me/966508218878?text=أرغب%20في%20طلب%20خدمة%20تنظيف%20واجهات%20الأبراج"
-                                   target="_blank"
-                                   rel="noopener noreferrer"
-                                   class="service-btn">
-                                    اطلب الآن
-                                </a>
-
-                            </div>
-
+                    <article class="service-card">
+                        <div class="service-image-wrapper">
+                            <img src="images/IMG_20221030_111321378498532225596.jpg" alt="تنظيف واجهات الأبراج بالرياض" class="service-image" loading="lazy">
                         </div>
-
+                        <div class="service-content">
+                            <div class="service-icon">🏙️</div>
+                            <h3 class="service-title">تنظيف واجهات الأبراج</h3>
+                            <p class="service-description">حلول تنظيف متخصصة للمباني العالية والأبراج مع الاهتمام بالسلامة وجودة التنفيذ.</p>
+                            <div class="service-actions">
+                                <a href="/riyadh/towers-cleaning" class="service-btn">معاينة</a>
+                                <a href="https://wa.me/966508218878?text=أرغب%20في%20طلب%20خدمة%20تنظيف%20واجهات%20الأبراج" target="_blank" rel="noopener noreferrer" class="service-btn primary">اطلب الآن</a>
+                            </div>
+                        </div>
                     </article>
-
 
                     <!-- SERVICE 3 -->
-
-                    <article class="service-card reveal">
-
-                        <img
-                            src="images/IMG_20221112_090054243913976131726.jpg"
-                            alt="تنظيف الواجهات الحجرية بالرياض"
-                            class="service-image"
-                            loading="lazy">
-
-                        <div class="service-overlay"></div>
-
-                        <div class="service-content">
-
-                            <div class="service-icon">🧱</div>
-
-                            <h3 class="service-title">
-                                تنظيف الواجهات الحجرية
-                            </h3>
-
-                            <p class="service-description">
-                                تنظيف الواجهات الحجرية وإزالة الغبار
-                                والترسبات مع المحافظة على مظهر الحجر.
-                            </p>
-
-                            <div class="service-actions">
-
-                                <a href="/riyadh/stone-cleaning"
-                                   class="service-btn primary">
-                                    معاينة الخدمة
-                                </a>
-
-                                <a href="https://wa.me/966508218878?text=أرغب%20في%20طلب%20خدمة%20تنظيف%20الواجهات%20الحجرية"
-                                   target="_blank"
-                                   rel="noopener noreferrer"
-                                   class="service-btn">
-                                    اطلب الآن
-                                </a>
-
-                            </div>
-
+                    <article class="service-card">
+                        <div class="service-image-wrapper">
+                            <img src="images/IMG_20221112_090054243913976131726.jpg" alt="تنظيف الواجهات الحجرية بالرياض" class="service-image" loading="lazy">
                         </div>
-
+                        <div class="service-content">
+                            <div class="service-icon">🧱</div>
+                            <h3 class="service-title">تنظيف الواجهات الحجرية</h3>
+                            <p class="service-description">تنظيف الواجهات الحجرية وإزالة الغبار والترسبات مع المحافظة على مظهر الحجر.</p>
+                            <div class="service-actions">
+                                <a href="/riyadh/stone-cleaning" class="service-btn">معاينة</a>
+                                <a href="https://wa.me/966508218878?text=أرغب%20في%20طلب%20خدمة%20تنظيف%20الواجهات%20الحجرية" target="_blank" rel="noopener noreferrer" class="service-btn primary">اطلب الآن</a>
+                            </div>
+                        </div>
                     </article>
-
 
                     <!-- SERVICE 4 -->
-
-                    <article class="service-card reveal">
-
-                        <img
-                            src="images/IMG_20230103_091852532744467787995.jpg"
-                            alt="تنظيف الفلل والقصور بالرياض"
-                            class="service-image"
-                            loading="lazy">
-
-                        <div class="service-overlay"></div>
-
-                        <div class="service-content">
-
-                            <div class="service-icon">🏠</div>
-
-                            <h3 class="service-title">
-                                تنظيف الفلل والقصور
-                            </h3>
-
-                            <p class="service-description">
-                                خدمات تنظيف شاملة للفلل والقصور والمنازل
-                                مع الاهتمام بالتفاصيل والمساحات المختلفة.
-                            </p>
-
-                            <div class="service-actions">
-
-                                <a href="/riyadh/villas-cleaning"
-                                   class="service-btn primary">
-                                    معاينة الخدمة
-                                </a>
-
-                                <a href="https://wa.me/966508218878?text=أرغب%20في%20طلب%20خدمة%20تنظيف%20فيلا%20أو%20قصر"
-                                   target="_blank"
-                                   rel="noopener noreferrer"
-                                   class="service-btn">
-                                    اطلب الآن
-                                </a>
-
-                            </div>
-
+                    <article class="service-card">
+                        <div class="service-image-wrapper">
+                            <img src="images/IMG_20230103_091852532744467787995.jpg" alt="تنظيف الفلل والقصور بالرياض" class="service-image" loading="lazy">
                         </div>
-
+                        <div class="service-content">
+                            <div class="service-icon">🏠</div>
+                            <h3 class="service-title">تنظيف الفلل والقصور</h3>
+                            <p class="service-description">خدمات تنظيف شاملة للفلل والقصور والمنازل مع الاهتمام بالتفاصيل والمساحات المختلفة.</p>
+                            <div class="service-actions">
+                                <a href="/riyadh/villas-cleaning" class="service-btn">معاينة</a>
+                                <a href="https://wa.me/966508218878?text=أرغب%20في%20طلب%20خدمة%20تنظيف%20فيلا%20أو%20قصر" target="_blank" rel="noopener noreferrer" class="service-btn primary">اطلب الآن</a>
+                            </div>
+                        </div>
                     </article>
-
 
                     <!-- SERVICE 5 -->
-
-                    <article class="service-card reveal">
-
-                        <img
-                            src="images/IMG_20230103_091852532744677788093.jpg"
-                            alt="التنظيف بعد التشطيب بالرياض"
-                            class="service-image"
-                            loading="lazy">
-
-                        <div class="service-overlay"></div>
-
-                        <div class="service-content">
-
-                            <div class="service-icon">🧹</div>
-
-                            <h3 class="service-title">
-                                التنظيف بعد التشطيب
-                            </h3>
-
-                            <p class="service-description">
-                                تجهيز المباني بعد أعمال التشطيب وإزالة
-                                آثار الغبار ومخلفات العمل للوصول إلى نظافة عالية.
-                            </p>
-
-                            <div class="service-actions">
-
-                                <a href="/riyadh/post-construction"
-                                   class="service-btn primary">
-                                    معاينة الخدمة
-                                </a>
-
-                                <a href="https://wa.me/966508218878?text=أرغب%20في%20طلب%20خدمة%20التنظيف%20بعد%20التشطيب"
-                                   target="_blank"
-                                   rel="noopener noreferrer"
-                                   class="service-btn">
-                                    اطلب الآن
-                                </a>
-
-                            </div>
-
+                    <article class="service-card">
+                        <div class="service-image-wrapper">
+                            <img src="images/IMG_20230103_091852532744677788093.jpg" alt="التنظيف بعد التشطيب بالرياض" class="service-image" loading="lazy">
                         </div>
-
+                        <div class="service-content">
+                            <div class="service-icon">🧹</div>
+                            <h3 class="service-title">التنظيف بعد التشطيب</h3>
+                            <p class="service-description">تجهيز المباني بعد أعمال التشطيب وإزالة آثار الغبار ومخلفات العمل للوصول إلى نظافة عالية.</p>
+                            <div class="service-actions">
+                                <a href="/riyadh/post-construction" class="service-btn">معاينة</a>
+                                <a href="https://wa.me/966508218878?text=أرغب%20في%20طلب%20خدمة%20التنظيف%20بعد%20التشطيب" target="_blank" rel="noopener noreferrer" class="service-btn primary">اطلب الآن</a>
+                            </div>
+                        </div>
                     </article>
-
 
                     <!-- SERVICE 6 -->
-
-                    <article class="service-card reveal">
-
-                        <img
-                            src="images/IMG_20230207_211230560845431563187.jpg"
-                            alt="جلي وتلميع الرخام بالرياض"
-                            class="service-image"
-                            loading="lazy">
-
-                        <div class="service-overlay"></div>
-
-                        <div class="service-content">
-
-                            <div class="service-icon">✨</div>
-
-                            <h3 class="service-title">
-                                جلي وتلميع الرخام
-                            </h3>
-
-                            <p class="service-description">
-                                خدمات جلي وتلميع الأرضيات والرخام لتحسين
-                                المظهر واستعادة اللمعان والنظافة.
-                            </p>
-
-                            <div class="service-actions">
-
-                                <a href="/riyadh/floor-polishing"
-                                   class="service-btn primary">
-                                    معاينة الخدمة
-                                </a>
-
-                                <a href="https://wa.me/966508218878?text=أرغب%20في%20طلب%20خدمة%20جلي%20وتلميع%20الرخام"
-                                   target="_blank"
-                                   rel="noopener noreferrer"
-                                   class="service-btn">
-                                    اطلب الآن
-                                </a>
-
-                            </div>
-
+                    <article class="service-card">
+                        <div class="service-image-wrapper">
+                            <img src="images/IMG_20230207_211230560845431563187.jpg" alt="جلي وتلميع الرخام بالرياض" class="service-image" loading="lazy">
                         </div>
-
+                        <div class="service-content">
+                            <div class="service-icon">✨</div>
+                            <h3 class="service-title">جلي وتلميع الرخام</h3>
+                            <p class="service-description">خدمات جلي وتلميع الأرضيات والرخام لتحسين المظهر واستعادة اللمعان والنظافة.</p>
+                            <div class="service-actions">
+                                <a href="/riyadh/floor-polishing" class="service-btn">معاينة</a>
+                                <a href="https://wa.me/966508218878?text=أرغب%20في%20طلب%20خدمة%20جلي%20وتلميع%20الرخام" target="_blank" rel="noopener noreferrer" class="service-btn primary">اطلب الآن</a>
+                            </div>
+                        </div>
                     </article>
-
 
                     <!-- SERVICE 7 -->
-
-                    <article class="service-card reveal">
-
-                        <img
-                            src="images/IMG_20230207_211231560845862478307.jpg"
-                            alt="تنظيف خزانات المياه بالرياض"
-                            class="service-image"
-                            loading="lazy">
-
-                        <div class="service-overlay"></div>
-
+                    <article class="service-card">
+                        <div class="service-image-wrapper">
+                            <img src="images/IMG_20230207_211231560845862478307.jpg" alt="تنظيف خزانات المياه بالرياض" class="service-image" loading="lazy">
+                        </div>
                         <div class="service-content">
-
                             <div class="service-icon">💧</div>
-
-                            <h3 class="service-title">
-                                تنظيف خزانات المياه
-                            </h3>
-
-                            <p class="service-description">
-                                تنظيف خزانات المياه وإزالة الرواسب والأوساخ
-                                للمساعدة في المحافظة على نظافة الخزان.
-                            </p>
-
+                            <h3 class="service-title">تنظيف خزانات المياه</h3>
+                            <p class="service-description">تنظيف خزانات المياه وإزالة الرواسب والأوساخ للمساعدة في المحافظة على نظافة الخزان.</p>
                             <div class="service-actions">
-
-                                <a href="/riyadh/tank-cleaning"
-                                   class="service-btn primary">
-                                    معاينة الخدمة
-                                </a>
-
-                                <a href="https://wa.me/966508218878?text=أرغب%20في%20طلب%20خدمة%20تنظيف%20خزانات%20المياه"
-                                   target="_blank"
-                                   rel="noopener noreferrer"
-                                   class="service-btn">
-                                    اطلب الآن
-                                </a>
-
+                                <a href="/riyadh/tank-cleaning" class="service-btn">معاينة</a>
+                                <a href="https://wa.me/966508218878?text=أرغب%20في%20طلب%20خدمة%20تنظيف%20خزانات%20المياه" target="_blank" rel="noopener noreferrer" class="service-btn primary">اطلب الآن</a>
                             </div>
-
                         </div>
-
                     </article>
-
-
-                    <!-- SERVICE 8 -->
-
-                    <article class="service-card reveal">
-
-                        <img
-                            src="images/IMG_20230207_211231560845975352318.jpg"
-                            alt="خدمات نظافة المباني في الرياض"
-                            class="service-image"
-                            loading="lazy">
-
-                        <div class="service-overlay"></div>
-
-                        <div class="service-content">
-
-                            <div class="service-icon">🏢</div>
-
-                            <h3 class="service-title">
-                                نظافة المباني والمنشآت
-                            </h3>
-
-                            <p class="service-description">
-                                حلول نظافة متكاملة للمباني والمنشآت التجارية
-                                والإدارية والمرافق المختلفة.
-                            </p>
-
-                            <div class="service-actions">
-
-                                <a href="#booking"
-                                   class="service-btn primary">
-                                    اطلب الخدمة
-                                </a>
-
-                                <a href="https://wa.me/966508218878?text=أرغب%20في%20طلب%20خدمة%20نظافة%20مبنى%20أو%20منشأة"
-                                   target="_blank"
-                                   rel="noopener noreferrer"
-                                   class="service-btn">
-                                    واتساب
-                                </a>
-
-                            </div>
-
-                        </div>
-
-                    </article>
-
-
-                    <!-- SERVICE 9 -->
-
-                    <article class="service-card reveal">
-
-                        <img
-                            src="images/IMG_20230207_211231560846052401672.jpg"
-                            alt="تنظيف المنشآت والمرافق بالرياض"
-                            class="service-image"
-                            loading="lazy">
-
-                        <div class="service-overlay"></div>
-
-                        <div class="service-content">
-
-                            <div class="service-icon">🧽</div>
-
-                            <h3 class="service-title">
-                                تنظيف المنشآت والمرافق
-                            </h3>
-
-                            <p class="service-description">
-                                تنفيذ أعمال النظافة للمرافق المختلفة وفق
-                                احتياج العميل وطبيعة الموقع.
-                            </p>
-
-                            <div class="service-actions">
-
-                                <a href="#booking"
-                                   class="service-btn primary">
-                                    اطلب الخدمة
-                                </a>
-
-                                <a href="https://wa.me/966508218878?text=أرغب%20في%20الاستفسار%20عن%20خدمات%20تنظيف%20المنشآت"
-                                   target="_blank"
-                                   rel="noopener noreferrer"
-                                   class="service-btn">
-                                    استفسر الآن
-                                </a>
-
-                            </div>
-
-                        </div>
-
-                    </article>
-
                 </div>
-
             </div>
-
         </section>
 
-
-        <!-- ========================================================
-             ABOUT
-        ========================================================= -->
-
-        <section class="section" id="about">
-
-            <div class="container about-grid">
-
-                <div class="about-images reveal">
-
-                    <img
-                        src="images/IMG_20240417_063559_959.jpg"
-                        alt="فريق kalin للنظافة العامة"
-                        class="about-image-main"
-                        loading="lazy">
-
-                    <img
-                        src="images/IMG_20240418_051656_323.jpg"
-                        alt="أعمال تنظيف احترافية في الرياض"
-                        class="about-image-small"
-                        loading="lazy">
-
-                    <div class="experience-card">
-
-                        <strong>10+</strong>
-
-                        <span>
-                            سنوات من الخبرة
-                        </span>
-
-                    </div>
-
-                </div>
-
-
-                <div class="about-text reveal">
-
-                    <div class="section-label">
-                        لماذا kalin؟
-                    </div>
-
-                    <h2>
-                        نرفع معيار النظافة
-                        <br>
-                        من أول زيارة
-                    </h2>
-
-                    <p>
-                        نؤمن أن النظافة ليست مجرد إزالة للأوساخ، بل هي
-                        تجربة متكاملة تبدأ بفهم احتياج العميل وتنتهي بنتيجة
-                        يفتخر بها. لذلك نركز على الجودة، السلامة، الالتزام
-                        بالمواعيد، واستخدام المعدات المناسبة لكل نوع من الخدمات.
-                    </p>
-
-
-                    <div class="features">
-
-                        <div class="feature">
-
-                            <div class="feature-icon">
-                                🛡️
-                            </div>
-
-                            <h3>
-                                معايير السلامة
-                            </h3>
-
-                            <p>
-                                اهتمام مستمر بإجراءات السلامة أثناء تنفيذ الأعمال.
-                            </p>
-
-                        </div>
-
-
-                        <div class="feature">
-
-                            <div class="feature-icon">
-                                ⚙️
-                            </div>
-
-                            <h3>
-                                معدات حديثة
-                            </h3>
-
-                            <p>
-                                استخدام معدات وأدوات مناسبة لطبيعة كل خدمة.
-                            </p>
-
-                        </div>
-
-
-                        <div class="feature">
-
-                            <div class="feature-icon">
-                                ⏱️
-                            </div>
-
-                            <h3>
-                                الالتزام بالمواعيد
-                            </h3>
-
-                            <p>
-                                نحرص على تنظيم المواعيد وتنفيذ الخدمة في الوقت المتفق عليه.
-                            </p>
-
-                        </div>
-
-
-                        <div class="feature">
-
-                            <div class="feature-icon">
-                                ✓
-                            </div>
-
-                            <h3>
-                                جودة التنفيذ
-                            </h3>
-
-                            <p>
-                                متابعة التفاصيل للوصول إلى نتيجة نظافة احترافية.
-                            </p>
-
-                        </div>
-
-                    </div>
-
-                </div>
-
-            </div>
-
-        </section>
-
-
-        <!-- ========================================================
-             EXTRA GALLERY
-        ========================================================= -->
-
-        <section class="section">
-
+        <!-- BOOKING SECTION (تم نقل الصورة رقم 3 لتصبح مباشرة بعد خدماتنا) -->
+        <section class="section booking-section" id="booking">
             <div class="container">
-
-                <div class="section-header reveal">
-
-                    <div class="section-label">
-                        من أعمالنا
-                    </div>
-
-                    <h2 class="section-title">
-                        أعمال تعكس مستوى الخدمة
-                    </h2>
-
-                    <p class="section-description">
-                        مجموعة من الصور المستخدمة لعرض خدمات وأعمال المؤسسة.
-                    </p>
-
-                </div>
-
-
-                <div class="services-grid">
-
-                    <article class="service-card reveal">
-
-                        <img
-                            src="images/IMG_20240418_051727_162.jpg"
-                            alt="أعمال تنظيف kalin"
-                            class="service-image"
-                            loading="lazy">
-
-                        <div class="service-overlay"></div>
-
-                        <div class="service-content">
-
-                            <h3 class="service-title">
-                                تنظيف احترافي
-                            </h3>
-
-                            <p class="service-description">
-                                تنفيذ أعمال النظافة بعناية واهتمام بالتفاصيل.
-                            </p>
-
-                        </div>
-
-                    </article>
-
-
-                    <article class="service-card reveal">
-
-                        <img
-                            src="images/IMG_20240421_064818_921.jpg"
-                            alt="خدمات النظافة العامة بالرياض"
-                            class="service-image"
-                            loading="lazy">
-
-                        <div class="service-overlay"></div>
-
-                        <div class="service-content">
-
-                            <h3 class="service-title">
-                                خدمات النظافة العامة
-                            </h3>
-
-                            <p class="service-description">
-                                حلول مناسبة لمختلف أنواع المباني والمنشآت.
-                            </p>
-
-                        </div>
-
-                    </article>
-
-
-                    <article class="service-card reveal">
-
-                        <img
-                            src="images/IMG_20240511_062226_385.jpg"
-                            alt="تنظيف المباني والمنشآت في الرياض"
-                            class="service-image"
-                            loading="lazy">
-
-                        <div class="service-overlay"></div>
-
-                        <div class="service-content">
-
-                            <h3 class="service-title">
-                                نظافة المنشآت
-                            </h3>
-
-                            <p class="service-description">
-                                فريق متخصص لتنفيذ أعمال التنظيف حسب احتياج الموقع.
-                            </p>
-
-                        </div>
-
-                    </article>
-
-                </div>
-
-            </div>
-
-        </section>
-
-
-        <!-- ========================================================
-             PROCESS
-        ========================================================= -->
-
-        <section class="section">
-
-            <div class="container">
-
-                <div class="section-header reveal">
-
-                    <div class="section-label">
-                        طريقة العمل
-                    </div>
-
-                    <h2 class="section-title">
-                        من التواصل إلى الإنجاز
-                    </h2>
-
-                    <p class="section-description">
-                        خطوات واضحة وبسيطة للحصول على الخدمة المناسبة.
-                    </p>
-
-                </div>
-
-
-                <div class="process-grid">
-
-                    <div class="process-card glass reveal">
-
-                        <div class="process-number">
-                            01
-                        </div>
-
-                        <h3>
-                            تواصل معنا
-                        </h3>
-
-                        <p>
-                            أرسل طلبك عبر واتساب أو اتصل مباشرة.
-                        </p>
-
-                    </div>
-
-
-                    <div class="process-card glass reveal">
-
-                        <div class="process-number">
-                            02
-                        </div>
-
-                        <h3>
-                            تحديد الخدمة
-                        </h3>
-
-                        <p>
-                            نحدد نوع الخدمة وااحتياج الموقع.
-                        </p>
-
-                    </div>
-
-
-                    <div class="process-card glass reveal">
-
-                        <div class="process-number">
-                            03
-                        </div>
-
-                        <h3>
-                            تحديد الموعد
-                        </h3>
-
-                        <p>
-                            يتم الاتفاق على الموعد المناسب لتنفيذ الخدمة.
-                        </p>
-
-                    </div>
-
-
-                    <div class="process-card glass reveal">
-
-                        <div class="process-number">
-                            04
-                        </div>
-
-                        <h3>
-                            تنفيذ الخدمة
-                        </h3>
-
-                        <p>
-                            يصل الفريق ويتم تنفيذ العمل باحترافية.
-                        </p>
-
-                    </div>
-
-                </div>
-
-            </div>
-
-        </section>
-
-
-        <!-- ========================================================
-             TESTIMONIALS
-        ========================================================= -->
-
-        <section class="section" id="testimonials">
-
-            <div class="container">
-
-                <div class="section-header reveal">
-
-                    <div class="section-label">
-                        آراء العملاء
-                    </div>
-
-                    <h2 class="section-title">
-                        رضا العميل هو معيارنا
-                    </h2>
-
-                    <p class="section-description">
-                        تجربة الخدمة تبدأ من التواصل وتنتهي بالنتيجة التي يرضى عنها العميل.
-                    </p>
-
-                </div>
-
-
-                <div class="testimonials-grid">
-
-
-                    <article class="testimonial glass reveal">
-
-                        <div class="stars">
-                            ★★★★★
-                        </div>
-
-                        <p>
-                            "الخدمة كانت ممتازة والتنفيذ مرتب جداً. الفريق
-                            تعامل باحترافية والنتيجة كانت أفضل مما توقعت."
-                        </p>
-
-                        <div class="customer">
-
-                            <div class="customer-avatar">
-                                م
-                            </div>
-
-                            <div>
-                                <strong>محمد</strong>
-                                <span>عميل من الرياض</span>
-                            </div>
-
-                        </div>
-
-                    </article>
-
-
-                    <article class="testimonial glass reveal">
-
-                        <div class="stars">
-                            ★★★★★
-                        </div>
-
-                        <p>
-                            "التزام بالمواعيد وسرعة في التجاوب، والأهم أن
-                            العمل تم بعناية. تجربة ممتازة."
-                        </p>
-
-                        <div class="customer">
-
-                            <div class="customer-avatar">
-                                ع
-                            </div>
-
-                            <div>
-                                <strong>عبدالله</strong>
-                                <span>عميل من الرياض</span>
-                            </div>
-
-                        </div>
-
-                    </article>
-
-
-                    <article class="testimonial glass reveal">
-
-                        <div class="stars">
-                            ★★★★★
-                        </div>
-
-                        <p>
-                            "طلبنا تنظيف للموقع بعد التشطيب وكانت النتيجة
-                            رائعة. الفريق متعاون جداً."
-                        </p>
-
-                        <div class="customer">
-
-                            <div class="customer-avatar">
-                                س
-                            </div>
-
-                            <div>
-                                <strong>سالم</strong>
-                                <span>عميل من الرياض</span>
-                            </div>
-
-                        </div>
-
-                    </article>
-
-                </div>
-
-            </div>
-
-        </section>
-
-
-        <!-- ========================================================
-             BOOKING
-        ========================================================= -->
-
-        <section class="section" id="booking">
-
-            <div class="container">
-
                 <div class="booking-wrapper">
-
-                    <div class="booking-info reveal">
-
-                        <div class="section-label">
-                            احجز خدمتك
-                        </div>
-
-                        <h2>
-                            جاهزون لتنظيف
-                            مكانك باحترافية
-                        </h2>
-
-                        <p>
-                            اترك بياناتك وسنتواصل معك لتحديد احتياجك
-                            والخدمة المناسبة والموعد.
-                        </p>
-
-
+                    <div class="booking-info">
+                        <div class="section-label">احجز خدمتك</div>
+                        <h2>جاهزون لتنظيف مكانك باحترافية</h2>
+                        <p>اترك بياناتك وسنتواصل معك لتحديد احتياجك والخدمة المناسبة والموعد.</p>
+                        
                         <div class="contact-list">
-
-                            <a href="tel:0570471168"
-                               class="contact-item">
-
-                                <div class="contact-icon">
-                                    ☎
-                                </div>
-
+                            <a href="tel:0570471168" class="contact-item">
+                                <div>☎</div>
                                 <div>
-                                    <span>الاتصال المباشر</span>
+                                    <span style="font-size: 11px; color: #6b7280;">الاتصال المباشر</span><br>
                                     <strong>0570471168</strong>
                                 </div>
-
                             </a>
-
-
-                            <a href="https://wa.me/966508218878"
-                               target="_blank"
-                               rel="noopener noreferrer"
-                               class="contact-item">
-
-                                <div class="contact-icon">
-                                    💬
-                                </div>
-
+                            <a href="https://wa.me/966508218878" target="_blank" rel="noopener noreferrer" class="contact-item">
+                                <div>💬</div>
                                 <div>
-                                    <span>واتساب</span>
+                                    <span style="font-size: 11px; color: #6b7280;">واتساب</span><br>
                                     <strong>0508218878</strong>
                                 </div>
-
                             </a>
-
-
-                            <div class="contact-item">
-
-                                <div class="contact-icon">
-                                    📍
-                                </div>
-
-                                <div>
-                                    <span>نطاق الخدمة</span>
-                                    <strong>الرياض</strong>
-                                </div>
-
-                            </div>
-
-
-                            <div class="contact-item">
-
-                                <div class="contact-icon">
-                                    🕐
-                                </div>
-
-                                <div>
-                                    <span>ساعات العمل</span>
-                                    <strong>8 ص - 10 م</strong>
-                                </div>
-
-                            </div>
-
                         </div>
-
                     </div>
 
-
-                    <div class="booking-form reveal">
-
+                    <div class="booking-form">
                         <form id="bookingForm">
-
                             <div class="form-grid">
-
                                 <div class="form-group">
-
-                                    <label for="name">
-                                        الاسم
-                                    </label>
-
-                                    <input
-                                        id="name"
-                                        name="name"
-                                        type="text"
-                                        class="form-control"
-                                        placeholder="اكتب اسمك"
-                                        autocomplete="name"
-                                        required>
-
+                                    <label for="name">الاسم</label>
+                                    <input id="name" name="name" type="text" class="form-control" placeholder="اكتب اسمك" autocomplete="name" required>
                                 </div>
 
-
                                 <div class="form-group">
-
-                                    <label for="phone">
-                                        رقم الجوال
-                                    </label>
-
-                                    <input
-                                        id="phone"
-                                        name="phone"
-                                        type="tel"
-                                        class="form-control"
-                                        placeholder="05xxxxxxxx"
-                                        autocomplete="tel"
-                                        inputmode="tel"
-                                        required>
-
+                                    <label for="phone">رقم الجوال</label>
+                                    <input id="phone" name="phone" type="tel" class="form-control" placeholder="05xxxxxxxx" autocomplete="tel" inputmode="tel" required>
                                 </div>
-
 
                                 <div class="form-group full">
-
-                                    <label for="service">
-                                        نوع الخدمة
-                                    </label>
-
-                                    <select
-                                        id="service"
-                                        name="service"
-                                        class="form-control"
-                                        required>
-
-                                        <option value="">
-                                            اختر الخدمة
-                                        </option>
-
-                                        <option value="تنظيف واجهات الكلادينج">
-                                            تنظيف واجهات الكلادينج
-                                        </option>
-
-                                        <option value="تنظيف واجهات الأبراج">
-                                            تنظيف واجهات الأبراج
-                                        </option>
-
-                                        <option value="تنظيف الواجهات الحجرية">
-                                            تنظيف الواجهات الحجرية
-                                        </option>
-
-                                        <option value="تنظيف الفلل والقصور">
-                                            تنظيف الفلل والقصور
-                                        </option>
-
-                                        <option value="التنظيف بعد التشطيب">
-                                            التنظيف بعد التشطيب
-                                        </option>
-
-                                        <option value="جلي وتلميع الرخام">
-                                            جلي وتلميع الرخام
-                                        </option>
-
-                                        <option value="تنظيف خزانات المياه">
-                                            تنظيف خزانات المياه
-                                        </option>
-
-                                        <option value="خدمة أخرى">
-                                            خدمة أخرى
-                                        </option>
-
+                                    <label for="service">نوع الخدمة</label>
+                                    <select id="service" name="service" class="form-control" required>
+                                        <option value="">اختر الخدمة</option>
+                                        <option value="تنظيف واجهات الكلادينج">تنظيف واجهات الكلادينج</option>
+                                        <option value="تنظيف واجهات الأبراج">تنظيف واجهات الأبراج</option>
+                                        <option value="تنظيف الواجهات الحجرية">تنظيف الواجهات الحجرية</option>
+                                        <option value="تنظيف الفلل والقصور">تنظيف الفلل والقصور</option>
+                                        <option value="التنظيف بعد التشطيب">التنظيف بعد التشطيب</option>
+                                        <option value="جلي وتلميع الرخام">جلي وتلميع الرخام</option>
+                                        <option value="تنظيف خزانات المياه">تنظيف خزانات المياه</option>
+                                        <option value="خدمة أخرى">خدمة أخرى</option>
                                     </select>
-
                                 </div>
-
 
                                 <div class="form-group full">
-
-                                    <label for="details">
-                                        تفاصيل الاستفسار
-                                    </label>
-
-                                    <textarea
-                                        id="details"
-                                        name="details"
-                                        class="form-control"
-                                        placeholder="اكتب تفاصيل الموقع أو الخدمة المطلوبة..."
-                                        required></textarea>
-
+                                    <label for="details">تفاصيل الاستفسار</label>
+                                    <textarea id="details" name="details" class="form-control" placeholder="اكتب تفاصيل الموقع أو الخدمة المطلوبة..." required></textarea>
                                 </div>
-
                             </div>
 
-
-                            <button
-                                type="submit"
-                                class="btn btn-primary form-submit">
-
-                                💬 إرسال الطلب عبر واتساب
-
-                            </button>
-
-
-                            <div class="form-note">
-                                عند الإرسال سيتم فتح واتساب وإرسال تفاصيل طلبك إلى المؤسسة.
-                            </div>
-
+                            <button type="submit" class="btn btn-primary form-submit">💬 إرسال الطلب عبر واتساب</button>
+                            <div class="form-note">عند الإرسال سيتم فتح واتساب وإرسال تفاصيل طلبك إلى المؤسسة.</div>
                         </form>
-
                     </div>
-
                 </div>
-
             </div>
-
         </section>
 
-
-        <!-- ========================================================
-             FAQ
-        ========================================================= -->
-
-        <section class="section" id="faq">
-
+        <!-- EXTRA GALLERY (تمرير أفقي بناءً على ملاحظة الصورة رقم 1 و 2) -->
+        <section class="section">
             <div class="container">
-
-                <div class="section-header reveal">
-
-                    <div class="section-label">
-                        الأسئلة الشائعة
-                    </div>
-
-                    <h2 class="section-title">
-                        إجابات على أهم استفساراتك
-                    </h2>
-
+                <div class="section-header">
+                    <div class="section-label">من أعمالنا</div>
+                    <h2 class="section-title">أعمال تعكس مستوى الخدمة</h2>
+                    <p class="section-description">معرض أعمال المؤسسة بالتمرير الأفقي</p>
                 </div>
 
-
-                <div class="faq-wrapper">
-
-
-                    <div class="faq-item reveal">
-
-                        <button
-                            class="faq-question"
-                            type="button"
-                            aria-expanded="false">
-
-                            <span>
-                                ما هي مناطق تقديم خدمات kalin؟
-                            </span>
-
-                            <span class="faq-icon">
-                                +
-                            </span>
-
-                        </button>
-
-                        <div class="faq-answer">
-
-                            <p>
-                                نقدم خدماتنا داخل مدينة الرياض والمناطق التابعة
-                                لها حسب نطاق الخدمة وطبيعة الموقع.
-                            </p>
-
+                <div class="horizontal-scroll-container">
+                    <article class="service-card">
+                        <div class="service-image-wrapper">
+                            <img src="images/IMG_20240418_051727_162.jpg" alt="أعمال تنظيف kalin" class="service-image" loading="lazy">
                         </div>
-
-                    </div>
-
-
-                    <div class="faq-item reveal">
-
-                        <button
-                            class="faq-question"
-                            type="button"
-                            aria-expanded="false">
-
-                            <span>
-                                هل تقدمون تنظيف واجهات الكلادينج؟
-                            </span>
-
-                            <span class="faq-icon">
-                                +
-                            </span>
-
-                        </button>
-
-                        <div class="faq-answer">
-
-                            <p>
-                                نعم، نقدم خدمات تنظيف واجهات الكلادينج للمباني
-                                والمنشآت باستخدام الأساليب والمعدات المناسبة لطبيعة الواجهة.
-                            </p>
-
+                        <div class="service-content">
+                            <h3 class="service-title">تنظيف احترافي</h3>
+                            <p class="service-description">تنفيذ أعمال النظافة بعناية واهتمام بالتفاصيل.</p>
                         </div>
+                    </article>
 
-                    </div>
-
-
-                    <div class="faq-item reveal">
-
-                        <button
-                            class="faq-question"
-                            type="button"
-                            aria-expanded="false">
-
-                            <span>
-                                هل تقدمون خدمات التنظيف بعد التشطيب؟
-                            </span>
-
-                            <span class="faq-icon">
-                                +
-                            </span>
-
-                        </button>
-
-                        <div class="faq-answer">
-
-                            <p>
-                                نعم، نقدم خدمات التنظيف بعد التشطيب وإزالة آثار
-                                الغبار ومخلفات الأعمال وتجهيز الموقع للاستخدام.
-                            </p>
-
+                    <article class="service-card">
+                        <div class="service-image-wrapper">
+                            <img src="images/IMG_20240421_064818_921.jpg" alt="خدمات النظافة العامة بالرياض" class="service-image" loading="lazy">
                         </div>
-
-                    </div>
-
-
-                    <div class="faq-item reveal">
-
-                        <button
-                            class="faq-question"
-                            type="button"
-                            aria-expanded="false">
-
-                            <span>
-                                هل يمكن طلب معاينة قبل تنفيذ الخدمة؟
-                            </span>
-
-                            <span class="faq-icon">
-                                +
-                            </span>
-
-                        </button>
-
-                        <div class="faq-answer">
-
-                            <p>
-                                نعم، يمكنك التواصل معنا عبر واتساب أو الاتصال
-                                المباشر لتحديد احتياجك وطلب المعاينة أو عرض السعر المناسب.
-                            </p>
-
+                        <div class="service-content">
+                            <h3 class="service-title">خدمات النظافة العامة</h3>
+                            <p class="service-description">حلول مناسبة لمختلف أنواع المباني والمنشآت.</p>
                         </div>
+                    </article>
 
-                    </div>
-
-
-                    <div class="faq-item reveal">
-
-                        <button
-                            class="faq-question"
-                            type="button"
-                            aria-expanded="false">
-
-                            <span>
-                                ما أوقات العمل؟
-                            </span>
-
-                            <span class="faq-icon">
-                                +
-                            </span>
-
-                        </button>
-
-                        <div class="faq-answer">
-
-                            <p>
-                                ساعات العمل من السبت إلى الخميس من الساعة
-                                8 صباحاً حتى 10 مساءً.
-                            </p>
-
+                    <article class="service-card">
+                        <div class="service-image-wrapper">
+                            <img src="images/IMG_20240511_062226_385.jpg" alt="تنظيف المباني والمنشآت في الرياض" class="service-image" loading="lazy">
                         </div>
-
-                    </div>
-
-
+                        <div class="service-content">
+                            <h3 class="service-title">نظافة المنشآت</h3>
+                            <p class="service-description">فريق متخصص لتنفيذ أعمال التنظيف حسب احتياج الموقع.</p>
+                        </div>
+                    </article>
                 </div>
-
             </div>
-
         </section>
 
+        <!-- ABOUT -->
+        <section class="section" id="about">
+            <div class="container about-grid">
+                <div class="about-images">
+                    <img src="images/IMG_20240417_063559_959.jpg" alt="فريق kalin للنظافة العامة" class="about-image-main" loading="lazy">
+                </div>
 
-        <!-- ========================================================
-             CTA
-        ========================================================= -->
-
-        <section class="cta">
-
-            <div class="container">
-
-                <div class="cta-box reveal">
-
-                    <h2>
-                        مكانك يستحق نظافة أفضل
-                    </h2>
-
+                <div class="about-text">
+                    <div class="section-label">لماذا kalin؟</div>
+                    <h2>نرفع معيار النظافة من أول زيارة</h2>
                     <p>
-                        تواصل مع kalin للنظافة العامة اليوم واحصل على
-                        الخدمة المناسبة لموقعك في الرياض.
+                        نؤمن أن النظافة ليست مجرد إزالة للأوساخ، بل هي تجربة متكاملة تبدأ بفهم احتياج العميل وتنتهي بنتيجة يفتخر بها.
                     </p>
 
-
-                    <div class="cta-buttons">
-
-                        <a href="https://wa.me/966508218878?text=السلام%20عليكم،%20أرغب%20في%20طلب%20عرض%20سعر%20لخدمة%20تنظيف"
-                           target="_blank"
-                           rel="noopener noreferrer"
-                           class="btn btn-primary">
-
-                            💬 تواصل عبر واتساب
-
-                        </a>
-
-
-                        <a href="tel:0570471168"
-                           class="btn btn-outline">
-
-                            ☎ 0570471168
-
-                        </a>
-
+                    <div class="features">
+                        <div class="feature">
+                            <h3>🛡️ معايير السلامة</h3>
+                            <p>اهتمام مستمر بإجراءات السلامة أثناء التنفيذ.</p>
+                        </div>
+                        <div class="feature">
+                            <h3>⚙️ معدات حديثة</h3>
+                            <p>أدوات مناسبة لكل نوع من الخدمات.</p>
+                        </div>
+                        <div class="feature">
+                            <h3>⏱️ الالتزام بالمواعيد</h3>
+                            <p>تنفيذ الخدمة في الوقت المتفق عليه.</p>
+                        </div>
+                        <div class="feature">
+                            <h3>✓ جودة التنفيذ</h3>
+                            <p>متابعة التفاصيل لنظافة احترافية.</p>
+                        </div>
                     </div>
-
                 </div>
-
             </div>
-
         </section>
 
+        <!-- PROCESS -->
+        <section class="section">
+            <div class="container">
+                <div class="section-header">
+                    <div class="section-label">طريقة العمل</div>
+                    <h2 class="section-title">من التواصل إلى الإنجاز</h2>
+                </div>
+
+                <div class="process-grid">
+                    <div class="process-card">
+                        <div class="process-number">01</div>
+                        <h3>تواصل معنا</h3>
+                        <p>أرسل طلبك عبر واتساب أو اتصل مباشرة.</p>
+                    </div>
+                    <div class="process-card">
+                        <div class="process-number">02</div>
+                        <h3>تحديد الخدمة</h3>
+                        <p>نحدد نوع الخدمة وااحتياج الموقع.</p>
+                    </div>
+                    <div class="process-card">
+                        <div class="process-number">03</div>
+                        <h3>تحديد الموعد</h3>
+                        <p>يتم الاتفاق على الموعد المناسب.</p>
+                    </div>
+                    <div class="process-card">
+                        <div class="process-number">04</div>
+                        <h3>تنفيذ الخدمة</h3>
+                        <p>يصل الفريق ويتم تنفيذ العمل باحترافية.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- TESTIMONIALS -->
+        <section class="section" id="testimonials">
+            <div class="container">
+                <div class="section-header">
+                    <div class="section-label">آراء العملاء</div>
+                    <h2 class="section-title">رضا العميل هو معيارنا</h2>
+                </div>
+
+                <div class="testimonials-grid">
+                    <article class="testimonial">
+                        <div class="stars">★★★★★</div>
+                        <p>"الخدمة كانت ممتازة والتنفيذ مرتب جداً. الفريق تعامل باحترافية."</p>
+                        <strong>محمد</strong> - <small>عميل من الرياض</small>
+                    </article>
+                    <article class="testimonial">
+                        <div class="stars">★★★★★</div>
+                        <p>"التزام بالمواعيد وسرعة في التجاوب، والعمل تم بعناية."</p>
+                        <strong>عبدالله</strong> - <small>عميل من الرياض</small>
+                    </article>
+                    <article class="testimonial">
+                        <div class="stars">★★★★★</div>
+                        <p>"طلبنا تنظيف للموقع بعد التشطيب وكانت النتيجة رائعة."</p>
+                        <strong>سالم</strong> - <small>عميل من الرياض</small>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- FAQ -->
+        <section class="section" id="faq">
+            <div class="container">
+                <div class="section-header">
+                    <div class="section-label">الأسئلة الشائعة</div>
+                    <h2 class="section-title">إجابات على أهم استفساراتك</h2>
+                </div>
+
+                <div class="faq-wrapper">
+                    <div class="faq-item">
+                        <button class="faq-question" type="button">ما هي مناطق تقديم خدمات kalin؟ <span>+</span></button>
+                        <div class="faq-answer"><p>نقدم خدماتنا داخل مدينة الرياض والمناطق التابعة لها.</p></div>
+                    </div>
+                    <div class="faq-item">
+                        <button class="faq-question" type="button">هل تقدمون تنظيف واجهات الكلادينج؟ <span>+</span></button>
+                        <div class="faq-answer"><p>نعم، نقدم خدمات تنظيف واجهات الكلادينج للمباني والمنشآت.</p></div>
+                    </div>
+                    <div class="faq-item">
+                        <button class="faq-question" type="button">هل تقدمون خدمات التنظيف بعد التشطيب؟ <span>+</span></button>
+                        <div class="faq-answer"><p>نعم، نقدم خدمات التنظيف بعد التشطيب وإزالة آثار العمل.</p></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA -->
+        <section class="section">
+            <div class="container">
+                <div class="cta-box">
+                    <h2>مكانك يستحق نظافة أفضل</h2>
+                    <p style="margin-bottom: 20px;">تواصل مع kalin للنظافة العامة اليوم واحصل على الخدمة المناسبة.</p>
+                    <a href="https://wa.me/966508218878?text=السلام%20عليكم،%20أرغب%20في%20طلب%20عرض%20سعر" target="_blank" rel="noopener noreferrer" class="btn btn-primary">💬 تواصل عبر واتساب</a>
+                </div>
+            </div>
+        </section>
     </main>
 
-
-    <!-- ============================================================
-         FOOTER
-    ============================================================ -->
-
+    <!-- FOOTER -->
     <footer>
-
         <div class="container footer-main">
-
-
-            <div class="footer-brand">
-
+            <div>
                 <a href="/" class="logo">
-
-                    <div class="logo-mark">
-                        <span>K</span>
-                    </div>
-
-                    <div class="logo-text">
-                        kalin
-                        <small>GENERAL CLEANING</small>
-                    </div>
-
+                    <div class="logo-mark">K</div>
+                    <div class="logo-text">kalin<small>GENERAL CLEANING</small></div>
                 </a>
-
-
-                <p>
-                    kalin للنظافة العامة مؤسسة متخصصة في تقديم
-                    خدمات التنظيف الاحترافية للمباني والواجهات
-                    والفلل والمنشآت في الرياض.
-                </p>
-
-
-                <div class="socials">
-
-                    <a href="https://wa.me/966508218878"
-                       target="_blank"
-                       rel="noopener noreferrer"
-                       class="social"
-                       aria-label="واتساب">
-                        💬
-                    </a>
-
-                    <a href="tel:0570471168"
-                       class="social"
-                       aria-label="اتصال">
-                        ☎
-                    </a>
-
-                </div>
-
+                <p style="font-size: 13px; color: var(--text-soft); margin-top: 10px;">مؤسسة متخصصة في تقديم خدمات التنظيف الاحترافية بالرياض.</p>
             </div>
-
-
             <div>
-
-                <div class="footer-title">
-                    روابط سريعة
-                </div>
-
+                <div class="footer-title">روابط سريعة</div>
                 <div class="footer-links">
-
-                    <a href="#home">
-                        الرئيسية
-                    </a>
-
-                    <a href="#services">
-                        خدماتنا
-                    </a>
-
-                    <a href="#about">
-                        من نحن
-                    </a>
-
-                    <a href="#testimonials">
-                        آراء العملاء
-                    </a>
-
-                    <a href="#booking">
-                        احجز الآن
-                    </a>
-
-                    <a href="/blog">
-                        المدونة
-                    </a>
-
+                    <a href="#home">الرئيسية</a>
+                    <a href="#services">خدماتنا</a>
+                    <a href="#booking">احجز الآن</a>
+                    <a href="#about">من نحن</a>
                 </div>
-
             </div>
-
-
             <div>
-
-                <div class="footer-title">
-                    خدمات الرياض
-                </div>
-
+                <div class="footer-title">خدمات الرياض</div>
                 <div class="footer-links">
-
-                    <a href="/riyadh/cladding-cleaning">
-                        تنظيف الكلادينج
-                    </a>
-
-                    <a href="/riyadh/towers-cleaning">
-                        تنظيف الأبراج
-                    </a>
-
-                    <a href="/riyadh/stone-cleaning">
-                        تنظيف الحجر
-                    </a>
-
-                    <a href="/riyadh/villas-cleaning">
-                        تنظيف الفلل والقصور
-                    </a>
-
-                    <a href="/riyadh/post-construction">
-                        التنظيف بعد التشطيب
-                    </a>
-
-                    <a href="/riyadh/floor-polishing">
-                        جلي وتلميع الرخام
-                    </a>
-
-                    <a href="/riyadh/tank-cleaning">
-                        تنظيف خزانات المياه
-                    </a>
-
+                    <a href="/riyadh/cladding-cleaning">تنظيف الكلادينج</a>
+                    <a href="/riyadh/towers-cleaning">تنظيف الأبراج</a>
+                    <a href="/riyadh/villas-cleaning">تنظيف الفلل والقصور</a>
                 </div>
-
             </div>
-
-
             <div>
-
-                <div class="footer-title">
-                    تواصل معنا
+                <div class="footer-title">تواصل معنا</div>
+                <div class="footer-links">
+                    <span>☎ 0570471168</span>
+                    <span>💬 0508218878</span>
+                    <span>📍 الرياض، السعودية</span>
                 </div>
-
-                <div class="footer-contact">
-
-                    <a href="tel:0570471168">
-                        ☎ 0570471168
-                    </a>
-
-                    <a href="https://wa.me/966508218878"
-                       target="_blank"
-                       rel="noopener noreferrer">
-                        💬 0508218878
-                    </a>
-
-                    <div>
-                        📍 الرياض، المملكة العربية السعودية
-                    </div>
-
-                    <div>
-                        🕐 السبت - الخميس
-                        <br>
-                        8 ص - 10 م
-                    </div>
-
-                </div>
-
             </div>
-
         </div>
-
 
         <div class="container footer-bottom">
-
-            <div>
-                © <span id="currentYear"></span>
-                kalin للنظافة العامة. جميع الحقوق محفوظة.
-            </div>
-
-            <div>
-                خدمات تنظيف احترافية في الرياض
-            </div>
-
+            <div>© <span id="currentYear"></span> kalin للنظافة العامة. جميع الحقوق محفوظة.</div>
+            <div>خدمات تنظيف احترافية في الرياض</div>
         </div>
-
     </footer>
 
-
-    <!-- ============================================================
-         FLOATING ACTIONS
-    ============================================================ -->
-
+    <!-- FLOATING ACTIONS -->
     <div class="floating-actions">
-
-        <a href="https://wa.me/966508218878?text=السلام%20عليكم،%20أرغب%20في%20الاستفسار%20عن%20خدمات%20التنظيف"
-           target="_blank"
-           rel="noopener noreferrer"
-           class="floating-btn floating-whatsapp"
-           aria-label="التواصل عبر واتساب"
-           title="واتساب">
-
-            💬
-
-        </a>
-
-
-        <button
-            type="button"
-            class="floating-btn floating-top"
-            id="scrollTop"
-            aria-label="الصعود إلى الأعلى"
-            title="الصعود للأعلى">
-
-            ↑
-
-        </button>
-
+        <a href="https://wa.me/966508218878" target="_blank" rel="noopener noreferrer" class="floating-btn floating-whatsapp" title="واتساب">💬</a>
+        <button type="button" class="floating-btn floating-top" id="scrollTop" title="الصعود للأعلى">↑</button>
     </div>
 
+    <div class="toast" id="toast"></div>
 
-    <!-- ============================================================
-         TOAST
-    ============================================================ -->
-
-    <div
-        class="toast"
-        id="toast"
-        role="status"
-        aria-live="polite">
-    </div>
-
-
-    <!-- ============================================================
-         JAVASCRIPT
-    ============================================================ -->
-
+    <!-- JAVASCRIPT LIGHT & FAST -->
     <script>
-
         "use strict";
-
-
-        /* ============================================================
-           DOM
-        ============================================================ */
 
         const menuToggle = document.getElementById("menuToggle");
         const navLinks = document.getElementById("navLinks");
@@ -3998,398 +1443,78 @@
         const toast = document.getElementById("toast");
         const currentYear = document.getElementById("currentYear");
 
-
-        /* ============================================================
-           CURRENT YEAR
-        ============================================================ */
-
         if (currentYear) {
             currentYear.textContent = new Date().getFullYear();
         }
 
-
-        /* ============================================================
-           MOBILE MENU
-        ============================================================ */
-
+        // MOBILE MENU
         if (menuToggle && navLinks) {
-
             menuToggle.addEventListener("click", function () {
-
-                const isActive =
-                    navLinks.classList.toggle("active");
-
-                menuToggle.setAttribute(
-                    "aria-expanded",
-                    isActive ? "true" : "false"
-                );
-
-                document.body.classList.toggle(
-                    "menu-open",
-                    isActive
-                );
-
-                menuToggle.textContent =
-                    isActive ? "×" : "☰";
-
+                const isActive = navLinks.classList.toggle("active");
+                menuToggle.textContent = isActive ? "×" : "☰";
             });
-
-
-            navLinks.querySelectorAll("a").forEach(function (link) {
-
-                link.addEventListener("click", function () {
-
+            navLinks.querySelectorAll("a").forEach(link => {
+                link.addEventListener("click", () => {
                     navLinks.classList.remove("active");
-
-                    document.body.classList.remove("menu-open");
-
-                    menuToggle.setAttribute(
-                        "aria-expanded",
-                        "false"
-                    );
-
                     menuToggle.textContent = "☰";
-
                 });
-
             });
-
         }
 
-
-        /* ============================================================
-           SCROLL TOP
-        ============================================================ */
-
-        window.addEventListener(
-            "scroll",
-            function () {
-
-                if (window.scrollY > 500) {
-
-                    scrollTopButton.classList.add("show");
-
-                } else {
-
-                    scrollTopButton.classList.remove("show");
-
-                }
-
-            },
-            { passive: true }
-        );
-
+        // SCROLL TOP
+        window.addEventListener("scroll", function () {
+            if (window.scrollY > 300) {
+                scrollTopButton.classList.add("show");
+            } else {
+                scrollTopButton.classList.remove("show");
+            }
+        }, { passive: true });
 
         if (scrollTopButton) {
-
-            scrollTopButton.addEventListener(
-                "click",
-                function () {
-
-                    window.scrollTo({
-                        top: 0,
-                        behavior: "smooth"
-                    });
-
-                }
-            );
-
+            scrollTopButton.addEventListener("click", function () {
+                window.scrollTo({ top: 0, behavior: "smooth" });
+            });
         }
 
-
-        /* ============================================================
-           FAQ ACCORDION
-        ============================================================ */
-
-        const faqQuestions =
-            document.querySelectorAll(".faq-question");
-
-
-        faqQuestions.forEach(function (question) {
-
-            question.addEventListener(
-                "click",
-                function () {
-
-                    const currentItem =
-                        question.closest(".faq-item");
-
-                    const wasActive =
-                        currentItem.classList.contains("active");
-
-
-                    document
-                        .querySelectorAll(".faq-item.active")
-                        .forEach(function (item) {
-
-                            item.classList.remove("active");
-
-                            const btn =
-                                item.querySelector(".faq-question");
-
-                            if (btn) {
-                                btn.setAttribute(
-                                    "aria-expanded",
-                                    "false"
-                                );
-                            }
-
-                        });
-
-
-                    if (!wasActive) {
-
-                        currentItem.classList.add("active");
-
-                        question.setAttribute(
-                            "aria-expanded",
-                            "true"
-                        );
-
-                    }
-
-                }
-            );
-
+        // FAQ ACCORDION
+        document.querySelectorAll(".faq-question").forEach(question => {
+            question.addEventListener("click", function () {
+                const item = this.closest(".faq-item");
+                item.classList.toggle("active");
+            });
         });
 
-
-        /* ============================================================
-           TOAST
-        ============================================================ */
-
-        let toastTimer;
-
-
+        // TOAST
         function showToast(message) {
-
-            if (!toast) {
-                return;
-            }
-
+            if (!toast) return;
             toast.textContent = message;
-
             toast.classList.add("show");
-
-            clearTimeout(toastTimer);
-
-            toastTimer = setTimeout(
-                function () {
-
-                    toast.classList.remove("show");
-
-                },
-                3500
-            );
-
+            setTimeout(() => { toast.classList.remove("show"); }, 3000);
         }
 
-
-        /* ============================================================
-           BOOKING FORM
-        ============================================================ */
-
+        // BOOKING FORM TO WHATSAPP
         if (bookingForm) {
+            bookingForm.addEventListener("submit", function (e) {
+                e.preventDefault();
+                const name = document.getElementById("name").value.trim();
+                const phone = document.getElementById("phone").value.trim();
+                const service = document.getElementById("service").value;
+                const details = document.getElementById("details").value.trim();
 
-            bookingForm.addEventListener(
-                "submit",
-                function (event) {
-
-                    event.preventDefault();
-
-
-                    const name =
-                        document.getElementById("name").value.trim();
-
-                    const phone =
-                        document.getElementById("phone").value.trim();
-
-                    const service =
-                        document.getElementById("service").value;
-
-                    const details =
-                        document.getElementById("details").value.trim();
-
-
-                    if (!name || !phone || !service || !details) {
-
-                        showToast(
-                            "فضلاً أكمل جميع البيانات المطلوبة."
-                        );
-
-                        return;
-
-                    }
-
-
-                    const cleanPhone =
-                        phone.replace(/[^\d+]/g, "");
-
-
-                    if (cleanPhone.length < 9) {
-
-                        showToast(
-                            "يرجى إدخال رقم جوال صحيح."
-                        );
-
-                        return;
-
-                    }
-
-
-                    const message =
-                        "طلب خدمة جديد - kalin للنظافة العامة\n\n" +
-                        "الاسم: " + name + "\n" +
-                        "رقم الجوال: " + phone + "\n" +
-                        "نوع الخدمة: " + service + "\n" +
-                        "تفاصيل الطلب: " + details;
-
-
-                    const whatsappUrl =
-                        "https://wa.me/966508218878?text=" +
-                        encodeURIComponent(message);
-
-
-                    showToast(
-                        "سيتم فتح واتساب لإرسال طلبك."
-                    );
-
-
-                    setTimeout(
-                        function () {
-
-                            window.open(
-                                whatsappUrl,
-                                "_blank",
-                                "noopener,noreferrer"
-                            );
-
-                        },
-                        500
-                    );
-
+                if (!name || !phone || !service || !details) {
+                    showToast("فضلاً أكمل جميع البيانات المطلوبة.");
+                    return;
                 }
-            );
 
+                const message = `طلب خدمة جديد - kalin للنظافة العامة\n\nالاسم: ${name}\nرقم الجوال: ${phone}\nنوع الخدمة: ${service}\nالتفاصيل: ${details}`;
+                const whatsappUrl = `https://wa.me/966508218878?text=${encodeURIComponent(message)}`;
+
+                showToast("جاري التوجيه إلى واتساب...");
+                setTimeout(() => {
+                    window.open(whatsappUrl, "_blank");
+                }, 500);
+            });
         }
-
-
-        /* ============================================================
-           SCROLL REVEAL
-        ============================================================ */
-
-        const revealElements =
-            document.querySelectorAll(".reveal");
-
-
-        if ("IntersectionObserver" in window) {
-
-            const observer =
-                new IntersectionObserver(
-                    function (entries, observerInstance) {
-
-                        entries.forEach(function (entry) {
-
-                            if (entry.isIntersecting) {
-
-                                entry.target.classList.add("visible");
-
-                                observerInstance.unobserve(
-                                    entry.target
-                                );
-
-                            }
-
-                        });
-
-                    },
-                    {
-                        threshold: 0.10,
-                        rootMargin: "0px 0px -50px 0px"
-                    }
-                );
-
-
-            revealElements.forEach(function (element) {
-
-                observer.observe(element);
-
-            });
-
-        } else {
-
-            revealElements.forEach(function (element) {
-
-                element.classList.add("visible");
-
-            });
-
-        }
-
-
-        /* ============================================================
-           SMOOTH ANCHOR LINKS
-        ============================================================ */
-
-        document
-            .querySelectorAll('a[href^="#"]')
-            .forEach(function (link) {
-
-                link.addEventListener(
-                    "click",
-                    function (event) {
-
-                        const targetId =
-                            link.getAttribute("href");
-
-                        if (
-                            !targetId ||
-                            targetId === "#"
-                        ) {
-                            return;
-                        }
-
-
-                        const target =
-                            document.querySelector(targetId);
-
-
-                        if (target) {
-
-                            event.preventDefault();
-
-                            target.scrollIntoView({
-                                behavior: "smooth",
-                                block: "start"
-                            });
-
-                        }
-
-                    }
-                );
-
-            });
-
-
-        /* ============================================================
-           IMAGE ERROR HANDLING
-        ============================================================ */
-
-        document
-            .querySelectorAll("img")
-            .forEach(function (image) {
-
-                image.addEventListener(
-                    "error",
-                    function () {
-
-                        this.style.display = "none";
-
-                    }
-                );
-
-            });
-
     </script>
 </body>
 </html>
