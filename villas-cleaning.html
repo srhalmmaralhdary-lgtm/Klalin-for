@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>شركة تنظيف الفلل والقصور - خدمات نظافة شاملة</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background-color: #f8f9fa;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        /* الهيدر وشريط التنقل */
+        header {
+            background-color: #1b4332;
+            color: white;
+            padding: 1rem 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        header h1 {
+            font-size: 1.5rem;
+            color: #40916c;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin-right: 1.5rem;
+            font-weight: 500;
+            transition: color 0.3s;
+        }
+
+        nav a:hover {
+            color: #52b788;
+        }
+
+        /* البانر الرئيسي */
+        .hero {
+            background: linear-gradient(rgba(27, 67, 50, 0.85), rgba(27, 67, 50, 0.85)), 
+                        url('https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1350&q=80') center/cover no-repeat;
+            color: white;
+            text-align: center;
+            padding: 100px 20px;
+        }
+
+        .hero h2 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .hero p {
+            font-size: 1.2rem;
+            max-width: 650px;
+            margin: 0 auto 2rem auto;
+        }
+
+        .btn {
+            background-color: #52b788;
+            color: #081c15;
+            padding: 12px 30px;
+            border: none;
+            border-radius: 5px;
+            font-weight: bold;
+            text-decoration: none;
+            cursor: pointer;
+            transition: background 0.3s;
+        }
+
+        .btn:hover {
+            background-color: #74c69d;
+        }
+
+        /* قسم الخدمات */
+        .services {
+            padding: 60px 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        .services h3 {
+            font-size: 2rem;
+            color: #1b4332;
+            margin-bottom: 40px;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 20px;
+        }
+
+        .card {
+            background: white;
+            padding: 25px;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+        }
+
+        .card h4 {
+            color: #2d6a4f;
+            margin-bottom: 15px;
+        }
+
+        /* قسم مميزات تنظيف الفلل */
+        .features {
+            background-color: #e9f5ec;
+            padding: 50px 20px;
+            text-align: center;
+        }
+
+        .features h3 {
+            color: #1b4332;
+            margin-bottom: 20px;
+        }
+
+        /* قسم التواصل */
+        .contact {
+            background-color: #1b4332;
+            color: white;
+            text-align: center;
+            padding: 50px 20px;
+        }
+
+        .contact h3 {
+            margin-bottom: 15px;
+        }
+
+        /* الفوتر */
+        footer {
+            background-color: #081c15;
+            color: #aaa;
+            text-align: center;
+            padding: 15px;
+            font-size: 0.9rem;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- هيدر الموقع -->
+    <header>
+        <h1>تنظيف الفلل والقصور</h1>
+        <nav>
+            <a href="#home">الرئيسية</a>
+            <a href="#services">خدماتنا</a>
+            <a href="#features">لماذا نتميز</a>
+            <a href="#contact">تواصل معنا</a>
+        </nav>
+    </header>
+
+    <!-- البانر الرئيسي -->
+    <section class="hero" id="home">
+        <h2>خدمات تنظيف الفلل الشاملة والاحترافية</h2>
+        <p>نقدم أفضل الحلول لتنظيف الفلل الجديدة والمسكونة، تشمل الأرضيات، الواجهات، المجالس، والأحواش بأعلى دقة وتعقيم.</p>
+        <a href="#contact" class="btn">طلب معاينة وتحديد موعد</a>
+    </section>
+
+    <!-- قسم الخدمات -->
+    <section class="services" id="services">
+        <h3>خدمات تنظيف الفلل المتكاملة</h3>
+        <div class="grid">
+            <div class="card">
+                <h4>تنظيف الفلل بعد الإنشاء والتسليم</h4>
+                <p>إزالة بقايا البوية، الأسمنت، والتطشيش من الأرضيات والزجاج باستخدام مكائن الجلي والتلميع.</p>
+            </div>
+            <div class="card">
+                <h4>تنظيف وجلي الأرضيات والرخام</h4>
+                <p>جلي وتلميع جميع أنواع السيراميك والرخام والبورسلين وإعادة البريق واللمعان لكافة غرف الفيلا.</p>
+            </div>
+            <div class="card">
+                <h4>غسيل وتعقيم المجالس والكنب</h4>
+                <p>تنظيف السجاد والمجالس والستائر بأجهزة البخار الحديثة لضمان التعقيم وإزالة البقع والروائح.</p>
+            </div>
+            <div class="card">
+                <h4>تنظيف الواجهات والحدائق الخارجية</h4>
+                <p>غسيل الأحواش، الواجهات الخارجية، وتنظيف المظلات والملاحق الخاصة بالفيلا بكفاءة عالية.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- قسم المميزات -->
+    <section class="features" id="features">
+        <h3>ما الذي يجعلنا اختيارك الأول لتنظيف فيلتك؟</h3>
+        <p>فريق عمل مدرب ومخصص للتعامل مع المساحات الكبيرة، مع استخدام عوازل ومنظفات آمنة 100% على الأثاث والديكورات.</p>
+    </section>
+
+    <!-- قسم التواصل -->
+    <section class="contact" id="contact">
+        <h3>احصل على فيلا نظيفة ومعقمة بالكامل اليوم!</h3>
+        <p>اتصل بنا الآن لتحديد الموعد المناسب وحساب التكلفة</p>
+        <br>
+        <a href="tel:+966000000000" class="btn">اتصل بنا الآن</a>
+    </section>
+
+    <!-- الفوتر -->
+    <footer>
+        <p>&copy; 2026 جميع الحقوق محفوظة لـ شركة تنظيف الفلل والقصور.</p>
+    </footer>
+
+</body>
+</html>
+
