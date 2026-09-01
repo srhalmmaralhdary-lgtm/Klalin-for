@@ -1,8 +1,6 @@
 User-agent: *
 Allow: /
-# منع زواحف جوجل من أرشفة مجلدات التنسيقات والسكربتات إذا وجدت
-Disallow: /css/
-Disallow: /js/
+Allow: /*.html
+Allow: /blog/
 
-# توجيه جوجل إلى ملف خريطة الموقع الجديد
-Sitemap: https://klalin-for.vercel.app/sitemap.xml
+Sitemap: https://kalin.sa/sitemap.xml
