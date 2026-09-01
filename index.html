@@ -159,22 +159,22 @@
 
     <style>
         /* ============================================================
-           ROOT - LIGHT GREEN & WHITE THEME (LIGHTWEIGHT)
+           ROOT - MODERN & EYES-FRIENDLY THEME
         ============================================================ */
         :root {
-            --bg: #ffffff;
-            --bg-soft: #f4fbf7;
+            --bg: #f8fafc; /* خلفية ناعمة مريحة بدلاً من الأبيض المزعج */
+            --bg-soft: #edf7f2;
             --card: #ffffff;
             --border: #e2e8f0;
 
-            --text: #1f2937;
-            --text-soft: #4b5563;
+            --text: #0f172a;
+            --text-soft: #475569;
 
             --primary: #10b981;
             --primary-dark: #059669;
             --accent: #059669;
 
-            --shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+            --shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.05), 0 8px 10px -6px rgba(0, 0, 0, 0.01);
             --radius: 16px;
             --container: 1200px;
         }
@@ -227,7 +227,7 @@
             display: inline-block;
             padding: 4px 14px;
             margin-bottom: 12px;
-            background: #e6f4ea;
+            background: #d1fae5;
             border-radius: 50px;
             color: var(--primary-dark);
             font-size: 13px;
@@ -238,7 +238,7 @@
             font-size: clamp(24px, 4vw, 36px);
             font-weight: 800;
             margin-bottom: 10px;
-            color: #111827;
+            color: #0f172a;
         }
 
         .section-description {
@@ -352,7 +352,7 @@
             border-radius: 10px;
             font-size: 14px;
             font-weight: 700;
-            transition: background 0.2s ease;
+            transition: all 0.2s ease;
         }
 
         .btn-primary {
@@ -387,7 +387,7 @@
         /* HERO SECTION */
         .hero {
             padding: 50px 0;
-            background: linear-gradient(180deg, var(--bg-soft) 0%, #ffffff 100%);
+            background: linear-gradient(180deg, var(--bg-soft) 0%, var(--bg) 100%);
         }
 
         .hero-content {
@@ -412,7 +412,7 @@
         .hero-title {
             font-size: clamp(30px, 4.5vw, 48px);
             font-weight: 900;
-            color: #111827;
+            color: #0f172a;
             margin-bottom: 15px;
             line-height: 1.2;
         }
@@ -479,13 +479,13 @@
             font-size: 13px;
         }
 
-        /* HORIZONTAL SCROLL FOR SERVICES & GALLERIES (طلب الصور 1 و 2) */
+        /* HORIZONTAL SCROLL FOR SERVICES & GALLERIES */
         .horizontal-scroll-container {
             display: flex;
-            gap: 16px;
+            gap: 18px;
             overflow-x: auto;
             scroll-snap-type: x mandatory;
-            padding-bottom: 15px;
+            padding: 10px 5px 20px;
             -webkit-overflow-scrolling: touch;
         }
 
@@ -503,7 +503,7 @@
         }
 
         .service-card {
-            flex: 0 0 300px;
+            flex: 0 0 310px;
             scroll-snap-align: start;
             border-radius: var(--radius);
             border: 1px solid var(--border);
@@ -512,11 +512,17 @@
             box-shadow: var(--shadow);
             display: flex;
             flex-direction: column;
+            transition: transform 0.2s ease;
+        }
+
+        .service-card:hover {
+            transform: translateY(-4px);
         }
 
         .service-image-wrapper {
             height: 200px;
             position: relative;
+            background-color: #f1f5f9;
         }
 
         .service-image {
@@ -526,7 +532,7 @@
         }
 
         .service-content {
-            padding: 18px;
+            padding: 20px;
             display: flex;
             flex-direction: column;
             flex: 1;
@@ -541,31 +547,37 @@
             font-size: 18px;
             font-weight: 700;
             margin-bottom: 8px;
-            color: #111827;
+            color: #0f172a;
         }
 
         .service-description {
             color: var(--text-soft);
             font-size: 13px;
-            margin-bottom: 15px;
+            margin-bottom: 18px;
             flex: 1;
+            line-height: 1.5;
         }
 
         .service-actions {
             display: flex;
-            gap: 8px;
+            gap: 10px;
         }
 
         .service-btn {
             flex: 1;
-            padding: 8px;
+            padding: 10px;
             text-align: center;
-            border-radius: 6px;
-            font-size: 12px;
+            border-radius: 8px;
+            font-size: 13px;
             font-weight: 700;
-            background: var(--bg-soft);
-            color: var(--primary-dark);
-            border: 1px solid var(--border);
+            background: #f1f5f9;
+            color: #334155;
+            border: 1px solid #cbd5e1;
+            transition: all 0.2s ease;
+        }
+
+        .service-btn:hover {
+            background: #e2e8f0;
         }
 
         .service-btn.primary {
@@ -574,7 +586,11 @@
             border: none;
         }
 
-        /* BOOKING FORM (الصورة رقم 3 - نقلت مباشرة بعد خدماتنا) */
+        .service-btn.primary:hover {
+            background: var(--primary-dark);
+        }
+
+        /* BOOKING FORM */
         .booking-section {
             background: var(--bg-soft);
             border-top: 1px solid var(--border);
@@ -601,7 +617,7 @@
             font-size: 26px;
             font-weight: 800;
             margin-bottom: 12px;
-            color: #111827;
+            color: #0f172a;
         }
 
         .booking-info p {
@@ -646,7 +662,7 @@
         }
 
         .form-group label {
-            color: #374151;
+            color: #334155;
             font-size: 13px;
             font-weight: 700;
         }
@@ -657,7 +673,7 @@
             padding: 0 12px;
             border-radius: 8px;
             border: 1px solid var(--border);
-            background: #ffffff;
+            background: #f8fafc;
             outline: none;
             color: var(--text);
             font-size: 14px;
@@ -670,8 +686,9 @@
         }
 
         .form-control:focus {
+            background: #ffffff;
             border-color: var(--primary);
-            box-shadow: 0 0 0 3px rgba(16, 185, 129, 0.1);
+            box-shadow: 0 0 0 3px rgba(16, 185, 129, 0.15);
         }
 
         .form-submit {
@@ -716,11 +733,12 @@
         .feature {
             padding: 15px;
             border-radius: 10px;
-            background: var(--bg-soft);
+            background: #ffffff;
             border: 1px solid var(--border);
+            box-shadow: 0 2px 4px rgba(0,0,0,0.02);
         }
 
-        .feature h3 { font-size: 14px; margin-bottom: 4px; }
+        .feature h3 { font-size: 14px; margin-bottom: 4px; color: #0f172a; }
         .feature p { font-size: 12px; color: var(--text-soft); }
 
         /* PROCESS */
@@ -811,13 +829,15 @@
             padding: 40px 20px;
             text-align: center;
             border-radius: var(--radius);
-            background: var(--bg-soft);
+            background: #ffffff;
             border: 1px solid var(--border);
+            box-shadow: var(--shadow);
         }
 
         /* FOOTER */
         footer {
-            background: #f9fafb;
+            background: #0f172a;
+            color: #f8fafc;
             border-top: 1px solid var(--border);
             padding: 40px 0 20px;
         }
@@ -829,16 +849,17 @@
             margin-bottom: 30px;
         }
 
-        .footer-title { font-weight: 700; margin-bottom: 12px; }
-        .footer-links { display: grid; gap: 6px; font-size: 13px; color: var(--text-soft); }
+        .footer-title { font-weight: 700; margin-bottom: 12px; color: #ffffff; }
+        .footer-links { display: grid; gap: 6px; font-size: 13px; color: #94a3b8; }
+        .footer-links a:hover { color: var(--primary); }
 
         .footer-bottom {
-            border-top: 1px solid var(--border);
+            border-top: 1px solid #1e293b;
             padding-top: 20px;
             display: flex;
             justify-content: space-between;
             font-size: 12px;
-            color: #6b7280;
+            color: #64748b;
         }
 
         /* FLOATING ACTION */
@@ -873,7 +894,7 @@
             z-index: 2000;
             padding: 12px 20px;
             border-radius: 8px;
-            background: #111827;
+            background: #0f172a;
             color: white;
             font-size: 13px;
             display: none;
@@ -1009,7 +1030,7 @@
             </div>
         </section>
 
-        <!-- SERVICES (تمرير أفقي بناءً على ملاحظتك) -->
+        <!-- SERVICES (تمرير أفقي مع تخصيص الصور والخدمات) -->
         <section class="section" id="services">
             <div class="container">
                 <div class="section-header">
@@ -1068,13 +1089,13 @@
                         </div>
                     </article>
 
-                    <!-- SERVICE 4 -->
+                    <!-- SERVICE 4 (تم التعديل لصورة الفلل والقصور الخاصة) -->
                     <article class="service-card">
                         <div class="service-image-wrapper">
                             <img src="images/IMG_20230103_091852532744467787995.jpg" alt="تنظيف الفلل والقصور بالرياض" class="service-image" loading="lazy">
                         </div>
                         <div class="service-content">
-                            <div class="service-icon">🏠</div>
+                            <div class="service-icon">🏰</div>
                             <h3 class="service-title">تنظيف الفلل والقصور</h3>
                             <p class="service-description">خدمات تنظيف شاملة للفلل والقصور والمنازل مع الاهتمام بالتفاصيل والمساحات المختلفة.</p>
                             <div class="service-actions">
@@ -1084,14 +1105,14 @@
                         </div>
                     </article>
 
-                    <!-- SERVICE 5 -->
+                    <!-- SERVICE 5 (تم التعديل لصورة التنظيف بعد التشطيب الخاصة) -->
                     <article class="service-card">
                         <div class="service-image-wrapper">
                             <img src="images/IMG_20230103_091852532744677788093.jpg" alt="التنظيف بعد التشطيب بالرياض" class="service-image" loading="lazy">
                         </div>
                         <div class="service-content">
                             <div class="service-icon">🧹</div>
-                            <h3 class="service-title">التنظيف بعد التشطيب</h3>
+                            <h3 class="service-title">التنظيف بعد التشطيب بالرياض</h3>
                             <p class="service-description">تجهيز المباني بعد أعمال التشطيب وإزالة آثار الغبار ومخلفات العمل للوصول إلى نظافة عالية.</p>
                             <div class="service-actions">
                                 <a href="/riyadh/post-construction" class="service-btn">معاينة</a>
@@ -1100,14 +1121,14 @@
                         </div>
                     </article>
 
-                    <!-- SERVICE 6 -->
+                    <!-- SERVICE 6 (تم التعديل لصورة جلي وتلميع الرخام الخاصة) -->
                     <article class="service-card">
                         <div class="service-image-wrapper">
                             <img src="images/IMG_20230207_211230560845431563187.jpg" alt="جلي وتلميع الرخام بالرياض" class="service-image" loading="lazy">
                         </div>
                         <div class="service-content">
                             <div class="service-icon">✨</div>
-                            <h3 class="service-title">جلي وتلميع الرخام</h3>
+                            <h3 class="service-title">جلي وتلميع الرخام بالرياض</h3>
                             <p class="service-description">خدمات جلي وتلميع الأرضيات والرخام لتحسين المظهر واستعادة اللمعان والنظافة.</p>
                             <div class="service-actions">
                                 <a href="/riyadh/floor-polishing" class="service-btn">معاينة</a>
@@ -1116,14 +1137,14 @@
                         </div>
                     </article>
 
-                    <!-- SERVICE 7 -->
+                    <!-- SERVICE 7 (تم التعديل لصورة تنظيف خزانات المياه الخاصة) -->
                     <article class="service-card">
                         <div class="service-image-wrapper">
                             <img src="images/IMG_20230207_211231560845862478307.jpg" alt="تنظيف خزانات المياه بالرياض" class="service-image" loading="lazy">
                         </div>
                         <div class="service-content">
                             <div class="service-icon">💧</div>
-                            <h3 class="service-title">تنظيف خزانات المياه</h3>
+                            <h3 class="service-title">تنظيف خزانات المياه بالرياض</h3>
                             <p class="service-description">تنظيف خزانات المياه وإزالة الرواسب والأوساخ للمساعدة في المحافظة على نظافة الخزان.</p>
                             <div class="service-actions">
                                 <a href="/riyadh/tank-cleaning" class="service-btn">معاينة</a>
@@ -1135,7 +1156,7 @@
             </div>
         </section>
 
-        <!-- BOOKING SECTION (تم نقل الصورة رقم 3 لتصبح مباشرة بعد خدماتنا) -->
+        <!-- BOOKING SECTION (مباشرة بعد خدماتنا) -->
         <section class="section booking-section" id="booking">
             <div class="container">
                 <div class="booking-wrapper">
@@ -1204,7 +1225,7 @@
             </div>
         </section>
 
-        <!-- EXTRA GALLERY (تمرير أفقي بناءً على ملاحظة الصورة رقم 1 و 2) -->
+        <!-- EXTRA GALLERY -->
         <section class="section">
             <div class="container">
                 <div class="section-header">
@@ -1385,11 +1406,11 @@
     <footer>
         <div class="container footer-main">
             <div>
-                <a href="/" class="logo">
+                <a href="/" class="logo" style="color: #ffffff;">
                     <div class="logo-mark">K</div>
-                    <div class="logo-text">kalin<small>GENERAL CLEANING</small></div>
+                    <div class="logo-text">kalin<small style="color: #94a3b8;">GENERAL CLEANING</small></div>
                 </a>
-                <p style="font-size: 13px; color: var(--text-soft); margin-top: 10px;">مؤسسة متخصصة في تقديم خدمات التنظيف الاحترافية بالرياض.</p>
+                <p style="font-size: 13px; color: #94a3b8; margin-top: 10px;">مؤسسة متخصصة في تقديم خدمات التنظيف الاحترافية بالرياض.</p>
             </div>
             <div>
                 <div class="footer-title">روابط سريعة</div>
