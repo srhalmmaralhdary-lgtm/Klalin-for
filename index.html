@@ -506,7 +506,7 @@
             scroll-snap-align: start;
             border-radius: var(--radius);
             border: 1px solid rgba(16, 185, 129, 0.3);
-            background: #0f172a; /* خلفية كحلية غامقة وفاخرة جداً غير الأسود والأبيض */
+            background: #0f172a;
             overflow: hidden;
             box-shadow: 0 15px 30px rgba(15, 23, 42, 0.2);
             display: flex;
@@ -548,11 +548,11 @@
             font-size: 18px;
             font-weight: 700;
             margin-bottom: 8px;
-            color: #34d399; /* خط أخضر زمردي ناصع ومتوهج خلف الخلفية الغامقة */
+            color: #34d399;
         }
 
         .service-description {
-            color: #10b981; /* إبقاء الخط باللون الأخضر الممتاز والقابل للقرائية */
+            color: #10b981;
             font-size: 13px;
             margin-bottom: 18px;
             flex: 1;
@@ -711,4 +711,523 @@
         /* ABOUT SECTION */
         .about-grid {
             display: grid;
-            grid-temp
+            grid-template-columns: 1fr 1fr;
+            gap: 40px;
+            align-items: center;
+        }
+
+        .about-image {
+            border-radius: var(--radius);
+            box-shadow: var(--shadow);
+            border: 1px solid var(--border);
+        }
+
+        .about-features {
+            display: grid;
+            gap: 15px;
+            margin-top: 20px;
+        }
+
+        .about-feature {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            font-weight: 700;
+            color: var(--text);
+        }
+
+        .about-icon {
+            width: 32px;
+            height: 32px;
+            border-radius: 50%;
+            background: #d1fae5;
+            color: var(--primary-dark);
+            display: grid;
+            place-items: center;
+            font-size: 14px;
+        }
+
+        /* FAQ SECTION */
+        .faq-grid {
+            max-width: 800px;
+            margin: 0 auto;
+            display: grid;
+            gap: 15px;
+        }
+
+        .faq-item {
+            background: #ffffff;
+            border: 1px solid var(--border);
+            border-radius: 12px;
+            padding: 20px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.02);
+        }
+
+        .faq-question {
+            font-size: 16px;
+            font-weight: 700;
+            color: #0f172a;
+            margin-bottom: 8px;
+        }
+
+        .faq-answer {
+            color: var(--text-soft);
+            font-size: 14px;
+        }
+
+        /* FOOTER */
+        footer {
+            background: #0f172a;
+            color: #94a3b8;
+            padding: 50px 0 20px;
+            border-top: 1px solid #1e293b;
+        }
+
+        .footer-grid {
+            display: grid;
+            grid-template-columns: 1.5fr repeat(3, 1fr);
+            gap: 30px;
+            margin-bottom: 40px;
+        }
+
+        .footer-brand {
+            color: #ffffff;
+        }
+
+        .footer-brand p {
+            color: #94a3b8;
+            font-size: 13px;
+            margin-top: 10px;
+        }
+
+        .footer-title {
+            color: #ffffff;
+            font-size: 15px;
+            font-weight: 700;
+            margin-bottom: 15px;
+        }
+
+        .footer-links {
+            list-style: none;
+            display: grid;
+            gap: 8px;
+            font-size: 13px;
+        }
+
+        .footer-links a:hover {
+            color: #34d399;
+        }
+
+        .footer-bottom {
+            text-align: center;
+            padding-top: 20px;
+            border-top: 1px solid #1e293b;
+            font-size: 12px;
+        }
+
+        /* RESPONSIVE DESIGN */
+        @media (max-width: 992px) {
+            .hero-content, .booking-wrapper, .about-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .stats-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            .stat {
+                border-bottom: 1px solid #cbd5e1;
+            }
+
+            .footer-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        @media (max-width: 768px) {
+            .nav-links {
+                display: none;
+            }
+
+            .menu-toggle {
+                display: grid;
+                place-items: center;
+            }
+
+            .form-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .footer-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- TOPBAR -->
+    <div class="topbar">
+        <div class="container topbar-inner">
+            <div class="topbar-items">
+                <div class="topbar-item"><span>📍</span> الرياض، المملكة العربية السعودية</div>
+                <div class="topbar-item"><span>🕒</span> السبت - الخميس: 8 صباحاً - 10 مساءً</div>
+            </div>
+            <div class="topbar-items">
+                <a href="tel:+966570471168" class="topbar-item"><span>📞</span> 0570471168</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- HEADER -->
+    <header>
+        <div class="container navbar">
+            <a href="#" class="logo">
+                <div class="logo-mark">K</div>
+                <div class="logo-text">
+                    kalin
+                    <small>للنظافة العامة</small>
+                </div>
+            </a>
+            <nav class="nav-links">
+                <a href="#services">خدماتنا</a>
+                <a href="#booking">طلب خدمة</a>
+                <a href="#about">من نحن</a>
+                <a href="#faq">الأسئلة الشائعة</a>
+            </nav>
+            <div class="header-actions">
+                <a href="tel:+966570471168" class="btn btn-primary">اتصل الآن</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- HERO SECTION -->
+    <section class="hero">
+        <div class="container hero-content">
+            <div>
+                <span class="hero-badge">✨ الخدمة الاحترافية الأولى بالرياض</span>
+                <h1 class="hero-title">نظافة متكاملة تعيد <span class="highlight">للمباني بريقها</span></h1>
+                <p class="hero-description">نقدم خدمات تنظيف احترافية للواجهات والفلل والقصور والخزانات والمباني بأعلى معايير الجودة ومعدات متطورة.</p>
+                <div class="hero-buttons">
+                    <a href="#booking" class="btn btn-primary">احجز خدمتك الآن</a>
+                    <a href="https://wa.me/966570471168" class="btn btn-outline" target="_blank">تواصل عبر الواتساب</a>
+                </div>
+            </div>
+            <div class="hero-image-card">
+                <img src="https://images.unsplash.com/photo-1581578731548-c64695cc6952?auto=format&fit=crop&w=800&q=80" alt="خدمات تنظيف بالرياض" class="hero-image">
+            </div>
+        </div>
+    </section>
+
+    <!-- STATS -->
+    <section class="stats">
+        <div class="container">
+            <div class="stats-grid">
+                <div class="stat">
+                    <div class="stat-number">+1500</div>
+                    <div class="stat-title">مشروع منجز</div>
+                </div>
+                <div class="stat">
+                    <div class="stat-number">100%</div>
+                    <div class="stat-title">رضا العملاء</div>
+                </div>
+                <div class="stat">
+                    <div class="stat-number">+10</div>
+                    <div class="stat-title">سنوات خبرة</div>
+                </div>
+                <div class="stat">
+                    <div class="stat-number">24/7</div>
+                    <div class="stat-title">دعم وتواصل</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SERVICES SECTION -->
+    <section class="section" id="services">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-label">خدماتنا المتخصصة</span>
+                <h2 class="section-title">خدمات النظافة الاحترافية</h2>
+                <p class="section-description">نقدم باقة شاملة من خدمات التنظيف للمباني والمنشآت بأحدث التقنيات.</p>
+            </div>
+
+            <div class="horizontal-scroll-container">
+                <!-- خدمة 1: الكلادينج -->
+                <div class="service-card">
+                    <div class="service-image-wrapper">
+                        <img src="https://images.unsplash.com/photo-1541888946425-d0fbb186a5b3?auto=format&fit=crop&w=500&q=80" alt="تنظيف الكلادينج" class="service-image">
+                    </div>
+                    <div class="service-content">
+                        <div class="service-icon">🏢</div>
+                        <h3 class="service-title">تنظيف واجهات الكلادينج</h3>
+                        <p class="service-description">إزالة الأتربة والبقع الصعبة من واجهات الكلادينج باستعمال مواد آمنة ومعدات متطورة.</p>
+                        <div class="service-actions">
+                            <a href="cladding-cleaning.html" class="service-btn">معاينة</a>
+                            <a href="#booking" class="service-btn primary">طلب الخدمة</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- خدمة 2: الحجر -->
+                <div class="service-card">
+                    <div class="service-image-wrapper">
+                        <img src="https://images.unsplash.com/photo-1513694203232-719a280e022f?auto=format&fit=crop&w=500&q=80" alt="تنظيف الحجر" class="service-image">
+                    </div>
+                    <div class="service-content">
+                        <div class="service-icon">🏛️</div>
+                        <h3 class="service-title">تنظيف الواجهات الحجرية</h3>
+                        <p class="service-description">تنظيف وتلميع الواجهات الحجرية باستخدام الرشاشات والقاذفات المناسبة لإعادة مظهرها الأصلي.</p>
+                        <div class="service-actions">
+                            <a href="stone-cleaning.html" class="service-btn">معاينة</a>
+                            <a href="#booking" class="service-btn primary">طلب الخدمة</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- خدمة 3: الأبراج والزجاج -->
+                <div class="service-card">
+                    <div class="service-image-wrapper">
+                        <img src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=500&q=80" alt="تنظيف الأبراج والزجاج" class="service-image">
+                    </div>
+                    <div class="service-content">
+                        <div class="service-icon">🏙️</div>
+                        <h3 class="service-title">تنظيف الأبراج والزجاج</h3>
+                        <p class="service-description">غسيل وتنظيف زجاج الأبراج والمباني المرتفعة بأحدث رافعات وأساليب السلامة المعتمدة.</p>
+                        <div class="service-actions">
+                            <a href="towers-cleaning.html" class="service-btn">معاينة</a>
+                            <a href="#booking" class="service-btn primary">طلب الخدمة</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- خدمة 4: الفلل والقصور -->
+                <div class="service-card">
+                    <div class="service-image-wrapper">
+                        <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=500&q=80" alt="تنظيف الفلل والقصور" class="service-image">
+                    </div>
+                    <div class="service-content">
+                        <div class="service-icon">🏰</div>
+                        <h3 class="service-title">تنظيف الفلل والقصور</h3>
+                        <p class="service-description">نظافة شاملة وعميقة لكافة أجزاء الفلل والقصور بأعلى معايير الإتقان والتطهير.</p>
+                        <div class="service-actions">
+                            <a href="villas-cleaning.html" class="service-btn">معاينة</a>
+                            <a href="#booking" class="service-btn primary">طلب الخدمة</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- خدمة 5: التنظيف بعد التشطيب -->
+                <div class="service-card">
+                    <div class="service-image-wrapper">
+                        <img src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?auto=format&fit=crop&w=500&q=80" alt="التنظيف بعد التشطيب" class="service-image">
+                    </div>
+                    <div class="service-content">
+                        <div class="service-icon">🧹</div>
+                        <h3 class="service-title">التنظيف بعد التشطيب</h3>
+                        <p class="service-description">إزالة مخلفات البناء والدهانات والأتربة وتجهيز المبنى للمعيشة والاستخدام المباشر.</p>
+                        <div class="service-actions">
+                            <a href="post-construction-cleaning.html" class="service-btn">معاينة</a>
+                            <a href="#booking" class="service-btn primary">طلب الخدمة</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- خدمة 6: جلي وتلميع الرخام -->
+                <div class="service-card">
+                    <div class="service-image-wrapper">
+                        <img src="https://images.unsplash.com/photo-1600585154526-990dced4db0d?auto=format&fit=crop&w=500&q=80" alt="جلي وتلميع الرخام" class="service-image">
+                    </div>
+                    <div class="service-content">
+                        <div class="service-icon">✨</div>
+                        <h3 class="service-title">جلي وتلميع الرخام</h3>
+                        <p class="service-description">معالجة وتلميع الأرضيات بالرخام باستخدام أقراص الألماس والكريستال لإعادة لمعانها الطبيعي.</p>
+                        <div class="service-actions">
+                            <a href="marble-polishing.html" class="service-btn">معاينة</a>
+                            <a href="#booking" class="service-btn primary">طلب الخدمة</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- خدمة 7: تنظيف الخزانات -->
+                <div class="service-card">
+                    <div class="service-image-wrapper">
+                        <img src="https://images.unsplash.com/photo-1584622650111-993a426fbf0a?auto=format&fit=crop&w=500&q=80" alt="تنظيف خزانات المياه" class="service-image">
+                    </div>
+                    <div class="service-content">
+                        <div class="service-icon">💧</div>
+                        <h3 class="service-title">تنظيف وتعقيم الخزانات</h3>
+                        <p class="service-description">غسيل وتعقيم خزانات المياه الأرضية والعلوية بمواد مصرح بها لضمان مياه صحية ونقية.</p>
+                        <div class="service-actions">
+                            <a href="tank-cleaning.html" class="service-btn">معاينة</a>
+                            <a href="#booking" class="service-btn primary">طلب الخدمة</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- BOOKING SECTION -->
+    <section class="section booking-section" id="booking">
+        <div class="container">
+            <div class="booking-wrapper">
+                <div class="booking-info">
+                    <h2>اطلب خدمتك الآن</h2>
+                    <p>قم بتعبئة النموذج وسيقوم فريقنا بالتواصل معك فوراً لتأكيد الموعد والمعاينة.</p>
+                    <div class="contact-list">
+                        <div class="contact-item">
+                            <span>📞</span>
+                            <div>
+                                <strong>الهاتف المباشر:</strong>
+                                <div>0570471168</div>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <span>💬</span>
+                            <div>
+                                <strong>واتساب:</strong>
+                                <div>0570471168</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="booking-form">
+                    <form action="#" method="POST">
+                        <div class="form-grid">
+                            <div class="form-group">
+                                <label for="name">الاسم الكامل</label>
+                                <input type="text" id="name" class="form-control" placeholder="أدخل اسمك" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="phone">رقم الجوال</label>
+                                <input type="tel" id="phone" class="form-control" placeholder="05xxxxxxxx" required>
+                            </div>
+                            <div class="form-group full">
+                                <label for="service">اختر الخدمة المطلوبة</label>
+                                <select id="service" class="form-control" required>
+                                    <option value="">اختر الخدمة...</option>
+                                    <option value="cladding">تنظيف واجهات الكلادينج</option>
+                                    <option value="stone">تنظيف الواجهات الحجرية</option>
+                                    <option value="towers">تنظيف الأبراج والزجاج</option>
+                                    <option value="villas">تنظيف الفلل والقصور</option>
+                                    <option value="post-construction">التنظيف بعد التشطيب</option>
+                                    <option value="marble">جلي وتلميع الرخام</option>
+                                    <option value="tank">تنظيف وتعقيم الخزانات</option>
+                                </select>
+                            </div>
+                            <div class="form-group full">
+                                <label for="notes">ملاحظات إضافية</label>
+                                <textarea id="notes" class="form-control" placeholder="أذكر أي تفاصيل خاصة بالموقع أو المساحة..."></textarea>
+                            </div>
+                        </div>
+                        <button type="submit" class="btn btn-primary form-submit">إرسال الطلب</button>
+                        <p class="form-note">سنقوم بالتواصل معك خلال ساعات العمل الرسمية.</p>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ABOUT SECTION -->
+    <section class="section" id="about">
+        <div class="container about-grid">
+            <div>
+                <span class="section-label">عن المؤسسة</span>
+                <h2 class="section-title">خبرة واحترافية في خدمات النظافة</h2>
+                <p class="section-description">تسعى مؤسسة kalin للنظافة العامة لتوفير أعلى خدمات النظافة والتطهير في كافة أنحاء مدينة الرياض باستخدام أحدث المعدات والكوادر المدربة.</p>
+                <div class="about-features">
+                    <div class="about-feature">
+                        <div class="about-icon">✓</div>
+                        <span>فريق متخصص ومدرب بأعلى معايير السلامة</span>
+                    </div>
+                    <div class="about-feature">
+                        <div class="about-icon">✓</div>
+                        <span>استخدام مواد تنظيف آمنة ومعتمدة</span>
+                    </div>
+                    <div class="about-feature">
+                        <div class="about-icon">✓</div>
+                        <span>التزام تام بالتقيد في المواعيد المحددة</span>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <img src="https://images.unsplash.com/photo-1527515637462-cff94eecc1ac?auto=format&fit=crop&w=800&q=80" alt="عن kalin للنظافة" class="about-image">
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ SECTION -->
+    <section class="section" id="faq" style="background: var(--bg-soft);">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-label">الأسئلة الشائعة</span>
+                <h2 class="section-title">إجابات لجميع استفساراتك</h2>
+            </div>
+            <div class="faq-grid">
+                <div class="faq-item">
+                    <div class="faq-question">ما هي مناطق تقديم خدمات kalin؟</div>
+                    <div class="faq-answer">تقدم kalin للنظافة العامة خدماتها داخل مدينة الرياض والمناطق التابعة لها حسب نطاق الخدمة.</div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">هل تقدمون تنظيف واجهات الكلادينج؟</div>
+                    <div class="faq-answer">نعم، نقدم خدمات تنظيف واجهات الكلادينج للمباني والمنشآت باستخدام معدات وأساليب مناسبة لنوع الواجهة.</div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">هل تقدمون خدمات التنظيف بعد التشطيب؟</div>
+                    <div class="faq-answer">نعم، نقدم خدمات التنظيف بعد التشطيب وإزالة آثار الغبار ومخلفات الأعمال وتجهيز المكان للاستخدام.</div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">هل يمكن طلب معاينة قبل تنفيذ الخدمة؟</div>
+                    <div class="faq-answer">نعم، يمكن التواصل معنا عبر الهاتف أو واتساب لتحديد الخدمة وطلب المعاينة أو عرض السعر المناسب.</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <div class="logo" style="color: #ffffff;">
+                        <div class="logo-mark">K</div>
+                        <div class="logo-text">kalin <small style="color: #94a3b8;">للنظافة العامة</small></div>
+                    </div>
+                    <p>مؤسسة متخصصة في تقديم خدمات التنظيف والتعقيم الشاملة للواجهات والمباني بالرياض.</p>
+                </div>
+                <div>
+                    <div class="footer-title">روابط سريعة</div>
+                    <ul class="footer-links">
+                        <li><a href="#services">خدماتنا</a></li>
+                        <li><a href="#booking">طلب خدمة</a></li>
+                        <li><a href="#about">من نحن</a></li>
+                        <li><a href="#faq">الأسئلة الشائعة</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <div class="footer-title">خدماتنا</div>
+                    <ul class="footer-links">
+                        <li><a href="cladding-cleaning.html">تنظيف الكلادينج</a></li>
+                        <li><a href="stone-cleaning.html">تنظيف الحجر</a></li>
+                        <li><a href="towers-cleaning.html">تنظيف الأبراج والزجاج</a></li>
+                        <li><a href="villas-cleaning.html">تنظيف الفلل والقصور</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <div class="footer-title">تواصل معنا</div>
+                    <ul class="footer-links">
+                        <li>📍 الرياض، المملكة العربية السعودية</li>
+                        <li>📞 0570471168</li>
+                        <li>💬 0570471168</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 kalin للنظافة العامة. جميع الحقوق محفوظة.</p>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
