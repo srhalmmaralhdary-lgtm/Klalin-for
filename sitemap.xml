@@ -1,10 +1,31 @@
+
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  
+  <!-- الصفحة الرئيسية -->
   <url>
-    <loc>https://srhalmmaraldhary-igtm.github.io/Kialin-for/</loc>
-    <lastmod>2026-09-01</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>1.0</priority>
+    <loc>https://klalin-for.vercel.app/</loc>
+    <priority>1.00</priority>
   </url>
-</urlset>
+  
+  <!-- صفحة المدونة الرئيسية -->
+  <url>
+    <loc>https://klalin-for.vercel.app/blog/</loc>
+    <priority>0.80</priority>
+  </url>
 
+  <!-- روابط الـ 40 مقالة - مثال للمقالة الأولى -->
+  <!-- كرر هذا القسم لكل مقالة جديدة تنشئها -->
+  <url>
+    <loc>https://klalin-for.vercel.app/blog/cladding-cleaning-guide/</loc>
+    <priority>0.70</priority>
+  </url>
+
+  <!-- إضافة المزيد من المقالات هنا... -->
+  <!-- مثال لمقالة 2 -->
+  <url>
+    <loc>https://klalin-for.vercel.app/blog/marble-polishing-tips/</loc>
+    <priority>0.70</priority>
+  </url>
+
+</urlset>
