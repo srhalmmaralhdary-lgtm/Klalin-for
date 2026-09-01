@@ -1,31 +1,73 @@
-
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <!-- الصفحة الرئيسية -->
   <url>
-    <loc>https://klalin-for.vercel.app/</loc>
+    <loc>https://kalin.sa/index.html</loc>
+    <lastmod>2026-09-02</lastmod>
     <priority>1.00</priority>
   </url>
-  
-  <!-- صفحة المدونة الرئيسية -->
+
+  <!-- صفحات الخدمات الفرعية -->
   <url>
-    <loc>https://klalin-for.vercel.app/blog/</loc>
+    <loc>https://kalin.sa/cladding-cleaning.html</loc>
+    <lastmod>2026-09-02</lastmod>
+    <priority>0.90</priority>
+  </url>
+
+  <url>
+    <loc>https://kalin.sa/towers-cleaning.html</loc>
+    <lastmod>2026-09-02</lastmod>
+    <priority>0.90</priority>
+  </url>
+
+  <url>
+    <loc>https://kalin.sa/stone-cleaning.html</loc>
+    <lastmod>2026-09-02</lastmod>
+    <priority>0.90</priority>
+  </url>
+
+  <url>
+    <loc>https://kalin.sa/villas-cleaning.html</loc>
+    <lastmod>2026-09-02</lastmod>
+    <priority>0.90</priority>
+  </url>
+
+  <url>
+    <loc>https://kalin.sa/post-construction-cleaning.html</loc>
+    <lastmod>2026-09-02</lastmod>
+    <priority>0.90</priority>
+  </url>
+
+  <url>
+    <loc>https://kalin.sa/marble-polishing.html</loc>
+    <lastmod>2026-09-02</lastmod>
+    <priority>0.90</priority>
+  </url>
+
+  <url>
+    <loc>https://kalin.sa/tank-cleaning.html</loc>
+    <lastmod>2026-09-02</lastmod>
+    <priority>0.90</priority>
+  </url>
+
+  <!-- قسم المدونة والمقالات -->
+  <url>
+    <loc>https://kalin.sa/blog/</loc>
+    <lastmod>2026-09-02</lastmod>
+    <priority>0.85</priority>
+  </url>
+
+  <url>
+    <loc>https://kalin.sa/blog/index.html</loc>
+    <lastmod>2026-09-02</lastmod>
+    <priority>0.85</priority>
+  </url>
+
+  <url>
+    <loc>https://kalin.sa/blog/glass-cleaning-guide.html</loc>
+    <lastmod>2026-09-02</lastmod>
     <priority>0.80</priority>
-  </url>
-
-  <!-- روابط الـ 40 مقالة - مثال للمقالة الأولى -->
-  <!-- كرر هذا القسم لكل مقالة جديدة تنشئها -->
-  <url>
-    <loc>https://klalin-for.vercel.app/blog/cladding-cleaning-guide/</loc>
-    <priority>0.70</priority>
-  </url>
-
-  <!-- إضافة المزيد من المقالات هنا... -->
-  <!-- مثال لمقالة 2 -->
-  <url>
-    <loc>https://klalin-for.vercel.app/blog/marble-polishing-tips/</loc>
-    <priority>0.70</priority>
   </url>
 
 </urlset>
