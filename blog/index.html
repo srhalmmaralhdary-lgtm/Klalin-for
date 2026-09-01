@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>مدونة كلالين | 40 مقالة احترافية ونصائح تنظيف الواجهات والمنشآت بالرياض</title>
+    <meta name="description" content="اقرأ أحدث المقالات والنصائح المتخصصة في تنظيف الكلادينج، الواجهات الزجاجية، والمباني في الرياض. 40 مقالة احترافية من خبراء شركة كلالين.">
+    <link rel="canonical" href="https://klalin-for.vercel.app/blog/" />
+    
+    <!-- Google Tag (gtag.js) - يمكنك وضع معرف التتبع الخاص بك هنا -->
+    <!-- 
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-XXXXXXXXXX');
+    </script>
+    -->
+
+    <style>
+        :root {
+            --primary-color: #0d8a72;
+            --primary-dark: #075e4e;
+            --accent-color: #e5a93b;
+            --bg-light: #f8fcfb;
+            --text-main: #2b3a37;
+            --text-muted: #627571;
+            --white: #ffffff;
+            --card-shadow: 0 10px 30px rgba(13, 138, 114, 0.08);
+            --radius: 12px;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: 'Cairo', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background-color: var(--bg-light);
+            color: var(--text-main);
+            line-height: 1.6;
+            direction: rtl;
+        }
+
+        /* Header / Navbar */
+        header {
+            background-color: var(--white);
+            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        .navbar {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 20px;
+        }
+
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+            color: var(--primary-color);
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 20px;
+            list-style: none;
+        }
+
+        .nav-links a {
+            text-decoration: none;
+            color: var(--text-main);
+            font-weight: 600;
+            transition: color 0.3s;
+        }
+
+        .nav-links a:hover, .nav-links a.active {
+            color: var(--primary-color);
+        }
+
+        .btn-contact {
+            background-color: var(--primary-color);
+            color: var(--white);
+            padding: 10px 20px;
+            border-radius: 6px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: background 0.3s;
+        }
+
+        .btn-contact:hover {
+            background-color: var(--primary-dark);
+        }
+
+        /* Hero Section */
+        .hero-blog {
+            background: linear-gradient(135deg, var(--primary-color), var(--primary-dark));
+            color: var(--white);
+            text-align: center;
+            padding: 80px 20px;
+        }
+
+        .hero-blog h1 {
+            font-size: 36px;
+            margin-bottom: 15px;
+        }
+
+        .hero-blog p {
+            font-size: 18px;
+            max-width: 700px;
+            margin: 0 auto;
+            opacity: 0.9;
+        }
+
+        /* Blog Categories & Grid */
+        .blog-section {
+            max-width: 1200px;
+            margin: 60px auto;
+            padding: 0 20px;
+        }
+
+        .section-title-blog {
+            font-size: 28px;
+            color: var(--primary-dark);
+            margin-bottom: 30px;
+            text-align: center;
+            border-bottom: 2px solid var(--accent-color);
+            display: inline-block;
+            left: 50%;
+            transform: translateX(-50%);
+            position: relative;
+            padding-bottom: 10px;
+        }
+
+        .blog-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 25px;
+        }
+
+        .blog-card {
+            background-color: var(--white);
+            border-radius: var(--radius);
+            overflow: hidden;
+            box-shadow: var(--card-shadow);
+            transition: transform 0.3s, box-shadow 0.3s;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .blog-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 35px rgba(13, 138, 114, 0.12);
+        }
+
+        .card-img {
+            height: 180px;
+            background-color: #e0f2fe;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--primary-color);
+            font-size: 40px;
+        }
+
+        .card-content {
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            flex-grow: 1;
+        }
+
+        .card-tag {
+            align-self: flex-start;
+            background-color: rgba(13, 138, 114, 0.08);
+            color: var(--primary-color);
+            padding: 4px 10px;
+            border-radius: 20px;
+            font-size: 12px;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        .card-title {
+            font-size: 18px;
+            color: var(--text-main);
+            margin-bottom: 10px;
+            text-decoration: none;
+            font-weight: bold;
+            line-height: 1.4;
+        }
+
+        .card-title:hover {
+            color: var(--primary-color);
+        }
+
+        .card-excerpt {
+            color: var(--text-muted);
+            font-size: 14px;
+            margin-bottom: 15px;
+            flex-grow: 1;
+        }
+
+        .card-footer {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-top: 1px solid #edf2f1;
+            padding-top: 12px;
+            font-size: 12px;
+            color: var(--text-muted);
+        }
+
+        .read-more {
+            color: var(--primary-color);
+            text-decoration: none;
+            font-weight: bold;
+            display: inline-flex;
+            align-items: center;
+            gap: 5px;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #1a2523;
+            color: var(--white);
+            padding: 50px 20px 30px 20px;
+            margin-top: 80px;
+        }
+
+        .footer-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            gap: 30px;
+            margin-bottom: 40px;
+        }
+
+        .footer-bottom {
+            max-width: 1200px;
+            margin: 0 auto;
+            text-align: center;
+            padding-top: 25px;
+            border-top: 1px solid #2d3d39;
+            color: #a0b0ac;
+            font-size: 14px;
+        }
+
+        @media (max-width: 768px) {
+            .nav-links {
+                display: none;
+            }
+            .hero-blog h1 {
+                font-size: 28px;
+            }
+        }
+    </style>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <nav class="navbar">
+            <a href="/" class="logo">
+                <span>✨ كلالين للنظافة</span>
+            </a>
+            <ul class="nav-links">
+                <li><a href="/">الرئيسية</a></li>
+                <li><a href="/#services">خدماتنا</a></li>
+                <li><a href="/blog/" class="active">المدونة</a></li>
+                <li><a href="/#about">من نحن</a></li>
+            </ul>
+            <a href="tel:0500000000" class="btn-contact">اتصل بنا الان</a>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero-blog">
+        <h1>المدونة الأسطورية: 40 مقالة احترافية</h1>
+        <p>دليلك الأوحد ونصائح الخبراء في تنظيف وصيانة الواجهات والمنشآت التجارية بالرياض.</p>
+    </section>
+
+    <!-- Main Content -->
+    <main>
+
+        <!-- القسم الأول: تنظيف الكلادينج والواجهات (10 مقالات) -->
+        <section class="blog-section">
+            <h2 class="section-title-blog">تنظيف الكلادينج والواجهات</h2>
+            <div class="blog-grid">
+                
+                <!-- مقالة 1 -->
+                <article class="blog-card">
+                    <div class="card-img">🏢</div>
+                    <div class="card-content">
+                        <span class="card-tag">تنظيف الكلادينج</span>
+                        <a href="/blog/cladding-cleaning-guide/" class="card-title">دليل شامل: كيف تحافظ على نظافة واجهات الكلادينج من غبار الرياض؟</a>
+                        <p class="card-excerpt">تتعرض واجهات الكلادينج للعوامل الجوية الصعبة بالرياض. نتعرف في هذا المقال على الطرق الاحترافية لتلميعها دون حك الدهان.</p>
+                        <div class="card-footer">
+                            <span>🗓️ سبتمبر 2026</span>
+                            <a href="/blog/cladding-cleaning-guide/" class="read-more">اقرأ المزيد &larr;</a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- مقالة 2 -->
+                <article class="blog-card">
+                    <div class="card-img">🪟</div>
+                    <div class="card-content">
+                        <span class="card-tag">نظافة الزجاج</span>
+                        <a href="/blog/glass-cleaning-tips/" class="card-title">أفضل 5 تقنيات لتنظيف الواجهات الزجاجية الشاهقة والأبراج</a>
+                        <p class="card-excerpt">استعراض لأحدث معدات تنظيف الزجاج على الارتفاعات العالية وكيفية التخلص من التكلسات والبقع الصعبة بشكل آمن.</p>
+                        <div class="card-footer">
+                            <span>🗓️ سبتمبر 2026</span>
+                            <a href="/blog/glass-cleaning-tips/" class="read-more">اقرأ المزيد &larr;</a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- كرر الكروت هنا لمقالات 3 إلى 10 في هذا القسم مع تغيير العناوين والروابط -->
+
+            </div>
+        </section>
+
+        <!-- القسم الثاني: تلميع وجلي الرخام (10 مقالات) -->
+        <section class="blog-section">
+            <h2 class="section-title-blog">تلميع وجلي الرخام</h2>
+            <div class="blog-grid">
+                
+                <!-- مقالة 11 -->
+                <article class="blog-card">
+                    <div class="card-img">✨</div>
+                    <div class="card-content">
+                        <span class="card-tag">جلي الرخام</span>
+                        <a href="/blog/marble-polishing-process/" class="card-title">العملية الاحترافية لجلي الرخام: من الخدوش إلى اللمعان البلوري</a>
+                        <p class="card-excerpt">كيف نعيد الحياة لأرضيات الرخام القديمة باستخدام أحدث ماكينات الجلي الإيطالية؟ تفاصيل العملية خطوة بخطوة.</p>
+                        <div class="card-footer">
+                            <span>🗓️ سبتمبر 2026</span>
+                            <a href="/blog/marble-polishing-process/" class="read-more">اقرأ المزيد &larr;</a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- كرر الكروت هنا لمقالات 12 إلى 20 في هذا القسم -->
+
+            </div>
+        </section>
+
+        <!-- القسم الثالث: نظافة المباني والمنشآت التجارية (10 مقالات) -->
+        <section class="blog-section">
+            <h2 class="section-title-blog">نظافة المباني والمنشآت</h2>
+            <div class="blog-grid">
+                
+                <!-- مقالة 21 -->
+                <article class="blog-card">
+                    <div class="card-img">🧼</div>
+                    <div class="card-content">
+                        <span class="card-tag">نظافة المباني</span>
+                        <a href="/blog/building-maintenance-importance/" class="card-title">أهمية الصيانة الدورية لواجهات الشركات والمنشآت التجارية</a>
+                        <p class="card-excerpt">كيف تؤثر نظافة واجهة منشأتك على انطباع العملاء وقيمة المبنى الاستثمارية على المدى الطويل.</p>
+                        <div class="card-footer">
+                            <span>🗓️ أغسطس 2026</span>
+                            <a href="/blog/building-maintenance-importance/" class="read-more">اقرأ المزيد &larr;</a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- كرر الكروت هنا لمقالات 22 إلى 30 في هذا القسم -->
+
+            </div>
+        </section>
+
+        <!-- القسم الرابع: تنظيف الخزانات ونصائح عامة (10 مقالات) -->
+        <section class="blog-section">
+            <h2 class="section-title-blog">تنظيف الخزانات ونصائح عامة</h2>
+            <div class="blog-grid">
+                
+                <!-- مقالة 31 -->
+                <article class="blog-card">
+                    <div class="card-img">💧</div>
+                    <div class="card-content">
+                        <span class="card-tag">تنظيف خزانات</span>
+                        <a href="/blog/water-tank-cleaning-health/" class="card-title">صحتك تبدأ من خزانك: أهمية تنظيف وتعقيم خزانات المياه بالرياض</a>
+                        <p class="card-excerpt">مخاطر إهمال تنظيف الخزانات الأرضية والعلوية وكيف نقوم بعملية التعقيم الثلاثي لضمان سلامة مياه الشرب.</p>
+                        <div class="card-footer">
+                            <span>🗓️ أغسطس 2026</span>
+                            <a href="/blog/water-tank-cleaning-health/" class="read-more">اقرأ المزيد &larr;</a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- كرر الكروت هنا لمقالات 32 إلى 40 في هذا القسم -->
+
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div>
+                <h3 style="color: var(--primary-color); margin-bottom: 15px; font-size: 22px;">شركة كلالين للنظافة</h3>
+                <p style="color: #a0b0ac; max-width: 350px; font-size: 15px;">حلول تنظيف فائقة الجودة تبرز جمال منشأتك بالرياض. متخصصون في الواجهات والرخام.</p>
+            </div>
+            <div style="font-size: 15px;">
+                <h4 style="margin-bottom: 15px;">روابط سريعة</h4>
+                <ul style="list-style: none; color: #a0b0ac;">
+                    <li style="margin-bottom: 8px;"><a href="/" style="color: inherit; text-decoration: none;">الرئيسية</a></li>
+                    <li style="margin-bottom: 8px;"><a href="/blog/" style="color: inherit; text-decoration: none;">المدونة الأسطورية</a></li>
+                    <li style="margin-bottom: 8px;"><a href="tel:0500000000" style="color: inherit; text-decoration: none;">طلب عرض سعر</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2026 شركة كلالين للنظافة بالرياض. جميع الحقوق محفوظة.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
