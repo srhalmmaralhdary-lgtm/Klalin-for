@@ -446,37 +446,38 @@
             object-fit: cover;
         }
 
-        /* STATS SECTION */
+        /* STATS SECTION (تغيير لون الخلفية من الأبيض المزعج إلى لون مريح مائل للخضرة/الرمادي الناعم) */
         .stats {
-            padding: 20px 0 40px;
+            padding: 30px 0;
         }
 
         .stats-grid {
             display: grid;
             grid-template-columns: repeat(4, 1fr);
-            background: #ffffff;
-            border: 1px solid var(--border);
+            background: #edf7f2; /* درجة ناعمة جداً ومريحة للعين */
+            border: 1px solid #d1fae5;
             border-radius: var(--radius);
             box-shadow: var(--shadow);
         }
 
         .stat {
-            padding: 20px;
+            padding: 25px 20px;
             text-align: center;
-            border-left: 1px solid var(--border);
+            border-left: 1px solid #cbd5e1;
         }
 
         .stat:last-child { border-left: none; }
 
         .stat-number {
-            font-size: 28px;
+            font-size: 32px;
             font-weight: 900;
             color: var(--primary-dark);
         }
 
         .stat-title {
-            color: var(--text-soft);
-            font-size: 13px;
+            color: #334155;
+            font-size: 14px;
+            font-weight: 700;
         }
 
         /* HORIZONTAL SCROLL FOR SERVICES & GALLERIES */
@@ -980,7 +981,7 @@
     </header>
 
     <main>
-        <!-- HERO -->
+        <!-- HERO (تم تغيير صورة النظافة العامة بالصورة المفاهيمية الاحترافية الأولى) -->
         <section class="hero" id="home">
             <div class="container hero-content">
                 <div class="hero-copy">
@@ -1000,37 +1001,13 @@
 
                 <div class="hero-visual">
                     <div class="hero-image-card">
-                        <img src="https://images.unsplash.com/photo-1581578731548-c64695cc6952?q=80&w=1000&auto=format&fit=crop" alt="خدمات التنظيف الاحترافية في الرياض من kalin" class="hero-image" loading="eager">
+                        <img src="images/IMG_20230103_091852532744677788093.jpg" alt="خدمات التنظيف الاحترافية في الرياض من kalin" class="hero-image" loading="eager">
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- STATS -->
-        <section class="stats">
-            <div class="container">
-                <div class="stats-grid">
-                    <div class="stat">
-                        <div class="stat-number">+500</div>
-                        <div class="stat-title">مبنى تم تنظيفه</div>
-                    </div>
-                    <div class="stat">
-                        <div class="stat-number">10+</div>
-                        <div class="stat-title">سنوات خبرة</div>
-                    </div>
-                    <div class="stat">
-                        <div class="stat-number">100%</div>
-                        <div class="stat-title">رضا العملاء</div>
-                    </div>
-                    <div class="stat">
-                        <div class="stat-number">+50</div>
-                        <div class="stat-title">فريق محترف</div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- SERVICES (تمرير أفقي مع تخصيص الصور والخدمات) -->
+        <!-- SERVICES -->
         <section class="section" id="services">
             <div class="container">
                 <div class="section-header">
@@ -1089,7 +1066,7 @@
                         </div>
                     </article>
 
-                    <!-- SERVICE 4 (تم التعديل لصورة الفلل والقصور الخاصة) -->
+                    <!-- SERVICE 4 -->
                     <article class="service-card">
                         <div class="service-image-wrapper">
                             <img src="images/IMG_20230103_091852532744467787995.jpg" alt="تنظيف الفلل والقصور بالرياض" class="service-image" loading="lazy">
@@ -1105,7 +1082,7 @@
                         </div>
                     </article>
 
-                    <!-- SERVICE 5 (تم التعديل لصورة التنظيف بعد التشطيب الخاصة) -->
+                    <!-- SERVICE 5 (التنظيف بعد التشطيب بالرياض) -->
                     <article class="service-card">
                         <div class="service-image-wrapper">
                             <img src="images/IMG_20230103_091852532744677788093.jpg" alt="التنظيف بعد التشطيب بالرياض" class="service-image" loading="lazy">
@@ -1121,7 +1098,7 @@
                         </div>
                     </article>
 
-                    <!-- SERVICE 6 (تم التعديل لصورة جلي وتلميع الرخام الخاصة) -->
+                    <!-- SERVICE 6 (جلي وتلميع الرخام بالرياض) -->
                     <article class="service-card">
                         <div class="service-image-wrapper">
                             <img src="images/IMG_20230207_211230560845431563187.jpg" alt="جلي وتلميع الرخام بالرياض" class="service-image" loading="lazy">
@@ -1137,7 +1114,7 @@
                         </div>
                     </article>
 
-                    <!-- SERVICE 7 (تم التعديل لصورة تنظيف خزانات المياه الخاصة) -->
+                    <!-- SERVICE 7 (تنظيف خزانات المياه بالرياض) -->
                     <article class="service-card">
                         <div class="service-image-wrapper">
                             <img src="images/IMG_20230207_211231560845862478307.jpg" alt="تنظيف خزانات المياه بالرياض" class="service-image" loading="lazy">
@@ -1156,7 +1133,7 @@
             </div>
         </section>
 
-        <!-- BOOKING SECTION (مباشرة بعد خدماتنا) -->
+        <!-- BOOKING SECTION -->
         <section class="section booking-section" id="booking">
             <div class="container">
                 <div class="booking-wrapper">
@@ -1361,6 +1338,30 @@
                         <p>"طلبنا تنظيف للموقع بعد التشطيب وكانت النتيجة رائعة."</p>
                         <strong>سالم</strong> - <small>عميل من الرياض</small>
                     </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- STATS SECTION (تم نقل الإحصائيات هنا بعد آراء العملاء وتغيير خلفيتها للون هادئ ومريح) -->
+        <section class="stats">
+            <div class="container">
+                <div class="stats-grid">
+                    <div class="stat">
+                        <div class="stat-number">+500</div>
+                        <div class="stat-title">مبنى تم تنظيفه</div>
+                    </div>
+                    <div class="stat">
+                        <div class="stat-number">10+</div>
+                        <div class="stat-title">سنوات خبرة</div>
+                    </div>
+                    <div class="stat">
+                        <div class="stat-number">100%</div>
+                        <div class="stat-title">رضا العملاء</div>
+                    </div>
+                    <div class="stat">
+                        <div class="stat-number">+50</div>
+                        <div class="stat-title">فريق محترف</div>
+                    </div>
                 </div>
             </div>
         </section>
