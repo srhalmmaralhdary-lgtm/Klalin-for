@@ -172,24 +172,23 @@
         ============================================================ */
 
         :root {
-            --bg: #080a0f;
-            --bg-soft: #0d1118;
-            --card: rgba(255, 255, 255, 0.055);
-            --card-hover: rgba(255, 255, 255, 0.09);
-            --border: rgba(255, 255, 255, 0.11);
+            --bg: #06110d;
+            --bg-soft: #0a1a14;
+            --card: rgba(16, 185, 129, 0.05);
+            --card-hover: rgba(16, 185, 129, 0.1);
+            --border: rgba(16, 185, 129, 0.2);
 
-            --text: #f7f8fa;
-            --text-soft: #aeb5c0;
-            --text-dark: #11151c;
+            --text: #f0fdf4;
+            --text-soft: #a7f3d0;
+            --text-dark: #064e3b;
 
-            --primary: #ffffff;
-            --accent: #7dd3fc;
-            --accent-2: #38bdf8;
+            --primary: #10b981;
+            --accent: #34d399;
+            --accent-2: #059669;
 
             --success: #25d366;
 
-            --shadow:
-                0 20px 70px rgba(0, 0, 0, 0.35);
+            --shadow: 0 20px 70px rgba(0, 0, 0, 0.5);
 
             --radius: 24px;
             --container: 1200px;
@@ -217,18 +216,13 @@
             background:
                 radial-gradient(
                     circle at 10% 10%,
-                    rgba(56, 189, 248, 0.10),
-                    transparent 28%
+                    rgba(16, 185, 129, 0.15),
+                    transparent 30%
                 ),
                 radial-gradient(
                     circle at 90% 20%,
-                    rgba(125, 211, 252, 0.07),
+                    rgba(52, 211, 153, 0.1),
                     transparent 25%
-                ),
-                radial-gradient(
-                    circle at 50% 100%,
-                    rgba(255, 255, 255, 0.035),
-                    transparent 30%
                 ),
                 var(--bg);
 
@@ -264,7 +258,7 @@
         }
 
         ::selection {
-            background: rgba(125, 211, 252, 0.25);
+            background: rgba(52, 211, 153, 0.3);
         }
 
         /* ============================================================
@@ -296,7 +290,7 @@
             margin-bottom: 16px;
 
             border: 1px solid var(--border);
-            background: rgba(255,255,255,0.045);
+            background: rgba(16, 185, 129, 0.1);
 
             border-radius: 100px;
 
@@ -342,8 +336,8 @@
         ============================================================ */
 
         .topbar {
-            background: rgba(255,255,255,0.025);
-            border-bottom: 1px solid rgba(255,255,255,0.06);
+            background: rgba(10, 26, 20, 0.8);
+            border-bottom: 1px solid var(--border);
             color: var(--text-soft);
             font-size: 13px;
         }
@@ -378,8 +372,8 @@
             top: 0;
             z-index: 1000;
 
-            background: rgba(8, 10, 15, 0.78);
-            border-bottom: 1px solid rgba(255,255,255,0.07);
+            background: rgba(6, 17, 13, 0.85);
+            border-bottom: 1px solid var(--border);
 
             backdrop-filter: blur(20px);
             -webkit-backdrop-filter: blur(20px);
@@ -414,18 +408,10 @@
 
             border-radius: 13px;
 
-            background:
-                linear-gradient(
-                    145deg,
-                    rgba(255,255,255,0.16),
-                    rgba(255,255,255,0.035)
-                );
-
-            border: 1px solid rgba(255,255,255,0.14);
-
-            box-shadow:
-                inset 0 1px 0 rgba(255,255,255,0.15),
-                0 8px 30px rgba(0,0,0,0.25);
+            background: linear-gradient(135deg, var(--primary), var(--accent-2));
+            color: #ffffff;
+            border: 1px solid var(--accent);
+            box-shadow: 0 0 15px rgba(16, 185, 129, 0.4);
         }
 
         .logo-mark span {
@@ -449,7 +435,7 @@
         }
 
         .nav-links a {
-            color: #c7ccd5;
+            color: #d1fae5;
             font-size: 14px;
             font-weight: 600;
 
@@ -461,7 +447,7 @@
 
         .nav-links a:hover {
             color: white;
-            background: rgba(255,255,255,0.06);
+            background: rgba(16, 185, 129, 0.15);
         }
 
         .header-actions {
@@ -478,17 +464,14 @@
             align-items: center;
             gap: 9px;
 
-            padding: 0 18px;
+            padding: 0 22px;
 
             border-radius: 13px;
 
             font-size: 14px;
             font-weight: 800;
 
-            transition:
-                transform var(--transition),
-                background var(--transition),
-                box-shadow var(--transition);
+            transition: var(--transition);
         }
 
         .btn:hover {
@@ -496,23 +479,25 @@
         }
 
         .btn-primary {
-            color: #071018;
-            background: #ffffff;
-            box-shadow: 0 12px 30px rgba(255,255,255,0.08);
+            color: #042f2e;
+            background: linear-gradient(135deg, #34d399, #10b981);
+            box-shadow: 0 8px 25px rgba(16, 185, 129, 0.3);
         }
 
         .btn-primary:hover {
-            background: #e9f9ff;
+            background: linear-gradient(135deg, #6ee7b7, #34d399);
+            box-shadow: 0 12px 30px rgba(16, 185, 129, 0.5);
         }
 
         .btn-outline {
-            color: white;
-            background: rgba(255,255,255,0.045);
-            border: 1px solid var(--border);
+            color: #ffffff;
+            background: rgba(16, 185, 129, 0.1);
+            border: 1px solid var(--primary);
         }
 
         .btn-outline:hover {
-            background: rgba(255,255,255,0.09);
+            background: rgba(16, 185, 129, 0.25);
+            border-color: var(--accent);
         }
 
         .btn-whatsapp {
@@ -531,7 +516,7 @@
             width: 44px;
             height: 44px;
 
-            background: rgba(255,255,255,0.06);
+            background: rgba(16, 185, 129, 0.1);
             color: white;
 
             border: 1px solid var(--border);
@@ -541,61 +526,25 @@
         }
 
         /* ============================================================
-           HERO
+           HERO (مُعدلة ومطورة بالكامل)
         ============================================================ */
 
         .hero {
             position: relative;
-            min-height: 780px;
-
-            display: flex;
-            align-items: center;
-
+            padding: 110px 0 90px;
             overflow: hidden;
-
-            padding: 100px 0 80px;
-        }
-
-        .hero-grid {
-            position: absolute;
-            inset: 0;
-
-            background-image:
-                linear-gradient(
-                    rgba(255,255,255,0.025) 1px,
-                    transparent 1px
-                ),
-                linear-gradient(
-                    90deg,
-                    rgba(255,255,255,0.025) 1px,
-                    transparent 1px
-                );
-
-            background-size: 60px 60px;
-
-            mask-image: linear-gradient(
-                to bottom,
-                black,
-                transparent 90%
-            );
-
-            pointer-events: none;
+            background: radial-gradient(circle at top right, rgba(16, 185, 129, 0.12), transparent 45%);
         }
 
         .hero-glow {
             position: absolute;
-            width: 520px;
-            height: 520px;
-
+            width: 500px;
+            height: 500px;
             border-radius: 50%;
-
-            background: rgba(56,189,248,0.08);
-
-            filter: blur(80px);
-
-            top: 10%;
-            right: -160px;
-
+            background: rgba(16, 185, 129, 0.15);
+            filter: blur(100px);
+            top: -100px;
+            right: -100px;
             pointer-events: none;
         }
 
@@ -603,88 +552,57 @@
             position: absolute;
             width: 400px;
             height: 400px;
-
             border-radius: 50%;
-
-            background: rgba(255,255,255,0.045);
-
-            filter: blur(80px);
-
-            bottom: -180px;
-            left: -120px;
-
+            background: rgba(52, 211, 153, 0.08);
+            filter: blur(90px);
+            bottom: -150px;
+            left: -100px;
             pointer-events: none;
         }
 
         .hero-content {
             position: relative;
             z-index: 2;
-
             display: grid;
-            grid-template-columns: 1.08fr 0.92fr;
+            grid-template-columns: 1.1fr 0.9fr;
             align-items: center;
-
-            gap: 70px;
+            gap: 60px;
         }
 
         .hero-badge {
             display: inline-flex;
             align-items: center;
             gap: 10px;
-
-            padding: 8px 14px;
-
-            background: rgba(125,211,252,0.08);
-            border: 1px solid rgba(125,211,252,0.18);
-
+            padding: 8px 16px;
+            background: rgba(16, 185, 129, 0.12);
+            border: 1px solid rgba(52, 211, 153, 0.3);
             border-radius: 100px;
-
-            color: #bcecff;
+            color: var(--accent);
             font-size: 13px;
             font-weight: 700;
-
-            margin-bottom: 20px;
+            margin-bottom: 24px;
         }
 
         .pulse-dot {
             width: 8px;
             height: 8px;
-
             border-radius: 50%;
-
             background: var(--accent);
-
-            box-shadow:
-                0 0 0 0 rgba(125,211,252,0.5);
-
+            box-shadow: 0 0 0 0 rgba(52, 211, 153, 0.6);
             animation: pulse 2s infinite;
         }
 
         @keyframes pulse {
-            0% {
-                box-shadow:
-                    0 0 0 0 rgba(125,211,252,0.5);
-            }
-
-            70% {
-                box-shadow:
-                    0 0 0 10px rgba(125,211,252,0);
-            }
-
-            100% {
-                box-shadow:
-                    0 0 0 0 rgba(125,211,252,0);
-            }
+            0% { box-shadow: 0 0 0 0 rgba(52, 211, 153, 0.6); }
+            70% { box-shadow: 0 0 0 10px rgba(52, 211, 153, 0); }
+            100% { box-shadow: 0 0 0 0 rgba(52, 211, 153, 0); }
         }
 
         .hero-title {
-            font-size: clamp(40px, 6vw, 72px);
-            line-height: 1.08;
-
+            font-size: clamp(38px, 5.5vw, 64px);
+            line-height: 1.2;
             font-weight: 900;
-
-            letter-spacing: -2.5px;
-
+            color: #ffffff;
             margin-bottom: 24px;
         }
 
@@ -694,46 +612,28 @@
             display: inline-block;
         }
 
-        .hero-title .highlight::after {
-            content: "";
-            position: absolute;
-
-            right: 0;
-            bottom: -5px;
-
-            width: 100%;
-            height: 2px;
-
-            background: linear-gradient(
-                90deg,
-                transparent,
-                var(--accent)
-            );
-        }
-
         .hero-description {
-            color: var(--text-soft);
+            color: #a7f3d0;
             font-size: 17px;
-            max-width: 650px;
-
-            margin-bottom: 30px;
+            line-height: 1.8;
+            max-width: 600px;
+            margin-bottom: 35px;
         }
 
         .hero-buttons {
             display: flex;
             flex-wrap: wrap;
-            gap: 11px;
-
-            margin-bottom: 42px;
+            gap: 14px;
+            margin-bottom: 40px;
         }
 
         .hero-trust {
             display: flex;
             align-items: center;
-            gap: 13px;
-
-            color: var(--text-soft);
-            font-size: 12px;
+            gap: 14px;
+            color: #d1fae5;
+            font-size: 13px;
+            font-weight: 600;
         }
 
         .trust-avatars {
@@ -742,25 +642,15 @@
         }
 
         .trust-avatar {
-            width: 33px;
-            height: 33px;
-
+            width: 34px;
+            height: 34px;
             margin-left: -8px;
-
             display: grid;
             place-items: center;
-
-            background: linear-gradient(
-                145deg,
-                #ffffff,
-                #8ea0ad
-            );
-
-            color: #111;
-
+            background: linear-gradient(135deg, #10b981, #042f2e);
+            color: #ffffff;
             border-radius: 50%;
             border: 2px solid var(--bg);
-
             font-size: 11px;
             font-weight: 900;
         }
@@ -771,89 +661,51 @@
 
         .hero-image-card {
             position: relative;
-
-            padding: 12px;
-
-            border-radius: 30px;
-
-            background:
-                linear-gradient(
-                    145deg,
-                    rgba(255,255,255,0.13),
-                    rgba(255,255,255,0.035)
-                );
-
-            border: 1px solid rgba(255,255,255,0.12);
-
-            box-shadow:
-                0 40px 100px rgba(0,0,0,0.45);
-
-            transform: rotate(1.2deg);
-        }
-
-        .hero-image-card::before {
-            content: "";
-
-            position: absolute;
-            inset: -1px;
-
-            border-radius: inherit;
-
-            background:
-                linear-gradient(
-                    135deg,
-                    rgba(125,211,252,0.35),
-                    transparent 35%
-                );
-
-            pointer-events: none;
+            padding: 10px;
+            border-radius: 28px;
+            background: rgba(16, 185, 129, 0.08);
+            border: 1px solid rgba(52, 211, 153, 0.25);
+            box-shadow: 0 30px 80px rgba(0, 0, 0, 0.6);
         }
 
         .hero-image {
-            height: 520px;
+            height: 480px;
             width: 100%;
-
             object-fit: cover;
-
-            border-radius: 21px;
-
-            filter: brightness(0.82) contrast(1.05);
+            border-radius: 20px;
+            filter: brightness(0.95) contrast(1.05);
         }
 
         .hero-floating {
             position: absolute;
-
-            padding: 15px 18px;
-
+            padding: 14px 20px;
             border-radius: 18px;
-
-            background: rgba(10,13,18,0.72);
-
-            border: 1px solid rgba(255,255,255,0.12);
-
-            backdrop-filter: blur(18px);
-
-            box-shadow: 0 20px 50px rgba(0,0,0,0.35);
+            background: rgba(6, 17, 13, 0.9);
+            border: 1px solid rgba(52, 211, 153, 0.3);
+            backdrop-filter: blur(15px);
+            box-shadow: 0 20px 40px rgba(0,0,0,0.5);
         }
 
         .hero-floating.top {
-            top: 45px;
-            right: -35px;
+            top: 30px;
+            right: -25px;
         }
 
         .hero-floating.bottom {
-            bottom: 45px;
-            left: -35px;
+            bottom: 30px;
+            left: -25px;
         }
 
         .floating-number {
-            font-size: 25px;
+            font-size: 24px;
             font-weight: 900;
+            color: var(--accent);
         }
 
         .floating-text {
-            color: var(--text-soft);
-            font-size: 11px;
+            color: #d1fae5;
+            font-size: 12px;
+            font-weight: 600;
         }
 
         /* ============================================================
@@ -2379,19 +2231,15 @@
 
 
     <!-- ============================================================
-         HERO
+         HERO (المقدمة الاحترافية المُعدلة)
     ============================================================ -->
 
     <main>
 
         <section class="hero" id="home">
 
-            <div class="hero-grid"></div>
-
             <div class="hero-glow"></div>
-
             <div class="hero-glow-two"></div>
-
 
             <div class="container hero-content">
 
@@ -2399,106 +2247,71 @@
 
                     <div class="hero-badge">
                         <span class="pulse-dot"></span>
-                        حلول نظافة احترافية في الرياض
+                        خدمات النظافة المتكاملة والاحترافية بالرياض
                     </div>
 
-
                     <h1 class="hero-title">
-
-                        نظافة احترافية
+                        نظافة فائقة الجودة
                         <br>
-
-                        تليق
-                        <span class="highlight">بمكانك</span>
-
+                        تُبرز جمال <span class="highlight">منشأتك</span>
                     </h1>
 
-
                     <p class="hero-description">
-
-                        في <strong>kalin للنظافة العامة</strong>
-                        نقدم حلول تنظيف متخصصة للمباني والمنشآت والواجهات
-                        والفلل والقصور، مع فريق محترف ومعدات حديثة واهتمام
-                        بأدق التفاصيل داخل مدينة الرياض.
-
+                        في <strong>kalin للنظافة العامة</strong>، نقدم حلول تنظيف متخصصة للمباني، الواجهات، والفلل بالرياض بأحدث المعدات وأعلى معايير الأمان والالتزام بالوقت.
                     </p>
-
 
                     <div class="hero-buttons">
 
-                        <a href="https://wa.me/966508218878?text=السلام%20عليكم،%20أرغب%20في%20طلب%20خدمة%20تنظيف"
+                        <a href="https://wa.me/966508218878?text=السلام%20عليكم،%20أرغب%20في%20طلب%20عرض%20سعر"
                            target="_blank"
                            rel="noopener noreferrer"
                            class="btn btn-primary">
-
                             💬 اطلب عرض سعر
-
                         </a>
-
 
                         <a href="tel:0570471168"
                            class="btn btn-outline">
-
-                            ☎ اتصل بنا
-
+                            ☎ اتصل الآن
                         </a>
 
                     </div>
-
 
                     <div class="hero-trust">
 
                         <div class="trust-avatars">
-
                             <div class="trust-avatar">K</div>
                             <div class="trust-avatar">✓</div>
                             <div class="trust-avatar">★</div>
                             <div class="trust-avatar">+</div>
-
                         </div>
 
                         <span>
-                            خدمة احترافية • جودة • التزام بالمواعيد
+                            جودة عالية • كادر متخصص • إتقان في العمل
                         </span>
 
                     </div>
 
                 </div>
 
-
                 <div class="hero-visual reveal">
 
                     <div class="hero-image-card">
-
                         <img
-                            src="images/IMG-20240929-WA0002.jpg"
+                            src="https://images.unsplash.com/photo-1581578731548-c64695cc6952?q=80&w=1000&auto=format&fit=crop"
                             alt="خدمات التنظيف الاحترافية في الرياض من kalin"
                             class="hero-image"
                             loading="eager"
                             fetchpriority="high">
-
                     </div>
-
 
                     <div class="hero-floating top">
-
                         <div class="floating-number">+500</div>
-
-                        <div class="floating-text">
-                            مبنى تم تنظيفه
-                        </div>
-
+                        <div class="floating-text">مشروع تم إنجازه</div>
                     </div>
 
-
                     <div class="hero-floating bottom">
-
                         <div class="floating-number">10+</div>
-
-                        <div class="floating-text">
-                            سنوات من الخبرة
-                        </div>
-
+                        <div class="floating-text">سنوات خبرة متواصلة</div>
                     </div>
 
                 </div>
@@ -3321,7 +3134,7 @@
                         </h3>
 
                         <p>
-                            نحدد نوع الخدمة واحتياج الموقع.
+                            نحدد نوع الخدمة وااحتياج الموقع.
                         </p>
 
                     </div>
@@ -4570,31 +4383,7 @@
                     "error",
                     function () {
 
-                        image.style.background =
-                            "linear-gradient(135deg,#111720,#202b36)";
-
-                        image.style.objectFit =
-                            "cover";
-
-                    }
-                );
-
-            });
-
-
-        /* ============================================================
-           PREVENT EMPTY SOCIAL LINKS
-        ============================================================ */
-
-        document
-            .querySelectorAll('a[href="#"]')
-            .forEach(function (link) {
-
-                link.addEventListener(
-                    "click",
-                    function (event) {
-
-                        event.preventDefault();
+                        this.style.display = "none";
 
                     }
                 );
@@ -4602,6 +4391,5 @@
             });
 
     </script>
-
 </body>
 </html>
