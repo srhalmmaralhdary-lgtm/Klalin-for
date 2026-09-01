@@ -498,27 +498,32 @@
             background: var(--border);
         }
 
+        /* ============================================================
+           تعديل ألوان الكروت: خلفية كحلية ملَكية فاخرة مع المحافظة على النصوص باللون الأخضر
+        ============================================================ */
         .service-card {
             flex: 0 0 310px;
             scroll-snap-align: start;
             border-radius: var(--radius);
-            border: 1px solid #eedc9a;
-            background: #fffdf0; /* خلفية هادئة قريبة للون الأصفر */
+            border: 1px solid rgba(16, 185, 129, 0.3);
+            background: #0f172a; /* خلفية كحلية غامقة وفاخرة جداً غير الأسود والأبيض */
             overflow: hidden;
-            box-shadow: var(--shadow);
+            box-shadow: 0 15px 30px rgba(15, 23, 42, 0.2);
             display: flex;
             flex-direction: column;
-            transition: transform 0.2s ease;
+            transition: all 0.3s ease;
         }
 
         .service-card:hover {
-            transform: translateY(-4px);
+            transform: translateY(-6px);
+            border-color: #10b981;
+            box-shadow: 0 20px 35px rgba(16, 185, 129, 0.15);
         }
 
         .service-image-wrapper {
             height: 200px;
             position: relative;
-            background-color: #f1f5f9;
+            background-color: #1e293b;
         }
 
         .service-image {
@@ -543,15 +548,15 @@
             font-size: 18px;
             font-weight: 700;
             margin-bottom: 8px;
-            color: #059669; /* إبقاء الخط بالأخضر */
+            color: #34d399; /* خط أخضر زمردي ناصع ومتوهج خلف الخلفية الغامقة */
         }
 
         .service-description {
-            color: #047857; /* إبقاء الخط بالأخضر */
+            color: #10b981; /* إبقاء الخط باللون الأخضر الممتاز والقابل للقرائية */
             font-size: 13px;
             margin-bottom: 18px;
             flex: 1;
-            line-height: 1.5;
+            line-height: 1.6;
         }
 
         .service-actions {
@@ -566,14 +571,15 @@
             border-radius: 8px;
             font-size: 13px;
             font-weight: 700;
-            background: #f1f5f9;
-            color: #334155;
-            border: 1px solid #cbd5e1;
+            background: #1e293b;
+            color: #34d399;
+            border: 1px solid #10b981;
             transition: all 0.2s ease;
         }
 
         .service-btn:hover {
-            background: #e2e8f0;
+            background: #334155;
+            color: #6ee7b7;
         }
 
         .service-btn.primary {
