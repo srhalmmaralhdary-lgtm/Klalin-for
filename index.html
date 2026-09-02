@@ -32,7 +32,7 @@
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;500;600;700;800;900&family=Tajawal:wght@300;400;500;700;800;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
 
     <script type="application/ld+json">
     {
@@ -385,16 +385,12 @@
             margin-bottom: 15px;
         }
 
-        /* (الصورة 1): تطبيق الخط والأبعاد والظل والنطاق لمنع تداخل الأحرف */
         .hero-title {
-            font-family: 'Tajawal', 'Cairo', sans-serif !important;
-            font-weight: 900 !important;
             font-size: clamp(30px, 4.5vw, 48px);
+            font-weight: 900;
             color: #0f172a;
             margin-bottom: 15px;
-            line-height: 1.35 !important;
-            letter-spacing: 0.02em !important;
-            text-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
+            line-height: 1.2;
         }
 
         .hero-title .highlight {
@@ -602,79 +598,41 @@
             box-shadow: 0 4px 10px rgba(0,0,0,0.15);
         }
 
-        /* GALLERY CARDS DESIGN (الصورة 2): كروت بطاقات بخلفية زرقاء داكنة مع المنحنى والأيقونة والشعار الأزرق */
+        /* GALLERY CARDS DESIGN (IMAGE 2) */
         .work-card-custom {
-            background-color: #0f172a;
+            background-color: #ffffff;
             border-radius: 24px;
-            padding: 16px;
-            box-shadow: 0 12px 28px rgba(15, 23, 42, 0.25);
+            padding: 12px;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.08);
             position: relative;
-            border: 1px solid rgba(13, 75, 117, 0.4);
-            display: flex;
-            flex-direction: column;
-            gap: 12px;
-            overflow: hidden;
-            transition: transform 0.3s ease, box-shadow 0.3s ease;
-        }
-
-        .work-card-custom:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 18px 36px rgba(13, 75, 117, 0.35);
-        }
-
-        .work-card-top-icon {
-            position: absolute;
-            top: 24px;
-            left: 24px;
-            width: 32px;
-            height: 32px;
-            background: #0d4b75;
-            border-radius: 50%;
-            display: grid;
-            place-items: center;
-            color: #ffffff;
-            font-size: 14px;
-            z-index: 3;
-            box-shadow: 0 2px 8px rgba(0,0,0,0.3);
         }
 
         .work-image-container {
             position: relative;
-            border-radius: 20px 20px 0 20px;
+            border-radius: 20px;
             overflow: hidden;
-            background: #1e293b;
+            background: #f1f5f9;
         }
 
         .work-image-container img {
             width: 100%;
-            height: 260px;
+            height: 280px;
             object-fit: cover;
-            border-radius: 20px 20px 0 20px;
+            border-radius: 20px;
         }
 
         .work-badge-overlay {
             position: absolute;
-            bottom: 0;
-            right: 0;
+            bottom: -5px;
+            right: -5px;
             background-color: #0d4b75;
-            width: 55px;
-            height: 55px;
+            width: 65px;
+            height: 65px;
             border-top-left-radius: 35px;
             z-index: 2;
-            display: flex;
-            align-items: center;
-            justify-content: center;
         }
 
-        .work-badge-overlay::after {
-            content: "✦";
-            color: #ffffff;
-            font-size: 16px;
-            margin-top: 10px;
-            margin-right: 10px;
-        }
-
-        /* PARTNERS SECTION DESIGN (الصورة 3 مع التبديل التلقائي لـ JS) */
+        /* PARTNERS SECTION DESIGN (IMAGE 3) */
         .partners-section {
             background-color: #ffffff;
             padding: 40px 0;
@@ -697,33 +655,6 @@
             text-align: right;
             line-height: 1.8;
             letter-spacing: 0.3px;
-            transition: opacity 0.6s ease-in-out, transform 0.6s ease-in-out;
-            opacity: 1;
-        }
-
-        .partner-item-custom.fade-out {
-            opacity: 0;
-            transform: translateY(-6px);
-        }
-
-        .partner-indicators {
-            display: flex;
-            justify-content: center;
-            gap: 8px;
-            margin-top: 20px;
-        }
-
-        .indicator-dot {
-            width: 10px;
-            height: 10px;
-            border-radius: 50%;
-            background-color: #cbd5e1;
-            transition: background-color 0.3s ease, transform 0.3s ease;
-        }
-
-        .indicator-dot.active {
-            background-color: #0d4b75;
-            transform: scale(1.3);
         }
 
         /* BOOKING FORM */
@@ -1072,6 +1003,7 @@
 
         /* ============================================================
            PREMIUM CLEAN UPGRADE — visual/performance layer
+           Existing sections, forms and links are intentionally preserved.
         ============================================================ */
         body {
             background:
@@ -1154,6 +1086,19 @@
             color: #047857;
             padding: 8px 16px;
             box-shadow: 0 6px 18px rgba(6,78,59,.06);
+        }
+
+        .hero-title {
+            font-size: clamp(38px, 5.2vw, 62px);
+            letter-spacing: -.7px;
+            margin-bottom: 18px;
+        }
+
+        .hero-title .highlight {
+            background: linear-gradient(90deg, #059669, #10b981);
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
         }
 
         .hero-description {
@@ -1249,10 +1194,37 @@
             box-shadow: 0 8px 20px rgba(6,78,59,.14);
         }
 
+        .work-card-custom {
+            border: 1px solid #e2eee7;
+            box-shadow: 0 16px 34px rgba(6,78,59,.08);
+            transition: transform .25s ease, box-shadow .25s ease;
+        }
+
+        .work-card-custom:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 22px 42px rgba(6,78,59,.12);
+        }
+
+        .work-badge-overlay {
+            background: #047857;
+        }
+
         .partners-section {
             background: linear-gradient(180deg, #ffffff 0%, #f0fdf4 100%);
             border-top: 1px solid #e2eee7;
             border-bottom: 1px solid #e2eee7;
+        }
+
+        .partner-item-custom {
+            color: #065f46;
+            padding: 7px 14px;
+            border-radius: 10px;
+            transition: background .2s ease, transform .2s ease;
+        }
+
+        .partner-item-custom:hover {
+            background: #dcfce7;
+            transform: translateX(-4px);
         }
 
         .booking-section {
@@ -1343,6 +1315,10 @@
                 gap: 30px;
             }
 
+            .hero-title {
+                font-size: clamp(34px, 10vw, 48px);
+            }
+
             .hero-description {
                 font-size: 15px;
                 line-height: 1.8;
@@ -1378,6 +1354,10 @@
         }
 
         @media (max-width: 480px) {
+            .hero-title {
+                font-size: 35px;
+            }
+
             .hero-call-btn {
                 min-height: 62px;
                 font-size: 19px;
@@ -1387,6 +1367,7 @@
                 height: 260px;
             }
         }
+
     </style>
 
 <style id="legendary-typography">
@@ -1406,6 +1387,18 @@ h1, h2, h3, h4, .logo, .nav a, .btn, .badge, .section-kicker,
   letter-spacing: -0.025em;
 }
 
+.hero h1 {
+  font-size: clamp(3rem, 7vw, 6.2rem);
+  line-height: 1.03;
+  letter-spacing: -0.045em;
+  color: #0b2b20;
+  text-shadow: 0 3px 18px rgba(16, 185, 129, .10);
+}
+.hero h1 span,
+.hero h1 strong {
+  color: #059669;
+  font-weight: 900;
+}
 .hero p {
   font-size: clamp(1.05rem, 1.5vw, 1.25rem);
   line-height: 2;
@@ -1472,6 +1465,10 @@ h1, h2, h3, h4, .logo, .nav a, .btn, .badge, .section-kicker,
   font-weight: 600;
 }
 @media (max-width: 700px) {
+  .hero h1 {
+    font-size: clamp(2.65rem, 13vw, 4.2rem);
+    line-height: 1.08;
+  }
   .hero p { font-size: 1rem; line-height: 1.9; }
   .section-title { font-size: 2rem; }
   .hero .btn-primary { min-height: 62px; font-size: 1.08rem; }
@@ -1528,10 +1525,9 @@ h1, h2, h3, h4, .logo, .nav a, .btn, .badge, .section-kicker,
             <div class="container hero-content">
                 <div class="hero-copy">
                     <div class="hero-badge">شركة تنظيف متخصصة في الرياض • جودة تفرق</div>
-                    <!-- العنوان الرئيسي المحدث (الصورة 1) -->
                     <h1 class="hero-title">
-                        نظافة متكاملة.. <br>
-                        <span class="highlight">تُبرز فخامة منشأتك</span>
+                        نظافة احترافية <br>
+                        <span class="highlight">تليق بمنشأتك</span>
                     </h1>
                     <p class="hero-description">
                         حلول تنظيف متخصصة للمباني والواجهات والفلل والمنشآت في الرياض، بتنفيذ احترافي ومعدات حديثة والتزام بالمواعيد. <strong>اطلب عرضك الآن</strong> ودع فريق Clean يهتم بالتفاصيل.
@@ -1741,7 +1737,7 @@ h1, h2, h3, h4, .logo, .nav a, .btn, .badge, .section-kicker,
         </section>
 
         <!-- ============================================================
-             قسم من أعمالنا (الصورة رقم 2) - بالتصميم والكرت الأزرق المنحني احترافياً
+             قسم من أعمالنا المحدث بالكامل (مطابق للصورة رقم 2)
         ============================================================ -->
         <section class="section">
             <div class="container">
@@ -1751,7 +1747,6 @@ h1, h2, h3, h4, .logo, .nav a, .btn, .badge, .section-kicker,
 
                 <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 25px;">
                     <div class="work-card-custom">
-                        <div class="work-card-top-icon">C</div>
                         <div class="work-image-container">
                             <img src="images/IMG_20240418_051727_162.jpg" alt="تنظيف مبنى الكليات" decoding="async">
                             <div class="work-badge-overlay"></div>
@@ -1759,15 +1754,13 @@ h1, h2, h3, h4, .logo, .nav a, .btn, .badge, .section-kicker,
                     </div>
 
                     <div class="work-card-custom">
-                        <div class="work-card-top-icon">C</div>
                         <div class="work-image-container">
                             <img src="images/IMG_20240421_064818_921.jpg" alt="تنظيف واجهة ROUGE غوج" decoding="async">
-                            <div class="work-badge-overlay"></div>
+                            <div class="work-badge-overlay" style="left: -5px; right: auto; border-top-left-radius: 0; border-top-right-radius: 35px;"></div>
                         </div>
                     </div>
 
                     <div class="work-card-custom">
-                        <div class="work-card-top-icon">C</div>
                         <div class="work-image-container">
                             <img src="images/IMG_20240511_062226_385.jpg" alt="تنظيف واجهات زجاجية ومباني بالرياض" decoding="async">
                             <div class="work-badge-overlay"></div>
@@ -1778,7 +1771,7 @@ h1, h2, h3, h4, .logo, .nav a, .btn, .badge, .section-kicker,
         </section>
 
         <!-- ============================================================
-             قسم التعليقات/الشركاء التلقائي (الصورة رقم 3 مع كود التبديل التلقائي)
+             قسم شركاء النجاح الجديد بالكامل (مطابق للصورة رقم 3)
         ============================================================ -->
         <section class="partners-section">
             <div class="container">
@@ -1786,12 +1779,26 @@ h1, h2, h3, h4, .logo, .nav a, .btn, .badge, .section-kicker,
                     <div class="custom-blue-tag">من شركاء النجاح</div>
                 </div>
 
-                <div class="partners-list-custom" id="partnersContainer">
-                    <div class="partner-item-custom" id="dynamicPartnerItem">1- شركة دانات القابضة.</div>
+                <div class="partners-list-custom">
+                    <div class="partner-item-custom">1- شركة دانات القابضة.</div>
+                    <div class="partner-item-custom">2- مدارس الرواد العالمية.</div>
+                    <div class="partner-item-custom">3- فندق موفنبيك.</div>
+                    <div class="partner-item-custom">4- شركة مزاج وكيف لتقديم المشروبات.</div>
+                    <div class="partner-item-custom">5- شركة حياة الرياض الفندقية.</div>
+                    <div class="partner-item-custom">6- فندق كراون بلازا.</div>
+                    <div class="partner-item-custom">7- TCC شركة تحكم التقنية.</div>
+                    <div class="partner-item-custom">8- برج العنود التجاري.</div>
+                    <div class="partner-item-custom">9- فندق هيلتون الشرقية.</div>
+                    <div class="partner-item-custom">10- برج مصرف الراجحي.</div>
+                    <div class="partner-item-custom">11- معارض مؤسسة المنبع التجارية.</div>
+                    <div class="partner-item-custom">12- شركة دانات العقارية.</div>
+                    <div class="partner-item-custom">13- شركة الراجح الحديثة للمقاولات المحدودة.</div>
+                    <div class="partner-item-custom">14- شركة نولتي للمطابخ الألمانية.</div>
+                    <div class="partner-item-custom">15- معارض السيف هوم.</div>
+                    <div class="partner-item-custom">16- شركة اسمنت الرياض.</div>
+                    <div class="partner-item-custom">17- شركة صخور العرب للسيراميك والبورسلان.</div>
+                    <div class="partner-item-custom">18- شركة دزن كافيه.</div>
                 </div>
-
-                <!-- النقاط السفلية (Indicators) -->
-                <div class="partner-indicators" id="partnerIndicators"></div>
             </div>
         </section>
 
@@ -1841,7 +1848,7 @@ h1, h2, h3, h4, .logo, .nav a, .btn, .badge, .section-kicker,
                     <div class="process-card">
                         <div class="process-number">02</div>
                         <h3>تحديد الخدمة</h3>
-                        <p>نحدد نوع الخدمة وااحتياج الموقع.</p>
+                        <p>نحدد نوع الخدمة واحتياج الموقع.</p>
                     </div>
                     <div class="process-card">
                         <div class="process-number">03</div>
@@ -2093,63 +2100,6 @@ h1, h2, h3, h4, .logo, .nav a, .btn, .badge, .section-kicker,
                         window.open(whatsappUrl, "_blank");
                     }, 600);
                 });
-            }
-
-            // ============================================================
-            // (الصورة 3): كود JS للتبديل التلقائي بين الشركاء كل 4 ثوانٍ مع الفيد والنقاط
-            // ============================================================
-            const partnersList = [
-                "1- شركة دانات القابضة.",
-                "2- مدارس الرواد العالمية.",
-                "3- فندق موفنبيك.",
-                "4- شركة مزاج وكيف لتقديم المشروبات.",
-                "5- شركة حياة الرياض الفندقية.",
-                "6- فندق كراون بلازا.",
-                "7- TCC شركة تحكم التقنية.",
-                "8- برج العنود التجاري.",
-                "9- فندق هيلتون الشرقية.",
-                "10- برج مصرف الراجحي.",
-                "11- معارض مؤسسة المنبع التجارية.",
-                "12- شركة دانات العقارية.",
-                "13- شركة الراجح الحديثة للمقاولات المحدودة.",
-                "14- شركة نولتي للمطابخ الألمانية.",
-                "15- معارض السيف هوم.",
-                "16- شركة اسمنت الرياض.",
-                "17- شركة صخور العرب للسيراميك والبورسلان.",
-                "18- شركة دزن كافيه."
-            ];
-
-            const partnerItemEl = document.getElementById("dynamicPartnerItem");
-            const indicatorsContainer = document.getElementById("partnerIndicators");
-            let currentIndex = 0;
-
-            if (partnerItemEl && indicatorsContainer) {
-                // إنشاء النقاط (Indicators)
-                partnersList.forEach((_, idx) => {
-                    const dot = document.createElement("div");
-                    dot.classList.add("indicator-dot");
-                    if (idx === 0) dot.classList.add("active");
-                    indicatorsContainer.appendChild(dot);
-                });
-
-                const dots = indicatorsContainer.querySelectorAll(".indicator-dot");
-
-                // دالة التبديل السلس مع حركة Fade out / Fade in
-                setInterval(() => {
-                    partnerItemEl.classList.add("fade-out");
-
-                    setTimeout(() => {
-                        currentIndex = (currentIndex + 1) % partnersList.length;
-                        partnerItemEl.textContent = partnersList[currentIndex];
-
-                        // تحديث النقطة النشطة
-                        dots.forEach((dot, idx) => {
-                            dot.classList.toggle("active", idx === currentIndex);
-                        });
-
-                        partnerItemEl.classList.remove("fade-out");
-                    }, 600); // يستغرق الاختفاء 0.6 ثانية ثم يتغير النص ويظهر
-                }, 4000); // التبديل يحدث كل 4 ثوانٍ
             }
         });
     </script>
