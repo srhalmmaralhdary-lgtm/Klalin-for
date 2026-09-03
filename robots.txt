@@ -3,4 +3,4 @@ Allow: /
 Allow: /*.html
 Allow: /blog/
 
-Sitemap: https://kalin.sa/sitemap.xml
+Sitemap: https://clean-ksa.com/sitemap.xml
