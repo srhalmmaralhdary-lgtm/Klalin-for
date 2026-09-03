@@ -1,72 +1,76 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  
-  <!-- الصفحة الرئيسية -->
+
+  <!-- 1. الصفحة الرئيسية (أعلى أولوية) -->
   <url>
-    <loc>https://kalin.sa/index.html</loc>
-    <lastmod>2026-09-02</lastmod>
+    <loc>https://clean-ksa.com/</loc>
+    <lastmod>2026-09-03</lastmod>
+    <changefreq>daily</changefreq>
     <priority>1.00</priority>
   </url>
 
-  <!-- صفحات الخدمات الفرعية -->
+  <!-- 2. بطاقات وسطحات الخدمات الظاهرة في الموقع -->
   <url>
-    <loc>https://kalin.sa/cladding-cleaning.html</loc>
-    <lastmod>2026-09-02</lastmod>
+    <loc>https://clean-ksa.com/cladding-cleaning.html</loc>
+    <lastmod>2026-09-03</lastmod>
+    <changefreq>weekly</changefreq>
     <priority>0.90</priority>
   </url>
 
   <url>
-    <loc>https://kalin.sa/towers-cleaning.html</loc>
-    <lastmod>2026-09-02</lastmod>
+    <loc>https://clean-ksa.com/towers-cleaning.html</loc>
+    <lastmod>2026-09-03</lastmod>
+    <changefreq>weekly</changefreq>
     <priority>0.90</priority>
   </url>
 
   <url>
-    <loc>https://kalin.sa/stone-cleaning.html</loc>
-    <lastmod>2026-09-02</lastmod>
+    <loc>https://clean-ksa.com/stone-cleaning.html</loc>
+    <lastmod>2026-09-03</lastmod>
+    <changefreq>weekly</changefreq>
     <priority>0.90</priority>
   </url>
 
   <url>
-    <loc>https://kalin.sa/villas-cleaning.html</loc>
-    <lastmod>2026-09-02</lastmod>
+    <loc>https://clean-ksa.com/villas-cleaning.html</loc>
+    <lastmod>2026-09-03</lastmod>
+    <changefreq>weekly</changefreq>
     <priority>0.90</priority>
   </url>
 
   <url>
-    <loc>https://kalin.sa/post-construction-cleaning.html</loc>
-    <lastmod>2026-09-02</lastmod>
+    <loc>https://clean-ksa.com/post-construction-cleaning.html</loc>
+    <lastmod>2026-09-03</lastmod>
+    <changefreq>weekly</changefreq>
     <priority>0.90</priority>
   </url>
 
   <url>
-    <loc>https://kalin.sa/marble-polishing.html</loc>
-    <lastmod>2026-09-02</lastmod>
+    <loc>https://clean-ksa.com/marble-polishing.html</loc>
+    <lastmod>2026-09-03</lastmod>
+    <changefreq>weekly</changefreq>
     <priority>0.90</priority>
   </url>
 
   <url>
-    <loc>https://kalin.sa/tank-cleaning.html</loc>
-    <lastmod>2026-09-02</lastmod>
+    <loc>https://clean-ksa.com/tank-cleaning.html</loc>
+    <lastmod>2026-09-03</lastmod>
+    <changefreq>weekly</changefreq>
     <priority>0.90</priority>
   </url>
 
-  <!-- قسم المدونة والمقالات -->
+  <!-- 3. قسم المدونة الرئيسي والمقالات -->
   <url>
-    <loc>https://kalin.sa/blog/</loc>
-    <lastmod>2026-09-02</lastmod>
+    <loc>https://clean-ksa.com/blog/</loc>
+    <lastmod>2026-09-03</lastmod>
+    <changefreq>daily</changefreq>
     <priority>0.85</priority>
   </url>
 
   <url>
-    <loc>https://kalin.sa/blog/index.html</loc>
-    <lastmod>2026-09-02</lastmod>
-    <priority>0.85</priority>
-  </url>
-
-  <url>
-    <loc>https://kalin.sa/blog/glass-cleaning-guide.html</loc>
-    <lastmod>2026-09-02</lastmod>
+    <loc>https://clean-ksa.com/blog/glass-cleaning-guide.html</loc>
+    <lastmod>2026-09-03</lastmod>
+    <changefreq>monthly</changefreq>
     <priority>0.80</priority>
   </url>
 
