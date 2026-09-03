@@ -1,6 +1,3 @@
 User-agent: *
 Allow: /
-Allow: /*.html
-Allow: /blog/
-
 Sitemap: https://clean-ksa.com/sitemap.xml
