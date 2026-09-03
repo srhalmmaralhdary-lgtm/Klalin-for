@@ -1479,6 +1479,167 @@
       .hero .btn-primary { min-height: 62px; font-size: 1.08rem; }
     }
     </style>
+
+    <!-- POPUP MODAL STYLES -->
+    <style>
+        .promo-overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.6);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            z-index: 99999;
+            opacity: 0;
+            visibility: hidden;
+            transition: opacity 0.3s ease, visibility 0.3s ease;
+            padding: 15px;
+        }
+
+        .promo-overlay.active {
+            opacity: 1;
+            visibility: visible;
+        }
+
+        .promo-modal {
+            background: #ffffff;
+            border-radius: 20px;
+            width: 100%;
+            max-width: 500px;
+            overflow: hidden;
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.25);
+            text-align: center;
+            position: relative;
+            transform: scale(0.9);
+            transition: transform 0.3s ease;
+        }
+
+        .promo-overlay.active .promo-modal {
+            transform: scale(1);
+        }
+
+        .promo-header {
+            background: #0075ff;
+            color: #ffffff;
+            padding: 18px 20px 14px;
+            position: relative;
+        }
+
+        .promo-header h3 {
+            font-size: 18px;
+            font-weight: 800;
+            margin-bottom: 6px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 6px;
+        }
+
+        .promo-header p {
+            font-size: 13px;
+            opacity: 0.95;
+            font-weight: 500;
+        }
+
+        .promo-close {
+            position: absolute;
+            top: 12px;
+            right: 14px;
+            background: transparent;
+            border: none;
+            color: #ffffff;
+            font-size: 20px;
+            font-weight: bold;
+            cursor: pointer;
+            line-height: 1;
+            padding: 4px;
+        }
+
+        .promo-body {
+            padding: 22px 20px;
+        }
+
+        .promo-subtitle {
+            color: #718096;
+            font-size: 14px;
+            font-weight: 600;
+            margin-bottom: 16px;
+        }
+
+        .promo-timer-box {
+            background: #f7fafc;
+            border: 1px solid #e2e8f0;
+            border-radius: 12px;
+            display: inline-block;
+            padding: 8px 28px;
+            margin-bottom: 20px;
+        }
+
+        .promo-timer-title {
+            font-size: 12px;
+            color: #718096;
+            margin-bottom: 2px;
+            font-weight: 600;
+        }
+
+        .promo-timer-clock {
+            font-size: 26px;
+            font-weight: 800;
+            color: #0075ff;
+            letter-spacing: 1px;
+            font-family: monospace, sans-serif;
+        }
+
+        .promo-actions {
+            display: flex;
+            gap: 12px;
+            margin-bottom: 14px;
+        }
+
+        .promo-btn {
+            flex: 1;
+            padding: 12px;
+            border-radius: 10px;
+            font-size: 15px;
+            font-weight: 800;
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 6px;
+            color: #ffffff;
+            transition: transform 0.2s ease, opacity 0.2s ease;
+        }
+
+        .promo-btn:hover {
+            opacity: 0.95;
+            transform: translateY(-2px);
+        }
+
+        .promo-btn-whatsapp {
+            background: #25d366;
+        }
+
+        .promo-btn-call {
+            background: #0075ff;
+        }
+
+        .promo-footnote {
+            font-size: 12px;
+            color: #a0aec0;
+            font-weight: 600;
+        }
+
+        @media (max-width: 480px) {
+            .promo-header h3 { font-size: 16px; }
+            .promo-header p { font-size: 12px; }
+            .promo-timer-clock { font-size: 22px; }
+            .promo-btn { font-size: 14px; padding: 10px; }
+        }
+    </style>
 </head>
 
 <body>
@@ -1996,6 +2157,33 @@
         <button type="button" class="floating-btn floating-top" id="scrollTop" title="الصعود للأعلى">↑</button>
     </div>
 
+    <!-- POPUP MODAL COMPONENT -->
+    <div class="promo-overlay" id="promoOverlay">
+        <div class="promo-modal">
+            <div class="promo-header">
+                <button class="promo-close" id="promoClose">&times;</button>
+                <h3>🎉 عرض اليوم فقط – خصم 25% على جميع خدمات التنظيف</h3>
+                <p>يشمل تنظيف المنازل • المجالس • الخزانات • الواجهات</p>
+            </div>
+            <div class="promo-body">
+                <p class="promo-subtitle">احجز الآن قبل انتهاء الوقت للاستفادة من العرض</p>
+                <div class="promo-timer-box">
+                    <div class="promo-timer-title">ينتهي خلال</div>
+                    <div class="promo-timer-clock" id="promoTimer">30:00</div>
+                </div>
+                <div class="promo-actions">
+                    <a href="https://wa.me/966508218878?text=السلام%20عليكم،%20أرغب%20في%20الاستفادة%20من%20عرض%20الخصم%2025%25" target="_blank" rel="noopener noreferrer" class="promo-btn promo-btn-whatsapp">
+                        واتساب
+                    </a>
+                    <a href="tel:0570471168" class="promo-btn promo-btn-call">
+                        اتصال
+                    </a>
+                </div>
+                <div class="promo-footnote">* العرض متاح لمدة 30 دقيقة لكل عميل</div>
+            </div>
+        </div>
+    </div>
+
     <div class="toast" id="toast"></div>
 
     <script>
@@ -2093,6 +2281,46 @@
                         window.open(whatsappUrl, "_blank");
                     }, 600);
                 });
+            }
+
+            /* PROMO POPUP SCRIPT */
+            const promoOverlay = document.getElementById("promoOverlay");
+            const promoClose = document.getElementById("promoClose");
+            const promoTimer = document.getElementById("promoTimer");
+
+            setTimeout(() => {
+                if (promoOverlay) {
+                    promoOverlay.classList.add("active");
+                    startPromoTimer(30 * 60);
+                }
+            }, 1000);
+
+            if (promoClose && promoOverlay) {
+                promoClose.addEventListener("click", () => {
+                    promoOverlay.classList.remove("active");
+                });
+            }
+
+            function startPromoTimer(durationInSeconds) {
+                let timer = durationInSeconds;
+                const interval = setInterval(() => {
+                    const minutes = Math.floor(timer / 60);
+                    const seconds = timer % 60;
+
+                    const formattedMinutes = minutes < 10 ? "0" + minutes : minutes;
+                    const formattedSeconds = seconds < 10 ? "0" + seconds : seconds;
+
+                    if (promoTimer) {
+                        promoTimer.textContent = `${formattedMinutes}:${formattedSeconds}`;
+                    }
+
+                    if (--timer < 0) {
+                        clearInterval(interval);
+                        if (promoTimer) {
+                            promoTimer.textContent = "00:00";
+                        }
+                    }
+                }, 1000);
             }
         });
     </script>
