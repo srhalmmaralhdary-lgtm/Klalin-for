@@ -15,17 +15,20 @@
     <meta name="geo.placename" content="Riyadh">
     <meta name="geo.country" content="SA">
 
-    <link rel="canonical" href="https://clean.sa/">
+    <!-- Canonical Link -->
+    <link rel="canonical" href="https://clean-ksa.com/">
     <link rel="sitemap" type="application/xml" title="Sitemap" href="/sitemap.xml">
     <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='24' fill='%2310b981'/%3E%3Ctext x='50' y='65' font-size='45' text-anchor='middle' fill='%23ffffff' font-family='Arial'%3EC%3C/text%3E%3C/svg%3E">
 
+    <!-- Open Graph Tags -->
     <meta property="og:type" content="website">
     <meta property="og:locale" content="ar_SA">
     <meta property="og:title" content="Clean للنظافة العامة | خدمات تنظيف احترافية بالرياض">
     <meta property="og:description" content="حلول تنظيف احترافية للمباني والواجهات والفلل والقصور والمنشآت في الرياض.">
-    <meta property="og:url" content="https://clean.sa/">
+    <meta property="og:url" content="https://clean-ksa.com/">
     <meta property="og:site_name" content="Clean للنظافة العامة">
 
+    <!-- Twitter Cards -->
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="Clean للنظافة العامة | تنظيف بالرياض">
     <meta name="twitter:description" content="خدمات تنظيف احترافية في الرياض بأيدي فريق متخصص ومعدات حديثة.">
@@ -34,14 +37,15 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
 
+    <!-- LocalBusiness Schema -->
     <script type="application/ld+json">
     {
         "@context": "https://schema.org",
         "@type": "LocalBusiness",
-        "@id": "https://clean.sa/#business",
+        "@id": "https://clean-ksa.com/#business",
         "name": "Clean للنظافة العامة",
         "alternateName": "Clean General Cleaning",
-        "url": "https://clean.sa/",
+        "url": "https://clean-ksa.com/",
         "telephone": "+966570471168",
         "description": "مؤسسة Clean للنظافة العامة تقدم خدمات التنظيف الاحترافية للمباني والواجهات والفلل والقصور والمنشآت في مدينة الرياض.",
         "priceRange": "$$",
@@ -84,6 +88,7 @@
     }
     </script>
 
+    <!-- FAQPage Schema -->
     <script type="application/ld+json">
     {
         "@context": "https://schema.org",
@@ -578,9 +583,7 @@
             background: var(--primary-dark);
         }
 
-        /* ============================================================
-           NEW CUSTOM DESIGNS FROM IMAGES 2 & 3
-        ============================================================ */
+        /* CUSTOM DESIGNS */
         .custom-blue-header {
             display: flex;
             justify-content: flex-end;
@@ -598,7 +601,7 @@
             box-shadow: 0 4px 10px rgba(0,0,0,0.15);
         }
 
-        /* GALLERY CARDS DESIGN (IMAGE 2) */
+        /* GALLERY CARDS DESIGN */
         .work-card-custom {
             background-color: #ffffff;
             border-radius: 24px;
@@ -632,7 +635,7 @@
             z-index: 2;
         }
 
-        /* PARTNERS SECTION DESIGN (IMAGE 3) */
+        /* PARTNERS SECTION DESIGN */
         .partners-section {
             background-color: #ffffff;
             padding: 40px 0;
@@ -1002,8 +1005,7 @@
         }
 
         /* ============================================================
-           PREMIUM CLEAN UPGRADE — visual/performance layer
-           Existing sections, forms and links are intentionally preserved.
+           PREMIUM CLEAN UPGRADE
         ============================================================ */
         body {
             background:
@@ -1367,114 +1369,112 @@
                 height: 260px;
             }
         }
-
     </style>
 
-<style id="legendary-typography">
-/* === LEGENDARY TYPOGRAPHY === */
-html, body {
-  font-family: "Cairo", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-  -webkit-font-smoothing: antialiased;
-  text-rendering: optimizeLegibility;
-}
-body { font-weight: 500; color:#10251c; }
+    <style id="legendary-typography">
+    /* === LEGENDARY TYPOGRAPHY === */
+    html, body {
+      font-family: "Cairo", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      -webkit-font-smoothing: antialiased;
+      text-rendering: optimizeLegibility;
+    }
+    body { font-weight: 500; color:#10251c; }
 
-h1, h2, h3, h4, .logo, .nav a, .btn, .badge, .section-kicker,
-.stat-number, .process-number, .service-card h3, .work-card h3,
-.feature-card h3, .testimonial-card h3, .faq-question {
-  font-family: "Cairo", system-ui, sans-serif;
-  font-weight: 900;
-  letter-spacing: -0.025em;
-}
+    h1, h2, h3, h4, .logo, .nav a, .btn, .badge, .section-kicker,
+    .stat-number, .process-number, .service-card h3, .work-card h3,
+    .feature-card h3, .testimonial-card h3, .faq-question {
+      font-family: "Cairo", system-ui, sans-serif;
+      font-weight: 900;
+      letter-spacing: -0.025em;
+    }
 
-.hero h1 {
-  font-size: clamp(3rem, 7vw, 6.2rem);
-  line-height: 1.03;
-  letter-spacing: -0.045em;
-  color: #0b2b20;
-  text-shadow: 0 3px 18px rgba(16, 185, 129, .10);
-}
-.hero h1 span,
-.hero h1 strong {
-  color: #059669;
-  font-weight: 900;
-}
-.hero p {
-  font-size: clamp(1.05rem, 1.5vw, 1.25rem);
-  line-height: 2;
-  font-weight: 600;
-  color: #355248;
-  max-width: 760px;
-}
-.section-title {
-  font-size: clamp(2rem, 4vw, 3.4rem);
-  line-height: 1.15;
-  font-weight: 900;
-  color: #0b2b20;
-  letter-spacing: -0.035em;
-}
-.section-subtitle, .section-head p {
-  font-size: 1.05rem;
-  font-weight: 600;
-  line-height: 1.9;
-  color: #49645a;
-}
-.btn {
-  font-size: 1.02rem;
-  font-weight: 900;
-  letter-spacing: -.015em;
-}
-.hero .btn-primary {
-  font-size: 1.2rem;
-  min-height: 66px;
-  padding-inline: 30px;
-  text-shadow: 0 1px 1px rgba(0,0,0,.12);
-}
-.service-card h3, .work-card h3, .feature-card h3, .testimonial-card h3 {
-  font-size: 1.18rem;
-  line-height: 1.45;
-}
-.service-card p, .work-card p, .feature-card p, .testimonial-card p {
-  font-weight: 600;
-  line-height: 1.85;
-}
-.nav a {
-  font-size: .98rem;
-  font-weight: 800;
-}
-.logo {
-  font-size: 1.35rem;
-}
-.badge, .section-kicker {
-  font-weight: 900;
-  letter-spacing: .01em;
-}
-.booking-form label {
-  font-weight: 800;
-}
-.booking-form input,
-.booking-form select,
-.booking-form textarea {
-  font-family: inherit;
-  font-weight: 600;
-}
-.faq-question {
-  font-size: 1.05rem;
-}
-.footer, .footer a {
-  font-weight: 600;
-}
-@media (max-width: 700px) {
-  .hero h1 {
-    font-size: clamp(2.65rem, 13vw, 4.2rem);
-    line-height: 1.08;
-  }
-  .hero p { font-size: 1rem; line-height: 1.9; }
-  .section-title { font-size: 2rem; }
-  .hero .btn-primary { min-height: 62px; font-size: 1.08rem; }
-}
-</style>
-
+    .hero h1 {
+      font-size: clamp(3rem, 7vw, 6.2rem);
+      line-height: 1.03;
+      letter-spacing: -0.045em;
+      color: #0b2b20;
+      text-shadow: 0 3px 18px rgba(16, 185, 129, .10);
+    }
+    .hero h1 span,
+    .hero h1 strong {
+      color: #059669;
+      font-weight: 900;
+    }
+    .hero p {
+      font-size: clamp(1.05rem, 1.5vw, 1.25rem);
+      line-height: 2;
+      font-weight: 600;
+      color: #355248;
+      max-width: 760px;
+    }
+    .section-title {
+      font-size: clamp(2rem, 4vw, 3.4rem);
+      line-height: 1.15;
+      font-weight: 900;
+      color: #0b2b20;
+      letter-spacing: -0.035em;
+    }
+    .section-subtitle, .section-head p {
+      font-size: 1.05rem;
+      font-weight: 600;
+      line-height: 1.9;
+      color: #49645a;
+    }
+    .btn {
+      font-size: 1.02rem;
+      font-weight: 900;
+      letter-spacing: -.015em;
+    }
+    .hero .btn-primary {
+      font-size: 1.2rem;
+      min-height: 66px;
+      padding-inline: 30px;
+      text-shadow: 0 1px 1px rgba(0,0,0,.12);
+    }
+    .service-card h3, .work-card h3, .feature-card h3, .testimonial-card h3 {
+      font-size: 1.18rem;
+      line-height: 1.45;
+    }
+    .service-card p, .work-card p, .feature-card p, .testimonial-card p {
+      font-weight: 600;
+      line-height: 1.85;
+    }
+    .nav a {
+      font-size: .98rem;
+      font-weight: 800;
+    }
+    .logo {
+      font-size: 1.35rem;
+    }
+    .badge, .section-kicker {
+      font-weight: 900;
+      letter-spacing: .01em;
+    }
+    .booking-form label {
+      font-weight: 800;
+    }
+    .booking-form input,
+    .booking-form select,
+    .booking-form textarea {
+      font-family: inherit;
+      font-weight: 600;
+    }
+    .faq-question {
+      font-size: 1.05rem;
+    }
+    .footer, .footer a {
+      font-weight: 600;
+    }
+    @media (max-width: 700px) {
+      .hero h1 {
+        font-size: clamp(2.65rem, 13vw, 4.2rem);
+        line-height: 1.08;
+      }
+      .hero p { font-size: 1rem; line-height: 1.9; }
+      .section-title { font-size: 2rem; }
+      .hero .btn-primary { min-height: 62px; font-size: 1.08rem; }
+    }
+    </style>
 </head>
 
 <body>
@@ -1737,9 +1737,6 @@ h1, h2, h3, h4, .logo, .nav a, .btn, .badge, .section-kicker,
             </div>
         </section>
 
-        <!-- ============================================================
-             قسم من أعمالنا المحدث بالكامل (مطابق للصورة رقم 2)
-        ============================================================ -->
         <section class="section">
             <div class="container">
                 <div class="custom-blue-header">
@@ -1771,9 +1768,6 @@ h1, h2, h3, h4, .logo, .nav a, .btn, .badge, .section-kicker,
             </div>
         </section>
 
-        <!-- ============================================================
-             قسم شركاء النجاح الجديد بالكامل (مطابق للصورة رقم 3)
-        ============================================================ -->
         <section class="partners-section">
             <div class="container">
                 <div class="custom-blue-header">
@@ -2011,12 +2005,10 @@ h1, h2, h3, h4, .logo, .nav a, .btn, .badge, .section-kicker,
             const toast = document.getElementById("toast");
             const currentYear = document.getElementById("currentYear");
 
-            // تحديث سنة الحقوق تلقائياً
             if (currentYear) {
                 currentYear.textContent = new Date().getFullYear();
             }
 
-            // التحكم في القائمة للنسخة المحمولة (Mobile Menu)
             if (menuToggle && navLinks) {
                 menuToggle.addEventListener("click", function () {
                     const isActive = navLinks.classList.toggle("active");
@@ -2033,7 +2025,6 @@ h1, h2, h3, h4, .logo, .nav a, .btn, .badge, .section-kicker,
                 });
             }
 
-            // زر الصعود للأعلى
             window.addEventListener("scroll", function () {
                 if (window.scrollY > 300) {
                     scrollTopButton.classList.add("show");
@@ -2048,7 +2039,6 @@ h1, h2, h3, h4, .logo, .nav a, .btn, .badge, .section-kicker,
                 });
             }
 
-            // قائمة الأسئلة الشائعة (Accordion)
             document.querySelectorAll(".faq-question").forEach(question => {
                 question.addEventListener("click", function () {
                     const item = this.closest(".faq-item");
@@ -2056,7 +2046,6 @@ h1, h2, h3, h4, .logo, .nav a, .btn, .badge, .section-kicker,
                 });
             });
 
-            // دالة إظهار التنبيهات (Toast)
             function showToast(message) {
                 if (!toast) return;
                 toast.textContent = message;
@@ -2064,7 +2053,6 @@ h1, h2, h3, h4, .logo, .nav a, .btn, .badge, .section-kicker,
                 setTimeout(() => { toast.classList.remove("show"); }, 3000);
             }
 
-            // الربط البرمجي الرسمي لاستمارة الحجز والتوجيه إلى الواتساب
             if (bookingForm) {
                 bookingForm.addEventListener("submit", function (e) {
                     e.preventDefault();
@@ -2084,7 +2072,6 @@ h1, h2, h3, h4, .logo, .nav a, .btn, .badge, .section-kicker,
                         return;
                     }
 
-                    // تجهيز نص الرسالة للواتساب
                     const formattedMessage = 
                         `✨ *طلب خدمة جديد - Clean للنظافة العامة* ✨\n\n` +
                         `👤 *الاسم:* ${name}\n` +
