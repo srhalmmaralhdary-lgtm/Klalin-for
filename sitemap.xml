@@ -61,7 +61,7 @@
 
   <!-- 3. قسم المدونة الرئيسي والمقالات -->
   <url>
-    <loc>https://clean-ksa.com/blog/</loc>
+    <loc>https://clean-ksa.com/blog/index.html</loc>
     <lastmod>2026-09-04</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.85</priority>
