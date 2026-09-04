@@ -3,59 +3,67 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>تنظيف واجهات الكلادينج بالرياض | kalin للنظافة العامة</title>
-    <meta name="description" content="خدمة تنظيف واجهات الكلادينج للمباني والشركات في الرياض بأحدث المعدات ومواد التنظيف الآمنة لحماية وتلميع ألمنيوم الكلادينج.">
-    <link rel="canonical" href="https://kalin.sa/cladding-cleaning.html">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <title>تنظيف واجهات الكلادينج بالرياض - Clean للنظافة العامة</title>
+    <meta name="description" content="خدمة تنظيف واجهات الكلادينج للمباني والشركات في الرياض بأحدث المعدات ومواد التنظيف الآمنة لحماية وتلميع ألمنيوم الكلادينج من Clean.">
+    <link rel="canonical" href="https://clean-ksa.com/cladding-cleaning.html">
     <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;800&display=swap" rel="stylesheet">
     <style>
         :root {
-            --bg: #d4b886;
-            --bg-soft: #c8ab78;
-            --card: #0f172a;
-            --primary: #10b981;
-            --primary-dark: #059669;
-            --text-light: #f8fafc;
-            --text-muted: #94a3b8;
-            --radius: 16px;
+            --primary: #0d8a72;
+            --primary-accent: #075e4e;
+            --secondary: #e5a93b;
+            --bg-light: #f8fcfb;
+            --card: #ffffff;
+            --text-dark: #2b3a37;
+            --text-muted: #627571;
+            --white: #ffffff;
+            --shadow: 0 4px 20px rgba(0,0,0,0.06);
+            --radius: 12px;
         }
 
-        * { margin: 0; padding: 0; box-sizing: border-box; }
-        body { font-family: 'Cairo', sans-serif; background: var(--bg); color: #0f172a; line-height: 1.6; }
+        * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Cairo', sans-serif; }
+        body { background: var(--bg-light); color: var(--text-dark); line-height: 1.8; direction: rtl; }
         
-        .header { background: #ffffff; padding: 15px 0; border-bottom: 1px solid #b89b68; position: sticky; top: 0; z-index: 100; }
+        .header { background: var(--primary); padding: 15px 0; position: sticky; top: 0; z-index: 100; box-shadow: var(--shadow); }
         .container { width: min(1100px, calc(100% - 32px)); margin-inline: auto; }
         .nav-wrapper { display: flex; justify-content: space-between; align-items: center; }
-        .logo { font-size: 22px; font-weight: 800; color: var(--primary-dark); text-decoration: none; }
-        .back-btn { background: var(--primary); color: white; padding: 8px 16px; border-radius: 8px; text-decoration: none; font-weight: 700; font-size: 14px; }
+        .logo { font-size: 24px; font-weight: 800; color: var(--white); text-decoration: none; }
+        .nav-links a { color: var(--white); text-decoration: none; margin-right: 15px; font-weight: 600; }
+        .nav-links a:hover { color: var(--secondary); }
 
         .hero-details { padding: 40px 0; }
-        .details-card { background: var(--card); border-radius: var(--radius); overflow: hidden; color: var(--text-light); box-shadow: 0 15px 30px rgba(0,0,0,0.2); }
+        .details-card { background: var(--card); border-radius: var(--radius); overflow: hidden; color: var(--text-dark); box-shadow: var(--shadow); border: 1px solid #eef2f1; }
         .details-img { width: 100%; height: 350px; object-fit: cover; }
         .details-content { padding: 30px; }
-        .details-title { font-size: 28px; color: #34d399; margin-bottom: 15px; font-weight: 800; }
-        .details-desc { font-size: 16px; color: #cbd5e1; margin-bottom: 25px; }
+        .details-title { font-size: 26px; color: var(--primary-accent); margin-bottom: 15px; font-weight: 800; }
+        .details-desc { font-size: 16px; color: var(--text-muted); margin-bottom: 25px; }
 
         .features-list { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 15px; margin-bottom: 30px; }
-        .feature-item { background: #1e293b; padding: 15px; border-radius: 10px; border-right: 4px solid var(--primary); }
-        .feature-item h4 { color: #34d399; margin-bottom: 5px; font-size: 15px; }
+        .feature-item { background: #f0f7f5; padding: 15px; border-radius: 10px; border-right: 4px solid var(--primary); }
+        .feature-item h4 { color: var(--primary-accent); margin-bottom: 5px; font-size: 15px; font-weight: 700; }
         .feature-item p { color: var(--text-muted); font-size: 13px; }
 
-        .actions { display: flex; gap: 15px; flex-wrap: wrap; }
-        .btn-action { flex: 1; min-width: 200px; padding: 12px; border-radius: 10px; text-align: center; font-weight: 700; text-decoration: none; font-size: 15px; }
-        .btn-whatsapp { background: #25d366; color: white; }
-        .btn-call { background: var(--primary); color: white; }
+        .actions { display: flex; gap: 15px; flex-wrap: wrap; margin-top: 20px; }
+        .btn-action { flex: 1; min-width: 200px; padding: 12px; border-radius: 8px; text-align: center; font-weight: 700; text-decoration: none; font-size: 15px; }
+        .btn-whatsapp { background: var(--secondary); color: var(--text-dark); }
+        .btn-whatsapp:hover { background: #d4982f; }
+        .btn-call { background: var(--primary); color: var(--white); }
+        .btn-call:hover { background: var(--primary-accent); }
 
-        footer { text-align: center; padding: 20px; background: #0f172a; color: var(--text-muted); font-size: 13px; margin-top: 40px; }
+        footer { text-align: center; padding: 25px; background: #1a1a1a; color: var(--white); font-size: 0.9rem; margin-top: 40px; }
+        footer a { color: var(--secondary); text-decoration: none; }
     </style>
 </head>
 <body>
 
     <header class="header">
         <div class="container nav-wrapper">
-            <a href="index.html" class="logo">kalin للنظافة العامة</a>
-            <a href="index.html" class="back-btn">← العودة للرئيسية</a>
+            <a href="https://clean-ksa.com/" class="logo">Clean</a>
+            <nav class="nav-links">
+                <a href="https://clean-ksa.com/">الرئيسية</a>
+                <a href="https://clean-ksa.com/towers-cleaning.html">تنظيف الأبراج</a>
+                <a href="https://clean-ksa.com/blog/">المدونة</a>
+            </nav>
         </div>
     </header>
 
@@ -65,7 +73,7 @@
             <div class="details-content">
                 <h1 class="details-title">خدمة تنظيف واجهات الكلادينج بالرياض</h1>
                 <p class="details-desc">
-                    نقدم في <strong>kalin للنظافة العامة</strong> خدمة متخصصة وشاملة لتنظيف وغسيل واجهات الكلادينج للمعارض، الشركات، والمباني التجارية في الرياض. نعتمد على منظفات مخصصة تعيد للألمنيوم لمعانه الأصلي وتزيل الأتربة واستهلاك العوامل الجوية دون إلحاق أي ضرر بالدهان أو طبقة الحماية.
+                    نقدم في <strong>Clean للنظافة العامة</strong> خدمة متخصصة وشاملة لتنظيف وغسيل واجهات الكلادينج للمعارض، الشركات، والمباني التجارية في الرياض. نعتمد على منظفات مخصصة تعيد للألمنيوم لمعانه الأصلي وتزيل الأتربة واستهلاك العوامل الجوية دون إلحاق أي ضرر بالدهان أو طبقة الحماية.
                 </p>
 
                 <div class="features-list">
@@ -75,7 +83,7 @@
                     </div>
                     <div class="feature-item">
                         <h4>معدات ورافعات حديثة</h4>
-                        <p>الوصول إلى الأرتفاعات المختلفة بأعلى معايير الأمان والسلامة.</p>
+                        <p>الوصول إلى الارتفاعات المختلفة بأعلى معايير الأمان والسلامة.</p>
                     </div>
                     <div class="feature-item">
                         <h4>تلميع وحماية</h4>
@@ -84,7 +92,7 @@
                 </div>
 
                 <div class="actions">
-                    <a href="https://wa.me/966508218878?text=السلام%20عليكم،%20أرغب%20في%20طلب%20خدمة%20تنظيف%20واجهات%20الكلادينج" target="_blank" rel="noopener noreferrer" class="btn-action btn-whatsapp">💬 الطلب عبر واتساب</a>
+                    <a href="https://wa.me/966508218878?text=السلام%20عليكم،%20أرغب%20في%20طلب%20خدمة%20تنظيف%20واجهات%20الكلادينج" target="_blank" class="btn-action btn-whatsapp">💬 الطلب عبر واتساب</a>
                     <a href="tel:0570471168" class="btn-action btn-call">☎ الاتصال المباشر</a>
                 </div>
             </div>
@@ -92,7 +100,7 @@
     </main>
 
     <footer>
-        <p>© kalin للنظافة العامة - جميع الحقوق محفوظة</p>
+        <p>جميع الحقوق محفوظة © 2026 - <a href="https://clean-ksa.com/">Clean للنظافة العامة</a> | الرياض - المملكة العربية السعودية</p>
     </footer>
 
 </body>
