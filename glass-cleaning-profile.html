@@ -53,7 +53,6 @@
             --card-bg: #ffffff;
             --border: #cfe5d9;
             --radius: 18px;
-            /* تكبير عرض الحاوية لتبدو الصفحة كبيرة جداً */
             --container: 1400px;
         }
 
@@ -61,7 +60,6 @@
         body { font-family: "Cairo", sans-serif; background: var(--light-bg); color: var(--dark); line-height: 1.6; overflow-x: hidden; }
         a { color: inherit; text-decoration: none; }
         
-        /* جعل الحاوية تمتد بشكل أوسع جداً */
         .container { width: min(var(--container), calc(100% - 20px)); margin-inline: auto; }
 
         /* TOPBAR & NAVBAR */
@@ -88,7 +86,7 @@
             100% { box-shadow: 0 0 0 0 rgba(16, 185, 129, 0); }
         }
 
-        /* HERO BANNER - EXPANDED */
+        /* HERO BANNER */
         .hero { position: relative; padding: 80px 20px 50px; text-align: center; background: radial-gradient(circle at 50% 0%, rgba(16,185,129,0.18), transparent 70%), linear-gradient(135deg, #ffffff 0%, #e7f7ee 100%); border-bottom: 1px solid var(--border); overflow: hidden; border-radius: 0 0 24px 24px; }
         .hero-badge { background: #dcfce7; color: var(--primary-dark); font-size: 15px; font-weight: 800; padding: 8px 22px; border-radius: 30px; display: inline-block; margin-bottom: 20px; border: 1px solid #bbf7d0; }
         .hero h1 { font-size: clamp(28px, 5vw, 48px); font-weight: 900; color: #0b2b20; margin-bottom: 20px; line-height: 1.3; }
@@ -111,7 +109,7 @@
         .loc-tag { background: #ffffff; border: 1px solid var(--border); padding: 10px 20px; border-radius: 12px; font-size: 14px; font-weight: 700; color: #334155; transition: 0.2s; }
         .loc-tag:hover { background: var(--primary-dark); color: #fff; border-color: var(--primary-dark); }
 
-        /* CLEAN IMAGE CARDS (BEFORE/AFTER REMOVED) */
+        /* GALLERY SECTION */
         .gallery-section { padding: 50px 0 60px; }
         .gallery-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 25px; margin-top: 30px; }
         
@@ -169,14 +167,14 @@
     <!-- NAVBAR -->
     <header>
         <div class="container navbar">
-            <a href="glass-cleaning-profile_2.html" class="logo">
+            <a href="glass-cleaning-profile_7.html" class="logo">
                 <div class="logo-mark">C</div>
                 <div>Clean <small style="display:block; font-size:10px; color:#6b7280; font-weight:600;">تنظيف الواجهات بالرياض</small></div>
             </a>
 
-            <!-- رابط الربط مع المدونة الرئيسي -->
+            <!-- روابط الملاحة المربوطة بالمدونة -->
             <nav class="nav-menu">
-                <a href="glass-cleaning-profile_2.html">الرئيسية</a>
+                <a href="glass-cleaning-profile_7.html">الرئيسية</a>
                 <a href="index_5.html">المدونة والنصائح</a>
                 <a href="index_5.html#cladding-guide">دليل الكلادينج</a>
                 <a href="index_5.html#marble-guide">دليل الرخام</a>
@@ -233,13 +231,12 @@
             </div>
         </section>
 
-        <!-- GALLERY SECTION (CLEAN IMAGES WITHOUT BEFORE/AFTER) -->
+        <!-- GALLERY SECTION -->
         <section class="gallery-section">
             <h2 class="section-title" style="text-align: center;">معرض أعمالنا في تنظيف الواجهات والكلادينج</h2>
             <p style="text-align: center; font-size: 15px; color: #64748b; font-weight: 600;">نستعرض لكم نماذج حية ومباشرة من مشاريعنا التي تم تنفيذها بالرياض:</p>
 
             <div class="gallery-grid">
-                <!-- PHOTO 1 -->
                 <article class="project-card">
                     <div class="img-container">
                         <img src="images/IMG-20240929-WA0006.jpg" alt="تنظيف الواجهة الزجاجية">
@@ -250,7 +247,6 @@
                     </div>
                 </article>
 
-                <!-- PHOTO 2 -->
                 <article class="project-card">
                     <div class="img-container">
                         <img src="images/IMG_20221112_090054243913976131726.jpg" alt="غسيل زجاج معارض تجارية">
@@ -261,7 +257,6 @@
                     </div>
                 </article>
 
-                <!-- PHOTO 3 -->
                 <article class="project-card">
                     <div class="img-container">
                         <img src="images/IMG_20230207_211231560846052401672.jpg" alt="تنظيف الكلادينج">
@@ -272,7 +267,6 @@
                     </div>
                 </article>
 
-                <!-- PHOTO 4 -->
                 <article class="project-card">
                     <div class="img-container">
                         <img src="images/IMG_20240418_051727_162.jpg" alt="تنظيف واجهة برج">
@@ -283,7 +277,6 @@
                     </div>
                 </article>
 
-                <!-- PHOTO 5 -->
                 <article class="project-card">
                     <div class="img-container">
                         <img src="images/IMG_20240421_064818_921.jpg" alt="غسيل وتلميع زجاج المباني">
@@ -294,7 +287,6 @@
                     </div>
                 </article>
 
-                <!-- PHOTO 6 -->
                 <article class="project-card">
                     <div class="img-container">
                         <img src="images/IMG_20240511_062226_385.jpg" alt="إزالة البويات والترسبات">
@@ -307,7 +299,7 @@
             </div>
         </section>
 
-        <!-- INTEGRATED BLOG SECTION (ربط الملفات مع المدونة) -->
+        <!-- INTEGRATED BLOG SECTION (قسم المدونة المربوط بالصورة والملف الآخر) -->
         <section class="blog-integration-section">
             <h2 class="section-title">من مقالات ودليل مدونة Clean</h2>
             <p style="font-size: 15px; color: #64748b;">اطّلع على نصائح وإرشادات الخبراء لحماية وتنظيف واجهات المباني والرخام بالرياض:</p>
