@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>أعمالنا في تنظيف الواجهات الزجاجية بالرياض | قبل وبعد</title>
     <meta name="description" content="شاهد جودة أعمالنا في تنظيف وتلميع الواجهات الزجاجية بالرياض، اسحب السهم داخل الصورة لترى الفرق الحقيقي بين قبل وبعد.">
-    <link rel="canonical" href="https://klalin-for.vercel.app/glass-cleaning-works.html">
+    <link rel="canonical" href="https://www.clean-ksa.com/glass-cleaning-works.html">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;800&display=swap" rel="stylesheet">
@@ -35,28 +35,21 @@
         .hero h1 { font-size: 28px; font-weight: 800; color: var(--secondary); margin-bottom: 10px; }
         .hero p { font-size: 15px; color: #64748b; }
 
-        /* شبكة بطاقات المقارنة */
         .gallery-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 30px; margin: 30px 0 50px; }
-        
         .comparison-card { background: var(--card-bg); border-radius: var(--radius); overflow: hidden; box-shadow: 0 10px 30px rgba(0,0,0,0.06); border: 1px solid #e2e8f0; }
         
-        /* حاوية السلايدر التفاعلي */
         .img-slider-container { position: relative; width: 100%; height: 280px; overflow: hidden; user-select: none; }
         .img-slider-container img { position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover; }
         
-        /* صورة قبل */
         .img-before { width: 100%; height: 100%; z-index: 1; }
-        /* صورة بعد مع القص */
         .img-after-wrapper { position: absolute; top: 0; left: 0; width: 50%; height: 100%; overflow: hidden; z-index: 2; border-right: 2px solid #ffffff; }
         .img-after-wrapper img { width: 100%; height: 100%; max-width: none; }
 
-        /* مقبض السحب */
         .slider-handle { position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); width: 40px; height: 40px; background: var(--primary); border: 3px solid #ffffff; border-radius: 50%; z-index: 3; display: flex; align-items: center; justify-content: center; color: white; font-weight: bold; cursor: ew-resize; box-shadow: 0 4px 10px rgba(0,0,0,0.3); }
         .slider-handle::before, .slider-handle::after { content: ''; position: absolute; width: 2px; height: 200px; background: #ffffff; }
         .slider-handle::before { top: -200px; }
         .slider-handle::after { bottom: -200px; }
 
-        /* الشارات والتسميات */
         .badge { position: absolute; bottom: 15px; padding: 4px 14px; border-radius: 8px; font-size: 13px; font-weight: 800; color: white; z-index: 4; }
         .badge-before { right: 15px; background: #ef4444; }
         .badge-after { left: 15px; background: #10b981; }
@@ -91,7 +84,6 @@
 
         <div class="gallery-grid">
 
-            <!-- نموذج 1 -->
             <article class="comparison-card">
                 <div class="img-slider-container">
                     <span class="hint-badge">اسحب للمقارنة</span>
@@ -113,7 +105,6 @@
                 </div>
             </article>
 
-            <!-- نموذج 2 -->
             <article class="comparison-card">
                 <div class="img-slider-container">
                     <span class="hint-badge">اسحب للمقارنة</span>
@@ -135,7 +126,6 @@
                 </div>
             </article>
 
-            <!-- نموذج 3 -->
             <article class="comparison-card">
                 <div class="img-slider-container">
                     <span class="hint-badge">اسحب للمقارنة</span>
@@ -157,7 +147,6 @@
                 </div>
             </article>
 
-            <!-- نموذج 4 -->
             <article class="comparison-card">
                 <div class="img-slider-container">
                     <span class="hint-badge">اسحب للمقارنة</span>
@@ -188,7 +177,6 @@
     </div>
 
     <script>
-        // برمجة حركة السلايدر التفاعلي لجميع البطاقات
         document.querySelectorAll('.img-slider-container').forEach(container => {
             const sliderInput = container.querySelector('.slider-input');
             const afterWrapper = container.querySelector('.img-after-wrapper');
