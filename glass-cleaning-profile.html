@@ -14,8 +14,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
     <!-- ADVANCED SEO METADATA -->
-    <title>بروفايل تنظيف واجهات زجاجية بالرياض | شركة Clean للكلادينج والأبراج</title>
-    <meta name="description" content="أفضل شركة تنظيف واجهات زجاجية وكلادينج بالرياض. نغطي شرق وغرب الرياض، حي الياسمين، النرجس، ولبن. تنظيف أبراج، مباني تجارية، ومعارض بأحدث الرافعات الهيدروليكية.">
+    <title>بروفايل تنظيف واجهات زجاجية بالرياض | Clean للواجهات والأبراج</title>
+    <meta name="description" content="أفضل شركة تنظيف واجهات زجاجية وكلادينج بالرياض. نغطي شرق وغرب الرياض، حي الياسمين، النرجس، ولبن. خصم 20% لفترة محدودة ومعاينة مجانية خلال 30 دقيقة.">
     <meta name="keywords" content="تنظيف واجهات زجاجية بالرياض, تنظيف كلادينج الرياض, غسيل واجهات زجاج شرق الرياض, تنظيف زجاج مباني غرب الرياض, تنظيف زجاج حي الياسمين, تنظيف واجهات حي النرجس, غسيل زجاج حي لبن, شركة غسيل واجهات أبراج">
     <meta name="robots" content="index, follow, max-image-preview:large">
     <link rel="canonical" href="https://clean-ksa.com/glass-cleaning-profile.html">
@@ -47,87 +47,130 @@
             --primary: #059669;
             --primary-dark: #047857;
             --accent: #10b981;
+            --accent-glow: #34d399;
             --dark: #0f172a;
             --light-bg: #f4faf7;
             --card-bg: #ffffff;
             --border: #cfe5d9;
             --radius: 18px;
-            --container: 1200px;
+            /* تكبير عرض الحاوية لتبدو الصفحة كبيرة جداً */
+            --container: 1400px;
         }
 
         * { margin: 0; padding: 0; box-sizing: border-box; }
         body { font-family: "Cairo", sans-serif; background: var(--light-bg); color: var(--dark); line-height: 1.6; overflow-x: hidden; }
         a { color: inherit; text-decoration: none; }
-        .container { width: min(var(--container), calc(100% - 32px)); margin-inline: auto; }
+        
+        /* جعل الحاوية تمتد بشكل أوسع جداً */
+        .container { width: min(var(--container), calc(100% - 20px)); margin-inline: auto; }
+
+        /* URGENCY & GUARANTEE STRIP */
+        .guarantee-bar { background: #1e293b; color: #f8fafc; font-size: 14px; font-weight: 700; text-align: center; padding: 8px 10px; border-bottom: 1px solid #334155; }
+        .guarantee-bar span { color: #f59e0b; font-weight: 900; }
 
         /* TOPBAR & NAVBAR */
-        .topbar { background: linear-gradient(90deg, #047857, #059669); color: #fff; font-size: 13px; padding: 8px 0; font-weight: 600; }
+        .topbar { background: linear-gradient(90deg, #047857, #059669); color: #fff; font-size: 14px; padding: 10px 0; font-weight: 600; }
         .topbar-inner { display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 10px; }
-        header { position: sticky; top: 0; z-index: 1000; background: rgba(255, 255, 255, 0.95); backdrop-filter: blur(10px); border-bottom: 1px solid var(--border); }
-        .navbar { min-height: 75px; display: flex; align-items: center; justify-content: space-between; }
-        .logo { display: flex; align-items: center; gap: 10px; font-weight: 900; font-size: 24px; color: var(--primary-dark); }
-        .logo-mark { width: 42px; height: 42px; display: grid; place-items: center; border-radius: 12px; background: linear-gradient(135deg, var(--accent), var(--primary-dark)); color: #fff; font-weight: 900; box-shadow: 0 6px 15px rgba(16,185,129,0.3); }
+        header { position: sticky; top: 0; z-index: 1000; background: rgba(255, 255, 255, 0.98); backdrop-filter: blur(10px); border-bottom: 1px solid var(--border); box-shadow: 0 4px 15px rgba(0,0,0,0.03); }
+        .navbar { min-height: 80px; display: flex; align-items: center; justify-content: space-between; }
+        .logo { display: flex; align-items: center; gap: 10px; font-weight: 900; font-size: 26px; color: var(--primary-dark); }
+        .logo-mark { width: 46px; height: 46px; display: grid; place-items: center; border-radius: 12px; background: linear-gradient(135deg, var(--accent), var(--primary-dark)); color: #fff; font-weight: 900; box-shadow: 0 6px 15px rgba(16,185,129,0.3); }
 
-        .btn { min-height: 46px; display: inline-flex; justify-content: center; align-items: center; gap: 8px; padding: 0 22px; border-radius: 12px; font-size: 14px; font-weight: 800; transition: all 0.3s ease; }
+        .nav-menu { display: flex; align-items: center; gap: 20px; font-weight: 700; font-size: 15px; }
+        .nav-menu a { transition: color 0.2s; color: var(--dark); }
+        .nav-menu a:hover { color: var(--primary); }
+
+        .btn { min-height: 48px; display: inline-flex; justify-content: center; align-items: center; gap: 8px; padding: 0 24px; border-radius: 12px; font-size: 15px; font-weight: 800; transition: all 0.3s ease; cursor: pointer; border: none; }
         .btn-primary { color: #fff; background: linear-gradient(135deg, var(--accent), var(--primary-dark)); box-shadow: 0 8px 20px rgba(16,185,129,0.25); }
         .btn-primary:hover { transform: translateY(-2px); box-shadow: 0 12px 25px rgba(16,185,129,0.35); }
         .btn-outline { color: var(--primary-dark); border: 2px solid var(--accent); background: #fff; }
+        .btn-pulse { animation: pulse-btn 2s infinite; }
 
-        /* HERO BANNER - ULTRA HIGH QUALITY */
-        .hero { position: relative; padding: 70px 20px 50px; text-align: center; background: radial-gradient(circle at 50% 0%, rgba(16,185,129,0.15), transparent 70%), linear-gradient(135deg, #ffffff 0%, #e7f7ee 100%); border-bottom: 1px solid var(--border); overflow: hidden; }
-        .hero-badge { background: #dcfce7; color: var(--primary-dark); font-size: 14px; font-weight: 800; padding: 6px 18px; border-radius: 30px; display: inline-block; margin-bottom: 15px; border: 1px solid #bbf7d0; }
-        .hero h1 { font-size: clamp(26px, 4.5vw, 42px); font-weight: 900; color: #0b2b20; margin-bottom: 15px; line-height: 1.3; }
-        .hero p { font-size: 16px; color: #475569; font-weight: 600; max-width: 800px; margin: 0 auto 25px; }
+        @keyframes pulse-btn {
+            0% { box-shadow: 0 0 0 0 rgba(16, 185, 129, 0.7); }
+            70% { box-shadow: 0 0 0 12px rgba(16, 185, 129, 0); }
+            100% { box-shadow: 0 0 0 0 rgba(16, 185, 129, 0); }
+        }
+
+        /* HERO BANNER - EXPANDED */
+        .hero { position: relative; padding: 80px 20px 50px; text-align: center; background: radial-gradient(circle at 50% 0%, rgba(16,185,129,0.18), transparent 70%), linear-gradient(135deg, #ffffff 0%, #e7f7ee 100%); border-bottom: 1px solid var(--border); overflow: hidden; border-radius: 0 0 24px 24px; }
+        .hero-badge { background: #dcfce7; color: var(--primary-dark); font-size: 15px; font-weight: 800; padding: 8px 22px; border-radius: 30px; display: inline-block; margin-bottom: 20px; border: 1px solid #bbf7d0; }
+        .hero h1 { font-size: clamp(28px, 5vw, 48px); font-weight: 900; color: #0b2b20; margin-bottom: 20px; line-height: 1.3; }
+        .hero p { font-size: 18px; color: #475569; font-weight: 600; max-width: 950px; margin: 0 auto 30px; }
+
+        /* OFFER TIMER BOX */
+        .offer-box { background: #ffffff; border: 2px dashed var(--accent); padding: 18px 30px; border-radius: var(--radius); display: inline-block; margin-bottom: 35px; box-shadow: 0 10px 25px rgba(0,0,0,0.03); }
+        .offer-title { font-weight: 800; color: #e11d48; font-size: 16px; }
 
         /* STATS COUNTER */
-        .stats-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 20px; margin-top: 30px; }
-        .stat-card { background: var(--card-bg); padding: 20px; border-radius: var(--radius); border: 1px solid var(--border); box-shadow: 0 10px 20px rgba(0,0,0,0.02); text-align: center; }
-        .stat-num { font-size: 32px; font-weight: 900; color: var(--primary-dark); }
-        .stat-desc { font-size: 13px; color: #64748b; font-weight: 700; }
+        .stats-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 24px; margin-top: 25px; }
+        .stat-card { background: var(--card-bg); padding: 25px; border-radius: var(--radius); border: 1px solid var(--border); box-shadow: 0 10px 20px rgba(0,0,0,0.02); text-align: center; }
+        .stat-num { font-size: 36px; font-weight: 900; color: var(--primary-dark); }
+        .stat-desc { font-size: 14px; color: #64748b; font-weight: 700; }
 
         /* COVERAGE LOCATIONS BADGES */
-        .coverage-section { padding: 40px 0; text-align: center; }
-        .section-title { font-size: 24px; font-weight: 900; margin-bottom: 15px; color: var(--dark); }
-        .location-tags { display: flex; flex-wrap: wrap; justify-content: center; gap: 10px; margin-top: 15px; }
-        .loc-tag { background: #ffffff; border: 1px solid var(--border); padding: 8px 16px; border-radius: 10px; font-size: 13px; font-weight: 700; color: #334155; transition: 0.2s; }
+        .coverage-section { padding: 50px 0 30px; text-align: center; }
+        .section-title { font-size: 28px; font-weight: 900; margin-bottom: 12px; color: var(--dark); }
+        .location-tags { display: flex; flex-wrap: wrap; justify-content: center; gap: 12px; margin-top: 20px; }
+        .loc-tag { background: #ffffff; border: 1px solid var(--border); padding: 10px 20px; border-radius: 12px; font-size: 14px; font-weight: 700; color: #334155; transition: 0.2s; }
         .loc-tag:hover { background: var(--primary-dark); color: #fff; border-color: var(--primary-dark); }
 
-        /* BEFORE / AFTER SLIDER GALLERY */
-        .gallery-section { padding: 40px 0 60px; }
-        .gallery-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 30px; margin-top: 25px; }
-        .comparison-card { background: var(--card-bg); border-radius: var(--radius); overflow: hidden; box-shadow: 0 15px 30px rgba(0,0,0,0.06); border: 1px solid var(--border); }
+        /* CLEAN IMAGE CARDS (BEFORE/AFTER REMOVED) */
+        .gallery-section { padding: 50px 0 60px; }
+        .gallery-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 25px; margin-top: 30px; }
         
-        .img-slider-container { position: relative; width: 100%; height: 290px; overflow: hidden; user-select: none; }
-        .img-slider-container img { position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover; }
-        .img-before { width: 100%; height: 100%; z-index: 1; }
-        .img-after-wrapper { position: absolute; top: 0; left: 0; width: 50%; height: 100%; overflow: hidden; z-index: 2; border-right: 3px solid #ffffff; }
-        .img-after-wrapper img { width: 100%; height: 100%; max-width: none; }
+        .project-card { background: var(--card-bg); border-radius: var(--radius); overflow: hidden; box-shadow: 0 12px 25px rgba(0,0,0,0.05); border: 1px solid var(--border); transition: transform 0.3s ease; }
+        .project-card:hover { transform: translateY(-5px); }
+        
+        .img-container { position: relative; width: 100%; height: 260px; overflow: hidden; }
+        .img-container img { width: 100%; height: 100%; object-fit: cover; transition: transform 0.4s ease; }
+        .project-card:hover .img-container img { transform: scale(1.05); }
 
-        .slider-handle { position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); width: 38px; height: 38px; background: var(--accent); border: 3px solid #ffffff; border-radius: 50%; z-index: 3; display: flex; align-items: center; justify-content: center; color: white; font-weight: bold; cursor: ew-resize; box-shadow: 0 4px 12px rgba(0,0,0,0.3); }
-        .badge-label { position: absolute; bottom: 12px; padding: 4px 12px; border-radius: 6px; font-size: 12px; font-weight: 800; color: white; z-index: 4; }
-        .badge-before { right: 12px; background: #ef4444; }
-        .badge-after { left: 12px; background: #10b981; }
+        .card-info { padding: 20px; display: flex; justify-content: space-between; align-items: center; border-top: 1px solid var(--border); }
+        .card-title { font-size: 16px; font-weight: 800; color: var(--dark); }
+        .card-tag { background: #f0fdf4; color: var(--primary-dark); padding: 6px 12px; border-radius: 8px; font-size: 13px; font-weight: 700; }
 
-        .card-info { padding: 18px; display: flex; justify-content: space-between; align-items: center; border-top: 1px solid var(--border); }
-        .card-title { font-size: 15px; font-weight: 800; }
-        .card-tag { background: #f0fdf4; color: var(--primary-dark); padding: 4px 10px; border-radius: 6px; font-size: 12px; font-weight: 700; }
+        /* BLOG LINK SECTION */
+        .blog-integration-section { background: #ffffff; border: 1px solid var(--border); border-radius: 20px; padding: 40px; margin: 40px 0; text-align: center; box-shadow: 0 10px 30px rgba(0,0,0,0.03); }
+        .blog-cards { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 20px; margin-top: 25px; text-align: right; }
+        .blog-card { background: var(--light-bg); border: 1px solid var(--border); border-radius: 14px; padding: 20px; }
+        .blog-card h3 { font-size: 18px; color: var(--primary-dark); margin-bottom: 10px; }
+        .blog-card p { font-size: 14px; color: #475569; margin-bottom: 15px; }
+        .blog-card a { color: var(--primary); font-weight: 800; font-size: 14px; display: inline-flex; align-items: center; gap: 5px; }
+
+        /* QUICK QUOTE CALCULATOR / CALL TO ACTION BOX */
+        .cta-calculator-box { background: linear-gradient(135deg, #0b2b20 0%, #047857 100%); color: #fff; padding: 45px; border-radius: 24px; text-align: center; margin: 50px 0; box-shadow: 0 20px 40px rgba(4, 120, 87, 0.2); }
+        .cta-calculator-box h2 { font-size: 30px; font-weight: 900; margin-bottom: 12px; }
+        .cta-calculator-box p { font-size: 16px; color: #a7f3d0; margin-bottom: 30px; }
+
+        /* FAQ ACCORDION SECTION */
+        .faq-section { padding: 40px 0; }
+        .faq-item { background: #fff; border: 1px solid var(--border); border-radius: 14px; margin-bottom: 15px; padding: 20px 24px; }
+        .faq-question { font-weight: 800; font-size: 17px; color: var(--dark); margin-bottom: 8px; }
+        .faq-answer { font-size: 15px; color: #475569; font-weight: 600; line-height: 1.7; }
 
         /* FLOATING ACTION BUTTONS */
         .floating-actions { position: fixed; left: 20px; bottom: 20px; z-index: 999; display: flex; flex-direction: column; gap: 12px; }
-        .float-btn { width: 52px; height: 52px; border-radius: 50%; display: grid; place-items: center; color: white; font-size: 22px; box-shadow: 0 10px 20px rgba(0,0,0,0.2); transition: 0.3s; }
+        .float-btn { width: 58px; height: 58px; border-radius: 50%; display: grid; place-items: center; color: white; font-size: 26px; box-shadow: 0 10px 20px rgba(0,0,0,0.25); transition: 0.3s; }
         .float-wa { background: #25d366; }
         .float-call { background: #0284c7; }
-        .float-btn:hover { transform: scale(1.1); }
+        .float-btn:hover { transform: scale(1.12); }
 
-        footer { background: var(--dark); color: #94a3b8; padding: 40px 0 20px; font-size: 13px; text-align: center; border-top: 1px solid #1e293b; }
+        footer { background: var(--dark); color: #94a3b8; padding: 45px 0 25px; font-size: 14px; text-align: center; border-top: 1px solid #1e293b; }
+        footer a { color: var(--accent); }
     </style>
 </head>
 <body>
 
+    <!-- GUARANTEE STRIP -->
+    <div class="guarantee-bar">
+        ⚡ <span>ضمان عدم النظافة = لا تدفع ريال واحد!</span> معاينة وفحص مجاني في جميع أحياء الرياض خلال 30 دقيقة.
+    </div>
+
     <!-- TOPBAR -->
     <div class="topbar">
         <div class="container topbar-inner">
-            <div>📍 تغطية شاملة لجميع أحياء الرياض | أحدث المعدات والرافعات الهيدروليكية</div>
+            <div>📍 تغطية شاملة لجميع أحياء الرياض | أحدث الرافعات الهيدروليكية والسقالات</div>
             <div>☎ <a href="tel:0570471168">0570471168</a> | 💬 <a href="https://wa.me/966508218878" target="_blank">واتساب مباشر</a></div>
         </div>
     </div>
@@ -135,13 +178,22 @@
     <!-- NAVBAR -->
     <header>
         <div class="container navbar">
-            <a href="/" class="logo">
+            <a href="glass-cleaning-profile_2.html" class="logo">
                 <div class="logo-mark">C</div>
-                <div>Clean <small style="display:block; font-size:9px; color:#6b7280; font-weight:600;">تنظيف الواجهات بالرياض</small></div>
+                <div>Clean <small style="display:block; font-size:10px; color:#6b7280; font-weight:600;">تنظيف الواجهات بالرياض</small></div>
             </a>
+
+            <!-- رابط الربط مع المدونة الرئيسي -->
+            <nav class="nav-menu">
+                <a href="glass-cleaning-profile_2.html">الرئيسية</a>
+                <a href="index_5.html">المدونة والنصائح</a>
+                <a href="index_5.html#cladding-guide">دليل الكلادينج</a>
+                <a href="index_5.html#marble-guide">دليل الرخام</a>
+            </nav>
+
             <div style="display: flex; gap: 10px;">
                 <a href="tel:0570471168" class="btn btn-outline">☎ اتصل بنا</a>
-                <a href="https://wa.me/966508218878?text=السلام%20عليكم%20أرغب%20في%20استفسار%20عن%20تنظيف%20الواجهات" target="_blank" class="btn btn-primary">طلب معاينة مجانية</a>
+                <a href="https://wa.me/966508218878?text=السلام%20عليكم%20أرغب%20في%20استفسار%20عن%20تنظيف%20الواجهات" target="_blank" class="btn btn-primary btn-pulse">طلب معاينة مجانية</a>
             </div>
         </div>
     </header>
@@ -153,6 +205,11 @@
             <h1>الرائدة في تنظيف الواجهات الزجاجية والكلادينج بالرياض</h1>
             <p>نقدم أحدث حلول جلي وتلميع الزجاج، إزالة أثار الأملاح والبويات، وتنظيف واجهات المباني والأبراج التجارية بأعلى معايير السلامة المهنية.</p>
             
+            <div class="offer-box">
+                <div class="offer-title">🔥 عرض خاص لهذا الأسبوع!</div>
+                <div style="font-size:14px; font-weight:700; color:#334155;">خصم 20% على عقود تنظيف الواجهات للمعارض والمباني التجارية</div>
+            </div>
+
             <div class="stats-grid">
                 <div class="stat-card">
                     <div class="stat-num">+500</div>
@@ -172,7 +229,7 @@
         <!-- SEO LOCATIONS SECTION -->
         <section class="coverage-section">
             <h2 class="section-title">مناطق التغطية والخدمة السريعة بالرياض</h2>
-            <p style="font-size: 14px; color: #64748b; font-weight: 600;">نصلك أينما كنت داخل الرياض مع فريق عمل مجهز بالكامل:</p>
+            <p style="font-size: 15px; color: #64748b; font-weight: 600;">نصلك أينما كنت داخل الرياض مع فريق عمل مجهز بالكامل:</p>
             <div class="location-tags">
                 <span class="loc-tag">تنظيف واجهات شرق الرياض</span>
                 <span class="loc-tag">غسيل زجاج غرب الرياض</span>
@@ -185,23 +242,16 @@
             </div>
         </section>
 
-        <!-- GALLERY SECTION (BEFORE & AFTER) -->
+        <!-- GALLERY SECTION (CLEAN IMAGES WITHOUT BEFORE/AFTER) -->
         <section class="gallery-section">
-            <h2 class="section-title" style="text-align: center;">معرض الأعمال (قبل وبعد التنظيف)</h2>
-            <p style="text-align: center; font-size: 14px; color: #64748b; font-weight: 600;">اسحب المؤشر داخل الصورة لتر الفرق الحقيقي وجودة التنفيذ:</p>
+            <h2 class="section-title" style="text-align: center;">معرض أعمالنا في تنظيف الواجهات والكلادينج</h2>
+            <p style="text-align: center; font-size: 15px; color: #64748b; font-weight: 600;">نستعرض لكم نماذج حية ومباشرة من مشاريعنا التي تم تنفيذها بالرياض:</p>
 
             <div class="gallery-grid">
-                <!-- CARD 1 -->
-                <article class="comparison-card">
-                    <div class="img-slider-container">
-                        <span class="badge-label badge-before">قبل</span>
-                        <span class="badge-label badge-after">بعد</span>
-                        <img src="images/IMG-20240929-WA0002.jpg" class="img-before" alt="قبل تنظيف الواجهة الزجاجية">
-                        <div class="img-after-wrapper">
-                            <img src="images/IMG-20240929-WA0006.jpg" alt="بعد تنظيف الواجهة الزجاجية">
-                        </div>
-                        <div class="slider-handle">↔</div>
-                        <input type="range" min="0" max="100" value="50" class="slider-input" style="position: absolute; top:0; left:0; width:100%; height:100%; opacity:0; z-index:5; cursor:ew-resize;">
+                <!-- PHOTO 1 -->
+                <article class="project-card">
+                    <div class="img-container">
+                        <img src="images/IMG-20240929-WA0006.jpg" alt="تنظيف الواجهة الزجاجية">
                     </div>
                     <div class="card-info">
                         <h3 class="card-title">تنظيف واجهات زجاج واستروكشر</h3>
@@ -209,17 +259,10 @@
                     </div>
                 </article>
 
-                <!-- CARD 2 -->
-                <article class="comparison-card">
-                    <div class="img-slider-container">
-                        <span class="badge-label badge-before">قبل</span>
-                        <span class="badge-label badge-after">بعد</span>
-                        <img src="images/IMG_20221030_111321378498532225596.jpg" class="img-before" alt="قبل غسيل زجاج معارض تجارية">
-                        <div class="img-after-wrapper">
-                            <img src="images/IMG_20221112_090054243913976131726.jpg" alt="بعد غسيل زجاج معارض تجارية">
-                        </div>
-                        <div class="slider-handle">↔</div>
-                        <input type="range" min="0" max="100" value="50" class="slider-input" style="position: absolute; top:0; left:0; width:100%; height:100%; opacity:0; z-index:5; cursor:ew-resize;">
+                <!-- PHOTO 2 -->
+                <article class="project-card">
+                    <div class="img-container">
+                        <img src="images/IMG_20221112_090054243913976131726.jpg" alt="غسيل زجاج معارض تجارية">
                     </div>
                     <div class="card-info">
                         <h3 class="card-title">تلميع زجاج مباني ومعارض تجارية</h3>
@@ -227,17 +270,10 @@
                     </div>
                 </article>
 
-                <!-- CARD 3 -->
-                <article class="comparison-card">
-                    <div class="img-slider-container">
-                        <span class="badge-label badge-before">قبل</span>
-                        <span class="badge-label badge-after">بعد</span>
-                        <img src="images/IMG_20230207_211231560845975352318.jpg" class="img-before" alt="قبل تنظيف الكلادينج">
-                        <div class="img-after-wrapper">
-                            <img src="images/IMG_20230207_211231560846052401672.jpg" alt="بعد تنظيف الكلادينج">
-                        </div>
-                        <div class="slider-handle">↔</div>
-                        <input type="range" min="0" max="100" value="50" class="slider-input" style="position: absolute; top:0; left:0; width:100%; height:100%; opacity:0; z-index:5; cursor:ew-resize;">
+                <!-- PHOTO 3 -->
+                <article class="project-card">
+                    <div class="img-container">
+                        <img src="images/IMG_20230207_211231560846052401672.jpg" alt="تنظيف الكلادينج">
                     </div>
                     <div class="card-info">
                         <h3 class="card-title">غسيل وتجديد واجهات الكلادينج</h3>
@@ -245,23 +281,98 @@
                     </div>
                 </article>
 
-                <!-- CARD 4 -->
-                <article class="comparison-card">
-                    <div class="img-slider-container">
-                        <span class="badge-label badge-before">قبل</span>
-                        <span class="badge-label badge-after">بعد</span>
-                        <img src="images/IMG_20240418_051656_323.jpg" class="img-before" alt="قبل تنظيف واجهة برج">
-                        <div class="img-after-wrapper">
-                            <img src="images/IMG_20240418_051727_162.jpg" alt="بعد تنظيف واجهة برج">
-                        </div>
-                        <div class="slider-handle">↔</div>
-                        <input type="range" min="0" max="100" value="50" class="slider-input" style="position: absolute; top:0; left:0; width:100%; height:100%; opacity:0; z-index:5; cursor:ew-resize;">
+                <!-- PHOTO 4 -->
+                <article class="project-card">
+                    <div class="img-container">
+                        <img src="images/IMG_20240418_051727_162.jpg" alt="تنظيف واجهة برج">
                     </div>
                     <div class="card-info">
                         <h3 class="card-title">تنظيف واجهات أبراج بارتفاعات عالية</h3>
                         <span class="card-tag">جميع مناطق الرياض</span>
                     </div>
                 </article>
+
+                <!-- PHOTO 5 -->
+                <article class="project-card">
+                    <div class="img-container">
+                        <img src="images/IMG_20240421_064818_921.jpg" alt="غسيل وتلميع زجاج المباني">
+                    </div>
+                    <div class="card-info">
+                        <h3 class="card-title">غسيل وتلميع زجاج المباني العالية</h3>
+                        <span class="card-tag">شمال الرياض</span>
+                    </div>
+                </article>
+
+                <!-- PHOTO 6 -->
+                <article class="project-card">
+                    <div class="img-container">
+                        <img src="images/IMG_20240511_062226_385.jpg" alt="إزالة البويات والترسبات">
+                    </div>
+                    <div class="card-info">
+                        <h3 class="card-title">جلي وإزالة أثار البويات والترسبات</h3>
+                        <span class="card-tag">وسط الرياض</span>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <!-- INTEGRATED BLOG SECTION (ربط الملفات مع المدونة) -->
+        <section class="blog-integration-section">
+            <h2 class="section-title">من مقالات ودليل مدونة Clean</h2>
+            <p style="font-size: 15px; color: #64748b;">اطّلع على نصائح وإرشادات الخبراء لحماية وتنظيف واجهات المباني والرخام بالرياض:</p>
+
+            <div class="blog-cards">
+                <div class="blog-card">
+                    <h3>الدليل المتكامل لتنظيف الكلادينج</h3>
+                    <p>تعرف على الطرق والتقنيات الحديثة لصيانة ألواح الكلادينج وحمايتها من العوامل الجوية والأكسدة.</p>
+                    <a href="index_5.html#cladding-guide">قراءة المقال كاملاً ←</a>
+                </div>
+
+                <div class="blog-card">
+                    <h3>دليل جلي وتلميع الرخام</h3>
+                    <p>أحدث تقنيات الجلي بالألماس والتلميع بالكربونات لحماية الرخام وإعادة لمعانه كأنه جديد.</p>
+                    <a href="index_5.html#marble-guide">قراءة المقال كاملاً ←</a>
+                </div>
+
+                <div class="blog-card">
+                    <h3>أبرز الأخطاء الشائعة في التنظيف</h3>
+                    <p>تجنب أخطاء استخدام الأحماض والمواد القوية التي تتلف الزجاج والكلادينج والرخام.</p>
+                    <a href="index_5.html#faqs-guide">قراءة المقال كاملاً ←</a>
+                </div>
+            </div>
+
+            <div style="margin-top: 25px;">
+                <a href="index_5.html" class="btn btn-outline">زيارة مدونة Clean الشاملة</a>
+            </div>
+        </section>
+
+        <!-- HIGH-CONVERSION CTA BOX -->
+        <section class="cta-calculator-box">
+            <h2>هل تحتاج تسعيرة فورية لواجهتك؟</h2>
+            <p>أرسل لنا صورة الواجهة عبر الواتساب، وسنقوم بتحديد التكلفة والموعد المناسب خلال دقائق معدودة!</p>
+            <div style="display: flex; gap: 15px; justify-content: center; flex-wrap: wrap;">
+                <a href="https://wa.me/966508218878?text=السلام%20عليكم%20حبيت%20استفسر%20عن%20سعر%20تنظيف%20واجهة" target="_blank" class="btn btn-primary btn-pulse" style="font-size: 16px; padding: 14px 32px;">💬 أرسل صورة الواجهة للواتساب</a>
+                <a href="tel:0570471168" class="btn btn-outline" style="font-size: 16px; padding: 14px 32px; background: transparent; color: #fff; border-color: #fff;">☎ اتصل بالمشرف مباشرة</a>
+            </div>
+        </section>
+
+        <!-- FAQ SECTION FOR SEO & USER TRUST -->
+        <section class="faq-section">
+            <h2 class="section-title" style="text-align: center;">الأسئلة الشائعة حول تنظيف الواجهات بالرياض</h2>
+            
+            <div class="faq-item">
+                <div class="faq-question">كم تستغرق عملية معاينة الواجهة وتحديد التكلفة؟</div>
+                <div class="faq-answer">نوفر خدمة المعاينة الميدانية المجانية في جميع أحياء الرياض (شرق، غرب، شمال مثل الياسمين والنرجس ولبن) خلال 30 إلى 60 دقيقة من طلبكم.</div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question">هل يتم استخدام مواد تجلي وتحمي الزجاج من الأملاح؟</div>
+                <div class="faq-answer">نعم، نستخدم مواد تلميع مخصصة تعيد للزجاج شفافيته الأصلية، وتزيل البقع الصعبة والأملاح والترسبات مع وضع طبقة حماية تقاوم الغبار لفترة أطول.</div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question">هل تتكفلون بتوفير الرافعات والسقالات؟</div>
+                <div class="faq-answer">بالتأكيد، لدينا أسطول كامل من الرافعات الهيدروليكية والسقالات المعدنية وأحزمة الأمان المعتمدة لتنفيذ كافة الارتفاعات بالأبراج والمباني.</div>
             </div>
         </section>
     </main>
@@ -275,32 +386,14 @@
     <footer>
         <div class="container">
             <p>© <span id="year"></span> مؤسسة Clean للنظافة العامة بالرياض. جميع الحقوق محفوظة.</p>
-            <p style="margin-top: 5px; font-size: 11px; color: #64748b;">متخصصون في تنظيف الواجهات الزجاجية، الكلادينج، وجلي الزجاج بشرق وغرب وشمال الرياض.</p>
+            <p style="margin-top: 8px; font-size: 12px; color: #64748b;">
+                متخصصون في تنظيف الواجهات الزجاجية، الكلادينج، وجلي الزجاج بشرق وغرب وشمال الرياض. | <a href="index_5.html">مدونة Clean</a>
+            </p>
         </div>
     </footer>
 
     <script>
         document.getElementById('year').textContent = new Date().getFullYear();
-
-        // SLIDER BEFORE & AFTER SCRIPT
-        document.querySelectorAll('.img-slider-container').forEach(container => {
-            const sliderInput = container.querySelector('.slider-input');
-            const afterWrapper = container.querySelector('.img-after-wrapper');
-            const handle = container.querySelector('.slider-handle');
-            const afterImg = afterWrapper.querySelector('img');
-
-            function updateSliderWidth() {
-                afterImg.style.width = container.offsetWidth + 'px';
-            }
-            window.addEventListener('resize', updateSliderWidth);
-            updateSliderWidth();
-
-            sliderInput.addEventListener('input', (e) => {
-                const val = e.target.value;
-                afterWrapper.style.width = val + '%';
-                handle.style.left = val + '%';
-            });
-        });
     </script>
 </body>
 </html>
