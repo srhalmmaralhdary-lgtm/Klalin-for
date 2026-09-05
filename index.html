@@ -15,8 +15,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Clean للنظافة العامة | أفضل خدمات تنظيف بالرياض</title>
 
-    <meta name="description" content="Clean للنظافة العامة تقدم خدمات تنظيف احترافية في الرياض تشمل تنظيف واجهات الكلادينج والأبراج والواجهات الحجرية والفلل والقصور والتنظيف بعد التشطيب وجلي وتلميع الرخام وتنظيف خزانات المياه.">
-    <meta name="keywords" content="شركة تنظيف الرياض, تنظيف بالرياض, تنظيف واجهات الرياض, تنظيف كلادينج, تنظيف الأبراج, تنظيف الحجر, تنظيف الفلل, تنظيف القصور, تنظيف بعد التشطيب, جلي رخام, تلميع رخام, تنظيف خزانات المياه, شركة نظافة بالرياض, Clean للنظافة العامة">
+    <meta name="description" content="Clean للنظافة العامة تقدم خدمات تنظيف احترافية في الرياض تشمل تنظيف واجهات الكلادينج والزجاج والأبراج والواجهات الحجرية والفلل والقصور والتنظيف بعد التشطيب وجلي وتلميع الرخام وتنظيف خزانات المياه.">
+    <meta name="keywords" content="شركة تنظيف الرياض, تنظيف بالرياض, تنظيف واجهات الرياض, تنظيف واجهات زجاجية, بروفايل تنظيف زجاج, تنظيف كلادينج, تنظيف الأبراج, تنظيف الحجر, تنظيف الفلل, تنظيف القصور, تنظيف بعد التشطيب, جلي رخام, تلميع رخام, تنظيف خزانات المياه, شركة نظافة بالرياض, Clean للنظافة العامة">
     <meta name="author" content="Clean للنظافة العامة">
     <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
     <meta name="googlebot" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
@@ -118,10 +118,10 @@
             },
             {
                 "@type": "Question",
-                "name": "هل تقدمون تنظيف واجهات الكلادينج؟",
+                "name": "هل تقدمون تنظيف واجهات الكلادينج والزجاج؟",
                 "acceptedAnswer": {
                     "@type": "Answer",
-                    "text": "نعم، نقدم خدمات تنظيف واجهات الكلادينج للمباني والمنشآت باستخدام معدات وأساليب مناسبة لنوع الواجهة."
+                    "text": "نعم، نقدم خدمات تنظيف واجهات الكلادينج والزجاج للمباني والمنشآت باستخدام معدات وأساليب مناسبة لنوع الواجهة."
                 }
             },
             {
@@ -459,6 +459,92 @@
             height: 380px;
             width: 100%;
             object-fit: cover;
+        }
+
+        /* GLASS CLEANING BANNER SECTION */
+        .glass-profile-banner {
+            background: linear-gradient(135deg, #064e3b 0%, #0f172a 100%);
+            border: 2px solid #10b981;
+            border-radius: var(--radius);
+            padding: 35px 30px;
+            margin: 40px 0 20px;
+            color: #ffffff;
+            box-shadow: 0 20px 40px rgba(6, 78, 59, 0.2);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .glass-profile-banner::before {
+            content: "";
+            position: absolute;
+            top: -50px;
+            left: -50px;
+            width: 180px;
+            height: 180px;
+            background: rgba(52, 211, 153, 0.15);
+            border-radius: 50%;
+            pointer-events: none;
+        }
+
+        .glass-banner-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 25px;
+            flex-wrap: wrap;
+            position: relative;
+            z-index: 2;
+        }
+
+        .glass-banner-text {
+            max-width: 700px;
+        }
+
+        .glass-banner-badge {
+            display: inline-block;
+            background: #34d399;
+            color: #064e3b;
+            font-weight: 800;
+            font-size: 12px;
+            padding: 4px 12px;
+            border-radius: 20px;
+            margin-bottom: 12px;
+        }
+
+        .glass-banner-text h2 {
+            font-size: clamp(20px, 3vw, 28px);
+            font-weight: 900;
+            color: #ffffff;
+            margin-bottom: 10px;
+            line-height: 1.3;
+        }
+
+        .glass-banner-text p {
+            color: #d1fae5;
+            font-size: 15px;
+            line-height: 1.7;
+        }
+
+        .glass-banner-btn {
+            background: linear-gradient(135deg, #10b981, #059669);
+            color: #ffffff;
+            font-size: 16px;
+            font-weight: 800;
+            padding: 14px 28px;
+            border-radius: 12px;
+            box-shadow: 0 8px 20px rgba(16, 185, 129, 0.4);
+            white-space: nowrap;
+            transition: all 0.3s ease;
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .glass-banner-btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 12px 25px rgba(16, 185, 129, 0.6);
+            background: linear-gradient(135deg, #34d399, #10b981);
+            color: #064e3b;
         }
 
         /* STATS SECTION */
@@ -1029,6 +1115,15 @@
             }
             .nav-links.active { display: flex; }
             .booking-info { border-left: none; border-bottom: 1px solid var(--border); }
+            
+            .glass-banner-content {
+                flex-direction: column;
+                text-align: center;
+            }
+            .glass-banner-btn {
+                width: 100%;
+                justify-content: center;
+            }
         }
 
         @media (max-width: 480px) {
@@ -1662,6 +1757,7 @@
 
             <nav class="nav-links" id="navLinks" aria-label="القائمة الرئيسية">
                 <a href="#home">الرئيسية</a>
+                <a href="glass-cleaning-profile.html">تنظيف الزجاج</a>
                 <a href="#services">خدماتنا</a>
                 <a href="towers-cleaning.html">تنظيف الأبراج</a>
                 <a href="#booking">احجز الآن</a>
@@ -1715,6 +1811,23 @@
             </div>
         </section>
 
+        <!-- قسم ربط بروفايل تنظيف الواجهات الزجاجية الجديد (قبل خدماتنا) -->
+        <section class="container">
+            <div class="glass-profile-banner">
+                <div class="glass-banner-content">
+                    <div class="glass-banner-text">
+                        <span class="glass-banner-badge">💎 بروفايل مميز وجديد</span>
+                        <h2>خدمة تنظيف الواجهات الزجاجية والكلادينج بالرياض</h2>
+                        <p>تغطية شاملة لجميع أحياء الرياض (شرق، غرب، الياسمين، النرجس، لبن). شاهد بروفايل الأعمال، الصور قبل وبعد، واستفد من معاينة مجانية خلال 30 دقيقة وخصم 20% لفترة محدودة.</p>
+                    </div>
+                    <a href="glass-cleaning-profile.html" class="glass-banner-btn">
+                        <span>🔍 استعرض بروفايل الزجاج</span>
+                        <span style="font-size: 18px;">←</span>
+                    </a>
+                </div>
+            </div>
+        </section>
+
         <section class="section" id="services">
             <div class="container">
                 <div class="section-header">
@@ -1724,6 +1837,22 @@
                 </div>
 
                 <div class="horizontal-scroll-container">
+                    <!-- بطاقة تنظيف الواجهات الزجاجية المضافة لحلول الخدمات -->
+                    <article class="service-card">
+                        <div class="service-image-wrapper">
+                            <img src="images/IMG_20240511_062226_385.jpg" alt="تنظيف واجهات زجاجية بالرياض" class="service-image" loading="lazy" decoding="async">
+                        </div>
+                        <div class="service-content">
+                            <div class="service-icon">🪟</div>
+                            <h3 class="service-title">تنظيف الواجهات الزجاجية</h3>
+                            <p class="service-description">غسيل وتنظيف زجاج المباني والأبراج بأحدث التقنيات لجميع مناطق وأحياء الرياض.</p>
+                            <div class="service-actions">
+                                <a href="glass-cleaning-profile.html" class="service-btn preview-btn">التفاصيل</a>
+                                <a href="https://wa.me/966508218878?text=أرغب%20في%20طلب%20خدمة%20تنظيف%20الواجهات%20الزجاجية" target="_blank" rel="noopener noreferrer" class="service-btn primary">اطلب الآن</a>
+                            </div>
+                        </div>
+                    </article>
+
                     <article class="service-card">
                         <div class="service-image-wrapper">
                             <img src="images/IMG-20240929-WA0006.jpg" alt="تنظيف واجهات الكلادينج بالرياض" class="service-image" loading="lazy" decoding="async">
@@ -1875,6 +2004,7 @@
                                     <label for="service">نوع الخدمة</label>
                                     <select id="service" name="service" class="form-control" required>
                                         <option value="">اختر الخدمة</option>
+                                        <option value="تنظيف الواجهات الزجاجية">تنظيف الواجهات الزجاجية</option>
                                         <option value="تنظيف واجهات الكلادينج">تنظيف واجهات الكلادينج</option>
                                         <option value="تنظيف واجهات الأبراج">تنظيف واجهات الأبراج</option>
                                         <option value="تنظيف الواجهات الحجرية">تنظيف الواجهات الحجرية</option>
@@ -2085,8 +2215,8 @@
                         <div class="faq-answer"><p>نقدم خدماتنا داخل مدينة الرياض والمناطق التابعة لها.</p></div>
                     </div>
                     <div class="faq-item">
-                        <button class="faq-question" type="button">هل تقدمون تنظيف واجهات الكلادينج؟ <span>+</span></button>
-                        <div class="faq-answer"><p>نعم، نقدم خدمات تنظيف واجهات الكلادينج للمباني والمنشآت.</p></div>
+                        <button class="faq-question" type="button">هل تقدمون تنظيف واجهات الكلادينج والزجاج؟ <span>+</span></button>
+                        <div class="faq-answer"><p>نعم، نقدم خدمات تنظيف واجهات الكلادينج والزجاج للمباني والمنشآت.</p></div>
                     </div>
                     <div class="faq-item">
                         <button class="faq-question" type="button">هل تقدمون خدمات التنظيف بعد التشطيب؟ <span>+</span></button>
@@ -2120,6 +2250,7 @@
                 <div class="footer-title">روابط سريعة</div>
                 <div class="footer-links">
                     <a href="#home">الرئيسية</a>
+                    <a href="glass-cleaning-profile.html">تنظيف الزجاج</a>
                     <a href="#services">خدماتنا</a>
                     <a href="towers-cleaning.html">تنظيف الأبراج</a>
                     <a href="#booking">احجز الآن</a>
@@ -2129,6 +2260,7 @@
             <div>
                 <div class="footer-title">خدمات الرياض</div>
                 <div class="footer-links">
+                    <a href="glass-cleaning-profile.html">تنظيف الزجاج بالرياض</a>
                     <a href="cladding-cleaning.html">تنظيف الكلادينج</a>
                     <a href="towers-cleaning.html">تنظيف الأبراج</a>
                     <a href="villas-cleaning.html">تنظيف الفلل والقصور</a>
