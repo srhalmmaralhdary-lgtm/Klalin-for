@@ -11,6 +11,13 @@
 
   <!-- 2. صفحات الخدمات -->
   <url>
+    <loc>https://clean-ksa.com/glass-cleaning-profile.html</loc>
+    <lastmod>2026-09-05</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.90</priority>
+  </url>
+
+  <url>
     <loc>https://clean-ksa.com/cladding-cleaning.html</loc>
     <lastmod>2026-09-04</lastmod>
     <changefreq>weekly</changefreq>
@@ -61,7 +68,7 @@
 
   <!-- 3. قسم المدونة الرئيسي والمقالات -->
   <url>
-    <loc>https://clean-ksa.com/blog/index.html</loc>
+    <loc>https://clean-ksa.com/blog/</loc>
     <lastmod>2026-09-04</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.85</priority>
