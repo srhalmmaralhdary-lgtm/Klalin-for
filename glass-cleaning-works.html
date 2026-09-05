@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>أعمالنا في تنظيف الواجهات الزجاجية بالرياض | قبل وبعد</title>
+    <meta name="description" content="شاهد جودة أعمالنا في تنظيف وتلميع الواجهات الزجاجية بالرياض، اسحب السهم داخل الصورة لترى الفرق الحقيقي بين قبل وبعد.">
+    <link rel="canonical" href="https://klalin-for.vercel.app/glass-cleaning-works.html">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;800&display=swap" rel="stylesheet">
+    
+    <style>
+        :root {
+            --primary: #0070f3;
+            --primary-dark: #0051b3;
+            --secondary: #0f172a;
+            --bg: #f4f6f8;
+            --card-bg: #ffffff;
+            --text: #1e293b;
+            --radius: 20px;
+        }
+
+        * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Cairo', sans-serif; }
+        body { background: var(--bg); color: var(--text); line-height: 1.6; }
+
+        .header { background: #ffffff; padding: 15px 0; border-bottom: 1px solid #e2e8f0; position: sticky; top: 0; z-index: 1000; box-shadow: 0 4px 15px rgba(0,0,0,0.03); }
+        .container { width: min(1200px, calc(100% - 32px)); margin-inline: auto; }
+        .nav-wrapper { display: flex; justify-content: space-between; align-items: center; }
+        .logo { font-size: 20px; font-weight: 800; color: var(--primary); text-decoration: none; }
+        .back-btn { background: var(--primary); color: white; padding: 8px 18px; border-radius: 10px; text-decoration: none; font-weight: 700; font-size: 14px; }
+
+        .hero { text-align: center; padding: 40px 20px 20px; }
+        .hero-tag { background: #e0f2fe; color: var(--primary); font-size: 14px; font-weight: 700; padding: 6px 16px; border-radius: 30px; display: inline-block; margin-bottom: 12px; }
+        .hero h1 { font-size: 28px; font-weight: 800; color: var(--secondary); margin-bottom: 10px; }
+        .hero p { font-size: 15px; color: #64748b; }
+
+        /* شبكة بطاقات المقارنة */
+        .gallery-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 30px; margin: 30px 0 50px; }
+        
+        .comparison-card { background: var(--card-bg); border-radius: var(--radius); overflow: hidden; box-shadow: 0 10px 30px rgba(0,0,0,0.06); border: 1px solid #e2e8f0; }
+        
+        /* حاوية السلايدر التفاعلي */
+        .img-slider-container { position: relative; width: 100%; height: 280px; overflow: hidden; user-select: none; }
+        .img-slider-container img { position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover; }
+        
+        /* صورة قبل */
+        .img-before { width: 100%; height: 100%; z-index: 1; }
+        /* صورة بعد مع القص */
+        .img-after-wrapper { position: absolute; top: 0; left: 0; width: 50%; height: 100%; overflow: hidden; z-index: 2; border-right: 2px solid #ffffff; }
+        .img-after-wrapper img { width: 100%; height: 100%; max-width: none; }
+
+        /* مقبض السحب */
+        .slider-handle { position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); width: 40px; height: 40px; background: var(--primary); border: 3px solid #ffffff; border-radius: 50%; z-index: 3; display: flex; align-items: center; justify-content: center; color: white; font-weight: bold; cursor: ew-resize; box-shadow: 0 4px 10px rgba(0,0,0,0.3); }
+        .slider-handle::before, .slider-handle::after { content: ''; position: absolute; width: 2px; height: 200px; background: #ffffff; }
+        .slider-handle::before { top: -200px; }
+        .slider-handle::after { bottom: -200px; }
+
+        /* الشارات والتسميات */
+        .badge { position: absolute; bottom: 15px; padding: 4px 14px; border-radius: 8px; font-size: 13px; font-weight: 800; color: white; z-index: 4; }
+        .badge-before { right: 15px; background: #ef4444; }
+        .badge-after { left: 15px; background: #10b981; }
+
+        .hint-badge { position: absolute; top: 15px; left: 50%; transform: translateX(-50%); background: rgba(15, 23, 42, 0.75); color: white; padding: 4px 14px; border-radius: 20px; font-size: 12px; font-weight: 600; z-index: 4; backdrop-filter: blur(4px); }
+
+        .card-info { padding: 18px 20px; display: flex; justify-content: space-between; align-items: center; border-top: 1px solid #f1f5f9; }
+        .card-title { font-size: 16px; font-weight: 800; color: var(--secondary); }
+        .card-tag { background: #f0fdf4; color: #16a34a; padding: 4px 10px; border-radius: 6px; font-size: 12px; font-weight: 700; }
+
+        .floating-ctas { position: fixed; bottom: 20px; right: 20px; display: flex; flex-direction: column; gap: 10px; z-index: 999; }
+        .btn-float { width: 50px; height: 50px; border-radius: 50%; display: flex; align-items: center; justify-content: center; color: white; text-decoration: none; font-size: 22px; box-shadow: 0 5px 15px rgba(0,0,0,0.2); }
+        .btn-float-wa { background: #25d366; }
+        .btn-float-call { background: var(--primary); }
+    </style>
+</head>
+<body>
+
+    <header class="header">
+        <div class="container nav-wrapper">
+            <a href="index.html" class="logo">مؤسسة تنظيف الواجهات بالرياض</a>
+            <a href="index.html" class="back-btn">الرئيسية</a>
+        </div>
+    </header>
+
+    <main class="container">
+        <section class="hero">
+            <span class="hero-tag">معرض أعمالنا</span>
+            <h1>شاهد جودة أعمالنا في تنظيف الواجهات</h1>
+            <p>اسحب السهم داخل الصورة لترى الفرق الحقيقي بين قبل وبعد</p>
+        </section>
+
+        <div class="gallery-grid">
+
+            <!-- نموذج 1 -->
+            <article class="comparison-card">
+                <div class="img-slider-container">
+                    <span class="hint-badge">اسحب للمقارنة</span>
+                    <span class="badge badge-before">قبل</span>
+                    <span class="badge badge-after">بعد</span>
+                    
+                    <img src="images/IMG-20240929-WA0002.jpg" class="img-before" alt="قبل التنظيف">
+                    
+                    <div class="img-after-wrapper">
+                        <img src="images/IMG-20240929-WA0006.jpg" alt="بعد التنظيف">
+                    </div>
+                    
+                    <div class="slider-handle">↔</div>
+                    <input type="range" min="0" max="100" value="50" class="slider-input" style="position: absolute; top:0; left:0; width:100%; height:100%; opacity:0; z-index:5; cursor:ew-resize;">
+                </div>
+                <div class="card-info">
+                    <h3 class="card-title">تنظيف واجهات زجاجية وكينج</h3>
+                    <span class="card-tag">نتيجة مذهلة</span>
+                </div>
+            </article>
+
+            <!-- نموذج 2 -->
+            <article class="comparison-card">
+                <div class="img-slider-container">
+                    <span class="hint-badge">اسحب للمقارنة</span>
+                    <span class="badge badge-before">قبل</span>
+                    <span class="badge badge-after">بعد</span>
+                    
+                    <img src="images/IMG_20221030_111321378498532225596.jpg" class="img-before" alt="قبل التنظيف">
+                    
+                    <div class="img-after-wrapper">
+                        <img src="images/IMG_20221112_090054243913976131726.jpg" alt="بعد التنظيف">
+                    </div>
+                    
+                    <div class="slider-handle">↔</div>
+                    <input type="range" min="0" max="100" value="50" class="slider-input" style="position: absolute; top:0; left:0; width:100%; height:100%; opacity:0; z-index:5; cursor:ew-resize;">
+                </div>
+                <div class="card-info">
+                    <h3 class="card-title">تلميع واجهات مبانٍ تجارية</h3>
+                    <span class="card-tag">جودة فائقة</span>
+                </div>
+            </article>
+
+            <!-- نموذج 3 -->
+            <article class="comparison-card">
+                <div class="img-slider-container">
+                    <span class="hint-badge">اسحب للمقارنة</span>
+                    <span class="badge badge-before">قبل</span>
+                    <span class="badge badge-after">بعد</span>
+                    
+                    <img src="images/IMG_20230207_211231560845975352318.jpg" class="img-before" alt="قبل التنظيف">
+                    
+                    <div class="img-after-wrapper">
+                        <img src="images/IMG_20230207_211231560846052401672.jpg" alt="بعد التنظيف">
+                    </div>
+                    
+                    <div class="slider-handle">↔</div>
+                    <input type="range" min="0" max="100" value="50" class="slider-input" style="position: absolute; top:0; left:0; width:100%; height:100%; opacity:0; z-index:5; cursor:ew-resize;">
+                </div>
+                <div class="card-info">
+                    <h3 class="card-title">غسيل واجهات كلادينج بالرياض</h3>
+                    <span class="card-tag">تجديد شامل</span>
+                </div>
+            </article>
+
+            <!-- نموذج 4 -->
+            <article class="comparison-card">
+                <div class="img-slider-container">
+                    <span class="hint-badge">اسحب للمقارنة</span>
+                    <span class="badge badge-before">قبل</span>
+                    <span class="badge badge-after">بعد</span>
+                    
+                    <img src="images/IMG_20240418_051656_323.jpg" class="img-before" alt="قبل التنظيف">
+                    
+                    <div class="img-after-wrapper">
+                        <img src="images/IMG_20240418_051727_162.jpg" alt="بعد التنظيف">
+                    </div>
+                    
+                    <div class="slider-handle">↔</div>
+                    <input type="range" min="0" max="100" value="50" class="slider-input" style="position: absolute; top:0; left:0; width:100%; height:100%; opacity:0; z-index:5; cursor:ew-resize;">
+                </div>
+                <div class="card-info">
+                    <h3 class="card-title">تنظيف واجهات أبراج وسكني</h3>
+                    <span class="card-tag">احترافية عالية</span>
+                </div>
+            </article>
+
+        </div>
+    </main>
+
+    <div class="floating-ctas">
+        <a href="https://wa.me/966508218878" target="_blank" class="btn-float btn-float-wa">💬</a>
+        <a href="tel:0570471168" class="btn-float btn-float-call">📞</a>
+    </div>
+
+    <script>
+        // برمجة حركة السلايدر التفاعلي لجميع البطاقات
+        document.querySelectorAll('.img-slider-container').forEach(container => {
+            const sliderInput = container.querySelector('.slider-input');
+            const afterWrapper = container.querySelector('.img-after-wrapper');
+            const handle = container.querySelector('.slider-handle');
+            const afterImg = afterWrapper.querySelector('img');
+
+            function updateSliderWidth() {
+                const containerWidth = container.offsetWidth;
+                afterImg.style.width = containerWidth + 'px';
+            }
+
+            window.addEventListener('resize', updateSliderWidth);
+            updateSliderWidth();
+
+            sliderInput.addEventListener('input', (e) => {
+                const val = e.target.value;
+                afterWrapper.style.width = val + '%';
+                handle.style.left = val + '%';
+            });
+        });
+    </script>
+</body>
+</html>
