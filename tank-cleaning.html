@@ -3,25 +3,29 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>شركة تنظيف وتعقيم خزانات المياه بالرياض - Clean</title>
-    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;800&display=swap" rel="stylesheet">
+    <title>شركة تنظيف وتعقيم خزانات المياه بالرياض</title>
+
+    <!-- PWA Manifest & Theme Color -->
+    <link rel="manifest" href="/manifest.json">
+    <meta name="theme-color" content="#0077b6">
+
     <style>
         * {
             box-sizing: border-box;
             margin: 0;
             padding: 0;
-            font-family: 'Cairo', sans-serif;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
         }
 
         body {
-            background-color: #f8fcfb;
-            color: #2b3a37;
+            background-color: #f8f9fa;
+            color: #333;
             line-height: 1.6;
         }
 
         /* الهيدر وشريط التنقل */
         header {
-            background-color: #0d8a72;
+            background-color: #0077b6;
             color: white;
             padding: 1rem 2rem;
             display: flex;
@@ -34,7 +38,7 @@
 
         header h1 {
             font-size: 1.5rem;
-            color: #e5a93b;
+            color: #90e0ef;
         }
 
         nav a {
@@ -46,12 +50,12 @@
         }
 
         nav a:hover {
-            color: #e5a93b;
+            color: #90e0ef;
         }
 
         /* البانر الرئيسي */
         .hero {
-            background: linear-gradient(rgba(7, 94, 78, 0.85), rgba(7, 94, 78, 0.85)), 
+            background: linear-gradient(rgba(0, 119, 182, 0.85), rgba(0, 119, 182, 0.85)), 
                         url('https://images.unsplash.com/photo-1584622650111-993a426fbf0a?auto=format&fit=crop&w=1350&q=80') center/cover no-repeat;
             color: white;
             text-align: center;
@@ -69,9 +73,16 @@
             margin: 0 auto 2rem auto;
         }
 
+        .btn-group {
+            display: flex;
+            gap: 15px;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
         .btn {
-            background-color: #e5a93b;
-            color: #2b3a37;
+            background-color: #00b4d8;
+            color: white;
             padding: 12px 30px;
             border: none;
             border-radius: 5px;
@@ -79,11 +90,21 @@
             text-decoration: none;
             cursor: pointer;
             transition: background 0.3s;
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
         }
 
         .btn:hover {
-            background-color: #0d8a72;
-            color: white;
+            background-color: #0096c7;
+        }
+
+        .btn-wa {
+            background-color: #25d366;
+        }
+
+        .btn-wa:hover {
+            background-color: #1eb854;
         }
 
         /* قسم الخدمات */
@@ -96,7 +117,7 @@
 
         .services h3 {
             font-size: 2rem;
-            color: #075e4e;
+            color: #03045e;
             margin-bottom: 40px;
         }
 
@@ -119,25 +140,25 @@
         }
 
         .card h4 {
-            color: #0d8a72;
+            color: #0077b6;
             margin-bottom: 15px;
         }
 
         /* قسم المميزات */
         .features {
-            background-color: #e6f3f0;
+            background-color: #caf0f8;
             padding: 50px 20px;
             text-align: center;
         }
 
         .features h3 {
-            color: #075e4e;
+            color: #03045e;
             margin-bottom: 20px;
         }
 
         /* قسم التواصل */
         .contact {
-            background-color: #075e4e;
+            background-color: #03045e;
             color: white;
             text-align: center;
             padding: 50px 20px;
@@ -149,7 +170,7 @@
 
         /* الفوتر */
         footer {
-            background-color: #1a1a1a;
+            background-color: #023e8a;
             color: #aaa;
             text-align: center;
             padding: 15px;
@@ -161,9 +182,9 @@
 
     <!-- هيدر الموقع -->
     <header>
-        <h1>Clean - تنظيف وتعقيم الخزانات</h1>
+        <h1>تنظيف وتعقيم الخزانات</h1>
         <nav>
-            <a href="https://clean-ksa.com/">الرئيسية</a>
+            <a href="#home">الرئيسية</a>
             <a href="#services">خدماتنا</a>
             <a href="#features">مميزاتنا</a>
             <a href="#contact">تواصل معنا</a>
@@ -172,9 +193,12 @@
 
     <!-- البانر الرئيسي -->
     <section class="hero" id="home">
-        <h2>خدمات تنظيف وتعقيم خزانات المياه الأرضية والعلوية بالرياض</h2>
+        <h2>خدمات تنظيف وتعقيم خزانات المياه الأرضية والعلوية</h2>
         <p>مياه نقيّة وصحية لعائلتك! نستخدم أحدث أجهزة الشفط والضخ مع مواد تعقيم مصرحة ومطابقة للمواصفات الصحية العالمية.</p>
-        <a href="https://wa.me/966508218878" class="btn" target="_blank">احجز موعد غسيل الخزان الآن</a>
+        <div class="btn-group">
+            <a href="tel:0570471168" class="btn">☎ اتصل بنا الآن</a>
+            <a href="https://wa.me/966570471168?text=السلام%20عليكم%20حبيت%20استفسر%20عن%20خدمة%20تنظيف%20وترميم%20الخزانات" target="_blank" class="btn btn-wa">💬 تواصل عبر الواتساب</a>
+        </div>
     </section>
 
     <!-- قسم الخدمات -->
@@ -211,13 +235,28 @@
         <h3>هل حان موعد التنظيف الدوري لخزانك؟</h3>
         <p>تواصل معنا الآن للحصول على أفضل العروض والخدمات المتميزة!</p>
         <br>
-        <a href="tel:0570471168" class="btn">اتصل بنا الآن</a>
+        <div class="btn-group">
+            <a href="tel:0570471168" class="btn">☎ اتصل بنا: 0570471168</a>
+            <a href="https://wa.me/966570471168?text=السلام%20عليكم%20أرغب%20في%20حجز%20موعد%20لتنظيف%20الخزان" target="_blank" class="btn btn-wa">💬 واتساب مباشر</a>
+        </div>
     </section>
 
     <!-- الفوتر -->
     <footer>
-        <p>&copy; 2026 جميع الحقوق محفوظة لـ شركة Clean لتنظيف وتعقيم الخزانات.</p>
+        <p>&copy; <span id="year"></span> جميع الحقوق محفوظة لـ شركة تنظيف وتعقيم الخزانات.</p>
     </footer>
+
+    <!-- Service Worker Registration Script -->
+    <script>
+      if ('serviceWorker' in navigator) {
+        window.addEventListener('load', () => {
+          navigator.serviceWorker.register('/sw.js')
+            .then(reg => console.log('Service Worker registered successfully:', reg.scope))
+            .catch(err => console.error('Service Worker registration failed:', err));
+        });
+      }
+      document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
 
 </body>
 </html>
