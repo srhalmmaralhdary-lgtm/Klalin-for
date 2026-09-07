@@ -18,8 +18,8 @@
     <!-- PWA Manifest -->
     <link rel="manifest" href="/manifest.json">
 
-    <meta name="description" content="Clean للنظافة العامة تقدم خدمات تنظيف احترافية في الرياض تشمل تنظيف المباني بعد الإنشاء والبناء، التشطيب، إزالة الدهانات والأسمنت، تنظيف واجهات الكلادينج والزجاج والأبراج والواجهات الحجرية والفلل وجلي وتلميع الرخام.">
-    <meta name="keywords" content="شركة تنظيف الرياض, تنظيف بعد البناء, تنظيف بعد الإنشاء, تنظيف المباني بعد التشطيب, إزالة البوية, جلي وتلميع الرخام, تنظيف واجهات الرياض, تنظيف واجهات زجاجية, تنظيف كلادينج, شركة نظافة بالرياض, Clean للنظافة العامة">
+    <meta name="description" content="Clean للنظافة العامة تقدم خدمات تنظيف احترافية في الرياض تشمل تنظيف المباني بعد الإنشاء والبناء، التشطيب، إزالة الدهانات والأسمنت، تنظيف واجهات الكلادينج والزجاج والأبراج والواجهات الحجرية والفلل وجلي وتلميع الرخام، بالإضافة لخدمات تنظيف المنازل، الكنب بالبخار، المسابح، الثريات، وعقود الصيانة الدورية.">
+    <meta name="keywords" content="شركة تنظيف الرياض, تنظيف بعد البناء, تنظيف بعد الإنشاء, تنظيف المباني بعد التشطيب, إزالة البوية, جلي وتلميع الرخام, تنظيف واجهات الرياض, تنظيف واجهات زجاجية, تنظيف كلادينج, شركة نظافة بالرياض, Clean للنظافة العامة, غسيل كنب بالبخار, تنظيف مسابح, عقود صيانة دورية, تنظيف ثريات">
     <meta name="author" content="Clean للنظافة العامة">
     <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
     <meta name="googlebot" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
@@ -140,7 +140,7 @@
                 "name": "هل يمكن طلب معاينة قبل تنفيذ الخدمة؟",
                 "acceptedAnswer": {
                     "@type": "Answer",
-                    "text": "نعم، يمكن التواصل معنا عبر الهاتف أو واتساب لتحديد الخدمة وطلب المعاينة والتثمين المجاني."
+                    "text": "نعم، يمكن التواصل معنا عبر الهاتف أو واتساب لتحديد الخدمة وطلب المعاينة والتثمين المجاني خلال ساعة."
                 }
             },
             {
@@ -149,6 +149,14 @@
                 "acceptedAnswer": {
                     "@type": "Answer",
                     "text": "ساعات العمل من السبت إلى الخميس من الساعة 8 صباحاً حتى 10 مساءً."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "هل تقدمون ضماناً مكتوباً على خدمات التنظيف؟",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "نعم، نقدم ضماناً مكتوباً لمدة 48 ساعة مع إعادة التنظيف مجاناً في حال وجود أي ملاحظات."
                 }
             }
         ]
@@ -245,6 +253,20 @@
         .section-description {
             color: var(--text-soft);
             font-size: 15px;
+        }
+
+        /* ANNOUNCEMENT BANNER BAR */
+        .announcement-bar {
+            background: linear-gradient(90deg, #f59e0b, #d97706);
+            color: #ffffff;
+            text-align: center;
+            padding: 8px 15px;
+            font-size: 14px;
+            font-weight: 800;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 15px;
         }
 
         /* TOPBAR */
@@ -782,6 +804,37 @@
 
         .service-btn.primary:hover {
             background: var(--primary-dark);
+        }
+
+        /* TABLE STYLES FOR PRICING & COMPARISON */
+        .price-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+            background: #ffffff;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+        }
+
+        .price-table th {
+            background: #059669;
+            color: #ffffff;
+            padding: 14px;
+            font-size: 15px;
+            font-weight: 800;
+            text-align: right;
+        }
+
+        .price-table td {
+            padding: 12px 14px;
+            border-bottom: 1px solid #e2e8f0;
+            font-size: 14px;
+            color: #334155;
+        }
+
+        .price-table tr:nth-child(even) {
+            background: #f8fafc;
         }
 
         /* SPECIAL PAGES SECTION STYLES */
@@ -1984,6 +2037,13 @@
 
 <body>
 
+    <!-- ANNOUNCEMENT BAR (خصم للعملاء الجدد + معاينة مجانية) -->
+    <div class="announcement-bar">
+        <span>🎉 خصم خاص 15% للعملاء الجدد!</span>
+        <span>⏱️ معاينة مجانية خلال ساعة داخل مدينة الرياض</span>
+        <a href="https://wa.me/966570471168?text=أرغب%20في%20الاستفادة%20من%20خصم%20العملاء%20الجدد%20وطلب%20المعاينة%20المجانية" target="_blank" class="btn btn-red" style="padding: 2px 10px; font-size: 12px;">احجز خصمك الآن</a>
+    </div>
+
     <div class="topbar">
         <div class="container topbar-inner">
             <div class="topbar-items">
@@ -2012,6 +2072,7 @@
                 <a href="post-construction-cleaning.html">التنظيف بعد البناء</a>
                 <a href="glass-cleaning-profile.html">تنظيف الزجاج</a>
                 <a href="#services">خدماتنا</a>
+                <a href="#pricing-transparency">شفافية الأسعار</a>
                 <a href="#quote-page">طلب عرض سعر</a>
                 <a href="#trust-center">مركز الثقة والضمان</a>
                 <a href="#special-pages">الصفحات المتخصصة</a>
@@ -2055,7 +2116,8 @@
                     <div class="hero-trust">
                         <span>✓ فريق متخصص</span>
                         <span>✓ معدات حديثة</span>
-                        <span>✓ خدمة داخل الرياض</span>
+                        <span>✓ ضمان مكتوب 48 ساعة</span>
+                        <span>✓ معاينة مجانية خلال ساعة</span>
                     </div>
                 </div>
 
@@ -2083,7 +2145,7 @@
                     <div class="glass-banner-text">
                         <span class="glass-banner-badge">💎 بروفايل مميز وجديد</span>
                         <h2>خدمة تنظيف الواجهات الزجاجية والكلادينج بالرياض</h2>
-                        <p>تغطية شاملة لجميع أحياء الرياض (شرق، غرب، الياسمين، النرجس، لبن). شاهد بروفايل الأعمال، الصور قبل وبعد، واستفد من معاينة مجانية خلال 30 دقيقة وخصم 20% لفترة محدودة.</p>
+                        <p>تغطية شاملة لجميع أحياء الرياض (شرق، غرب، الياسمين، النرجس، العليا، حطين، لبن). شاهد بروفايل الأعمال، الصور قبل وبعد، واستفد من معاينة مجانية خلال 30 دقيقة وخصم 20% لفترة محدودة.</p>
                     </div>
                     <a href="glass-cleaning-profile.html" class="glass-banner-btn">
                         <span>🔍 استعرض بروفايل الزجاج</span>
@@ -2093,11 +2155,11 @@
             </div>
         </section>
 
-        <!-- قسم الخدمات الرئيسي مع شفافية الأسعار (1: الحد الأدنى لكل خدمة) -->
+        <!-- قسم الخدمات الرئيسي مع شفافية الأسعار (1: الحد الأدنى لكل خدمة + الخدمات الإضافية التنافسية) -->
         <section class="section" id="services">
             <div class="container">
                 <div class="section-header">
-                    <div class="section-label">شفافية الأسعار</div>
+                    <div class="section-label">خدمات شاملة ومكملة</div>
                     <h2 class="section-title">حلول تنظيف متخصصة لكل احتياج وبأسعار واضحة</h2>
                     <p class="section-description">أسعارنا تنافسية وتعتمد على المساحة وطبيعة الموقع (مرر أفقياً للاطلاع على كافة الخدمات)</p>
                 </div>
@@ -2240,15 +2302,165 @@
                         </div>
                         <div class="service-content">
                             <div class="service-icon">💧</div>
-                            <h3 class="service-title">تنظيف خزانات المياه بالرياض</h3>
-                            <p class="service-description">تنظيف خزانات المياه وإزالة الرواسب والأوساخ للمساعدة في المحافظة على نظافة الخزان.</p>
+                            <h3 class="service-title">تنظيف وتعقيم الخزانات والمسابح</h3>
+                            <p class="service-description">تنظيف وتعقيم خزانات المياه الأرضية والعلوية والمسابح بأفضل المواد المطهرة المعتمدة.</p>
                             <div class="service-actions">
                                 <a href="tank-cleaning.html" class="service-btn preview-btn">التفاصيل</a>
-                                <a href="https://wa.me/966570471168?text=أرغب%20في%20طلب%20خدمة%20تنظيف%20خزانات%20المياه" target="_blank" rel="noopener noreferrer" class="service-btn primary">اطلب الآن</a>
+                                <a href="https://wa.me/966570471168?text=أرغب%20في%20طلب%20خدمة%20تنظيف%20خزانات%20المياه%20والمسابح" target="_blank" rel="noopener noreferrer" class="service-btn primary">اطلب الآن</a>
                             </div>
                         </div>
                     </article>
+
+                    <!-- الإضافات الجديدة: خدمات المنازل، البخار، الثريات، الباركيه والعقود -->
+                    <article class="service-card">
+                        <div class="service-image-wrapper">
+                            <span class="service-price-badge">تبدأ من 200 ريال</span>
+                            <img src="https://images.unsplash.com/photo-1581578731548-c64695cc6952?auto=format&fit=crop&w=800&q=80" alt="غسيل الكنب والسجاد بالبخار" class="service-image" loading="lazy" decoding="async">
+                        </div>
+                        <div class="service-content">
+                            <div class="service-icon">🛋️</div>
+                            <h3 class="service-title">غسيل الكنب والسجاد بالبخار</h3>
+                            <p class="service-description">تنظيف وتعقيم الكنب، السجاد، والمجالس بالبخار الحار لإزالة البقع والميكروبات تماماً.</p>
+                            <div class="service-actions">
+                                <a href="#booking" class="service-btn preview-btn">التفاصيل</a>
+                                <a href="https://wa.me/966570471168?text=أرغب%20في%20طلب%20خدمة%20غسيل%20الكنب%20والسجاد%20بالبخار" target="_blank" rel="noopener noreferrer" class="service-btn primary">اطلب الآن</a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="service-card">
+                        <div class="service-image-wrapper">
+                            <span class="service-price-badge">تبدأ من 150 ريال</span>
+                            <img src="https://images.unsplash.com/photo-1513694203232-719a280e022f?auto=format&fit=crop&w=800&q=80" alt="تنظيف وتلميع الثريات الكريستال" class="service-image" loading="lazy" decoding="async">
+                        </div>
+                        <div class="service-content">
+                            <div class="service-icon">💡</div>
+                            <h3 class="service-title">تنظيف وتلميع الثريات والنجف</h3>
+                            <p class="service-description">تلميع الكريستال والنجف بدقة فائقة باستخدام أساليب آمنة تعيد إشراقة الإضاءة لعلمك.</p>
+                            <div class="service-actions">
+                                <a href="#booking" class="service-btn preview-btn">التفاصيل</a>
+                                <a href="https://wa.me/966570471168?text=أرغب%20في%20طلب%20خدمة%20تنظيف%20الثريات" target="_blank" rel="noopener noreferrer" class="service-btn primary">اطلب الآن</a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="service-card">
+                        <div class="service-image-wrapper">
+                            <span class="service-price-badge">تبدأ من 12 ريال/م²</span>
+                            <img src="https://images.unsplash.com/photo-1513694203232-719a280e022f?auto=format&fit=crop&w=800&q=80" alt="تنظيف وتلميع الباركيه والخشب" class="service-image" loading="lazy" decoding="async">
+                        </div>
+                        <div class="service-content">
+                            <div class="service-icon">🪵</div>
+                            <h3 class="service-title">تنظيف وتلميع الباركيه والخشب</h3>
+                            <p class="service-description">العناية الخاصة بجميع أنواع الأرضيات الخشبية والباركيه بمواد حماية لمنع الرطوبة والتلف.</p>
+                            <div class="service-actions">
+                                <a href="#booking" class="service-btn preview-btn">التفاصيل</a>
+                                <a href="https://wa.me/966570471168?text=أرغب%20في%20طلب%20خدمة%20تنظيف%20الباركيه" target="_blank" rel="noopener noreferrer" class="service-btn primary">اطلب الآن</a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="service-card">
+                        <div class="service-image-wrapper">
+                            <span class="service-price-badge">خصم يصل لـ 30%</span>
+                            <img src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=800&q=80" alt="عقود الصيانة الدورية للشركات والمنازل" class="service-image" loading="lazy" decoding="async">
+                        </div>
+                        <div class="service-content">
+                            <div class="service-icon">📅</div>
+                            <h3 class="service-title">عقود صيانة ونظافة دورية</h3>
+                            <p class="service-description">باقات صيانة (أسبوعية، شهرية، سنوية) للشركات، والمكاتب، والفلل بأسعار تفضيلية وخصومات حصرية.</p>
+                            <div class="service-actions">
+                                <a href="#booking" class="service-btn preview-btn">التفاصيل</a>
+                                <a href="https://wa.me/966570471168?text=أرغب%20في%20الاستفسار%20عن%20عقود%20الصيانة%20الدورية" target="_blank" rel="noopener noreferrer" class="service-btn primary">اطلب الآن</a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="service-card">
+                        <div class="service-image-wrapper">
+                            <span class="service-price-badge">حسب المساحة</span>
+                            <img src="https://images.unsplash.com/photo-1503387762-592deb58ef4e?auto=format&fit=crop&w=800&q=80" alt="خدمات الترميم والدهانات والتصليح" class="service-image" loading="lazy" decoding="async">
+                        </div>
+                        <div class="service-content">
+                            <div class="service-icon">🛠️</div>
+                            <h3 class="service-title">خدمات الترميم والدهانات والتصليح</h3>
+                            <p class="service-description">خدمات تكميلية تشمل دهانات، ديكورات، معالجة تشققات، وغسيل إيبوكسي المواقف لتقديم حزمة شاملة.</p>
+                            <div class="service-actions">
+                                <a href="#booking" class="service-btn preview-btn">التفاصيل</a>
+                                <a href="https://wa.me/966570471168?text=أرغب%20في%20طلب%20خدمات%20الترميم%20والدهانات" target="_blank" rel="noopener noreferrer" class="service-btn primary">اطلب الآن</a>
+                            </div>
+                        </div>
+                    </article>
+
                 </div>
+            </div>
+        </section>
+
+        <!-- ============================================================
+             جدول شفافية الأسعار التقريبية (Price Transparency Widget)
+        ============================================================ -->
+        <section class="section" id="pricing-transparency" style="background: #ffffff;">
+            <div class="container">
+                <div class="section-header">
+                    <div class="section-label">أسعار تقريبية وشفافة</div>
+                    <h2 class="section-title">دليل أسعار الخدمات بالرياض</h2>
+                    <p class="section-description">نلتزم بالشفافية المطلقة مع عملائنا. الجدول التالي يوضح حد الأسعار التقريبي لمختلف الخدمات:</p>
+                </div>
+
+                <table class="price-table">
+                    <thead>
+                        <tr>
+                            <th>نوع الخدمة</th>
+                            <th>وحدة القياس / النطاق</th>
+                            <th>السعر يبدأ من</th>
+                            <th>الملاحظات والضمان</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>تنظيف واجهات زجاجية / كلادينج</td>
+                            <td>المتر المربع (م²)</td>
+                            <td>8 ريال / م²</td>
+                            <td>شامل السقالات ومعدات السلامة</td>
+                        </tr>
+                        <tr>
+                            <td>جلي وتلميع الرخام</td>
+                            <td>المتر المربع (م²)</td>
+                            <td>15 ريال / م²</td>
+                            <td>شامل التلميع بالكريستال وإغلاق الشقوق</td>
+                        </tr>
+                        <tr>
+                            <td>تنظيف الشقق والمنازل (Move-in)</td>
+                            <td>الشقة الكاملة</td>
+                            <td>250 ريال</td>
+                            <td>تنظيف شامل، تعقيم الحمامات والمطابخ</td>
+                        </tr>
+                        <tr>
+                            <td>تنظيف المباني بعد البناء والإنشاء</td>
+                            <td>المبنى / الفيلا</td>
+                            <td>450 ريال</td>
+                            <td>إزالة البوية والأسمنت والترويبة</td>
+                        </tr>
+                        <tr>
+                            <td>غسيل طقم كنب بالبخار</td>
+                            <td>الطقم (5 - 7 مقاعد)</td>
+                            <td>200 ريال</td>
+                            <td>تعقيم وتجفيف سريع خلال ساعتين</td>
+                        </tr>
+                        <tr>
+                            <td>تنظيف وتعقيم خزانات المياه</td>
+                            <td>الخزان (علوي / أرضي)</td>
+                            <td>250 ريال</td>
+                            <td>استخدام مواد مطهرة معتمدة من الصحة</td>
+                        </tr>
+                        <tr>
+                            <td>عقود صيانة دورية (سنوية/شهرية)</td>
+                            <td>باقات مخصصة</td>
+                            <td>حسب الاتفاق</td>
+                            <td>خصومات حصرية تصل إلى 30%</td>
+                        </tr>
+                    </tbody>
+                </table>
             </div>
         </section>
 
@@ -2268,9 +2480,9 @@
                         <h3 style="font-size: 20px; font-weight: 800; color: #34d399; margin-bottom: 15px;">ماذا يتضمن عرض السعر المجاني؟</h3>
                         <ul style="list-style: none; display: flex; flex-direction: column; gap: 12px; font-size: 14px; color: #d1fae5;">
                             <li style="display: flex; align-items: center; gap: 10px;">⚡ <strong>رد سريع:</strong> التواصل وتزويدك بالتكلفة خلال 30 دقيقة فقط.</li>
-                            <li style="display: flex; align-items: center; gap: 10px;">🔍 <strong>معاينة ميدانية:</strong> زيارة تقييمية مجانية للموقع بمدينة الرياض إذا لزم الأمر.</li>
+                            <li style="display: flex; align-items: center; gap: 10px;">🔍 <strong>معاينة ميدانية:</strong> زيارة تقييمية مجانية للموقع بمدينة الرياض خلال ساعة.</li>
                             <li style="display: flex; align-items: center; gap: 10px;">📝 <strong>تفصيل التكاليف:</strong> بيان واضح بالأيدي العاملة، والمعدات، والمواد المستخدمة.</li>
-                            <li style="display: flex; align-items: center; gap: 10px;">🛡️ <strong>ضمان الجودة:</strong> التزام كامل بـ "الضمان الذهبي" وسياسة الرضا 100%.</li>
+                            <li style="display: flex; align-items: center; gap: 10px;">🛡️ <strong>ضمان الجودة:</strong> التزام كامل بـ "الضمان المكتوب 48 ساعة" وسياسة إعادة التنظيف المجاني.</li>
                         </ul>
                     </div>
 
@@ -2284,9 +2496,12 @@
                                 <option value="تنظيف واجهات زجاجية / كلادينج">تنظيف واجهات زجاجية / كلادينج</option>
                                 <option value="تنظيف فلل وقصور">تنظيف فلل وقصور</option>
                                 <option value="جلي وتلميع رخام">جلي وتلميع رخام</option>
+                                <option value="غسيل كنب ومجالس بالبخار">غسيل كنب ومجالس بالبخار</option>
+                                <option value="تنظيف وتعقيم مسابح وخزانات">تنظيف وتعقيم مسابح وخزانات</option>
+                                <option value="عقود صيانة دورية">عقود صيانة دورية</option>
                                 <option value="أخرى">خدمة أخرى</option>
                             </select>
-                            <textarea id="quoteDetails" class="form-control" placeholder="تفاصيل الموقع والمساحة والحي بالرياض..." rows="3" required></textarea>
+                            <textarea id="quoteDetails" class="form-control" placeholder="تفاصيل الموقع والمساحة والحي بالرياض (مثل: حي الياسمين، العليا، حطين)..." rows="3" required></textarea>
                             <button type="submit" class="btn btn-primary" style="min-height: 50px; font-size: 16px; font-weight: 800; background: #10b981;">🚀 طلب عرض السعر الآن (رد خلال 30 دقيقة)</button>
                         </form>
                     </div>
@@ -2301,15 +2516,15 @@
             <div class="container">
                 <div class="section-header">
                     <div class="section-label">حقوقك مضمونة 100%</div>
-                    <h2 class="section-title">مركز الثقة والسياسات</h2>
+                    <h2 class="section-title">مركز الثقة والضمان المكتوب</h2>
                     <p class="section-description">نلتزم بأعلى معايير الشفافية لنمنحك راحة البال التامة قبل وأثناء وبعد تنفيذ الخدمة</p>
                 </div>
 
                 <div class="trust-grid">
                     <div class="trust-card">
                         <div class="trust-icon">🏅</div>
-                        <h3 class="trust-title">الضمان الذهبي</h3>
-                        <p class="trust-desc">نضمن لك أعلى مستوى جودة في التنظيف وإزالة أصعب الأوساخ والدهانات. في حال وجود أي ملاحظة، نعيد تنظيف الجزء الملاحظ مجاناً وبدون أي تكلفة إضافية.</p>
+                        <h3 class="trust-title">ضمان مكتوب 48 ساعة</h3>
+                        <p class="trust-desc">نقدم ضماناً مكتوباً لمدة 48 ساعة بعد إنهاء العمل. في حال وجود أي ملاحظة أو بقع لم تنظف بالشكل المطلوب، نعيد التنظيف مجاناً فوراً.</p>
                     </div>
 
                     <div class="trust-card">
@@ -2320,9 +2535,84 @@
 
                     <div class="trust-card">
                         <div class="trust-icon">⚖️</div>
-                        <h3 class="trust-title">سياسة الشكاوى والتعويضات</h3>
+                        <h3 class="trust-title">سياسة التعويض والشكاوى</h3>
                         <p class="trust-desc">فريق خدمة العملاء جاهز للتعامل مع أي استفسار أو ملاحظة بجدية تامة. نضمن معالجة أي شكوى خلال 24 ساعة وتعويض العميل الفوري في حال حدوث أي تقصير.</p>
                     </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ============================================================
+             معرض المشاريع المخصصة لجميع أحياء الرياض (Local SEO Portfolio)
+        ============================================================ -->
+        <section class="section" id="portfolio" style="background: #f8fafc;">
+            <div class="container">
+                <div class="section-header">
+                    <div class="section-label">خبرتنا الميدانية بالرياض</div>
+                    <h2 class="section-title">معرض مشاريعنا الحقيقية في أحياء الرياض</h2>
+                    <p class="section-description">نعتز بتنفيذ مئات المشاريع في مختلف مناطق الرياض التجارية والسكينة</p>
+                </div>
+
+                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 20px;">
+                    <div class="work-card-custom">
+                        <div class="work-image-container">
+                            <img src="images/IMG_20221030_111321378498532225596.jpg" alt="تنظيف برج فندقي طريق الملك فهد بالرياض">
+                            <div class="work-badge-overlay"></div>
+                        </div>
+                        <h3 style="font-size: 16px; margin-top: 10px; color: #0d4b75;">تنظيف واجهة برج فندقي - طريق الملك فهد</h3>
+                        <p style="font-size: 13px; color: #64748b;">تنظيف زجاج وكلادينج باستخدام السبايدر مع إزالة الغبار والعوامل الجوية كاملة.</p>
+                    </div>
+
+                    <div class="work-card-custom">
+                        <div class="work-image-container">
+                            <img src="images/IMG_20230207_211231560845975352318.jpg" alt="تنظيف مجمع فلل سكنية حي الياسمين">
+                            <div class="work-badge-overlay"></div>
+                        </div>
+                        <h3 style="font-size: 16px; margin-top: 10px; color: #0d4b75;">تنظيف مجمع فلل بعد التشطيب - حي الياسمين</h3>
+                        <p style="font-size: 13px; color: #64748b;">إزالة بقايا البوية، الدهانات، وجلي الأرضيات بالكامل للجاهزية السكنية.</p>
+                    </div>
+
+                    <div class="work-card-custom">
+                        <div class="work-image-container">
+                            <img src="images/IMG-20240929-WA0006.jpg" alt="تنظيف مركز تجاري حي العليا">
+                            <div class="work-badge-overlay"></div>
+                        </div>
+                        <h3 style="font-size: 16px; margin-top: 10px; color: #0d4b75;">تنظيف واجهات كلادينج مول - حي العليا</h3>
+                        <p style="font-size: 13px; color: #64748b;">تلميع الكلادينج واللوحات التجارية لاستعادة المظهر الأصلي اللامع.</p>
+                    </div>
+
+                    <div class="work-card-custom">
+                        <div class="work-image-container">
+                            <img src="images/IMG_20240511_062226_385.jpg" alt="تنظيف قصر سكني حي حطين">
+                            <div class="work-badge-overlay"></div>
+                        </div>
+                        <h3 style="font-size: 16px; margin-top: 10px; color: #0d4b75;">جلي رخام وتنظيف قصر - حي حطين</h3>
+                        <p style="font-size: 13px; color: #64748b;">جلي الرخام بالماس وتلميعه بالكريستال مع تنظيف الثريات والمجالس.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ============================================================
+             قسم الاستهداف الجغرافي الأحياء (Local SEO Landing Pages Links)
+        ============================================================ -->
+        <section class="section" style="background: #ffffff; padding: 40px 0;">
+            <div class="container">
+                <div class="section-header">
+                    <div class="section-label">تغطية شاملة</div>
+                    <h2 class="section-title">نغطي كافة أحياء ومناطق الرياض</h2>
+                    <p class="section-description">فريقنا متواجد بالقرب منك لتوفير سرعة الاستجابة والمعاينة الميدانية السريعة خلال ساعة</p>
+                </div>
+
+                <div style="display: flex; flex-wrap: wrap; gap: 10px; justify-content: center;">
+                    <span style="background: #ecfdf5; border: 1px solid #a7f3d0; padding: 6px 14px; border-radius: 20px; font-size: 13px; font-weight: 700; color: #047857;">📍 تنظيف واجهات حي الياسمين</span>
+                    <span style="background: #ecfdf5; border: 1px solid #a7f3d0; padding: 6px 14px; border-radius: 20px; font-size: 13px; font-weight: 700; color: #047857;">📍 تنظيف بعد البناء حي النرجس</span>
+                    <span style="background: #ecfdf5; border: 1px solid #a7f3d0; padding: 6px 14px; border-radius: 20px; font-size: 13px; font-weight: 700; color: #047857;">📍 جلي رخام حي حطين</span>
+                    <span style="background: #ecfdf5; border: 1px solid #a7f3d0; padding: 6px 14px; border-radius: 20px; font-size: 13px; font-weight: 700; color: #047857;">📍 غسيل كنب بالبخار حي العليا</span>
+                    <span style="background: #ecfdf5; border: 1px solid #a7f3d0; padding: 6px 14px; border-radius: 20px; font-size: 13px; font-weight: 700; color: #047857;">📍 تنظيف واجهات كلادينج حي الملقا</span>
+                    <span style="background: #ecfdf5; border: 1px solid #a7f3d0; padding: 6px 14px; border-radius: 20px; font-size: 13px; font-weight: 700; color: #047857;">📍 تنظيف فلل حي ظهرة لبن</span>
+                    <span style="background: #ecfdf5; border: 1px solid #a7f3d0; padding: 6px 14px; border-radius: 20px; font-size: 13px; font-weight: 700; color: #047857;">📍 غسيل خزانات ومسابح شرق الرياض</span>
+                    <span style="background: #ecfdf5; border: 1px solid #a7f3d0; padding: 6px 14px; border-radius: 20px; font-size: 13px; font-weight: 700; color: #047857;">📍 شركة تنظيف غرب الرياض</span>
                 </div>
             </div>
         </section>
@@ -2414,7 +2704,7 @@
                         <div>
                             <div class="page-card-icon">🚰</div>
                             <h3 class="page-card-title">تنظيف خزانات المياه</h3>
-                            <p class="page-card-desc">تنظيف، تعقيم، وغسيل خزانات المياه العلوية والأارضية مع الضمان والتطهير الكامل.</p>
+                            <p class="page-card-desc">تنظيف، تعقيم، وغسيل خزانات المياه العلوية والأرضية مع الضمان والتطهير الكامل.</p>
                         </div>
                         <a href="tank-cleaning.html" class="page-card-link">عرض التفاصيل ←</a>
                     </div>
@@ -2437,7 +2727,7 @@
                     <div class="booking-info">
                         <div class="section-label">احجز خدمتك</div>
                         <h2>جاهزون لتنظيف مكانك باحترافية</h2>
-                        <p>اترك بياناتك وسنتواصل معك لتحديد احتياجك والخدمة المناسبة والموعد مع تقديم معاينة مجانية.</p>
+                        <p>اترك بياناتك وسنتواصل معك لتحديد احتياجك والخدمة المناسبة والموعد مع تقديم معاينة مجانية خلال ساعة.</p>
                         
                         <div class="contact-list">
                             <a href="tel:0570471168" class="contact-item">
@@ -2483,7 +2773,10 @@
                                         <option value="تنظيف الفلل والقصور">تنظيف الفلل والقصور</option>
                                         <option value="التنظيف بعد التشطيب">التنظيف بعد التشطيب</option>
                                         <option value="جلي وتلميع الرخام والسيراميك">جلي وتلميع الرخام والسيراميك</option>
-                                        <option value="تنظيف خزانات المياه">تنظيف خزانات المياه</option>
+                                        <option value="غسيل كنب ومجالس بالبخار">غسيل كنب ومجالس بالبخار</option>
+                                        <option value="تنظيف ثريات ونجف كريستال">تنظيف ثريات ونجف كريستال</option>
+                                        <option value="عقود صيانة ونظافة دورية">عقود صيانة ونظافة دورية</option>
+                                        <option value="تنظيف خزانات المياه والمسابح">تنظيف خزانات المياه والمسابح</option>
                                         <option value="خدمة أخرى">خدمة أخرى</option>
                                     </select>
                                 </div>
@@ -2509,24 +2802,31 @@
                     <div class="custom-blue-tag">من اعمالنا بالرياض</div>
                 </div>
 
-                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 25px;">
-                    <div class="work-card-custom">
+                <div class="horizontal-scroll-container">
+                    <div class="work-card-custom" style="flex: 0 0 300px;">
                         <div class="work-image-container">
-                            <img src="images/IMG_20240418_051727_162.jpg" alt="تنظيف مبنى الكليات" decoding="async">
+                            <img src="images/IMG_20221030_111321378498532225596.jpg" alt="تنظيف مبنى بالرياض">
                             <div class="work-badge-overlay"></div>
                         </div>
                     </div>
 
-                    <div class="work-card-custom">
+                    <div class="work-card-custom" style="flex: 0 0 300px;">
                         <div class="work-image-container">
-                            <img src="images/IMG_20240421_064818_921.jpg" alt="تنظيف واجهة ROUGE غوج" decoding="async">
-                            <div class="work-badge-overlay" style="left: -5px; right: auto; border-top-left-radius: 0; border-top-right-radius: 35px;"></div>
+                            <img src="images/IMG_20230207_211231560845975352318.jpg" alt="تنظيف فيلا بالرياض">
+                            <div class="work-badge-overlay"></div>
                         </div>
                     </div>
 
-                    <div class="work-card-custom">
+                    <div class="work-card-custom" style="flex: 0 0 300px;">
                         <div class="work-image-container">
-                            <img src="images/IMG_20240511_062226_385.jpg" alt="تنظيف واجهات زجاجية ومباني بالرياض" decoding="async">
+                            <img src="images/IMG_20240511_062226_385.jpg" alt="تنظيف واجهات زجاجية بالرياض">
+                            <div class="work-badge-overlay"></div>
+                        </div>
+                    </div>
+
+                    <div class="work-card-custom" style="flex: 0 0 300px;">
+                        <div class="work-image-container">
+                            <img src="images/IMG-20240929-WA0006.jpg" alt="تنظيف واجهات كلادينج بالرياض">
                             <div class="work-badge-overlay"></div>
                         </div>
                     </div>
@@ -2534,212 +2834,248 @@
             </div>
         </section>
 
-        <!-- شركاء النجاح -->
+        <!-- قسم شركاء النجاح -->
         <section class="partners-section">
             <div class="container">
-                <div class="custom-blue-header">
-                    <div class="custom-blue-tag">من شركاء النجاح</div>
+                <div class="section-header">
+                    <div class="section-label">شركاؤنا</div>
+                    <h2 class="section-title">شركاء النجاح والعملاء</h2>
                 </div>
 
                 <div class="partners-list-custom">
-                    <div class="partner-item-custom">1- شركة دانات القابضة.</div>
-                    <div class="partner-item-custom">2- مدارس الرواد العالمية.</div>
-                    <div class="partner-item-custom">3- فندق موفنبيك.</div>
-                    <div class="partner-item-custom">4- شركة مزاج وكيف لتقديم المشروبات.</div>
-                    <div class="partner-item-custom">5- شركة حياة الرياض الفندقية.</div>
-                    <div class="partner-item-custom">6- فندق كراون بلازا.</div>
-                    <div class="partner-item-custom">7- TCC شركة تحكم التقنية.</div>
-                    <div class="partner-item-custom">8- برج العنود التجاري.</div>
-                    <div class="partner-item-custom">9- فندق هيلتون الشرقية.</div>
-                    <div class="partner-item-custom">10- برج مصرف الراجحي.</div>
-                    <div class="partner-item-custom">11- معارض مؤسسة المنبع التجارية.</div>
-                    <div class="partner-item-custom">12- شركة دانات العقارية.</div>
-                    <div class="partner-item-custom">13- شركة الراجح الحديثة للمقاولات المحدودة.</div>
-                    <div class="partner-item-custom">14- شركة نولتي للمطابخ الألمانية.</div>
-                    <div class="partner-item-custom">15- معارض السيف هوم.</div>
-                    <div class="partner-item-custom">16- شركة اسمنت الرياض.</div>
-                    <div class="partner-item-custom">17- شركة صخور العرب للسيراميك والبورسلان.</div>
-                    <div class="partner-item-custom">18- شركة دزن كافيه.</div>
+                    <div class="partner-item-custom">1. شركه المطاعم الاهليه أمريكانا</div>
+                    <div class="partner-item-custom">2. شركه المأكولات السريعه البيك</div>
+                    <div class="partner-item-custom">3. شركه همبرغيني</div>
+                    <div class="partner-item-custom">4. شركه المراعي</div>
+                    <div class="partner-item-custom">5. المنيع للأجهزة الكهربائية</div>
                 </div>
             </div>
         </section>
 
-        <!-- من نحن -->
-        <section class="section" id="about">
-            <div class="container about-grid">
-                <div class="about-images">
-                    <img src="images/IMG_20240714_051557_677.jpg" alt="فريق Clean للنظافة العامة" class="about-image-main" loading="lazy" decoding="async">
-                </div>
-
-                <div class="about-text">
-                    <div class="section-label">لماذا Clean؟</div>
-                    <h2>نرفع معيار النظافة من أول زيارة</h2>
-                    <p>
-                        نؤمن أن النظافة ليست مجرد إزالة للأوساخ، بل هي تجربة متكاملة تبدأ بفهم احتياج العميل وتنتهي بنتيجة يفتخر بها.
-                    </p>
-
-                    <div class="features">
-                        <div class="feature">
-                            <h3>⚡ سرعة في الإنجاز</h3>
-                            <p>فريق منظم ومجهز بأحدث المعدات لإنهاء العمل بكفاءة عالية في الوقت المحدد.</p>
-                        </div>
-                        <div class="feature">
-                            <h3>🛡️ أمان وجودة</h3>
-                            <p>نستخدم مواد تنظيف معتمدة وآمنة لحماية أسطح المبنى والواجهات والرخام.</p>
-                        </div>
-                        <div class="feature">
-                            <h3>👔 كادر مدرب</h3>
-                            <p>عمالة متخصصة ومدرّبة على أساليب التنظيف الحديثة والتعامل مع كافة التحديات.</p>
-                        </div>
-                        <div class="feature">
-                            <h3>💰 أسعار منافسة</h3>
-                            <p>قيمة حقيقية مقابل المال مع تقديم تسعير واضح بدون تكاليف خفية.</p>
-                        </div>
+        <!-- قسم الإحصائيات -->
+        <section class="stats">
+            <div class="container">
+                <div class="stats-grid">
+                    <div class="stat">
+                        <div class="stat-number">+1200</div>
+                        <div class="stat-title">مشروع مكتمل</div>
+                    </div>
+                    <div class="stat">
+                        <div class="stat-number">%99</div>
+                        <div class="stat-title">نسبة رضا العملاء</div>
+                    </div>
+                    <div class="stat">
+                        <div class="stat-number">+10</div>
+                        <div class="stat-title">سنوات خبرة</div>
+                    </div>
+                    <div class="stat">
+                        <div class="stat-number">24/7</div>
+                        <div class="stat-title">دعم واستجابة</div>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- كيف نعمل -->
-        <section class="section" style="background: var(--bg-soft);">
+        <!-- قسم من نحن -->
+        <section class="section" id="about">
+            <div class="container">
+                <div class="about-grid">
+                    <div>
+                        <div class="section-label">من نحن</div>
+                        <h2 class="section-title">خبرة واحترافية في خدمات التنظيف بالرياض</h2>
+                        <p class="hero-description">
+                            نحن مؤسسة Clean للنظافة العامة، نعمل على تقديم أفضل حلول التنظيف المتخصصة للمباني والمنشآت بعد البناء والإنشاء والتشطيب والواجهات والفلل بالرياض، بالاعتماد على فريق عمل مدرب ومعدات حديثة تضمن لك الحصول على نتائج مبهرة وآمنة.
+                        </p>
+                        <div class="features">
+                            <div class="feature">
+                                <h3>فريق مؤهل</h3>
+                                <p>عمالة مدربة ومجهزة لأداء المهام بدقة وسرعة.</p>
+                            </div>
+                            <div class="feature">
+                                <h3>معدات حديثة</h3>
+                                <p>نستخدم أحدث أدوات ومواد التنظيف المتخصصة.</p>
+                            </div>
+                            <div class="feature">
+                                <h3>التزام بالمواعيد</h3>
+                                <p>نلتزم بإنهاء العمل في الموعد المحدد وبأعلى جودة.</p>
+                            </div>
+                            <div class="feature">
+                                <h3>أسعار تنافسية</h3>
+                                <p>نقدم أفضل قيمة مقابل تكلفة مناسبة لعملائنا.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="about-images">
+                        <img src="images/IMG-20240929-WA0002.jpg" alt="فريق Clean للنظافة العامة" class="about-image-main">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- قسم خطوات العمل -->
+        <section class="section">
             <div class="container">
                 <div class="section-header">
-                    <div class="section-label">خطوات متقنة</div>
-                    <h2 class="section-title">آلية العمل معنا</h2>
-                    <p class="section-description">خطوات بسيطة تضمن لك الحصول على خدمة نظافة ممتازة</p>
+                    <div class="section-label">كيف نعمل</div>
+                    <h2 class="section-title">خطوات بسيطة للحصول على خدمتك</h2>
                 </div>
 
                 <div class="process-grid">
                     <div class="process-card">
                         <div class="process-number">1</div>
                         <h3>التواصل والطلب</h3>
-                        <p>تتواصل معنا عبر الاتصال أو واتساب وتحدد نوع الخدمة والموقع بالرياض.</p>
+                        <p>تواصل معنا عبر الهاتف أو واتساب وحدد نوع الخدمة والموقع.</p>
                     </div>
 
                     <div class="process-card">
                         <div class="process-number">2</div>
-                        <h3>المعاينة والتحديد</h3>
-                        <p>نقوم بمعاينة الموقع إذا تطلب الأمر وتحديد التكلفة والموعد المناسب لطلبك.</p>
+                        <h3>المعاينة والتثمين</h3>
+                        <p>نحدد الاحتياج والتكلفة المناسبة والموعد المحدد للبدء.</p>
                     </div>
 
                     <div class="process-card">
                         <div class="process-number">3</div>
                         <h3>التنفيذ الاحترافي</h3>
-                        <p>يبدأ الفريق في تنفيذ عملية التنظيف باستخدام أدوات ومواد مناسبة للموقع.</p>
+                        <p>يقوم فريقنا بتنفيذ عملية التنظيف باستخدام المعدات المناسبة.</p>
                     </div>
 
                     <div class="process-card">
                         <div class="process-number">4</div>
-                        <h3>التسليم والرضا</h3>
-                        <p>يتم فحص النتيجة معك للتأكد من رضاك الكامل عن جودة التنظيف والتفاصيل.</p>
+                        <h3>التسليم والضمان</h3>
+                        <p>نعاين العمل معك للتأكد من رضاك التام وتسليم الموقع نظيفاً وجاهزاً.</p>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- آراء العملاء -->
+        <!-- قسم آراء العملاء -->
         <section class="section" id="testimonials">
             <div class="container">
                 <div class="section-header">
-                    <div class="section-label">ثقة عملائنا</div>
-                    <h2 class="section-title">ماذا يقول عملاؤنا في الرياض؟</h2>
-                    <p class="section-description">نفخر برضا عملائنا وثقتهم المستمرة في خدماتنا</p>
+                    <div class="section-label">آراء العملاء</div>
+                    <h2 class="section-title">ماذا يقول عملاؤنا عن خدماتنا</h2>
                 </div>
 
                 <div class="testimonials-grid">
                     <div class="testimonial">
                         <div class="stars">★★★★★</div>
-                        <p>"خدمة ممتازة جدًا في تنظيف المبنى بعد الإنشاء، أزالوا آثار الدهانات والبوية تمامًا وكان التعامل احترافي ومواعيدهم دقيقة."</p>
-                        <strong>- أ. عبدالمجيد العتيبي</strong>
+                        <p>"خدمة ممتازة ونظافة متقنة جداً بعد تشطيب الفيلا، تعامل راقي والتزام تكتيكي بالمواعيد."</p>
+                        <strong>أبو فهد - الرياض (حي النرجس)</strong>
                     </div>
 
                     <div class="testimonial">
                         <div class="stars">★★★★★</div>
-                        <p>"تم تنظيف الواجهات الزجاجية للمبنى بكفاءة عالية، الفرق كان واضحًا والأجهزة المستخدمة أسرعت العمالة بشكل ممتاز."</p>
-                        <strong>- م. سلطان الشمري</strong>
+                        <p>"فريق تنظيف الواجهات الزجاجية كان سريعاً ومحتصاً، والنتائج كانت ممتازة للغاية والضمان المكتوب أعطانا ثقة كاملة."</p>
+                        <strong>م. سلطان - مدير مجمع تجاري</strong>
                     </div>
 
                     <div class="testimonial">
                         <div class="stars">★★★★★</div>
-                        <p>"جربنا خدمة جلي وتلميع الرخام للفيلا، النتيجة كانت مبهرة وعاد للرخام بريقه من جديد، شكراً لفريق Clean."</p>
-                        <strong>- أبو فهد النجعي</strong>
+                        <p>"تم إزالة آثار البوية والأسمنت من الأرضيات تماماً والرخام رجع يلمع كأنه جديد، شكراً لمؤسسة Clean."</p>
+                        <strong>أم خالد - الرياض (حي الملقا)</strong>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- الأسئلة الشائعة -->
-        <section class="section" style="background: var(--bg-soft);">
+        <!-- ============================================================
+             قسم المدونة وإرشادات العناية (Care Guides Blog)
+        ============================================================ -->
+        <section class="section" id="blog" style="background: #ffffff;">
             <div class="container">
                 <div class="section-header">
-                    <div class="section-label">إجابات وسريعة</div>
-                    <h2 class="section-title">الأسئلة الشائعة</h2>
-                    <p class="section-description">إليك أكثر الأسئلة تكراراً حول خدماتنا بالرياض</p>
+                    <div class="section-label">نصائح وإرشادات العناية</div>
+                    <h2 class="section-title">مدونة Clean للعناية بالمباني والمنازل</h2>
+                    <p class="section-description">مقالات وأدلة تعليمية مجانية تساعدك على المحافظة على نظافة منشأتك</p>
+                </div>
+
+                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 20px;">
+                    <article style="border: 1px solid #e2e8f0; border-radius: 12px; overflow: hidden; background: #ffffff;">
+                        <img src="https://images.unsplash.com/photo-1581578731548-c64695cc6952?auto=format&fit=crop&w=600&q=80" alt="دليل تنظيف المباني بعد البناء" style="height: 180px; width: 100%; object-fit: cover;">
+                        <div style="padding: 15px;">
+                            <h3 style="font-size: 16px; font-weight: 800; margin-bottom: 8px; color: #0f172a;">دليل شامل لتنظيف المباني بعد البناء والتشطيب</h3>
+                            <p style="font-size: 13px; color: #64748b; margin-bottom: 12px;">خطوات عملية لإزالة بقايا البوية والترويبة بدون خدش السيراميك أو الرخام...</p>
+                            <a href="/blog" style="color: #059669; font-weight: 700; font-size: 13px;">اقرأ المقال كامل ←</a>
+                        </div>
+                    </article>
+
+                    <article style="border: 1px solid #e2e8f0; border-radius: 12px; overflow: hidden; background: #ffffff;">
+                        <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=600&q=80" alt="كيفية العناية بالرخام وتلميعه" style="height: 180px; width: 100%; object-fit: cover;">
+                        <div style="padding: 15px;">
+                            <h3 style="font-size: 16px; font-weight: 800; margin-bottom: 8px; color: #0f172a;">كيف تحافظ على لمعان الرخام وتمنع التآكل؟</h3>
+                            <p style="font-size: 13px; color: #64748b; margin-bottom: 12px;">أهم النصائح اليومية لتنظيف الرخام واستخدام المنظفات ذات الحموضة المتوازنة...</p>
+                            <a href="/blog" style="color: #059669; font-weight: 700; font-size: 13px;">اقرأ المقال كامل ←</a>
+                        </div>
+                    </article>
+
+                    <article style="border: 1px solid #e2e8f0; border-radius: 12px; overflow: hidden; background: #ffffff;">
+                        <img src="images/IMG_20240511_062226_385.jpg" alt="طريقة غسيل الواجهات الزجاجية" style="height: 180px; width: 100%; object-fit: cover;">
+                        <div style="padding: 15px;">
+                            <h3 style="font-size: 16px; font-weight: 800; margin-bottom: 8px; color: #0f172a;">أفضل الطرق لتنظيف الواجهات الزجاجية والكلادينج</h3>
+                            <p style="font-size: 13px; color: #64748b; margin-bottom: 12px;">كيف تتخلص من التكلسات والبقع الناتجة عن مياه الأمطار والأتربة بالرياض...</p>
+                            <a href="/blog" style="color: #059669; font-weight: 700; font-size: 13px;">اقرأ المقال كامل ←</a>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- قسم الأسئلة الشائعة (FAQ Widget) -->
+        <section class="section">
+            <div class="container">
+                <div class="section-header">
+                    <div class="section-label">الأسئلة الشائعة</div>
+                    <h2 class="section-title">أجوبة على أكثر استفساراتكم تكراراً</h2>
                 </div>
 
                 <div class="faq-wrapper">
                     <div class="faq-item">
-                        <button class="faq-question" type="button">
-                            ما هي مناطق تقديم خدمات Clean؟
-                            <span>+</span>
-                        </button>
+                        <button class="faq-question">ما هي مناطق تقديم خدمات Clean بالرياض؟ <span>+</span></button>
                         <div class="faq-answer">
-                            نقدم خدماتنا داخل مدينة الرياض وكافة الأحياء التابعة لها، بالإضافة للمناطق المجاورة حسب نطاق وحجم مشروع الخدمة.
+                            تقدم Clean للنظافة العامة خدماتها لكافة أحياء ومناطق مدينة الرياض (شمال، جنوب، شرق، وغرب الرياض) والمناطق المجاورة لها.
                         </div>
                     </div>
 
                     <div class="faq-item">
-                        <button class="faq-question" type="button">
-                            هل تقدمون خدمات تنظيف المباني والمنشآت بعد البناء والإنشاء؟
-                            <span>+</span>
-                        </button>
+                        <button class="faq-question">هل تقدمون ضماناً مكتوباً على الخدمات؟ <span>+</span></button>
                         <div class="faq-answer">
-                            نعم، متخصصون في تجهيز وتنظيف المباني بعد الإنشاء والتشطيب وإزالة الغبار الخشن والدهانات والأسمنت ليكون الموقع جاهزاً للاستخدام فوراً.
+                            نعم، نقدم ضماناً مكتوباً لمدة 48 ساعة بعد التنظيف. وفي حال وجود أي ملاحظة نعيد التنظيف مجاناً.
                         </div>
                     </div>
 
                     <div class="faq-item">
-                        <button class="faq-question" type="button">
-                            هل تقدمون تنظيف واجهات الكلادينج والزجاج؟
-                            <span>+</span>
-                        </button>
+                        <button class="faq-question">كم تستغرق عملية معاينة الموقع؟ <span>+</span></button>
                         <div class="faq-answer">
-                            نعم، نوفر معدات تنظيف احترافية للمباني المرتفعة والأبراج والواجهات الزجاجية والكلادينج بأمان وجودة عالية.
+                            نوفر معاينة مجانية وسريعة للموقع خلال 30 إلى 60 دقيقة من طلبك داخل مدينة الرياض.
                         </div>
                     </div>
 
                     <div class="faq-item">
-                        <button class="faq-question" type="button">
-                            هل يمكن طلب معاينة قبل تنفيذ الخدمة؟
-                            <span>+</span>
-                        </button>
+                        <button class="faq-question">هل تشمل خدماتكم تنظيف الكنب والمسابح والعقود الدورية؟ <span>+</span></button>
                         <div class="faq-answer">
-                            بالتأكيد، يمكنك التواصل معنا لتنسيق زيارة معاينة مجانية للموقع لتحديد الخدمة الدقيقة وتثمين التكلفة.
+                            نعم، نوفر حزمة خدمات متكاملة تشمل غسيل الكنب والسجاد بالبخار، تنظيف وتعقيم المسابح والخزانات، بالإضافة إلى عقود صيانة دورية للمؤسسات والشركات والمنازل بخصومات تصل إلى 30%.
                         </div>
                     </div>
 
                     <div class="faq-item">
-                        <button class="faq-question" type="button">
-                            ما هي أوقات وساعات العمل لديكم؟
-                            <span>+</span>
-                        </button>
+                        <button class="faq-question">كيف يتم تحديد سعر الخدمة؟ <span>+</span></button>
                         <div class="faq-answer">
-                            نعمل طوال أيام الأسبوع من السبت إلى الخميس من الساعة 8 صباحاً وحتى 10 مساءً لتلبية طلباتكم.
+                            يتم تحديد السعر بناءً على مساحة الموقع، درجة الأوساخ، ونوع المعدات المستخدمة مع إتاحة حد أدنى واضح ومحدد لجميع الخدمات.
                         </div>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- CTA دعوة للتواصل -->
+        <!-- CTA BOX -->
         <section class="section">
             <div class="container">
                 <div class="cta-box">
-                    <h2 style="font-size: clamp(20px, 3vw, 28px); font-weight: 800; margin-bottom: 10px;">جاهز لجعل منشأتك تبدو بأفضل مظهر؟</h2>
-                    <p style="color: var(--text-soft); max-width: 600px; margin: 0 auto 20px;">تواصل معنا الآن للحصول على استشارة سريعة ومعاينة مجانية للموقع داخل الرياض.</p>
-                    <div style="display: flex; gap: 10px; justify-content: center; flex-wrap: wrap;">
-                        <a href="tel:0570471168" class="btn btn-primary">☎ اتصل الآن 0570471168</a>
-                        <a href="https://wa.me/966570471168" target="_blank" rel="noopener noreferrer" class="btn btn-outline">💬 راسلنا عبر واتساب</a>
+                    <h2 style="font-size: 24px; font-weight: 800; margin-bottom: 10px; color: #0f172a;">احصل على معاينة وتثمين مجاني لمنشأتك الآن</h2>
+                    <p style="color: var(--text-soft); font-size: 14px; margin-bottom: 20px;">تواصل معنا فوراً للحصول على أفضل عرض سعر مخصص واحترافي في الرياض</p>
+                    <div style="display: flex; gap: 12px; justify-content: center; flex-wrap: wrap;">
+                        <a href="tel:0570471168" class="btn btn-primary">☎ اتصل بـ Clean الآن</a>
+                        <a href="https://wa.me/966570471168" target="_blank" rel="noopener noreferrer" class="btn btn-outline">💬 تواصل عبر واتساب</a>
                     </div>
                 </div>
             </div>
@@ -2751,266 +3087,195 @@
         <div class="container">
             <div class="footer-main">
                 <div>
-                    <div class="logo" style="color: #ffffff; margin-bottom: 15px;">
+                    <div class="logo" style="color: #ffffff; margin-bottom: 12px;">
                         <div class="logo-mark">C</div>
-                        <div class="logo-text">Clean<small style="color: #94a3b8;">GENERAL CLEANING</small></div>
+                        Clean
                     </div>
                     <p style="font-size: 13px; color: #94a3b8; line-height: 1.7;">
-                        Clean للنظافة العامة - مؤسسة متخصصة في تقديم خدمات التنظيف الشامل للمباني بعد الإنشاء والواجهات والفلل والقصور بالرياض بأعلى معايير الجودة.
+                        مؤسسة Clean للنظافة العامة بالرياض - متخصصون في تنظيف المباني والمنشآت بعد البناء والإنشاء والتشطيب، والواجهات، وجلي الرخام، وغسيل الكنب والعقود الدورية بأعلى معايير الجودة والالتزام.
                     </p>
                 </div>
 
                 <div>
-                    <div class="footer-title">روابط سريعة</div>
+                    <div class="footer-title">روابط السريعة</div>
                     <div class="footer-links">
                         <a href="#home">الرئيسية</a>
+                        <a href="post-construction-cleaning.html">التنظيف بعد البناء</a>
+                        <a href="glass-cleaning-profile.html">تنظيف الزجاج</a>
                         <a href="#services">خدماتنا</a>
-                        <a href="#about">من نحن</a>
-                        <a href="#special-pages">الصفحات المتخصصة</a>
-                        <a href="#booking">طلب حجز</a>
-                        <a href="/blog">المدونة</a>
+                        <a href="#pricing-transparency">شفافية الأسعار</a>
+                        <a href="#quote-page">طلب عرض سعر</a>
+                        <a href="#trust-center">الضمان والسياسات</a>
+                        <a href="#portfolio">معرض المشاريع</a>
+                        <a href="#booking">احجز الآن</a>
                     </div>
                 </div>
 
                 <div>
-                    <div class="footer-title">خدماتنا</div>
+                    <div class="footer-title">خدماتنا المتخصصة</div>
                     <div class="footer-links">
-                        <a href="post-construction-cleaning.html">تنظيف بعد البناء</a>
-                        <a href="glass-cleaning-profile.html">تنظيف واجهات زجاجية</a>
+                        <a href="post-construction-cleaning.html">تنظيف بعد الإنشاء</a>
                         <a href="cladding-cleaning.html">تنظيف الكلادينج</a>
-                        <a href="towers-cleaning.html">تنظيف واجهات الأبراج</a>
+                        <a href="towers-cleaning.html">تنظيف الأبراج</a>
                         <a href="stone-cleaning.html">تنظيف الواجهات الحجرية</a>
                         <a href="villas-cleaning.html">تنظيف الفلل والقصور</a>
                         <a href="marble-polishing.html">جلي وتلميع الرخام</a>
-                        <a href="tank-cleaning.html">تنظيف خزانات المياه</a>
+                        <a href="tank-cleaning.html">تنظيف الخزانات والمسابح</a>
+                        <a href="#services">غسيل الكنب بالبخار</a>
                     </div>
                 </div>
 
                 <div>
                     <div class="footer-title">تواصل معنا</div>
-                    <div class="footer-links">
-                        <span>📍 الرياض، المملكة العربية السعودية</span>
-                        <a href="tel:0570471168">☎ 0570471168</a>
-                        <a href="https://wa.me/966570471168" target="_blank" rel="noopener noreferrer">💬 واتساب المباشر</a>
-                        <span>🕐 السبت - الخميس: 8 ص - 10 م</span>
+                    <div class="footer-links" style="color: #cbd5e1;">
+                        <p>📍 المملكة العربية السعودية - الرياض</p>
+                        <p>☎ 0570471168</p>
+                        <p>💬 واتساب: 0570471168</p>
+                        <p>⏰ ساعات العمل: 8 ص - 10 م</p>
+                        <p>🛡️ ضمان مكتوب ومعاينة مجانية</p>
                     </div>
                 </div>
             </div>
 
             <div class="footer-bottom">
                 <div>جميع الحقوق محفوظة © 2026 Clean للنظافة العامة</div>
-                <div>خدمات تنظيف احترافية في الرياض</div>
+                <div>خدمات تنظيف احترافية في مدينة الرياض</div>
             </div>
         </div>
     </footer>
 
-    <!-- FLOATING BUTTONS -->
+    <!-- FLOATING ACTIONS (واتساب والعودة للأعلى) -->
     <div class="floating-actions">
         <a href="https://wa.me/966570471168" target="_blank" rel="noopener noreferrer" class="floating-btn floating-whatsapp" aria-label="تواصل عبر واتساب">💬</a>
-        <button class="floating-btn floating-top" id="scrollTopBtn" type="button" aria-label="العودة للأعلى">↑</button>
+        <button id="scrollTop" class="floating-btn floating-top" type="button" aria-label="العودة للأعلى">↑</button>
     </div>
 
-    <!-- LIVE VISITORS COUNTER BAR -->
+    <!-- LIVE VISITORS BAR (شريط الزوار والخصم المباشر العائم) -->
     <div class="online-counter-bar">
         <div class="online-counter-info">
             <div class="online-pulse"></div>
-            <span>يوجد الآن <strong id="liveVisitorsCount" style="color: #34d399;">14</strong> زائر يتصفحون الموقع في الرياض</span>
+            <span>يوجد الآن 14 زائر يتصفحون الموقع • خصم 15% للعملاء الجدد</span>
         </div>
-        <a href="https://wa.me/966570471168?text=السلام%20عليهم،%20أرغب%20في%20الاستفسار%20عن%20خدمات%20التنظيف" target="_blank" rel="noopener noreferrer" class="online-counter-btn">احجز دورك الآن 👈</a>
+        <a href="https://wa.me/966570471168?text=أرغب%20في%20الاستفادة%20من%20خصم%2015%25%20للعملاء%20الجدد" target="_blank" class="online-counter-btn">احصل على الخصم والمعاينة المجانية</a>
     </div>
 
-    <!-- PROMO POPUP MODAL -->
-    <div class="promo-overlay" id="promoOverlay">
+    <!-- PROMO POPUP MODAL (نافذة العرض التفاعلي) -->
+    <div class="promo-overlay" id="promoModal">
         <div class="promo-modal">
             <div class="promo-header">
-                <button class="promo-close" id="promoCloseBtn" type="button" aria-label="إغلاق النافذة">✕</button>
-                <h3>🎉 خصم خاص لفترة محدودة!</h3>
-                <p>احصل على خصم 15% عند طلب خدمة التنظيف اليوم</p>
+                <button class="promo-close" id="closePromo">&times;</button>
+                <h3>🎁 عرض خاص وحصري لزوار الموقع!</h3>
+                <p>احصل على خصم 15% + معاينة مجانية خلال ساعة في الرياض</p>
             </div>
             <div class="promo-body">
-                <div class="promo-subtitle">ينتهي العرض الخاص خلال:</div>
+                <p class="promo-subtitle">ينتهي العرض المؤقت خلال:</p>
                 <div class="promo-timer-box">
                     <div class="promo-timer-title">الوقت المتبقي</div>
-                    <div class="promo-timer-clock" id="promoTimer">14:59</div>
+                    <div class="promo-timer-clock" id="promoClock">29:59</div>
                 </div>
                 <div class="promo-actions">
-                    <a href="https://wa.me/966570471168?text=أرغب%20في%20الحصول%20على%20خصم%2015%25%20على%20خدمات%20التنظيف" target="_blank" rel="noopener noreferrer" class="promo-btn promo-btn-whatsapp">💬 حجز العرض عبر واتساب</a>
-                    <a href="tel:0570471168" class="promo-btn promo-btn-call">☎ اتصل بالهاتف</a>
+                    <a href="https://wa.me/966570471168?text=أرغب%20في%20الحصول%20على%20خصم%2015%25%20وطلب%20المعاينة%20المجانية" target="_blank" class="promo-btn promo-btn-whatsapp">💬 احجز عبر واتساب</a>
+                    <a href="tel:0570471168" class="promo-btn promo-btn-call">☎ اتصل المباشر</a>
                 </div>
-                <div class="promo-footnote">معاينة مجانية • ضمان شامل • تنفيذ سريع بالرياض</div>
+                <div class="promo-footnote">✓ يتضمن ضماناً مكتوباً لمدة 48 ساعة</div>
             </div>
         </div>
     </div>
 
-    <!-- TOAST NOTIFICATION -->
-    <div class="toast" id="toast">تم إرسال طلبك بنجاح، جاري التحويل للواتساب...</div>
+    <div id="toast" class="toast">تم الإرسال بنجاح، جاري تحويلك لواتساب...</div>
 
-    <!-- JAVASCRIPT LOGIC -->
+    <!-- SCRIPTS -->
     <script>
-        document.addEventListener('DOMContentLoaded', function() {
-            // Mobile Menu Toggle
-            const menuToggle = document.getElementById('menuToggle');
-            const navLinks = document.getElementById('navLinks');
-            if (menuToggle && navLinks) {
-                menuToggle.addEventListener('click', function() {
-                    const expanded = menuToggle.getAttribute('aria-expanded') === 'true';
-                    menuToggle.setAttribute('aria-expanded', !expanded);
-                    navLinks.classList.toggle('active');
-                    document.body.classList.toggle('menu-open');
-                });
+        // Toggle Nav Mobile Menu
+        const menuToggle = document.getElementById('menuToggle');
+        const navLinks = document.getElementById('navLinks');
 
-                navLinks.querySelectorAll('a').forEach(link => {
-                    link.addEventListener('click', () => {
-                        navLinks.classList.remove('active');
-                        document.body.classList.remove('menu-open');
-                        menuToggle.setAttribute('aria-expanded', 'false');
-                    });
-                });
-            }
+        menuToggle.addEventListener('click', () => {
+            const open = navLinks.classList.toggle('active');
+            document.body.classList.toggle('menu-open', open);
+            menuToggle.setAttribute('aria-expanded', open);
+        });
 
-            // Scroll To Top Button
-            const scrollTopBtn = document.getElementById('scrollTopBtn');
-            window.addEventListener('scroll', function() {
-                if (window.scrollY > 300) {
-                    scrollTopBtn.classList.add('show');
-                } else {
-                    scrollTopBtn.classList.remove('show');
-                }
+        // FAQ Accordion
+        const faqQuestions = document.querySelectorAll('.faq-question');
+        faqQuestions.forEach(btn => {
+            btn.addEventListener('click', () => {
+                const item = btn.parentElement;
+                item.classList.toggle('active');
+                const span = btn.querySelector('span');
+                if (span) span.textContent = item.classList.contains('active') ? '-' : '+';
             });
+        });
 
-            if (scrollTopBtn) {
-                scrollTopBtn.addEventListener('click', function() {
-                    window.scrollTo({ top: 0, behavior: 'smooth' });
-                });
-            }
-
-            // FAQ Accordion
-            const faqQuestions = document.querySelectorAll('.faq-question');
-            faqQuestions.forEach(question => {
-                question.addEventListener('click', function() {
-                    const item = this.parentElement;
-                    const isActive = item.classList.contains('active');
-                    
-                    document.querySelectorAll('.faq-item').forEach(el => {
-                        el.classList.remove('active');
-                        const span = el.querySelector('.faq-question span');
-                        if (span) span.textContent = '+';
-                    });
-
-                    if (!isActive) {
-                        item.classList.add('active');
-                        const span = this.querySelector('span');
-                        if (span) span.textContent = '-';
-                    }
-                });
-            });
-
-            // Booking Form Handler
-            const bookingForm = document.getElementById('bookingForm');
-            if (bookingForm) {
-                bookingForm.addEventListener('submit', function(e) {
-                    e.preventDefault();
-                    
-                    const name = document.getElementById('name').value;
-                    const phone = document.getElementById('phone').value;
-                    const service = document.getElementById('service').value;
-                    const details = document.getElementById('details').value;
-
-                    const message = `مرحباً Clean للنظافة العامة، أرغب في حجز خدمة:%0A%0A` +
-                                  `👤 *الاسم:* ${encodeURIComponent(name)}%0A` +
-                                  `📞 *الجوال:* ${encodeURIComponent(phone)}%0A` +
-                                  `🛠️ *الخدمة:* ${encodeURIComponent(service)}%0A` +
-                                  `📝 *التفاصيل:* ${encodeURIComponent(details)}`;
-
-                    const toast = document.getElementById('toast');
-                    if (toast) {
-                        toast.classList.add('show');
-                        setTimeout(() => toast.classList.remove('show'), 3000);
-                    }
-
-                    setTimeout(() => {
-                        window.open(`https://wa.me/966570471168?text=${message}`, '_blank');
-                    }, 800);
-                });
-            }
-
-            // Quote Form Handler
-            const quoteForm = document.getElementById('quoteForm');
-            if (quoteForm) {
-                quoteForm.addEventListener('submit', function(e) {
-                    e.preventDefault();
-                    
-                    const name = document.getElementById('quoteName').value;
-                    const phone = document.getElementById('quotePhone').value;
-                    const service = document.getElementById('quoteService').value;
-                    const details = document.getElementById('quoteDetails').value;
-
-                    const message = `طلب عرض سعر جديد (رد خلال 30 دقيقة):%0A%0A` +
-                                  `👤 *الاسم:* ${encodeURIComponent(name)}%0A` +
-                                  `📞 *الجوال:* ${encodeURIComponent(phone)}%0A` +
-                                  `🛠️ *الخدمة:* ${encodeURIComponent(service)}%0A` +
-                                  `📝 *تفاصيل الموقع:* ${encodeURIComponent(details)}`;
-
-                    const toast = document.getElementById('toast');
-                    if (toast) {
-                        toast.innerText = "جاري إرسال طلب عرض السعر...";
-                        toast.classList.add('show');
-                        setTimeout(() => toast.classList.remove('show'), 3000);
-                    }
-
-                    setTimeout(() => {
-                        window.open(`https://wa.me/966570471168?text=${message}`, '_blank');
-                    }, 800);
-                });
-            }
-
-            // Live Visitors Counter Logic
-            const counterEl = document.getElementById('liveVisitorsCount');
-            if (counterEl) {
-                setInterval(() => {
-                    let current = parseInt(counterEl.innerText, 10);
-                    let change = Math.floor(Math.random() * 5) - 2;
-                    let next = current + change;
-                    if (next < 8) next = 9;
-                    if (next > 28) next = 25;
-                    counterEl.innerText = next;
-                }, 4000);
-            }
-
-            // Promo Popup Modal Logic
-            const promoOverlay = document.getElementById('promoOverlay');
-            const promoCloseBtn = document.getElementById('promoCloseBtn');
-            const promoTimer = document.getElementById('promoTimer');
-
-            if (promoOverlay) {
-                setTimeout(() => {
-                    promoOverlay.classList.add('active');
-                }, 5000);
-
-                if (promoCloseBtn) {
-                    promoCloseBtn.addEventListener('click', () => {
-                        promoOverlay.classList.remove('active');
-                    });
-                }
-
-                promoOverlay.addEventListener('click', (e) => {
-                    if (e.target === promoOverlay) {
-                        promoOverlay.classList.remove('active');
-                    }
-                });
-
-                let totalSeconds = 15 * 60;
-                setInterval(() => {
-                    if (totalSeconds <= 0) return;
-                    totalSeconds--;
-                    let mins = Math.floor(totalSeconds / 60);
-                    let secs = totalSeconds % 60;
-                    if (promoTimer) {
-                        promoTimer.innerText = `${mins < 10 ? '0' : ''}${mins}:${secs < 10 ? '0' : ''}${secs}`;
-                    }
-                }, 1000);
+        // Scroll Top Button Visibility
+        const scrollTopBtn = document.getElementById('scrollTop');
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 300) {
+                scrollTopBtn.classList.add('show');
+            } else {
+                scrollTopBtn.classList.remove('show');
             }
         });
+
+        scrollTopBtn.addEventListener('click', () => {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        });
+
+        // Form Submission Handlers
+        function handleFormSubmit(formId, nameId, phoneId, serviceId, detailsId) {
+            const form = document.getElementById(formId);
+            if (!form) return;
+
+            form.addEventListener('submit', (e) => {
+                e.preventDefault();
+                const name = document.getElementById(nameId).value;
+                const phone = document.getElementById(phoneId).value;
+                const service = document.getElementById(serviceId).value;
+                const details = document.getElementById(detailsId).value;
+
+                const text = `السلام عليكم، أرغب في طلب خدمة:\n\n*الاسم:* ${name}\n*الجوال:* ${phone}\n*الخدمة:* ${service}\n*التفاصيل:* ${details}`;
+                const encoded = encodeURIComponent(text);
+
+                const toast = document.getElementById('toast');
+                toast.classList.add('show');
+
+                setTimeout(() => {
+                    toast.classList.remove('show');
+                    window.open(`https://wa.me/966570471168?text=${encoded}`, '_blank');
+                }, 1200);
+            });
+        }
+
+        handleFormSubmit('bookingForm', 'name', 'phone', 'service', 'details');
+        handleFormSubmit('quoteForm', 'quoteName', 'quotePhone', 'quoteService', 'quoteDetails');
+
+        // Promo Popup Modal & Timer Logic
+        const promoModal = document.getElementById('promoModal');
+        const closePromo = document.getElementById('closePromo');
+        const promoClock = document.getElementById('promoClock');
+
+        // Show Modal after 4 seconds
+        setTimeout(() => {
+            if (promoModal) promoModal.classList.add('active');
+        }, 4000);
+
+        if (closePromo) {
+            closePromo.addEventListener('click', () => {
+                promoModal.classList.remove('active');
+            });
+        }
+
+        // Countdown Timer
+        let timeRemaining = 30 * 60; // 30 mins
+        setInterval(() => {
+            if (timeRemaining <= 0) return;
+            timeRemaining--;
+            const minutes = Math.floor(timeRemaining / 60);
+            const seconds = timeRemaining % 60;
+            if (promoClock) {
+                promoClock.textContent = `${minutes.toString().padStart(2, '0')}:${seconds.toString().padStart(2, '0')}`;
+            }
+        }, 1000);
     </script>
 </body>
 </html>
