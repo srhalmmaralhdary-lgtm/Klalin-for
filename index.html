@@ -15,6 +15,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Clean للنظافة العامة | شركة تنظيف المباني والمنشآت بعد الإنشاء والبناء بالرياض</title>
 
+    <!-- PWA Manifest -->
+    <link rel="manifest" href="/manifest.json">
+
     <meta name="description" content="Clean للنظافة العامة تقدم خدمات تنظيف احترافية في الرياض تشمل تنظيف المباني بعد الإنشاء والبناء، التشطيب، إزالة الدهانات والأسمنت، تنظيف واجهات الكلادينج والزجاج والأبراج والواجهات الحجرية والفلل وجلي وتلميع الرخام.">
     <meta name="keywords" content="شركة تنظيف الرياض, تنظيف بعد البناء, تنظيف بعد الإنشاء, تنظيف المباني بعد التشطيب, إزالة البوية, جلي وتلميع الرخام, تنظيف واجهات الرياض, تنظيف واجهات زجاجية, تنظيف كلادينج, شركة نظافة بالرياض, Clean للنظافة العامة">
     <meta name="author" content="Clean للنظافة العامة">
@@ -2410,7 +2413,7 @@
                     <div class="process-card">
                         <div class="process-number">02</div>
                         <h3>تحديد الخدمة</h3>
-                        <p>نحدد نوع الخدمة واحتياج الموقع والمعاينة.</p>
+                        <p>نحدد نوع الخدمة وااحتياج الموقع والمعاينة.</p>
                     </div>
                     <div class="process-card">
                         <div class="process-number">03</div>
@@ -2635,6 +2638,17 @@
                 window.open(`https://wa.me/966508218878?text=${encodedMessage}`, '_blank');
             });
         }
+    </script>
+
+    <!-- Service Worker Registration -->
+    <script>
+      if ('serviceWorker' in navigator) {
+        window.addEventListener('load', () => {
+          navigator.serviceWorker.register('/sw.js')
+            .then(reg => console.log('Service Worker Registered successfully.', reg))
+            .catch(err => console.error('Service Worker registration failed:', err));
+        });
+      }
     </script>
 </body>
 </html>
