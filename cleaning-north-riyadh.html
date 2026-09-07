@@ -1,36 +1,45 @@
 <!DOCTYPE html>
 <html lang="ar" dir="rtl">
 <head>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-L4SGRY18SR"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-L4SGRY18SR');
+    </script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>شركة تنظيف بشمال الرياض | خدمات الملقا، الياسمين، الصحافة، وحطين</title>
     <meta name="description" content="أفضل شركة تنظيف منازل وفلل بشمال الرياض. نغطي أحياء الملقا والياسمين والصحافة بأحدث معدات جلي الرخام وتلميع الواجهات. احصل على خصم اليوم.">
-    <link rel="canonical" href="https://yourdomain.com/cleaning-north-riyadh.html">
+    <link rel="canonical" href="https://clean-ksa.com/cleaning-north-riyadh.html">
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700;900&display=swap" rel="stylesheet">
     
-    <!-- ربط ملف الـ PWA Manifest وثيم المتصفح -->
     <link rel="manifest" href="/manifest.json">
-    <meta name="theme-color" content="#007bff">
-    <link rel="apple-touch-icon" href="/icon-192.png">
+    <meta name="theme-color" content="#10b981">
 
-    <!-- CSS للتأثيرات البصرية وأزرار التواصل العائمة -->
     <style>
-        .floating-cta { position: fixed; bottom: 20px; left: 20px; z-index: 9999; display: flex; flex-direction: column; gap: 10px; }
-        .float-btn { padding: 12px 20px; border-radius: 50px; color: #fff; text-decoration: none; font-weight: bold; box-shadow: 0 4px 12px rgba(0,0,0,0.25); transition: transform 0.3s ease; }
-        .float-btn:hover { transform: scale(1.05); }
-        .float-wa { background-color: #25D366; }
-        .float-call { background-color: #007bff; }
-        .pulse { animation: pulse-animation 2s infinite; }
-        @keyframes pulse-animation { 0% { box-shadow: 0 0 0 0px rgba(37, 211, 102, 0.7); } 100% { box-shadow: 0 0 0 15px rgba(37, 211, 102, 0); } }
+        :root { --primary: #10b981; --dark: #0f172a; --bg: #f8f9fa; }
+        body { font-family: 'Cairo', sans-serif; background: var(--bg); margin: 0; padding: 0; color: #333; }
+        .container { width: min(1200px, 90%); margin: auto; padding: 20px 0; }
+        .hero { background: linear-gradient(135deg, #e7f7ee, #f8fffb); padding: 50px 20px; text-align: center; border-radius: 20px; margin-top: 20px; }
+        .hero h1 { font-size: 32px; color: var(--dark); font-weight: 900; }
+        .btn { display: inline-block; padding: 12px 28px; background: var(--primary); color: #fff; border-radius: 10px; font-weight: bold; text-decoration: none; margin-top: 15px; }
+        .ai-image-container { text-align: center; margin: 30px 0; }
+        .ai-image-container svg { width: 100%; max-width: 800px; height: auto; border-radius: 16px; box-shadow: 0 10px 25px rgba(0,0,0,0.1); }
+        .pulse { animation: pulse-anim 2s infinite; }
+        @keyframes pulse-anim { 0% { box-shadow: 0 0 0 0px rgba(16, 185, 129, 0.7); } 70% { box-shadow: 0 0 0 15px rgba(16, 185, 129, 0); } }
+        .floating { position: fixed; bottom: 20px; left: 20px; z-index: 99; display: flex; gap: 10px; }
+        .f-btn { width: 50px; height: 50px; border-radius: 50%; display: grid; place-items: center; color: #fff; font-size: 20px; text-decoration: none; }
         .badge-online { background: #28a745; color: #fff; padding: 3px 8px; border-radius: 12px; font-size: 12px; vertical-align: middle; }
     </style>
 
-    <!-- Schema JSON-LD LocalBusiness + Speakable -->
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
       "@type": "CleaningService",
-      "name": "خدمات التنظيف الاحترافية - شمال الرياض",
-      "image": "https://images.unsplash.com/photo-1581578731548-c64695cc6952?auto=format&fit=crop&w=1200&q=80",
+      "name": "Clean للنظافة - فرع شمال الرياض",
+      "url": "https://clean-ksa.com/cleaning-north-riyadh.html",
       "telephone": "+966570471168",
       "priceRange": "SAR",
       "address": {
@@ -39,80 +48,42 @@
         "addressRegion": "منطقة الرياض",
         "addressCountry": "SA"
       },
-      "geo": {
-        "@type": "GeoCoordinates",
-        "latitude": 24.8000,
-        "longitude": 46.6500
-      },
-      "areaServed": ["الملقا", "الياسمين", "الصحافة", "حطين"],
-      "aggregateRating": {
-        "@type": "AggregateRating",
-        "ratingValue": "4.9",
-        "reviewCount": "128"
-      },
-      "speakable": {
-        "@type": "SpeakableSpecification",
-        "xpath": ["/html/head/title", "/html/body/header/h1"]
-      }
+      "areaServed": ["الملقا", "الياسمين", "الصحافة", "حطين"]
     }
     </script>
 </head>
 <body>
-
-    <!-- الشريط العلوي للتواصل السريع -->
-    <div class="top-bar">
-        <span>تواصل معنا فوراً: <span class="badge-online">متاح الآن 24/7</span> </span>
-        <a href="tel:0570471168" class="phone-link">📞 اتصل الآن: 0570471168</a> | 
-        <a href="https://wa.me/966570471168?text=السلام%20عليكم،%20أريد%20استفسار%20عن%20خدمات%20التنظيف%20في%20شمال%20الرياض" class="wa-link">💬 واتساب: 0570471168</a>
-    </div>
-
-    <header class="hero-section">
-        <h1>خدمات التنظيف والنظافة الشاملة بشمال الرياض</h1>
-        <p>نغطي كافة أحياء شمال الرياض بفرق ميدانية مجهزة وسريعة الوصول (متوسط زمن الوصول: 30 دقيقة).</p>
-        <img src="https://images.unsplash.com/photo-1581578731548-c64695cc6952?auto=format&fit=crop&w=1200&q=80" alt="شركة تنظيف منازل وفلل بشمال الرياض" width="100%" height="auto" loading="eager">
-    </header>
-
-    <main>
-        <section class="services-grid">
-            <h2>تغطية خاصة لأبرز أحياء الشمال</h2>
-            
-            <article class="district-card">
-                <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=600&q=80" alt="تنظيف فلل حي الملقا الرياض" loading="lazy">
-                <h3>تنظيف وتعقيم الفلل - حي الملقا</h3>
-                <p>خدمات جلي الرخام وتنظيف الواجهات الزجاجية والكلادينج للفلل الحديثة بفرقة عمل متخصصة.</p>
-            </article>
-
-            <article class="district-card">
-                <img src="https://images.unsplash.com/photo-1527515637462-cff94eecc1ac?auto=format&fit=crop&w=600&q=80" alt="تلميع أرضيات حي الياسمين" loading="lazy">
-                <h3>جلي وتلميع الأرضيات - حي الياسمين</h3>
-                <p>أحدث مكائن الكريستال والماس لتلميع الأرضيات والرخام وإزالة البقع المستعصية فوراً.</p>
-            </article>
-        </section>
-
-        <div class="cta-box">
-            <h3>هل تسكن في شمال الرياض؟</h3>
-            <p>تواصل معنا الآن للحصول على معاينة مجانية وخصم 20% على العقود الدورية.</p>
-            <div class="cta-buttons">
-                <a href="tel:0570471168" class="call-btn">📱 اتصال مباشر: 0570471168</a>
-                <a href="https://wa.me/966570471168?text=السلام%20عليكم،%20أريد%20استفسار%20عن%20خدمات%20التنظيف%20في%20شمال%20الرياض" class="whatsapp-btn">💬 تواصل عبر الواتساب: 0570471168</a>
-            </div>
+    <div class="container">
+        <div class="hero">
+            <h1>خدمات التنظيف والنظافة الشاملة بشمال الرياض</h1>
+            <p>نغطي كافة أحياء شمال الرياض بفرق ميدانية مجهزة وسريعة الوصول (متوسط زمن الوصول: 30 دقيقة).</p>
+            <a href="tel:0570471168" class="btn pulse">📞 اتصل الآن: 0570471168</a>
         </div>
-    </main>
 
-    <!-- أزرار التواصل العائمة الذكية -->
-    <div class="floating-cta">
-        <a href="https://wa.me/966570471168?text=استفسار%20عاجل%20عن%20خدمات%20التنظيف" class="float-btn float-wa pulse">💬 واتساب مباشر</a>
-        <a href="tel:0570471168" class="float-btn float-call">📞 اتصال هاتفي</a>
+        <div class="ai-image-container">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450">
+                <defs>
+                    <linearGradient id="northGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+                        <stop offset="0%" stop-color="#065f46"/>
+                        <stop offset="100%" stop-color="#047857"/>
+                    </linearGradient>
+                </defs>
+                <rect width="800" height="450" fill="url(#northGrad)"/>
+                <circle cx="400" cy="220" r="120" fill="#ffffff" opacity="0.15"/>
+                <path d="M400 140 L415 190 L465 200 L415 210 L400 260 L385 210 L335 200 L385 190 Z" fill="#ffffff"/>
+                <text x="400" y="380" font-family="'Cairo', sans-serif" font-size="24" fill="#ffffff" font-weight="bold" text-anchor="middle">تنظيف فلل ومنازل شمال الرياض - Clean KSA</text>
+            </svg>
+        </div>
     </div>
 
-    <!-- تسجيل الـ Service Worker لتفعيل الـ PWA -->
+    <div class="floating">
+        <a href="https://wa.me/966570471168?text=استفسار%20عاجل%20عن%20خدمات%20التنظيف" class="f-btn" style="background:#25d366;">💬</a>
+        <a href="tel:0570471168" class="f-btn" style="background:#0075ff;">☎</a>
+    </div>
+
     <script>
         if ('serviceWorker' in navigator) {
-            window.addEventListener('load', () => {
-                navigator.serviceWorker.register('/sw.js')
-                    .then(reg => console.log('Service Worker Registered Successfully', reg))
-                    .catch(err => console.error('Service Worker Registration Failed', err));
-            });
+            navigator.serviceWorker.register('/sw.js');
         }
     </script>
 </body>
