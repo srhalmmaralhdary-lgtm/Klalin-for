@@ -21,7 +21,10 @@
     <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
     <meta name="googlebot" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
     
+    <!-- PWA Manifest & Theme Color -->
+    <link rel="manifest" href="/manifest.json">
     <meta name="theme-color" content="#10b981">
+
     <meta name="geo.region" content="SA-01">
     <meta name="geo.placename" content="Riyadh">
     <meta name="geo.country" content="SA">
@@ -191,7 +194,7 @@
             </div>
             <div class="topbar-items">
                 <a href="tel:0570471168" class="topbar-item">☎ 0570471168</a>
-                <a href="https://wa.me/966508218878" target="_blank" rel="noopener noreferrer" class="topbar-item">💬 واتساب</a>
+                <a href="https://wa.me/966570471168" target="_blank" rel="noopener noreferrer" class="topbar-item">💬 واتساب</a>
             </div>
         </div>
     </div>
@@ -261,7 +264,7 @@
             <div class="cta-box">
                 <h3>هل تبحث عن خدمة تنظيف واجهات زجاجية محترفة في الرياض؟</h3>
                 <p>نقدم أفضل الحلول المعتمدة لتنظيف واجهات المباني والأبراج بأعلى معايير السلامة والجودة.</p>
-                <a href="https://wa.me/966508218878?text=السلام%20عليكم،%20أرغب%20في%20استفسار%20عن%20تنظيف%20الواجهات%20الزجاجية" target="_blank" rel="noopener noreferrer" class="cta-btn">
+                <a href="https://wa.me/966570471168?text=السلام%20عليكم،%20أرغب%20في%20استفسار%20عن%20تنظيف%20الواجهات%20الزجاجية" target="_blank" rel="noopener noreferrer" class="cta-btn">
                     <span>💬 تواصل معنا عبر الواتساب</span>
                 </a>
             </div>
@@ -300,8 +303,8 @@
             <div>
                 <div class="footer-title">تواصل معنا</div>
                 <div class="footer-links">
-                    <span>☎ 0570471168</span>
-                    <span>💬 0508218878</span>
+                    <span>☎ <a href="tel:0570471168" style="color: inherit;">0570471168</a></span>
+                    <span>💬 <a href="https://wa.me/966570471168" target="_blank" rel="noopener noreferrer" style="color: inherit;">0570471168</a></span>
                     <span>📍 الرياض، السعودية</span>
                 </div>
             </div>
@@ -314,7 +317,7 @@
     </footer>
 
     <div class="floating-actions">
-        <a href="https://wa.me/966508218878" target="_blank" rel="noopener noreferrer" class="floating-btn floating-whatsapp" title="واتساب">💬</a>
+        <a href="https://wa.me/966570471168" target="_blank" rel="noopener noreferrer" class="floating-btn floating-whatsapp" title="واتساب">💬</a>
         <button type="button" class="floating-btn floating-top" id="scrollTop" title="الصعود للأعلى">↑</button>
     </div>
 
@@ -333,7 +336,7 @@
                     <div class="promo-timer-clock" id="promoTimer">30:00</div>
                 </div>
                 <div class="promo-actions">
-                    <a href="https://wa.me/966508218878?text=السلام%20عليكم،%20أرغب%20في%20الاستفادة%20من%20عرض%20الخصم%2025%25" target="_blank" rel="noopener noreferrer" class="promo-btn promo-btn-whatsapp">
+                    <a href="https://wa.me/966570471168?text=السلام%20عليكم،%20أرغب%20في%20الاستفادة%20من%20عرض%20الخصم%2025%25" target="_blank" rel="noopener noreferrer" class="promo-btn promo-btn-whatsapp">
                         واتساب
                     </a>
                     <a href="tel:0570471168" class="promo-btn promo-btn-call">
@@ -344,6 +347,17 @@
             </div>
         </div>
     </div>
+
+    <!-- Service Worker Registration Script -->
+    <script>
+      if ('serviceWorker' in navigator) {
+        window.addEventListener('load', () => {
+          navigator.serviceWorker.register('/sw.js')
+            .then(reg => console.log('Service Worker registered successfully:', reg.scope))
+            .catch(err => console.error('Service Worker registration failed:', err));
+        });
+      }
+    </script>
 
     <script>
         "use strict";
