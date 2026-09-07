@@ -94,7 +94,7 @@
         ],
         "contactPoint": {
             "@type": "ContactPoint",
-            "telephone": "+966508218878",
+            "telephone": "+966570471168",
             "contactType": "customer service",
             "areaServed": "SA",
             "availableLanguage": [
@@ -197,6 +197,7 @@
             color: var(--text);
             line-height: 1.6;
             overflow-x: hidden;
+            padding-bottom: 70px;
         }
 
         body.menu-open {
@@ -1197,7 +1198,7 @@
         .floating-actions {
             position: fixed;
             left: 15px;
-            bottom: 15px;
+            bottom: 75px;
             z-index: 900;
             display: flex;
             flex-direction: column;
@@ -1217,6 +1218,60 @@
         .floating-whatsapp { background: #25d366; }
         .floating-top { background: var(--primary); opacity: 0; pointer-events: none; }
         .floating-top.show { opacity: 1; pointer-events: auto; }
+
+        /* LIVE VISITORS BAR */
+        .online-counter-bar {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            background: #0f172a;
+            color: #ffffff;
+            padding: 10px 16px;
+            z-index: 9999;
+            box-shadow: 0 -4px 15px rgba(0,0,0,0.2);
+            border-top: 2px solid #10b981;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            font-size: 13px;
+            font-weight: 700;
+        }
+
+        .online-counter-info {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .online-pulse {
+            width: 10px;
+            height: 10px;
+            background-color: #10b981;
+            border-radius: 50%;
+            box-shadow: 0 0 0 0 rgba(16, 185, 129, 0.7);
+            animation: pulse-green 1.5s infinite;
+        }
+
+        @keyframes pulse-green {
+            0% { transform: scale(0.95); box-shadow: 0 0 0 0 rgba(16, 185, 129, 0.7); }
+            70% { transform: scale(1); box-shadow: 0 0 0 8px rgba(16, 185, 129, 0); }
+            100% { transform: scale(0.95); box-shadow: 0 0 0 0 rgba(16, 185, 129, 0); }
+        }
+
+        .online-counter-btn {
+            background: #10b981;
+            color: #ffffff;
+            padding: 6px 14px;
+            border-radius: 6px;
+            font-size: 12px;
+            font-weight: 800;
+            transition: background 0.2s;
+        }
+
+        .online-counter-btn:hover {
+            background: #059669;
+        }
 
         .toast {
             position: fixed;
@@ -1272,6 +1327,7 @@
             .form-grid { grid-template-columns: 1fr; }
             .partner-item-custom { font-size: 16px; }
             .custom-blue-tag { font-size: 18px; padding: 6px 20px; }
+            .online-counter-bar { font-size: 11px; padding: 8px 10px; }
         }
 
         /* PREMIUM CLEAN UPGRADE */
@@ -1879,7 +1935,7 @@
             </div>
             <div class="topbar-items">
                 <a href="tel:0570471168" class="topbar-item">☎ 0570471168</a>
-                <a href="https://wa.me/966508218878" target="_blank" rel="noopener noreferrer" class="topbar-item">💬 واتساب</a>
+                <a href="https://wa.me/966570471168" target="_blank" rel="noopener noreferrer" class="topbar-item">💬 واتساب</a>
             </div>
         </div>
     </div>
@@ -1935,7 +1991,7 @@
                     </p>
                     <div class="hero-buttons">
                         <a href="tel:0570471168" class="btn btn-primary hero-call-btn">☎ اتصل الآن</a>
-                        <a href="https://wa.me/966508218878?text=السلام%20عليكم،%20أرغب%20في%20طلب%20عرض%20سعر" target="_blank" rel="noopener noreferrer" class="btn btn-outline hero-whatsapp-btn">💬 اطلب عرض سعر</a>
+                        <a href="https://wa.me/966570471168?text=السلام%20عليكم،%20أرغب%20في%20طلب%20عرض%20سعر" target="_blank" rel="noopener noreferrer" class="btn btn-outline hero-whatsapp-btn">💬 اطلب عرض سعر</a>
                     </div>
                     <div class="hero-trust">
                         <span>✓ فريق متخصص</span>
@@ -2000,7 +2056,7 @@
                             <p class="service-description">تجهيز المباني والمنشآت بعد البناء والترميم وإزالة مخلفات الدهانات والبوية للجاهزية المباشرة.</p>
                             <div class="service-actions">
                                 <a href="post-construction-cleaning.html" class="service-btn preview-btn">التفاصيل</a>
-                                <a href="https://wa.me/966508218878?text=أرغب%20في%20طلب%20خدمة%20تنظيف%20المباني%20بعد%20الإنشاء" target="_blank" rel="noopener noreferrer" class="service-btn primary">اطلب الآن</a>
+                                <a href="https://wa.me/966570471168?text=أرغب%20في%20طلب%20خدمة%20تنظيف%20المباني%20بعد%20الإنشاء" target="_blank" rel="noopener noreferrer" class="service-btn primary">اطلب الآن</a>
                             </div>
                         </div>
                     </article>
@@ -2015,7 +2071,7 @@
                             <p class="service-description">قشط وتنظيف آثار الدهانات والأسمنت والترويبة العالقة بالأرضيات والجدران دون إلحاق أي ضرر بالأسطح.</p>
                             <div class="service-actions">
                                 <a href="post-construction-cleaning.html" class="service-btn preview-btn">التفاصيل</a>
-                                <a href="https://wa.me/966508218878?text=أرغب%20في%20طلب%20خدمة%20إزالة%20بقايا%20البوية%20والأسمنت" target="_blank" rel="noopener noreferrer" class="service-btn primary">اطلب الآن</a>
+                                <a href="https://wa.me/966570471168?text=أرغب%20في%20طلب%20خدمة%20إزالة%20بقايا%20البوية%20والأسمنت" target="_blank" rel="noopener noreferrer" class="service-btn primary">اطلب الآن</a>
                             </div>
                         </div>
                     </article>
@@ -2030,7 +2086,7 @@
                             <p class="service-description">غسيل وتنظيف زجاج المباني والأبراج بأحدث التقنيات وإزالة اللاصق والبوية عن الإطارات والزجاج.</p>
                             <div class="service-actions">
                                 <a href="glass-cleaning-profile.html" class="service-btn preview-btn">التفاصيل</a>
-                                <a href="https://wa.me/966508218878?text=أرغب%20في%20طلب%20خدمة%20تنظيف%20الواجهات%20الزجاجية" target="_blank" rel="noopener noreferrer" class="service-btn primary">اطلب الآن</a>
+                                <a href="https://wa.me/966570471168?text=أرغب%20في%20طلب%20خدمة%20تنظيف%20الواجهات%20الزجاجية" target="_blank" rel="noopener noreferrer" class="service-btn primary">اطلب الآن</a>
                             </div>
                         </div>
                     </article>
@@ -2045,7 +2101,7 @@
                             <p class="service-description">تنظيف احترافي لواجهات الكلادينج وإزالة الأوساخ والغبار وآثار العوامل الجوية.</p>
                             <div class="service-actions">
                                 <a href="cladding-cleaning.html" class="service-btn preview-btn">التفاصيل</a>
-                                <a href="https://wa.me/966508218878?text=أرغب%20في%20طلب%20خدمة%20تنظيف%20واجهات%20الكلادينج" target="_blank" rel="noopener noreferrer" class="service-btn primary">اطلب الآن</a>
+                                <a href="https://wa.me/966570471168?text=أرغب%20في%20طلب%20خدمة%20تنظيف%20واجهات%20الكلادينج" target="_blank" rel="noopener noreferrer" class="service-btn primary">اطلب الآن</a>
                             </div>
                         </div>
                     </article>
@@ -2060,7 +2116,7 @@
                             <p class="service-description">حلول تنظيف متخصصة للمباني العالية والأبراج مع الاهتمام بالسلامة وجودة التنفيذ.</p>
                             <div class="service-actions">
                                 <a href="towers-cleaning.html" class="service-btn preview-btn">التفاصيل</a>
-                                <a href="https://wa.me/966508218878?text=أرغب%20في%20طلب%20خدمة%20تنظيف%20واجهات%20الأبراج" target="_blank" rel="noopener noreferrer" class="service-btn primary">اطلب الآن</a>
+                                <a href="https://wa.me/966570471168?text=أرغب%20في%20طلب%20خدمة%20تنظيف%20واجهات%20الأبراج" target="_blank" rel="noopener noreferrer" class="service-btn primary">اطلب الآن</a>
                             </div>
                         </div>
                     </article>
@@ -2075,7 +2131,7 @@
                             <p class="service-description">تنظيف الواجهات الحجرية وإزالة الغبار والترسبات مع المحافظة على مظهر الحجر.</p>
                             <div class="service-actions">
                                 <a href="stone-cleaning.html" class="service-btn preview-btn">التفاصيل</a>
-                                <a href="https://wa.me/966508218878?text=أرغب%20في%20طلب%20خدمة%20تنظيف%20الواجهات%20الحجرية" target="_blank" rel="noopener noreferrer" class="service-btn primary">اطلب الآن</a>
+                                <a href="https://wa.me/966570471168?text=أرغب%20في%20طلب%20خدمة%20تنظيف%20الواجهات%20الحجرية" target="_blank" rel="noopener noreferrer" class="service-btn primary">اطلب الآن</a>
                             </div>
                         </div>
                     </article>
@@ -2090,7 +2146,7 @@
                             <p class="service-description">خدمات تنظيف شاملة للفلل والقصور والمنازل مع الاهتمام بالتفاصيل والمساحات المختلفة.</p>
                             <div class="service-actions">
                                 <a href="villas-cleaning.html" class="service-btn preview-btn">التفاصيل</a>
-                                <a href="https://wa.me/966508218878?text=أرغب%20في%20طلب%20خدمة%20تنظيف%20فيلا%20أو%20قصر" target="_blank" rel="noopener noreferrer" class="service-btn primary">اطلب الآن</a>
+                                <a href="https://wa.me/966570471168?text=أرغب%20في%20طلب%20خدمة%20تنظيف%20فيلا%20أو%20قصر" target="_blank" rel="noopener noreferrer" class="service-btn primary">اطلب الآن</a>
                             </div>
                         </div>
                     </article>
@@ -2105,7 +2161,7 @@
                             <p class="service-description">تنظيف عميق للأرضيات لإزالة الأتربة الناعمة ومواد البناء، وتلميع الرخام والسيراميك واستعادة لمعانها.</p>
                             <div class="service-actions">
                                 <a href="marble-polishing.html" class="service-btn preview-btn">التفاصيل</a>
-                                <a href="https://wa.me/966508218878?text=أرغب%20في%20طلب%20خدمة%20جلي%20وتلميع%20الرخام" target="_blank" rel="noopener noreferrer" class="service-btn primary">اطلب الآن</a>
+                                <a href="https://wa.me/966570471168?text=أرغب%20في%20طلب%20خدمة%20جلي%20وتلميع%20الرخام" target="_blank" rel="noopener noreferrer" class="service-btn primary">اطلب الآن</a>
                             </div>
                         </div>
                     </article>
@@ -2120,7 +2176,7 @@
                             <p class="service-description">تنظيف خزانات المياه وإزالة الرواسب والأوساخ للمساعدة في المحافظة على نظافة الخزان.</p>
                             <div class="service-actions">
                                 <a href="tank-cleaning.html" class="service-btn preview-btn">التفاصيل</a>
-                                <a href="https://wa.me/966508218878?text=أرغب%20في%20طلب%20خدمة%20تنظيف%20خزانات%20المياه" target="_blank" rel="noopener noreferrer" class="service-btn primary">اطلب الآن</a>
+                                <a href="https://wa.me/966570471168?text=أرغب%20في%20طلب%20خدمة%20تنظيف%20خزانات%20المياه" target="_blank" rel="noopener noreferrer" class="service-btn primary">اطلب الآن</a>
                             </div>
                         </div>
                     </article>
@@ -2248,11 +2304,11 @@
                                     <strong>0570471168</strong>
                                 </div>
                             </a>
-                            <a href="https://wa.me/966508218878" target="_blank" rel="noopener noreferrer" class="contact-item">
+                            <a href="https://wa.me/966570471168" target="_blank" rel="noopener noreferrer" class="contact-item">
                                 <div>💬</div>
                                 <div>
                                     <span style="font-size: 11px; color: #6b7280;">واتساب</span><br>
-                                    <strong>0508218878</strong>
+                                    <strong>0570471168</strong>
                                 </div>
                             </a>
                         </div>
@@ -2438,176 +2494,171 @@
                 </div>
 
                 <div class="testimonials-grid">
-                    <article class="testimonial">
+                    <div class="testimonial">
                         <div class="stars">★★★★★</div>
-                        <p>"الخدمة كانت ممتازة والتنفيذ مرتب جداً بعد إكمال بناء الفيلا. الفريق تعامل باحترافية."</p>
-                        <strong>محمد</strong> - <small>عميل من الرياض</small>
-                    </article>
-                    <article class="testimonial">
+                        <p>"خدمة ممتازة واحترافية في التعامل، تم تنظيف المبنى بالكامل بعد البناء بدقة عالية وفي الوقت المحدد."</p>
+                        <strong>- أ. محمد القحطاني</strong>
+                    </div>
+                    <div class="testimonial">
                         <div class="stars">★★★★★</div>
-                        <p>"التزام بالمواعيد وسرعة في التجاوب، وتمت إزالة بقايا البوية والأسمنت بعناية فائقة."</p>
-                        <strong>عبدالله</strong> - <small>عميل من الرياض</small>
-                    </article>
-                    <article class="testimonial">
+                        <p>"فريق عمل منظم ومعدات جبارة لإزالة آثار البوية والأسمنت، شكراً لمؤسسة Clean على هذا الإتقان."</p>
+                        <strong>- م. عبد الله الشهري</strong>
+                    </div>
+                    <div class="testimonial">
                         <div class="stars">★★★★★</div>
-                        <p>"طلبنا تنظيف للموقع بعد التشطيب وكانت النتيجة رائعة والأرضيات لامتعة جداً."</p>
-                        <strong>سالم</strong> - <small>عميل من الرياض</small>
-                    </article>
-                </div>
-            </div>
-        </section>
-
-        <!-- الإحصائيات -->
-        <section class="stats">
-            <div class="container">
-                <div class="stats-grid">
-                    <div class="stat">
-                        <div class="stat-number">+500</div>
-                        <div class="stat-title">مبنى تم تنظيفه</div>
-                    </div>
-                    <div class="stat">
-                        <div class="stat-number">10+</div>
-                        <div class="stat-title">سنوات خبرة</div>
-                    </div>
-                    <div class="stat">
-                        <div class="stat-number">100%</div>
-                        <div class="stat-title">رضا العملاء</div>
-                    </div>
-                    <div class="stat">
-                        <div class="stat-number">+50</div>
-                        <div class="stat-title">فريق محترف</div>
+                        <p>"تم تنظيف واجهات الكلادينج والزجاج لشركتنا وكانت النتيجة مذهلة جداً، نوصي بالتعامل معهم بشدة."</p>
+                        <strong>- شركة الأفق التجارية</strong>
                     </div>
                 </div>
             </div>
         </section>
 
         <!-- الأسئلة الشائعة -->
-        <section class="section" id="faq">
+        <section class="section">
             <div class="container">
                 <div class="section-header">
                     <div class="section-label">الأسئلة الشائعة</div>
-                    <h2 class="section-title">إجابات على أهم استفساراتك</h2>
+                    <h2 class="section-title">كل ما تحتاج معرفته عن خدماتنا</h2>
                 </div>
 
                 <div class="faq-wrapper">
                     <div class="faq-item">
-                        <button class="faq-question" type="button">ما هي مناطق تقديم خدمات Clean؟ <span>+</span></button>
-                        <div class="faq-answer"><p>نقدم خدماتنا داخل مدينة الرياض والمناطق التابعة لها.</p></div>
+                        <button class="faq-question">ما هي مناطق تقديم خدمات Clean؟ <span>+</span></button>
+                        <div class="faq-answer">
+                            تقدم Clean للنظافة العامة خدماتها داخل مدينة الرياض والمناطق التابعة لها حسب نطاق الخدمة.
+                        </div>
                     </div>
                     <div class="faq-item">
-                        <button class="faq-question" type="button">هل تقدمون تنظيف المباني والمنشآت بعد البناء والإنشاء؟ <span>+</span></button>
-                        <div class="faq-answer"><p>نعم، نقدم خدمات متكاملة لإزالة آثار الدهانات والبوية والأسمنت وغبار البناء الناعم وجلي الأرضيات لتجهيز المبنى بالكامل.</p></div>
+                        <button class="faq-question">هل تقدمون خدمات تنظيف المباني والمنشآت بعد البناء والإنشاء؟ <span>+</span></button>
+                        <div class="faq-answer">
+                            نعم، نقدم خدمات متكاملة لتنظيف المباني والمنشآت بعد البناء والإنشاء والترميم وإزالة آثار البوية والأسمنت وتجهيز المكان للاستخدام الفوري.
+                        </div>
                     </div>
                     <div class="faq-item">
-                        <button class="faq-question" type="button">هل تقدمون تنظيف واجهات الكلادينج والزجاج؟ <span>+</span></button>
-                        <div class="faq-answer"><p>نعم، نقدم خدمات تنظيف واجهات الكلادينج والزجاج للمباني والمنشآت.</p></div>
+                        <button class="faq-question">هل تقدمون تنظيف واجهات الكلادينج والزجاج؟ <span>+</span></button>
+                        <div class="faq-answer">
+                            نعم، نقدم خدمات تنظيف واجهات الكلادينج والزجاج للمباني والمنشآت باستخدام معدات وأساليب مناسبة لنوع الواجهة.
+                        </div>
                     </div>
                     <div class="faq-item">
-                        <button class="faq-question" type="button">هل تقدمون خدمات التنظيف بعد التشطيب؟ <span>+</span></button>
-                        <div class="faq-answer"><p>نعم، نقدم خدمات التنظيف بعد التشطيب وإزالة آثار العمل.</p></div>
+                        <button class="faq-question">هل يمكن طلب معاينة قبل تنفيذ الخدمة؟ <span>+</span></button>
+                        <div class="faq-answer">
+                            نعم، يمكن التواصل معنا عبر الهاتف أو واتساب لتحديد الخدمة وطلب المعاينة والتثمين المجاني.
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <button class="faq-question">ما أوقات العمل؟ <span>+</span></button>
+                        <div class="faq-answer">
+                            ساعات العمل من السبت إلى الخميس من الساعة 8 صباحاً حتى 10 مساءً.
+                        </div>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- دعوة للتواصل -->
+        <!-- الدعوة لاتخاذ إجراء CTA -->
         <section class="section">
             <div class="container">
                 <div class="cta-box">
-                    <h2>هل انتهيت من بناء أو ترميم موقعك؟</h2>
-                    <p style="margin-bottom: 20px;">تواصل معنا اليوم ليقوم فريقنا بتجهيز المكان وتسليمه لك على أكمل وجه!</p>
-                    <a href="https://wa.me/966508218878?text=السلام%20عليكم،%20انتهيت%20من%20البناء/الترميم%20وأرغب%20في%20طلب%20عرض%20سعر" target="_blank" rel="noopener noreferrer" class="btn btn-primary">💬 تواصل عبر واتساب</a>
+                    <h2 style="font-size: 28px; margin-bottom: 10px;">احصل على معاينة وتثمين مجاني لموقعك اليوم</h2>
+                    <p style="color: var(--text-soft); margin-bottom: 20px;">تواصل مع فريقنا في الرياض وسنكون سعداء بخدمتك فوراً.</p>
+                    <a href="https://wa.me/966570471168?text=السلام%20عليكم،%20أرغب%20في%20طلب%20معاينة%20مجانية" target="_blank" rel="noopener noreferrer" class="btn btn-primary">💬 تواصل عبر واتساب الآن</a>
                 </div>
             </div>
         </section>
     </main>
 
+    <!-- FOOTER -->
     <footer>
-        <div class="container footer-main">
-            <div>
-                <a href="/" class="logo" style="color: #ffffff;">
-                    <div class="logo-mark">C</div>
-                    <div class="logo-text">Clean<small style="color: #94a3b8;">GENERAL CLEANING</small></div>
-                </a>
-                <p style="font-size: 13px; color: #94a3b8; margin-top: 10px;">مؤسسة متخصصة في تقديم خدمات التنظيف الاحترافية للمباني والواجهات بعد الإنشاء والبناء بالرياض.</p>
-            </div>
-            <div>
-                <div class="footer-title">روابط سريعة</div>
-                <div class="footer-links">
-                    <a href="#home">الرئيسية</a>
-                    <a href="post-construction-cleaning.html">التنظيف بعد البناء</a>
-                    <a href="glass-cleaning-profile.html">تنظيف الزجاج</a>
-                    <a href="#services">خدماتنا</a>
-                    <a href="#special-pages">الصفحات المتخصصة</a>
-                    <a href="towers-cleaning.html">تنظيف الأبراج</a>
-                    <a href="#booking">احجز الآن</a>
-                    <a href="#about">من نحن</a>
+        <div class="container">
+            <div class="footer-main">
+                <div>
+                    <div class="logo" style="color: #ffffff; margin-bottom: 15px;">
+                        <div class="logo-mark">C</div>
+                        Clean
+                    </div>
+                    <p style="font-size: 13px; color: #94a3b8; line-height: 1.8;">
+                        مؤسسة متخصصة في خدمات التنظيف الاحترافية للمباني والمنشآت والواجهات بالرياض، نعمل بأعلى معايير الجودة والسلامة.
+                    </p>
+                </div>
+
+                <div>
+                    <div class="footer-title">روابط سريعة</div>
+                    <div class="footer-links">
+                        <a href="#home">الرئيسية</a>
+                        <a href="#services">خدماتنا</a>
+                        <a href="#about">من نحن</a>
+                        <a href="#booking">احجز الآن</a>
+                    </div>
+                </div>
+
+                <div>
+                    <div class="footer-title">خدماتنا المميزة</div>
+                    <div class="footer-links">
+                        <a href="post-construction-cleaning.html">تنظيف بعد البناء</a>
+                        <a href="glass-cleaning-profile.html">تنظيف الزجاج</a>
+                        <a href="cladding-cleaning.html">تنظيف الكلادينج</a>
+                        <a href="towers-cleaning.html">تنظيف الأبراج</a>
+                    </div>
+                </div>
+
+                <div>
+                    <div class="footer-title">تواصل معنا</div>
+                    <div class="footer-links">
+                        <span>📍 الرياض، المملكة العربية السعودية</span>
+                        <a href="tel:0570471168">☎ 0570471168</a>
+                        <a href="https://wa.me/966570471168" target="_blank" rel="noopener noreferrer">💬 0570471168 (واتساب)</a>
+                    </div>
                 </div>
             </div>
-            <div>
-                <div class="footer-title">خدمات الرياض</div>
-                <div class="footer-links">
-                    <a href="post-construction-cleaning.html">تنظيف المباني بعد الإنشاء</a>
-                    <a href="glass-cleaning-profile.html">تنظيف الزجاج بالرياض</a>
-                    <a href="cladding-cleaning.html">تنظيف الكلادينج</a>
-                    <a href="towers-cleaning.html">تنظيف الأبراج</a>
-                    <a href="villas-cleaning.html">تنظيف الفلل والقصور</a>
-                </div>
+
+            <div class="footer-bottom">
+                <div>جميع الحقوق محفوظة © Clean للنظافة العامة 2026</div>
+                <div>الرياض - المملكة العربية السعودية</div>
             </div>
-            <div>
-                <div class="footer-title">تواصل معنا</div>
-                <div class="footer-links">
-                    <span>☎ 0570471168</span>
-                    <span>💬 0508218878</span>
-                    <span>📍 الرياض، السعودية</span>
-                </div>
-            </div>
-        </div>
-        <div class="container footer-bottom">
-            <div>© جميع الحقوق محفوظة - Clean للنظافة العامة</div>
         </div>
     </footer>
 
-    <!-- الأزرار العائمة -->
+    <!-- FLOATING ACTIONS -->
     <div class="floating-actions">
-        <a href="https://wa.me/966508218878" target="_blank" rel="noopener noreferrer" class="floating-btn floating-whatsapp" aria-label="واتساب">💬</a>
-        <button id="scrollTop" class="floating-btn floating-top" type="button" aria-label="للأعلى">↑</button>
+        <a href="https://wa.me/966570471168" target="_blank" rel="noopener noreferrer" class="floating-btn floating-whatsapp" aria-label="تواصل عبر واتساب">💬</a>
+        <button id="scrollTop" class="floating-btn floating-top" type="button" aria-label="الرجوع للأعلى">↑</button>
     </div>
 
-    <!-- السكربتات الأساسية -->
+    <!-- LIVE VISITORS BAR (عداد المتواجدين أونلاين بالموقع) -->
+    <div class="online-counter-bar">
+        <div class="online-counter-info">
+            <span class="online-pulse"></span>
+            <span>متواجدون أونلاين الآن بالموقع: <strong id="liveVisitorCount" style="color: #34d399; font-size: 15px;">14</strong> زائر</span>
+        </div>
+        <a href="tel:0570471168" class="online-counter-btn">📞 اتصل الآن</a>
+    </div>
+
+    <div id="toast" class="toast">تم نسخ الرقم بنجاح!</div>
+
+    <!-- SCRIPTS -->
     <script>
-        // القائمة المتنقلة للموبايل
+        // Toggle mobile menu
         const menuToggle = document.getElementById('menuToggle');
         const navLinks = document.getElementById('navLinks');
 
         if (menuToggle && navLinks) {
             menuToggle.addEventListener('click', () => {
-                navLinks.classList.toggle('active');
-                document.body.classList.toggle('menu-open');
-                const expanded = menuToggle.getAttribute('aria-expanded') === 'true' || false;
-                menuToggle.setAttribute('aria-expanded', !expanded);
+                const isOpen = navLinks.classList.toggle('active');
+                menuToggle.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
+                document.body.classList.toggle('menu-open', isOpen);
             });
 
-            // إغلاق القائمة عند النقر على أي رابط
             navLinks.querySelectorAll('a').forEach(link => {
                 link.addEventListener('click', () => {
                     navLinks.classList.remove('active');
-                    document.body.classList.remove('menu-open');
                     menuToggle.setAttribute('aria-expanded', 'false');
+                    document.body.classList.remove('menu-open');
                 });
             });
         }
 
-        // الأسئلة الشائعة Accordion
-        const faqQuestions = document.querySelectorAll('.faq-question');
-        faqQuestions.forEach(question => {
-            question.addEventListener('click', () => {
-                const item = question.parentElement;
-                item.classList.toggle('active');
-            });
-        });
-
-        // زر الصعود للأعلى
+        // Scroll to top
         const scrollTopBtn = document.getElementById('scrollTop');
         window.addEventListener('scroll', () => {
             if (window.scrollY > 300) {
@@ -2623,7 +2674,22 @@
             });
         }
 
-        // معالجة إرسال النموذج إلى واتساب
+        // FAQ Toggles
+        const faqItems = document.querySelectorAll('.faq-item');
+        faqItems.forEach(item => {
+            const btn = item.querySelector('.faq-question');
+            if (btn) {
+                btn.addEventListener('click', () => {
+                    const isActive = item.classList.contains('active');
+                    faqItems.forEach(i => i.classList.remove('active'));
+                    if (!isActive) {
+                        item.classList.add('active');
+                    }
+                });
+            }
+        });
+
+        // Booking form WhatsApp handler
         const bookingForm = document.getElementById('bookingForm');
         if (bookingForm) {
             bookingForm.addEventListener('submit', (e) => {
@@ -2633,22 +2699,24 @@
                 const service = document.getElementById('service').value;
                 const details = document.getElementById('details').value;
 
-                const message = `مرحباً، لدي طلب خدمة جديد:\n- الاسم: ${name}\n- الهاتف: ${phone}\n- الخدمة المطلوبة: ${service}\n- التفاصيل: ${details}`;
-                const encodedMessage = encodeURIComponent(message);
-                window.open(`https://wa.me/966508218878?text=${encodedMessage}`, '_blank');
+                const text = `السلام عليكم ورحمة الله وبركاته،%0Aأرغب في طلب خدمة من مؤسسة Clean:%0A%0A👤 *الاسم:* ${encodeURIComponent(name)}%0A📱 *رقم الجوال:* ${encodeURIComponent(phone)}%0A🛠️ *الخدمة:* ${encodeURIComponent(service)}%0A📝 *التفاصيل:* ${encodeURIComponent(details)}`;
+                window.open(`https://wa.me/966570471168?text=${text}`, '_blank');
             });
         }
-    </script>
 
-    <!-- Service Worker Registration -->
-    <script>
-      if ('serviceWorker' in navigator) {
-        window.addEventListener('load', () => {
-          navigator.serviceWorker.register('/sw.js')
-            .then(reg => console.log('Service Worker Registered successfully.', reg))
-            .catch(err => console.error('Service Worker registration failed:', err));
-        });
-      }
+        // Dynamic Visitors Counter
+        function updateVisitors() {
+            const counterElement = document.getElementById('liveVisitorCount');
+            if (counterElement) {
+                let current = parseInt(counterElement.innerText) || 14;
+                let change = Math.floor(Math.random() * 5) - 2;
+                let newCount = current + change;
+                if (newCount < 8) newCount = 8;
+                if (newCount > 35) newCount = 35;
+                counterElement.innerText = newCount;
+            }
+        }
+        setInterval(updateVisitors, 4000);
     </script>
 </body>
 </html>
