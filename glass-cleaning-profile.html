@@ -18,6 +18,11 @@
     <meta name="description" content="أفضل شركة تنظيف واجهات زجاجية وكلادينج بالرياض. نغطي شرق وغرب الرياض، حي الياسمين، النرجس، ولبن. خصم 20% لفترة محدودة ومعاينة مجانية خلال 30 دقيقة.">
     <meta name="keywords" content="تنظيف واجهات زجاجية بالرياض, تنظيف كلادينج الرياض, غسيل واجهات زجاج شرق الرياض, تنظيف زجاج مباني غرب الرياض, تنظيف زجاج حي الياسمين, تنظيف واجهات حي النرجس, غسيل زجاج حي لبن, شركة غسيل واجهات أبراج">
     <meta name="robots" content="index, follow, max-image-preview:large">
+    
+    <!-- PWA Manifest & Theme Color -->
+    <link rel="manifest" href="/manifest.json">
+    <meta name="theme-color" content="#10b981">
+
     <link rel="canonical" href="https://clean-ksa.com/glass-cleaning-profile.html">
 
     <!-- Schema.org Structured Data for Local Business SEO -->
@@ -126,6 +131,14 @@
         .card-title { font-size: 16px; font-weight: 800; color: var(--dark); }
         .card-tag { background: #f0fdf4; color: var(--primary-dark); padding: 6px 12px; border-radius: 8px; font-size: 13px; font-weight: 700; }
 
+        /* BLOG LINK SECTION */
+        .blog-integration-section { background: #ffffff; border: 1px solid var(--border); border-radius: 20px; padding: 40px; margin: 40px 0; text-align: center; box-shadow: 0 10px 30px rgba(0,0,0,0.03); }
+        .blog-cards { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 20px; margin-top: 25px; text-align: right; }
+        .blog-card { background: var(--light-bg); border: 1px solid var(--border); border-radius: 14px; padding: 20px; }
+        .blog-card h3 { font-size: 18px; color: var(--primary-dark); margin-bottom: 10px; }
+        .blog-card p { font-size: 14px; color: #475569; margin-bottom: 15px; }
+        .blog-card a { color: var(--primary); font-weight: 800; font-size: 14px; display: inline-flex; align-items: center; gap: 5px; }
+
         /* QUICK QUOTE CALCULATOR / CALL TO ACTION BOX */
         .cta-calculator-box { background: linear-gradient(135deg, #0b2b20 0%, #047857 100%); color: #fff; padding: 45px; border-radius: 24px; text-align: center; margin: 50px 0; box-shadow: 0 20px 40px rgba(4, 120, 87, 0.2); }
         .cta-calculator-box h2 { font-size: 30px; font-weight: 900; margin-bottom: 12px; }
@@ -154,25 +167,29 @@
     <div class="topbar">
         <div class="container topbar-inner">
             <div>📍 تغطية شاملة لجميع أحياء الرياض | أحدث الرافعات الهيدروليكية والسقالات</div>
-            <div>☎ <a href="tel:0570471168">0570471168</a> | 💬 <a href="https://wa.me/966508218878" target="_blank">واتساب مباشر</a></div>
+            <div>☎ <a href="tel:0570471168">0570471168</a> | 💬 <a href="https://wa.me/966570471168" target="_blank">واتساب مباشر</a></div>
         </div>
     </div>
 
     <!-- NAVBAR -->
     <header>
         <div class="container navbar">
-            <a href="#" class="logo">
+            <a href="glass-cleaning-profile_2.html" class="logo">
                 <div class="logo-mark">C</div>
                 <div>Clean <small style="display:block; font-size:10px; color:#6b7280; font-weight:600;">تنظيف الواجهات بالرياض</small></div>
             </a>
 
+            <!-- رابط الربط مع المدونة الرئيسي -->
             <nav class="nav-menu">
-                <a href="#">الرئيسية</a>
+                <a href="glass-cleaning-profile_2.html">الرئيسية</a>
+                <a href="index_5.html">المدونة والنصائح</a>
+                <a href="index_5.html#cladding-guide">دليل الكلادينج</a>
+                <a href="index_5.html#marble-guide">دليل الرخام</a>
             </nav>
 
             <div style="display: flex; gap: 10px;">
                 <a href="tel:0570471168" class="btn btn-outline">☎ اتصل بنا</a>
-                <a href="https://wa.me/966508218878?text=السلام%20عليكم%20أرغب%20في%20استفسار%20عن%20تنظيف%20الواجهات" target="_blank" class="btn btn-primary btn-pulse">طلب معاينة مجانية</a>
+                <a href="https://wa.me/966570471168?text=السلام%20عليكم%20أرغب%20في%20استفسار%20عن%20تنظيف%20الواجهات" target="_blank" class="btn btn-primary btn-pulse">طلب معاينة مجانية</a>
             </div>
         </div>
     </header>
@@ -295,12 +312,42 @@
             </div>
         </section>
 
+        <!-- INTEGRATED BLOG SECTION (ربط الملفات مع المدونة) -->
+        <section class="blog-integration-section">
+            <h2 class="section-title">من مقالات ودليل مدونة Clean</h2>
+            <p style="font-size: 15px; color: #64748b;">اطّلع على نصائح وإرشادات الخبراء لحماية وتنظيف واجهات المباني والرخام بالرياض:</p>
+
+            <div class="blog-cards">
+                <div class="blog-card">
+                    <h3>الدليل المتكامل لتنظيف الكلادينج</h3>
+                    <p>تعرف على الطرق والتقنيات الحديثة لصيانة ألواح الكلادينج وحمايتها من العوامل الجوية والأكسدة.</p>
+                    <a href="index_5.html#cladding-guide">قراءة المقال كاملاً ←</a>
+                </div>
+
+                <div class="blog-card">
+                    <h3>دليل جلي وتلميع الرخام</h3>
+                    <p>أحدث تقنيات الجلي بالألماس والتلميع بالكربونات لحماية الرخام وإعادة لمعانه كأنه جديد.</p>
+                    <a href="index_5.html#marble-guide">قراءة المقال كاملاً ←</a>
+                </div>
+
+                <div class="blog-card">
+                    <h3>أبرز الأخطاء الشائعة في التنظيف</h3>
+                    <p>تجنب أخطاء استخدام الأحماض والمواد القوية التي تتلف الزجاج والكلادينج والرخام.</p>
+                    <a href="index_5.html#faqs-guide">قراءة المقال كاملاً ←</a>
+                </div>
+            </div>
+
+            <div style="margin-top: 25px;">
+                <a href="index_5.html" class="btn btn-outline">زيارة مدونة Clean الشاملة</a>
+            </div>
+        </section>
+
         <!-- HIGH-CONVERSION CTA BOX -->
         <section class="cta-calculator-box">
             <h2>هل تحتاج تسعيرة فورية لواجهتك؟</h2>
             <p>أرسل لنا صورة الواجهة عبر الواتساب، وسنقوم بتحديد التكلفة والموعد المناسب خلال دقائق معدودة!</p>
             <div style="display: flex; gap: 15px; justify-content: center; flex-wrap: wrap;">
-                <a href="https://wa.me/966508218878?text=السلام%20عليكم%20حبيت%20استفسر%20عن%20سعر%20تنظيف%20واجهة" target="_blank" class="btn btn-primary btn-pulse" style="font-size: 16px; padding: 14px 32px;">💬 أرسل صورة الواجهة للواتساب</a>
+                <a href="https://wa.me/966570471168?text=السلام%20عليكم%20حبيت%20استفسر%20عن%20سعر%20تنظيف%20واجهة" target="_blank" class="btn btn-primary btn-pulse" style="font-size: 16px; padding: 14px 32px;">💬 أرسل صورة الواجهة للواتساب</a>
                 <a href="tel:0570471168" class="btn btn-outline" style="font-size: 16px; padding: 14px 32px; background: transparent; color: #fff; border-color: #fff;">☎ اتصل بالمشرف مباشرة</a>
             </div>
         </section>
@@ -328,7 +375,7 @@
 
     <!-- FLOATING DIRECT BUTTONS -->
     <div class="floating-actions">
-        <a href="https://wa.me/966508218878?text=السلام%20عليكم%20أرغب%20في%20استفسار%20عن%20تنظيف%20الواجهات" target="_blank" class="float-btn float-wa" title="واتساب مباشر">💬</a>
+        <a href="https://wa.me/966570471168?text=السلام%20عليكم%20أرغب%20في%20استفسار%20عن%20تنظيف%20الواجهات" target="_blank" class="float-btn float-wa" title="واتساب مباشر">💬</a>
         <a href="tel:0570471168" class="float-btn float-call" title="اتصال مباشر">☎</a>
     </div>
 
@@ -336,10 +383,21 @@
         <div class="container">
             <p>© <span id="year"></span> مؤسسة Clean للنظافة العامة بالرياض. جميع الحقوق محفوظة.</p>
             <p style="margin-top: 8px; font-size: 12px; color: #64748b;">
-                متخصصون في تنظيف الواجهات الزجاجية، الكلادينج، وجلي الزجاج بشرق وغرب وشمال الرياض.
+                متخصصون في تنظيف الواجهات الزجاجية، الكلادينج، وجلي الزجاج بشرق وغرب وشمال الرياض. | <a href="index_5.html">مدونة Clean</a>
             </p>
         </div>
     </footer>
+
+    <!-- Service Worker Registration Script -->
+    <script>
+      if ('serviceWorker' in navigator) {
+        window.addEventListener('load', () => {
+          navigator.serviceWorker.register('/sw.js')
+            .then(reg => console.log('Service Worker registered successfully:', reg.scope))
+            .catch(err => console.error('Service Worker registration failed:', err));
+        });
+      }
+    </script>
 
     <script>
         document.getElementById('year').textContent = new Date().getFullYear();
