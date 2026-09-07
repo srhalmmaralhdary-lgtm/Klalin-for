@@ -4,12 +4,12 @@
   <!-- 1. الصفحة الرئيسية (أعلى أولوية) -->
   <url>
     <loc>https://clean-ksa.com/</loc>
-    <lastmod>2026-09-04</lastmod>
+    <lastmod>2026-09-07</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.00</priority>
   </url>
 
-  <!-- 2. صفحات الخدمات -->
+  <!-- 2. صفحات الخدمات الأساسية -->
   <url>
     <loc>https://clean-ksa.com/glass-cleaning-profile.html</loc>
     <lastmod>2026-09-05</lastmod>
@@ -66,7 +66,57 @@
     <priority>0.90</priority>
   </url>
 
-  <!-- 3. قسم المدونة الرئيسي والمقالات -->
+  <!-- 3. الصفحات الجديدة (التغطية الجغرافية والقطاع التجاري) -->
+  <url>
+    <loc>https://clean-ksa.com/cleaning-center-riyadh.html</loc>
+    <lastmod>2026-09-07</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
+  </url>
+
+  <url>
+    <loc>https://clean-ksa.com/cleaning-diriyah.html</loc>
+    <lastmod>2026-09-07</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
+  </url>
+
+  <url>
+    <loc>https://clean-ksa.com/cleaning-east-riyadh.html</loc>
+    <lastmod>2026-09-07</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
+  </url>
+
+  <url>
+    <loc>https://clean-ksa.com/cleaning-north-riyadh.html</loc>
+    <lastmod>2026-09-07</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
+  </url>
+
+  <url>
+    <loc>https://clean-ksa.com/cleaning-sahafa.html</loc>
+    <lastmod>2026-09-07</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
+  </url>
+
+  <url>
+    <loc>https://clean-ksa.com/cleaning-olaya.html</loc>
+    <lastmod>2026-09-07</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
+  </url>
+
+  <url>
+    <loc>https://clean-ksa.com/commercial-cleaning.html</loc>
+    <lastmod>2026-09-07</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.90</priority>
+  </url>
+
+  <!-- 4. قسم المدونة الرئيسي والمقالات -->
   <url>
     <loc>https://clean-ksa.com/blog/</loc>
     <lastmod>2026-09-04</lastmod>
