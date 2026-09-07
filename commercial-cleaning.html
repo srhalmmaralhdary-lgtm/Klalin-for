@@ -1,26 +1,38 @@
 <!DOCTYPE html>
 <html lang="ar" dir="rtl">
 <head>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-L4SGRY18SR"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-L4SGRY18SR');
+    </script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>تنظيف الشركات والمقرات التجارية بالرياض | عقود نظافة دورية</title>
     <meta name="description" content="حلول نظافة متكاملة للشركات، المكاتب، والمجمعات التجارية بالرياض. جدول عمل مرن وخيارات تعاقد سنوية وشهرية معتمدة.">
-    <link rel="canonical" href="https://yourdomain.com/commercial-cleaning.html">
+    <link rel="canonical" href="https://clean-ksa.com/commercial-cleaning.html">
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700;900&display=swap" rel="stylesheet">
 
-    <!-- ربط ملف الـ PWA Manifest وثيم المتصفح -->
     <link rel="manifest" href="/manifest.json">
-    <meta name="theme-color" content="#007bff">
-    <link rel="apple-touch-icon" href="/icon-192.png">
+    <meta name="theme-color" content="#10b981">
 
     <style>
-        .floating-cta { position: fixed; bottom: 20px; left: 20px; z-index: 9999; display: flex; flex-direction: column; gap: 10px; }
-        .float-btn { padding: 12px 20px; border-radius: 50px; color: #fff; text-decoration: none; font-weight: bold; box-shadow: 0 4px 12px rgba(0,0,0,0.25); }
-        .float-wa { background-color: #25D366; }
-        .float-call { background-color: #007bff; }
-        .b2b-badge { background: #17a2b8; color: #fff; padding: 4px 10px; border-radius: 4px; font-size: 13px; font-weight: bold; }
+        :root { --primary: #10b981; --dark: #0f172a; --bg: #f8f9fa; }
+        body { font-family: 'Cairo', sans-serif; background: var(--bg); margin: 0; padding: 0; color: #333; }
+        .container { width: min(1200px, 90%); margin: auto; padding: 20px 0; }
+        .hero { background: linear-gradient(135deg, #e7f7ee, #f8fffb); padding: 50px 20px; text-align: center; border-radius: 20px; margin-top: 20px; }
+        .hero h1 { font-size: 32px; color: var(--dark); font-weight: 900; }
+        .btn { display: inline-block; padding: 12px 28px; background: var(--primary); color: #fff; border-radius: 10px; font-weight: bold; text-decoration: none; margin-top: 15px; }
+        .ai-image-container { text-align: center; margin: 30px 0; }
+        .ai-image-container svg { width: 100%; max-width: 800px; height: auto; border-radius: 16px; box-shadow: 0 10px 25px rgba(0,0,0,0.1); }
+        .pulse { animation: pulse-anim 2s infinite; }
+        @keyframes pulse-anim { 0% { box-shadow: 0 0 0 0px rgba(16, 185, 129, 0.7); } 70% { box-shadow: 0 0 0 15px rgba(16, 185, 129, 0); } }
+        .floating { position: fixed; bottom: 20px; left: 20px; z-index: 99; display: flex; gap: 10px; }
+        .f-btn { width: 50px; height: 50px; border-radius: 50%; display: grid; place-items: center; color: #fff; font-size: 20px; text-decoration: none; }
     </style>
 
-    <!-- Schema JSON-LD Service -->
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
@@ -28,96 +40,48 @@
       "serviceType": "Commercial Cleaning",
       "provider": {
         "@type": "LocalBusiness",
-        "name": "شركة نظافة الشركات التجارية",
+        "name": "Clean للنظافة - تعاقدات الشركات",
         "telephone": "+966570471168"
       },
       "areaServed": {
         "@type": "City",
         "name": "الرياض"
-      },
-      "hasOfferCatalog": {
-        "@type": "OfferCatalog",
-        "name": "خدمات التنظيف التجاري",
-        "itemListElement": [
-          {
-            "@type": "Offer",
-            "itemOffered": {
-              "@type": "Service",
-              "name": "تنظيف المكاتب والشركات"
-            }
-          },
-          {
-            "@type": "Offer",
-            "itemOffered": {
-              "@type": "Service",
-              "name": "نظافة الواجهات الزجاجية للمباني"
-            }
-          }
-        ]
       }
     }
     </script>
 </head>
 <body>
+    <div class="container">
+        <div class="hero">
+            <h1>حلول النظافة والتشغيل المتكاملة للشركات والمكاتب</h1>
+            <p>نحافظ على بيئة عمل احترافية تعكس واجهة شركتك أمام عملائك مع التزام كامل باتفاقيات مستوى الخدمة (SLA).</p>
+            <a href="tel:0570471168" class="btn pulse">📞 مبيعات الشركات: 0570471168</a>
+        </div>
 
-    <!-- الشريط العلوي للتواصل السريع -->
-    <div class="top-bar">
-        <span><span class="b2b-badge">قطاع الأعمال B2B</span> خدمة العملاء والتعاقدات التجارية: </span>
-        <a href="tel:0570471168" class="phone-link">📞 اتصل بنا: 0570471168</a> | 
-        <a href="https://wa.me/966570471168?text=السلام%20عليكم،%20نستفسر%20عن%20عقود%20تنظيف%20شركات" class="wa-link">💬 واتساب: 0570471168</a>
+        <div class="ai-image-container">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450">
+                <defs>
+                    <linearGradient id="commGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+                        <stop offset="0%" stop-color="#1e293b"/>
+                        <stop offset="100%" stop-color="#0f172a"/>
+                    </linearGradient>
+                </defs>
+                <rect width="800" height="450" fill="url(#commGrad)"/>
+                <rect x="250" y="80" width="300" height="370" fill="#334155" stroke="#10b981" stroke-width="3"/>
+                <circle cx="400" cy="220" r="60" fill="#10b981" opacity="0.3"/>
+                <text x="400" y="390" font-family="'Cairo', sans-serif" font-size="22" fill="#ffffff" font-weight="bold" text-anchor="middle">نظافة الشركات والمقرات التجارية - Clean KSA</text>
+            </svg>
+        </div>
     </div>
 
-    <header class="b2b-header">
-        <h1>حلول النظافة والتشغيل المتكاملة للشركات والمكاتب</h1>
-        <p>نحافظ على بيئة عمل احترافية تعكس واجهة شركتك أمام عملائك مع التزام كامل باتفاقيات مستوى الخدمة (SLA).</p>
-        <img src="https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&w=1200&q=80" alt="تنظيف المكاتب والشركات بالرياض" width="100%" height="auto" loading="eager">
-    </header>
-
-    <main>
-        <section class="features">
-            <h2>لماذا تختارنا لإدارة نظافة مقر شركتك؟</h2>
-            
-            <div class="feature-item">
-                <img src="https://images.unsplash.com/photo-1613665813446-82a78c468a1d?auto=format&fit=crop&w=600&q=80" alt="فريق تنظيف مكاتب احترافي" loading="lazy">
-                <h3>فرق عمل مدرّبة بزي موحد</h3>
-                <p>عمالة مدربة على أعلى معايير السلامة والأمانة مع الإشراف المباشر على الأداء وتوفير بدلاء فوريين.</p>
-            </div>
-
-            <div class="feature-item">
-                <img src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=600&q=80" alt="تنظيف الواجهات للمباني التجارية" loading="lazy">
-                <h3>تنظيف الواجهات والكلادينج</h3>
-                <p>معدات ورافعات هيدروليكية متخصصة لتنظيف واجهات الأبراج والمقرات التجارية بتأمين شامل.</p>
-            </div>
-        </section>
-
-        <section class="quote-request">
-            <h2>طلب عرض سعر رسمي (RFP)</h2>
-            <p>أدخل بيانات منشأتك وسيقوم مسؤول الحسابات التجارية بالتواصل معك خلال ساعتين، أو تواصل فوراً على <strong>0570471168</strong>:</p>
-            <form action="/submit-quote" method="POST">
-                <input type="text" name="company_name" placeholder="اسم الشركة / المنشأة" required>
-                <input type="tel" name="phone" placeholder="رقم الهاتف" required>
-                <input type="email" name="email" placeholder="البريد الإلكتروني للعمل" required>
-                <button type="submit">طلب عرض سعر رسمي</button>
-            </form>
-            <div class="direct-b2b-contact" style="margin-top: 15px;">
-                <a href="https://wa.me/966570471168?text=طلب%20عرض%20سعر%20رسمي%20لتنظيف%20مقر%20شركة" class="whatsapp-btn">💬 طلب عرض سعر سريع عبر واتساب: 0570471168</a>
-            </div>
-        </section>
-    </main>
-
-    <div class="floating-cta">
-        <a href="https://wa.me/966570471168?text=طلب%20عرض%20سعر%20لشركة" class="float-btn float-wa">💬 عرض سعر واتساب</a>
-        <a href="tel:0570471168" class="float-btn float-call">📞 مبيعات الشركات</a>
+    <div class="floating">
+        <a href="https://wa.me/966570471168?text=طلب%20عرض%20سعر%20لشركة" class="f-btn" style="background:#25d366;">💬</a>
+        <a href="tel:0570471168" class="f-btn" style="background:#0075ff;">☎</a>
     </div>
 
-    <!-- تسجيل الـ Service Worker لتفعيل الـ PWA -->
     <script>
         if ('serviceWorker' in navigator) {
-            window.addEventListener('load', () => {
-                navigator.serviceWorker.register('/sw.js')
-                    .then(reg => console.log('Service Worker Registered Successfully', reg))
-                    .catch(err => console.error('Service Worker Registration Failed', err));
-            });
+            navigator.serviceWorker.register('/sw.js');
         }
     </script>
 </body>
