@@ -1,3 +1,4 @@
 User-agent: *
 Allow: /
+
 Sitemap: https://clean-ksa.com/sitemap.xml
