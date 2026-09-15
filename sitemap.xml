@@ -1,133 +1,140 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+
+  <!-- 1. الصفحة الرئيسية (أعلى أولوية) -->
   <url>
     <loc>https://clean-ksa.com/</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
+    <lastmod>2026-09-09</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>1.00</priority>
   </url>
-  <url>
-    <loc>https://clean-ksa.com/cladding-cleaning.html</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://clean-ksa.com/cleaning-center-riyadh.html</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://clean-ksa.com/cleaning-diriyah.html</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://clean-ksa.com/cleaning-east-riyadh.html</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://clean-ksa.com/cleaning-north-riyadh.html</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://clean-ksa.com/cleaning-olaya.html</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://clean-ksa.com/cleaning-sahafa.html</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://clean-ksa.com/commercial-cleaning.html</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
+
+  <!-- 2. صفحات الخدمات -->
   <url>
     <loc>https://clean-ksa.com/glass-cleaning-profile.html</loc>
+    <lastmod>2026-09-09</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
+    <priority>0.90</priority>
   </url>
+
   <url>
-    <loc>https://clean-ksa.com/government-contracts.html</loc>
+    <loc>https://clean-ksa.com/cladding-cleaning.html</loc>
+    <lastmod>2026-09-09</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
+    <priority>0.90</priority>
   </url>
-  <url>
-    <loc>https://clean-ksa.com/marble-polishing.html</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://clean-ksa.com/post-construction-cleaning.html</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://clean-ksa.com/stone-cleaning.html</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://clean-ksa.com/tank-cleaning.html</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
+
   <url>
     <loc>https://clean-ksa.com/towers-cleaning.html</loc>
+    <lastmod>2026-09-09</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
+    <priority>0.90</priority>
   </url>
+
+  <url>
+    <loc>https://clean-ksa.com/stone-cleaning.html</loc>
+    <lastmod>2026-09-09</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.90</priority>
+  </url>
+
   <url>
     <loc>https://clean-ksa.com/villas-cleaning.html</loc>
+    <lastmod>2026-09-09</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
+    <priority>0.90</priority>
   </url>
+
   <url>
-    <loc>https://clean-ksa.com/blog/glass-cleaning-guide.html</loc>
+    <loc>https://clean-ksa.com/post-construction-cleaning.html</loc>
+    <lastmod>2026-09-09</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
+    <priority>0.90</priority>
   </url>
+
+  <url>
+    <loc>https://clean-ksa.com/marble-polishing.html</loc>
+    <lastmod>2026-09-09</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.90</priority>
+  </url>
+
+  <url>
+    <loc>https://clean-ksa.com/tank-cleaning.html</loc>
+    <lastmod>2026-09-09</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.90</priority>
+  </url>
+
+  <!-- 3. قسم المدونة الرئيسي والمقالات -->
   <url>
     <loc>https://clean-ksa.com/blog/</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
+    <lastmod>2026-09-09</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.85</priority>
   </url>
+
   <url>
-    <loc>https://clean-ksa.com/blog/towers-high-rise.html</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
+    <loc>https://clean-ksa.com/blog/glass-cleaning-guide.html</loc>
+    <lastmod>2026-09-09</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.80</priority>
   </url>
+
+
   <url>
-    <loc>https://clean-ksa.com/blog/glass-facades.html</loc>
+    <loc>https://clean-ksa.com/cleaning-center-riyadh.html</loc>
+    <lastmod>2026-09-09</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
+    <priority>0.80</priority>
   </url>
+
   <url>
-    <loc>https://clean-ksa.com/blog/tile-marble-polishing.html</loc>
+    <loc>https://clean-ksa.com/cleaning-diriyah.html</loc>
+    <lastmod>2026-09-09</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
+    <priority>0.80</priority>
   </url>
+
   <url>
-    <loc>https://clean-ksa.com/blog/before-after-cleaning.html</loc>
+    <loc>https://clean-ksa.com/cleaning-east-riyadh.html</loc>
+    <lastmod>2026-09-09</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
+    <priority>0.80</priority>
   </url>
+
   <url>
-    <loc>https://clean-ksa.com/blog/cladding-maintenance.html</loc>
+    <loc>https://clean-ksa.com/cleaning-olaya.html</loc>
+    <lastmod>2026-09-09</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
+    <priority>0.80</priority>
   </url>
+
   <url>
-    <loc>https://clean-ksa.com/blog/post-construction.html</loc>
+    <loc>https://clean-ksa.com/cleaning-north-riyadh.html</loc>
+    <lastmod>2026-09-09</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
+    <priority>0.80</priority>
   </url>
+
   <url>
-    <loc>https://clean-ksa.com/blog/choose-company.html</loc>
+    <loc>https://clean-ksa.com/cleaning-sahafa.html</loc>
+    <lastmod>2026-09-09</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
+    <priority>0.80</priority>
+  </url>
+
+  <url>
+    <loc>https://clean-ksa.com/commercial-cleaning.html</loc>
+    <lastmod>2026-09-09</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
+  </url>
+
+  <url>
+    <loc>https://clean-ksa.com/government-contracts.html</loc>
+    <lastmod>2026-09-09</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
   </url>
 </urlset>
