@@ -1,0 +1,17 @@
+صرح كلين — ربط النطاق getsarhclean.com
+
+1) في Cloudflare (مكان شراء الدومين):
+   - ادخل الدومين getsarhclean.com
+   - DNS → أضف السجلات التي يطلبها Vercel
+
+2) في Vercel:
+   - Project → Settings → Domains
+   - Add: getsarhclean.com
+   - Add: www.getsarhclean.com
+   - انسخ سجلات DNS التي تظهر (عادة A أو CNAME)
+
+3) ارجع Cloudflare والصق السجلات، انتظر التفعيل (دقائق إلى 24 ساعة)
+
+4) ارفع محتويات مجلد sarh-fix كاملاً كـ Root للموقع
+
+ملاحظة: روابط واتساب (wa.me) وزر الاتصال (tel:) تبقى لأنها أدوات تواصل وليست صفحات موقع خارجي.

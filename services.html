@@ -1,0 +1,1226 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-C0F7WJ91VD"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-C0F7WJ91VD');
+  gtag('config', 'AW-18465441278');
+</script>
+
+<script>
+(function(){
+  function send(name, params){
+    try{
+      if(typeof gtag==='function'){ gtag('event', name, params||{}); }
+    }catch(e){}
+  }
+  document.addEventListener('click', function(e){
+    var a = e.target.closest('a');
+    if(!a || !a.href) return;
+    var h = a.href;
+    if(h.indexOf('wa.me')>-1 || h.indexOf('whatsapp')>-1){
+      send('whatsapp_click', {event_category:'contact', event_label: h.slice(0,120)});
+    } else if(h.indexOf('tel:')===0){
+      send('phone_call', {event_category:'contact', event_label: h});
+    }
+  }, true);
+  document.addEventListener('submit', function(e){
+    var f=e.target;
+    if(f && f.tagName==='FORM'){
+      send('generate_lead', {event_category:'form', event_label: (f.id||f.className||'form').toString().slice(0,80)});
+    }
+  }, true);
+})();
+</script>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>خدمات تنظيف الواجهات والجلي بالرياض | صرح كلين</title>
+    <meta name="description" content="جميع خدمات صرح كلين: تنظيف واجهات زجاجية، كلادينج، أبراج مرتفعة، جلي رخام وبلاط، تنظيف بعد التشطيب، ضغط عالي، تظليل وعزل حراري بالرياض.">
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;800;900&display=swap" rel="stylesheet">
+    <style>
+/* ============================================
+   صرح كلين للنظافة العامة - Main Stylesheet
+   Dark + Gold Premium Theme
+   ============================================ */
+
+:root {
+    --primary: #0f172a;
+    --primary-dark: #020617;
+    --gold: #d4a017;
+    --gold-light: #f0c14b;
+    --gold-dark: #b8860b;
+    --accent: #1e293b;
+    --text: #e2e8f0;
+    --text-muted: #94a3b8;
+    --white: #ffffff;
+    --success: #10b981;
+    --radius: 16px;
+    --shadow: 0 10px 40px rgba(0,0,0,0.35);
+    --transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Cairo', 'Segoe UI', Tahoma, sans-serif;
+    background: var(--primary-dark);
+    color: var(--text);
+    line-height: 1.7;
+    overflow-x: hidden;
+    direction: rtl;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+    transition: var(--transition);
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+.container {
+    width: min(1200px, 92%);
+    margin-inline: auto;
+}
+
+/* ========== TOP BAR ========== */
+.topbar {
+    background: linear-gradient(90deg, #020617, #0f172a);
+    color: var(--gold-light);
+    font-size: 14px;
+    font-weight: 600;
+    padding: 10px 0;
+    border-bottom: 1px solid rgba(212,160,23,0.2);
+}
+
+.topbar-inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.topbar a {
+    color: var(--gold-light);
+}
+
+.topbar a:hover {
+    color: var(--white);
+}
+
+/* ========== HEADER & NAV ========== */
+header {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    background: rgba(15, 23, 42, 0.97);
+    backdrop-filter: blur(12px);
+    border-bottom: 1px solid rgba(212,160,23,0.15);
+    box-shadow: 0 4px 30px rgba(0,0,0,0.4);
+}
+
+.navbar {
+    min-height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    font-weight: 900;
+    font-size: 22px;
+    color: var(--gold-light);
+}
+
+.logo-mark {
+    width: 48px;
+    height: 48px;
+    display: grid;
+    place-items: center;
+    border-radius: 14px;
+    background: linear-gradient(135deg, var(--gold), var(--gold-dark));
+    color: #0f172a;
+    font-weight: 900;
+    font-size: 22px;
+    box-shadow: 0 6px 20px rgba(212,160,23,0.4);
+}
+
+.logo small {
+    display: block;
+    font-size: 11px;
+    color: var(--text-muted);
+    font-weight: 600;
+}
+
+.nav-desktop {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.nav-desktop a {
+    padding: 10px 16px;
+    border-radius: 10px;
+    font-weight: 700;
+    font-size: 15px;
+    color: var(--text);
+}
+
+.nav-desktop a:hover,
+.nav-desktop a.active {
+    background: rgba(212,160,23,0.15);
+    color: var(--gold-light);
+}
+
+.btn {
+    min-height: 48px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    padding: 0 24px;
+    border-radius: 12px;
+    font-size: 15px;
+    font-weight: 800;
+    transition: var(--transition);
+    cursor: pointer;
+    border: none;
+    font-family: inherit;
+}
+
+.btn-gold {
+    background: linear-gradient(135deg, var(--gold-light), var(--gold));
+    color: #0f172a;
+    box-shadow: 0 8px 25px rgba(212,160,23,0.35);
+}
+
+.btn-gold:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 12px 30px rgba(212,160,23,0.5);
+}
+
+.btn-outline {
+    background: transparent;
+    border: 2px solid var(--gold);
+    color: var(--gold-light);
+}
+
+.btn-outline:hover {
+    background: var(--gold);
+    color: #0f172a;
+}
+
+.btn-pulse {
+    animation: pulse-gold 2.2s infinite;
+}
+
+@keyframes pulse-gold {
+    0% { box-shadow: 0 0 0 0 rgba(212,160,23,0.7); }
+    70% { box-shadow: 0 0 0 14px rgba(212,160,23,0); }
+    100% { box-shadow: 0 0 0 0 rgba(212,160,23,0); }
+}
+
+/* Mobile Menu Button */
+.menu-toggle {
+    display: none;
+    width: 46px;
+    height: 46px;
+    border-radius: 12px;
+    background: rgba(212,160,23,0.15);
+    border: 1px solid rgba(212,160,23,0.3);
+    color: var(--gold-light);
+    font-size: 22px;
+    cursor: pointer;
+    place-items: center;
+}
+
+/* ========== SIDEBAR (Mobile) ========== */
+.sidebar-overlay {
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,0.7);
+    z-index: 1100;
+    opacity: 0;
+    visibility: hidden;
+    transition: var(--transition);
+}
+
+.sidebar-overlay.active {
+    opacity: 1;
+    visibility: visible;
+}
+
+.sidebar {
+    position: fixed;
+    top: 0;
+    right: -320px;
+    width: 300px;
+    height: 100%;
+    background: #0b1220;
+    z-index: 1200;
+    transition: right 0.35s ease;
+    overflow-y: auto;
+    border-left: 1px solid rgba(212,160,23,0.2);
+    display: flex;
+    flex-direction: column;
+}
+
+.sidebar.active {
+    right: 0;
+}
+
+.sidebar-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    border-bottom: 1px solid rgba(212,160,23,0.15);
+}
+
+.sidebar-close {
+    width: 40px;
+    height: 40px;
+    border-radius: 10px;
+    background: rgba(255,255,255,0.08);
+    border: none;
+    color: var(--text);
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.sidebar-nav {
+    padding: 15px 0;
+    flex: 1;
+}
+
+.sidebar-nav a {
+    display: block;
+    padding: 14px 24px;
+    font-weight: 700;
+    font-size: 16px;
+    color: var(--text);
+    border-bottom: 1px solid rgba(255,255,255,0.04);
+}
+
+.sidebar-nav a:hover {
+    background: rgba(212,160,23,0.1);
+    color: var(--gold-light);
+}
+
+.sidebar-submenu {
+    background: rgba(0,0,0,0.25);
+    padding: 8px 0 8px 20px;
+}
+
+.sidebar-submenu a {
+    font-size: 14px;
+    padding: 10px 24px;
+    color: var(--text-muted);
+}
+
+.sidebar-contact {
+    padding: 20px;
+    border-top: 1px solid rgba(212,160,23,0.15);
+}
+
+/* ========== HERO ========== */
+.hero {
+    position: relative;
+    padding: 90px 0 70px;
+    background: 
+        radial-gradient(circle at 70% 20%, rgba(212,160,23,0.12), transparent 50%),
+        linear-gradient(180deg, #0f172a 0%, #020617 100%);
+    overflow: hidden;
+    text-align: center;
+}
+
+.hero-badge {
+    display: inline-block;
+    background: rgba(212,160,23,0.15);
+    color: var(--gold-light);
+    font-size: 14px;
+    font-weight: 800;
+    padding: 8px 22px;
+    border-radius: 50px;
+    border: 1px solid rgba(212,160,23,0.35);
+    margin-bottom: 22px;
+}
+
+.hero h1 {
+    font-size: clamp(28px, 5vw, 48px);
+    font-weight: 900;
+    color: var(--white);
+    line-height: 1.3;
+    margin-bottom: 18px;
+}
+
+.hero h1 span {
+    color: var(--gold-light);
+}
+
+.hero p {
+    font-size: 18px;
+    color: var(--text-muted);
+    max-width: 700px;
+    margin: 0 auto 30px;
+    font-weight: 600;
+}
+
+.hero-btns {
+    display: flex;
+    gap: 14px;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-bottom: 50px;
+}
+
+.stats-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+    gap: 18px;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.stat-card {
+    background: rgba(30, 41, 59, 0.6);
+    border: 1px solid rgba(212,160,23,0.2);
+    border-radius: var(--radius);
+    padding: 22px 16px;
+    text-align: center;
+    backdrop-filter: blur(8px);
+}
+
+.stat-num {
+    font-size: 32px;
+    font-weight: 900;
+    color: var(--gold-light);
+    margin-bottom: 4px;
+}
+
+.stat-desc {
+    font-size: 13px;
+    color: var(--text-muted);
+    font-weight: 700;
+}
+
+/* ========== SECTIONS ========== */
+section {
+    padding: 70px 0;
+}
+
+.section-header {
+    text-align: center;
+    margin-bottom: 45px;
+}
+
+.section-header h2 {
+    font-size: clamp(24px, 4vw, 34px);
+    font-weight: 900;
+    color: var(--white);
+    margin-bottom: 12px;
+}
+
+.section-header p {
+    color: var(--text-muted);
+    font-size: 16px;
+    font-weight: 600;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+/* Services */
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 24px;
+}
+
+.service-card {
+    background: linear-gradient(145deg, #1e293b, #0f172a);
+    border: 1px solid rgba(212,160,23,0.15);
+    border-radius: var(--radius);
+    padding: 28px;
+    transition: var(--transition);
+    position: relative;
+    overflow: hidden;
+}
+
+.service-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 3px;
+    background: linear-gradient(90deg, var(--gold), transparent);
+    opacity: 0;
+    transition: var(--transition);
+}
+
+.service-card:hover {
+    transform: translateY(-6px);
+    border-color: rgba(212,160,23,0.4);
+    box-shadow: var(--shadow);
+}
+
+.service-card:hover::before {
+    opacity: 1;
+}
+
+.service-icon {
+    width: 56px;
+    height: 56px;
+    border-radius: 14px;
+    background: rgba(212,160,23,0.12);
+    display: grid;
+    place-items: center;
+    font-size: 26px;
+    margin-bottom: 18px;
+    color: var(--gold-light);
+}
+
+.service-card h3 {
+    font-size: 18px;
+    font-weight: 800;
+    color: var(--white);
+    margin-bottom: 10px;
+}
+
+.service-card p {
+    font-size: 14px;
+    color: var(--text-muted);
+    margin-bottom: 16px;
+    font-weight: 600;
+}
+
+.service-card ul {
+    list-style: none;
+    margin-bottom: 18px;
+}
+
+.service-card ul li {
+    font-size: 13px;
+    color: var(--text-muted);
+    padding: 4px 0;
+    font-weight: 600;
+}
+
+.service-card ul li::before {
+    content: '✓ ';
+    color: var(--gold);
+    font-weight: 900;
+}
+
+/* Why Us */
+.why-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 20px;
+}
+
+.why-card {
+    background: rgba(30,41,59,0.5);
+    border: 1px solid rgba(212,160,23,0.12);
+    border-radius: var(--radius);
+    padding: 26px 20px;
+    text-align: center;
+    transition: var(--transition);
+}
+
+.why-card:hover {
+    border-color: rgba(212,160,23,0.35);
+    background: rgba(30,41,59,0.8);
+}
+
+.why-icon {
+    font-size: 32px;
+    margin-bottom: 14px;
+}
+
+.why-card h3 {
+    font-size: 16px;
+    font-weight: 800;
+    color: var(--gold-light);
+    margin-bottom: 8px;
+}
+
+.why-card p {
+    font-size: 13px;
+    color: var(--text-muted);
+    font-weight: 600;
+}
+
+/* CTA Box */
+.cta-box {
+    background: linear-gradient(135deg, #1a1405 0%, #0f172a 50%, #1a1405 100%);
+    border: 1px solid rgba(212,160,23,0.3);
+    border-radius: 24px;
+    padding: 50px 30px;
+    text-align: center;
+    margin: 40px 0;
+    position: relative;
+    overflow: hidden;
+}
+
+.cta-box::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: radial-gradient(circle at center, rgba(212,160,23,0.08), transparent 70%);
+}
+
+.cta-box h2 {
+    font-size: 28px;
+    font-weight: 900;
+    color: var(--white);
+    margin-bottom: 12px;
+    position: relative;
+}
+
+.cta-box p {
+    color: var(--text-muted);
+    font-size: 16px;
+    margin-bottom: 28px;
+    position: relative;
+}
+
+.cta-btns {
+    display: flex;
+    gap: 14px;
+    justify-content: center;
+    flex-wrap: wrap;
+    position: relative;
+}
+
+/* Projects */
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 24px;
+}
+
+.project-card {
+    background: #1e293b;
+    border-radius: var(--radius);
+    overflow: hidden;
+    border: 1px solid rgba(212,160,23,0.12);
+    transition: var(--transition);
+}
+
+.project-card:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--shadow);
+}
+
+.project-img {
+.img-container {
+    position: relative;
+    width: 100%;
+    height: 220px;
+    overflow: hidden;
+}
+.img-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.4s ease;
+}
+.project-card:hover .img-container img {
+    transform: scale(1.05);
+}
+    height: 200px;
+    background: linear-gradient(135deg, #334155, #1e293b);
+    display: grid;
+    place-items: center;
+    color: var(--text-muted);
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.project-info {
+    padding: 18px;
+}
+
+.project-info h3 {
+    font-size: 16px;
+    font-weight: 800;
+    color: var(--white);
+    margin-bottom: 6px;
+}
+
+.project-tag {
+    display: inline-block;
+    background: rgba(212,160,23,0.12);
+    color: var(--gold-light);
+    font-size: 12px;
+    font-weight: 700;
+    padding: 4px 12px;
+    border-radius: 20px;
+}
+
+/* FAQ */
+.faq-list {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.faq-item {
+    background: rgba(30,41,59,0.5);
+    border: 1px solid rgba(212,160,23,0.12);
+    border-radius: 14px;
+    margin-bottom: 14px;
+    padding: 20px 24px;
+}
+
+.faq-question {
+    font-weight: 800;
+    font-size: 16px;
+    color: var(--white);
+    margin-bottom: 8px;
+}
+
+.faq-answer {
+    font-size: 14px;
+    color: var(--text-muted);
+    font-weight: 600;
+    line-height: 1.7;
+}
+
+/* Contact Form */
+.contact-form {
+    max-width: 520px;
+    margin: 0 auto;
+}
+
+.form-group {
+    margin-bottom: 16px;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+    width: 100%;
+    padding: 14px 18px;
+    border-radius: 12px;
+    border: 1px solid rgba(212,160,23,0.25);
+    background: rgba(15,23,42,0.8);
+    color: var(--white);
+    font-size: 15px;
+    font-family: inherit;
+    font-weight: 600;
+    outline: none;
+    transition: var(--transition);
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+    border-color: var(--gold);
+    box-shadow: 0 0 0 3px rgba(212,160,23,0.15);
+}
+
+.form-group input::placeholder {
+    color: var(--text-muted);
+}
+
+/* Floating Buttons */
+.floating-actions {
+    position: fixed;
+    left: 18px;
+    bottom: 20px;
+    z-index: 999;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.float-btn {
+    width: 58px;
+    height: 58px;
+    border-radius: 50%;
+    display: grid;
+    place-items: center;
+    color: white;
+    font-size: 26px;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.4);
+    transition: var(--transition);
+}
+
+.float-wa {
+    background: #25d366;
+}
+
+.float-call {
+    background: #0284c7;
+}
+
+.float-btn:hover {
+    transform: scale(1.12);
+}
+
+/* Footer */
+footer {
+    background: #020617;
+    border-top: 1px solid rgba(212,160,23,0.15);
+    padding: 50px 0 30px;
+    text-align: center;
+}
+
+.footer-logo {
+    font-size: 22px;
+    font-weight: 900;
+    color: var(--gold-light);
+    margin-bottom: 12px;
+}
+
+footer p {
+    color: var(--text-muted);
+    font-size: 14px;
+    margin-bottom: 8px;
+}
+
+footer a {
+    color: var(--gold);
+}
+
+/* ========== RESPONSIVE ========== */
+@media (max-width: 900px) {
+    .nav-desktop {
+        display: none;
+    }
+    .menu-toggle {
+        display: grid;
+    }
+}
+
+@media (max-width: 600px) {
+    .hero {
+        padding: 60px 0 50px;
+    }
+    .stats-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .cta-box {
+        padding: 35px 20px;
+    }
+}
+
+/* ========== CITIES & DISTRICTS ========== */
+.cities-section {
+    padding: 70px 0;
+    background: linear-gradient(180deg, #0f172a 0%, #020617 100%);
+}
+
+.cities-badge {
+    display: inline-block;
+    background: rgba(212,160,23,0.12);
+    color: var(--gold-light);
+    font-size: 13px;
+    font-weight: 800;
+    padding: 6px 18px;
+    border-radius: 50px;
+    border: 1px solid rgba(212,160,23,0.3);
+    margin-bottom: 16px;
+}
+
+.cities-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 20px;
+    margin-top: 35px;
+}
+
+.city-card {
+    background: #1e293b;
+    border-radius: 18px;
+    overflow: hidden;
+    border: 1px solid rgba(212,160,23,0.12);
+    transition: var(--transition);
+}
+
+.city-card:hover {
+    transform: translateY(-5px);
+    border-color: rgba(212,160,23,0.35);
+    box-shadow: var(--shadow);
+}
+
+.city-img {
+    height: 140px;
+    background: linear-gradient(135deg, #334155, #1e293b);
+    display: grid;
+    place-items: center;
+    color: var(--text-muted);
+    font-size: 13px;
+    font-weight: 700;
+}
+
+.city-body {
+    padding: 18px;
+}
+
+.city-body h3 {
+    font-size: 18px;
+    font-weight: 900;
+    color: var(--white);
+    margin-bottom: 8px;
+}
+
+.city-body p {
+    font-size: 13px;
+    color: var(--text-muted);
+    font-weight: 600;
+    margin-bottom: 14px;
+    line-height: 1.6;
+}
+
+.city-link {
+    color: var(--gold-light);
+    font-weight: 800;
+    font-size: 14px;
+}
+
+.city-link:hover {
+    color: var(--gold);
+}
+
+.districts-box {
+    background: rgba(30,41,59,0.6);
+    border: 1px solid rgba(212,160,23,0.15);
+    border-radius: 20px;
+    padding: 30px 24px;
+    margin-top: 45px;
+    text-align: center;
+}
+
+.districts-box h3 {
+    font-size: 20px;
+    font-weight: 900;
+    color: var(--white);
+    margin-bottom: 20px;
+}
+
+.districts-tags {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+}
+
+.district-tag {
+    background: rgba(212,160,23,0.1);
+    border: 1px solid rgba(212,160,23,0.25);
+    color: var(--gold-light);
+    font-size: 13px;
+    font-weight: 700;
+    padding: 8px 16px;
+    border-radius: 50px;
+    transition: var(--transition);
+}
+
+.district-tag:hover {
+    background: var(--gold);
+    color: #0f172a;
+    border-color: var(--gold);
+}
+
+</style>
+<link rel="canonical" href="https://www.getsarhclean.com/services.html">
+<meta property="og:url" content="https://getsarhclean.com/services.html">
+  <meta name="keywords" content="صرح كلين, شركة تنظيف واجهات بالرياض, تنظيف واجهات زجاجية, تنظيف كلادينج, جلي بلاط بالرياض, جلي رخام, تنظيف أبراج, تنظيف بعد التشطيب, شركة تنظيف منازل الرياض, غسيل واجهات, تظليل زجاج, عازل حراري, تنظيف لوحات تجارية, تنظيف فلل الرياض">
+  <meta property="og:title" content="خدمات تنظيف الواجهات والجلي بالرياض | صرح كلين">
+  <meta property="og:description" content="جميع خدمات صرح كلين: تنظيف واجهات زجاجية، كلادينج، أبراج مرتفعة، جلي رخام وبلاط، تنظيف بعد التشطيب، ضغط عالي، تظليل وعزل حراري بالرياض.">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="ar_SA">
+  <meta name="robots" content="index,follow">
+</head>
+<body>
+    <div class="topbar">
+        <div class="container topbar-inner">
+            <div>📍 تغطية شاملة لجميع أحياء الرياض</div>
+            <div>☎ <a href="tel:+966570471168"><span class="call-icon" aria-label="اتصال">☎</span></a></div>
+        </div>
+    </div>
+    <header>
+        <div class="container navbar">
+            <a href="index.html" class="logo">
+                <img src="images/IMG-20240973-WA00044.jpg" alt="صرح كلين" style="width:42px;height:42px;border-radius:12px;object-fit:cover;">
+                <div>صرح كلين <small>للنظافة العامة</small></div>
+            </a>
+            <nav class="nav-desktop">
+                <a href="index.html">الرئيسية</a>
+                <a href="about.html">من نحن</a>
+                <a href="services.html" class="active">خدماتنا</a>
+                <a href="projects.html">مشاريعنا</a>
+                <a href="contact.html">تواصل معنا</a>
+            </nav>
+            <div style="display:flex; gap:10px; align-items:center;">
+                <a href="https://wa.me/966570471168" target="_blank" class="btn btn-gold btn-pulse">طلب معاينة</a>
+                <button class="menu-toggle" id="menuToggle">☰</button>
+            </div>
+        </div>
+    </header>
+    <div class="sidebar-overlay" id="sidebarOverlay"></div>
+    <aside class="sidebar" id="sidebar">
+        <div class="sidebar-header">
+            <div class="logo"><img src="images/IMG-20240973-WA00044.jpg" alt="صرح كلين" style="width:42px;height:42px;border-radius:12px;object-fit:cover;"><div>صرح كلين</div></div>
+            <button class="sidebar-close" id="sidebarClose">✕</button>
+        </div>
+        <nav class="sidebar-nav">
+            <a href="index.html">الرئيسية</a>
+            <a href="about.html">من نحن</a>
+            <a href="services.html">خدماتنا</a>
+            <a href="service-tint.html">العازل الحراري والتضليل</a>
+            <a href="projects.html">مشاريعنا</a>
+            <a href="contact.html">تواصل معنا</a>
+        </nav>
+    </aside>
+
+    <main>
+        <section class="hero" style="padding:60px 0 40px;">
+            <div class="container">
+                <h1>خدماتنا الاحترافية</h1>
+                <p>أكثر من 45 خدمة متخصصة في التنظيف بالرياض</p>
+            </div>
+        </section>
+
+        <section>
+            <div class="container">
+                <div class="services-grid">
+
+                    <article class="service-card">
+                        <div class="service-icon">🪟</div>
+                        <h3>تنظيف واجهات زجاجية</h3>
+                        <a href="service-glass-facade.html" class="btn btn-outline" style="width:100%;min-height:42px;margin-top:12px;">تفاصيل الخدمة</a>
+                    </article>
+                    <article class="service-card">
+                        <div class="service-icon">🏢</div>
+                        <h3>تنظيف الكلادينج</h3>
+                        <a href="service-cladding.html" class="btn btn-outline" style="width:100%;min-height:42px;margin-top:12px;">تفاصيل الخدمة</a>
+                    </article>
+                    <article class="service-card">
+                        <div class="service-icon">🏗️</div>
+                        <h3>تنظيف واجهات أبراج</h3>
+                        <a href="service-high-rise.html" class="btn btn-outline" style="width:100%;min-height:42px;margin-top:12px;">تفاصيل الخدمة</a>
+                    </article>
+                    <article class="service-card">
+                        <div class="service-icon">🏡</div>
+                        <h3>تنظيف فلل</h3>
+                        <a href="service-villas.html" class="btn btn-outline" style="width:100%;min-height:42px;margin-top:12px;">تفاصيل الخدمة</a>
+                    </article>
+                    <article class="service-card">
+                        <div class="service-icon">🏠</div>
+                        <h3>تنظيف منازل</h3>
+                        <a href="service-homes.html" class="btn btn-outline" style="width:100%;min-height:42px;margin-top:12px;">تفاصيل الخدمة</a>
+                    </article>
+                    <article class="service-card">
+                        <div class="service-icon">✨</div>
+                        <h3>جلي وتلميع رخام</h3>
+                        <a href="service-marble.html" class="btn btn-outline" style="width:100%;min-height:42px;margin-top:12px;">تفاصيل الخدمة</a>
+                    </article>
+                    <article class="service-card">
+                        <div class="service-icon">🧹</div>
+                        <h3>تنظيف بعد التشطيب</h3>
+                        <a href="service-after-construction.html" class="btn btn-outline" style="width:100%;min-height:42px;margin-top:12px;">تفاصيل الخدمة</a>
+                    </article>
+                    <article class="service-card">
+                        <div class="service-icon">💧</div>
+                        <h3>غسيل ضغط عالي</h3>
+                        <a href="service-pressure-washing.html" class="btn btn-outline" style="width:100%;min-height:42px;margin-top:12px;">تفاصيل الخدمة</a>
+                    </article>
+                    <article class="service-card">
+                        <div class="service-icon">🪧</div>
+                        <h3>تنظيف اللوحات التجارية</h3>
+                        <a href="service-signage.html" class="btn btn-outline" style="width:100%;min-height:42px;margin-top:12px;">تفاصيل الخدمة</a>
+                    </article>
+                    <article class="service-card">
+                        <div class="service-icon">🗑️</div>
+                        <h3>إزالة الملصقات</h3>
+                        <a href="service-sticker-removal.html" class="btn btn-outline" style="width:100%;min-height:42px;margin-top:12px;">تفاصيل الخدمة</a>
+                    </article>
+                    <article class="service-card">
+                        <div class="service-icon">🌳</div>
+                        <h3>تنظيف الأحواش والأسوار</h3>
+                        <a href="service-yards.html" class="btn btn-outline" style="width:100%;min-height:42px;margin-top:12px;">تفاصيل الخدمة</a>
+                    </article>
+                    <article class="service-card">
+                        <div class="service-icon">⛱️</div>
+                        <h3>تنظيف المظلات والسواتر</h3>
+                        <a href="service-shades.html" class="btn btn-outline" style="width:100%;min-height:42px;margin-top:12px;">تفاصيل الخدمة</a>
+                    </article>
+                    <article class="service-card">
+                        <div class="service-icon">🔆</div>
+                        <h3>تنظيف الأسقف الزجاجية</h3>
+                        <a href="service-glass-roofs.html" class="btn btn-outline" style="width:100%;min-height:42px;margin-top:12px;">تفاصيل الخدمة</a>
+                    </article>
+                    <article class="service-card">
+                        <div class="service-icon">🏢</div>
+                        <h3>تنظيف المكاتب والشركات</h3>
+                        <a href="service-offices.html" class="btn btn-outline" style="width:100%;min-height:42px;margin-top:12px;">تفاصيل الخدمة</a>
+                    </article>
+                    <article class="service-card">
+                        <div class="service-icon">🔄</div>
+                        <h3>عقود الصيانة الدورية</h3>
+                        <a href="service-maintenance.html" class="btn btn-outline" style="width:100%;min-height:42px;margin-top:12px;">تفاصيل الخدمة</a>
+                    </article>
+                    <article class="service-card">
+                        <div class="service-icon">🏊</div>
+                        <h3>تنظيف المسابح</h3>
+                        <a href="service-pools.html" class="btn btn-outline" style="width:100%;min-height:42px;margin-top:12px;">تفاصيل الخدمة</a>
+                    </article>
+                    <article class="service-card">
+                        <div class="service-icon">❄️</div>
+                        <h3>تنظيف المكيفات</h3>
+                        <a href="service-ac.html" class="btn btn-outline" style="width:100%;min-height:42px;margin-top:12px;">تفاصيل الخدمة</a>
+                    </article>
+                    <article class="service-card">
+                        <div class="service-icon">🦠</div>
+                        <h3>التعقيم والتطهير</h3>
+                        <a href="service-sterilization.html" class="btn btn-outline" style="width:100%;min-height:42px;margin-top:12px;">تفاصيل الخدمة</a>
+                    </article>
+                    <article class="service-card">
+                        <div class="service-icon">🪨</div>
+                        <h3>تنظيف الأرضيات</h3>
+                        <a href="service-floors.html" class="btn btn-outline" style="width:100%;min-height:42px;margin-top:12px;">تفاصيل الخدمة</a>
+                    </article>
+                    <article class="service-card">
+                        <div class="service-icon">🛋️</div>
+                        <h3>تنظيف الكنب والمفروشات</h3>
+                        <a href="service-upholstery.html" class="btn btn-outline" style="width:100%;min-height:42px;margin-top:12px;">تفاصيل الخدمة</a>
+                    </article>
+                    <article class="service-card">
+                        <div class="service-icon">🪟</div>
+                        <h3>تنظيف الحوائط الستائرية</h3>
+                        <a href="service-curtain-walls.html" class="btn btn-outline" style="width:100%;min-height:42px;margin-top:12px;">تفاصيل الخدمة</a>
+                    </article>
+                    <article class="service-card">
+                        <div class="service-icon">🧱</div>
+                        <h3>تنظيف واجهات الحجر</h3>
+                        <a href="service-stone-facade.html" class="btn btn-outline" style="width:100%;min-height:42px;margin-top:12px;">تفاصيل الخدمة</a>
+                    </article>
+                    <article class="service-card">
+                        <div class="service-icon">🔩</div>
+                        <h3>تنظيف الألمنيوم</h3>
+                        <a href="service-aluminum.html" class="btn btn-outline" style="width:100%;min-height:42px;margin-top:12px;">تفاصيل الخدمة</a>
+                    </article>
+                    <article class="service-card">
+                        <div class="service-icon">🪟</div>
+                        <h3>تنظيف النوافذ</h3>
+                        <a href="service-windows.html" class="btn btn-outline" style="width:100%;min-height:42px;margin-top:12px;">تفاصيل الخدمة</a>
+                    </article>
+                    <article class="service-card">
+                        <div class="service-icon">🌧️</div>
+                        <h3>تنظيف بعد الأمطار</h3>
+                        <a href="service-post-rain.html" class="btn btn-outline" style="width:100%;min-height:42px;margin-top:12px;">تفاصيل الخدمة</a>
+                    </article>
+                    <article class="service-card">
+                        <div class="service-icon">🏰</div>
+                        <h3>تنظيف الفلل الفاخرة</h3>
+                        <a href="service-luxury-villas.html" class="btn btn-outline" style="width:100%;min-height:42px;margin-top:12px;">تفاصيل الخدمة</a>
+                    </article>
+                    <article class="service-card">
+                        <div class="service-icon">🏗️</div>
+                        <h3>تنظيف المباني الجديدة</h3>
+                        <a href="service-new-buildings.html" class="btn btn-outline" style="width:100%;min-height:42px;margin-top:12px;">تفاصيل الخدمة</a>
+                    </article>
+                    <article class="service-card">
+                        <div class="service-icon">🏬</div>
+                        <h3>تنظيف المراكز التجارية</h3>
+                        <a href="service-commercial-centers.html" class="btn btn-outline" style="width:100%;min-height:42px;margin-top:12px;">تفاصيل الخدمة</a>
+                    </article>
+                    <article class="service-card">
+                        <div class="service-icon">🏘️</div>
+                        <h3>تنظيف المجمعات السكنية</h3>
+                        <a href="service-residential-compounds.html" class="btn btn-outline" style="width:100%;min-height:42px;margin-top:12px;">تفاصيل الخدمة</a>
+                    </article>
+                    <article class="service-card">
+                        <div class="service-icon">🏨</div>
+                        <h3>تنظيف الفنادق</h3>
+                        <a href="service-hotels.html" class="btn btn-outline" style="width:100%;min-height:42px;margin-top:12px;">تفاصيل الخدمة</a>
+                    </article>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-logo">صرح كلين للنظافة العامة</div>
+            <p>© <span id="year"></span> جميع الحقوق محفوظة | ☎</p>
+        </div>
+    </footer>
+    <div class="floating-actions">
+        <a href="https://wa.me/966570471168" target="_blank" class="float-btn float-wa">💬</a>
+        <a href="tel:+966570471168" class="float-btn float-call"><span class="call-icon" aria-label="اتصال">☎</span></a>
+    </div>
+    <script>
+// صرح كلين - Main JavaScript
+
+document.addEventListener('DOMContentLoaded', function () {
+    // Year
+    const yearEl = document.getElementById('year');
+    if (yearEl) yearEl.textContent = new Date().getFullYear();
+
+    // Sidebar Toggle
+    const menuToggle = document.getElementById('menuToggle');
+    const sidebar = document.getElementById('sidebar');
+    const sidebarOverlay = document.getElementById('sidebarOverlay');
+    const sidebarClose = document.getElementById('sidebarClose');
+
+    function openSidebar() {
+        sidebar.classList.add('active');
+        sidebarOverlay.classList.add('active');
+        document.body.style.overflow = 'hidden';
+    }
+
+    function closeSidebar() {
+        sidebar.classList.remove('active');
+        sidebarOverlay.classList.remove('active');
+        document.body.style.overflow = '';
+    }
+
+    if (menuToggle) menuToggle.addEventListener('click', openSidebar);
+    if (sidebarClose) sidebarClose.addEventListener('click', closeSidebar);
+    if (sidebarOverlay) sidebarOverlay.addEventListener('click', closeSidebar);
+
+    // Quick Booking Form -> WhatsApp
+    const quickForm = document.getElementById('quickBookForm');
+    if (quickForm) {
+        quickForm.addEventListener('submit', function (e) {
+            e.preventDefault();
+            const name = document.getElementById('clientName').value.trim();
+            const service = document.getElementById('clientService').value;
+            const district = document.getElementById('clientDistrict').value.trim() || 'غير محدد';
+
+            const text = `السلام عليكم، أرغب في حجز معاينة مجانية من صرح كلين للنظافة العامة:\n\n- الاسم: ${name}\n- الخدمة: ${service}\n- الحي/المنطقة: ${district}\n\nأرجو التواصل معي في أقرب وقت.`;
+            window.open(`https://wa.me/966570471168?text=${encodeURIComponent(text)}`, '_blank');
+        });
+    }
+});
+
+</script>
+</body>
+</html>

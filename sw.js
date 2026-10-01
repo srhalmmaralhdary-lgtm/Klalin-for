@@ -1,14 +1,11 @@
-// Service Worker أساسي لموقع Clean للنظافة العامة
-const CACHE_NAME = 'clean-ksa-v1';
-
-self.addEventListener('install', (event) => {
-  self.skipWaiting();
+const CACHE = "sarh-clean-v1";
+const ASSETS = ["/", "/index.html", "/services.html", "/contact.html", "/manifest.json"];
+self.addEventListener("install", e => {
+  e.waitUntil(caches.open(CACHE).then(c => c.addAll(ASSETS)).then(() => self.skipWaiting()));
 });
-
-self.addEventListener('activate', (event) => {
-  event.waitUntil(clients.claim());
+self.addEventListener("activate", e => {
+  e.waitUntil(caches.keys().then(keys => Promise.all(keys.filter(k => k !== CACHE).map(k => caches.delete(k)))));
 });
-
-self.addEventListener('fetch', (event) => {
-  // يمكن تطوير الكاش لاحقاً إذا احتجت
+self.addEventListener("fetch", e => {
+  e.respondWith(caches.match(e.request).then(r => r || fetch(e.request)));
 });

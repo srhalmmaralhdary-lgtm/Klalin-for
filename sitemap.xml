@@ -1,140 +1,573 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-
-  <!-- 1. الصفحة الرئيسية (أعلى أولوية) -->
   <url>
-    <loc>https://clean-ksa.com/</loc>
-    <lastmod>2026-09-09</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>1.00</priority>
-  </url>
-
-  <!-- 2. صفحات الخدمات -->
-  <url>
-    <loc>https://clean-ksa.com/glass-cleaning-profile.html</loc>
-    <lastmod>2026-09-09</lastmod>
+    <loc>https://www.getsarhclean.com/about.html</loc>
     <changefreq>weekly</changefreq>
-    <priority>0.90</priority>
+    <priority>0.6</priority>
   </url>
-
   <url>
-    <loc>https://clean-ksa.com/cladding-cleaning.html</loc>
-    <lastmod>2026-09-09</lastmod>
+    <loc>https://www.getsarhclean.com/blog-after-construction.html</loc>
     <changefreq>weekly</changefreq>
-    <priority>0.90</priority>
+    <priority>0.8</priority>
   </url>
-
   <url>
-    <loc>https://clean-ksa.com/towers-cleaning.html</loc>
-    <lastmod>2026-09-09</lastmod>
+    <loc>https://www.getsarhclean.com/blog-choose-company.html</loc>
     <changefreq>weekly</changefreq>
-    <priority>0.90</priority>
+    <priority>0.8</priority>
   </url>
-
   <url>
-    <loc>https://clean-ksa.com/stone-cleaning.html</loc>
-    <lastmod>2026-09-09</lastmod>
+    <loc>https://www.getsarhclean.com/blog-cladding.html</loc>
     <changefreq>weekly</changefreq>
-    <priority>0.90</priority>
+    <priority>0.8</priority>
   </url>
-
   <url>
-    <loc>https://clean-ksa.com/villas-cleaning.html</loc>
-    <lastmod>2026-09-09</lastmod>
+    <loc>https://www.getsarhclean.com/blog-glass-cleaning-guide.html</loc>
     <changefreq>weekly</changefreq>
-    <priority>0.90</priority>
+    <priority>0.8</priority>
   </url>
-
   <url>
-    <loc>https://clean-ksa.com/post-construction-cleaning.html</loc>
-    <lastmod>2026-09-09</lastmod>
+    <loc>https://www.getsarhclean.com/blog-high-rise.html</loc>
     <changefreq>weekly</changefreq>
-    <priority>0.90</priority>
+    <priority>0.8</priority>
   </url>
-
   <url>
-    <loc>https://clean-ksa.com/marble-polishing.html</loc>
-    <lastmod>2026-09-09</lastmod>
+    <loc>https://www.getsarhclean.com/blog-maintenance.html</loc>
     <changefreq>weekly</changefreq>
-    <priority>0.90</priority>
+    <priority>0.8</priority>
   </url>
-
   <url>
-    <loc>https://clean-ksa.com/tank-cleaning.html</loc>
-    <lastmod>2026-09-09</lastmod>
+    <loc>https://www.getsarhclean.com/blog-marble-polishing.html</loc>
     <changefreq>weekly</changefreq>
-    <priority>0.90</priority>
+    <priority>0.8</priority>
   </url>
-
-  <!-- 3. قسم المدونة الرئيسي والمقالات -->
   <url>
-    <loc>https://clean-ksa.com/blog/</loc>
-    <lastmod>2026-09-09</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.85</priority>
-  </url>
-
-  <url>
-    <loc>https://clean-ksa.com/blog/glass-cleaning-guide.html</loc>
-    <lastmod>2026-09-09</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.80</priority>
-  </url>
-
-
-  <url>
-    <loc>https://clean-ksa.com/cleaning-center-riyadh.html</loc>
-    <lastmod>2026-09-09</lastmod>
+    <loc>https://www.getsarhclean.com/blog-pressure.html</loc>
     <changefreq>weekly</changefreq>
-    <priority>0.80</priority>
+    <priority>0.8</priority>
   </url>
-
   <url>
-    <loc>https://clean-ksa.com/cleaning-diriyah.html</loc>
-    <lastmod>2026-09-09</lastmod>
+    <loc>https://www.getsarhclean.com/blog-tint.html</loc>
     <changefreq>weekly</changefreq>
-    <priority>0.80</priority>
+    <priority>0.8</priority>
   </url>
-
   <url>
-    <loc>https://clean-ksa.com/cleaning-east-riyadh.html</loc>
-    <lastmod>2026-09-09</lastmod>
+    <loc>https://www.getsarhclean.com/blog-villa-cleaning.html</loc>
     <changefreq>weekly</changefreq>
-    <priority>0.80</priority>
+    <priority>0.8</priority>
   </url>
-
   <url>
-    <loc>https://clean-ksa.com/cleaning-olaya.html</loc>
-    <lastmod>2026-09-09</lastmod>
+    <loc>https://www.getsarhclean.com/blog.html</loc>
     <changefreq>weekly</changefreq>
-    <priority>0.80</priority>
+    <priority>0.8</priority>
   </url>
-
   <url>
-    <loc>https://clean-ksa.com/cleaning-north-riyadh.html</loc>
-    <lastmod>2026-09-09</lastmod>
+    <loc>https://www.getsarhclean.com/contact.html</loc>
     <changefreq>weekly</changefreq>
-    <priority>0.80</priority>
+    <priority>0.6</priority>
   </url>
-
   <url>
-    <loc>https://clean-ksa.com/cleaning-sahafa.html</loc>
-    <lastmod>2026-09-09</lastmod>
+    <loc>https://www.getsarhclean.com/guarantee.html</loc>
     <changefreq>weekly</changefreq>
-    <priority>0.80</priority>
+    <priority>0.6</priority>
   </url>
-
   <url>
-    <loc>https://clean-ksa.com/commercial-cleaning.html</loc>
-    <lastmod>2026-09-09</lastmod>
+    <loc>https://www.getsarhclean.com/</loc>
     <changefreq>weekly</changefreq>
-    <priority>0.85</priority>
+    <priority>1.0</priority>
   </url>
-
   <url>
-    <loc>https://clean-ksa.com/government-contracts.html</loc>
-    <lastmod>2026-09-09</lastmod>
+    <loc>https://www.getsarhclean.com/licenses.html</loc>
     <changefreq>weekly</changefreq>
-    <priority>0.85</priority>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.getsarhclean.com/offers.html</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.getsarhclean.com/projects.html</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.getsarhclean.com/safety.html</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.getsarhclean.com/service-ac.html</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.getsarhclean.com/service-after-construction.html</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.getsarhclean.com/service-aluminum.html</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.getsarhclean.com/service-balconies.html</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.getsarhclean.com/service-car-showrooms.html</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.getsarhclean.com/service-cladding.html</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.getsarhclean.com/service-commercial-centers.html</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.getsarhclean.com/service-curtain-walls.html</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.getsarhclean.com/service-dust-removal.html</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.getsarhclean.com/service-external-floors.html</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.getsarhclean.com/service-floors.html</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.getsarhclean.com/service-glass-doors.html</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.getsarhclean.com/service-glass-facade.html</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.getsarhclean.com/service-glass-roofs.html</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.getsarhclean.com/service-graffiti-removal.html</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.getsarhclean.com/service-high-rise.html</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.getsarhclean.com/service-homes.html</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.getsarhclean.com/service-hospitals.html</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.getsarhclean.com/service-hotels.html</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.getsarhclean.com/service-luxury-villas.html</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.getsarhclean.com/service-maintenance.html</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.getsarhclean.com/service-marble.html</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.getsarhclean.com/service-mirrors.html</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.getsarhclean.com/service-mosques.html</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.getsarhclean.com/service-new-buildings.html</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.getsarhclean.com/service-offices.html</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.getsarhclean.com/service-periodic-glass.html</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.getsarhclean.com/service-pools.html</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.getsarhclean.com/service-post-rain.html</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.getsarhclean.com/service-pressure-washing.html</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.getsarhclean.com/service-residential-compounds.html</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.getsarhclean.com/service-restaurants.html</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.getsarhclean.com/service-schools.html</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.getsarhclean.com/service-shades.html</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.getsarhclean.com/service-showrooms.html</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.getsarhclean.com/service-signage.html</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.getsarhclean.com/service-skylights.html</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.getsarhclean.com/service-sterilization.html</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.getsarhclean.com/service-sticker-removal.html</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.getsarhclean.com/service-stone-facade.html</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.getsarhclean.com/service-tint.html</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.getsarhclean.com/service-upholstery.html</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.getsarhclean.com/service-villas.html</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.getsarhclean.com/service-warehouses.html</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.getsarhclean.com/service-windows.html</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.getsarhclean.com/service-yards.html</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.getsarhclean.com/services/ac.html</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.getsarhclean.com/services/after-construction.html</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.getsarhclean.com/services/aluminum.html</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.getsarhclean.com/services/balconies.html</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.getsarhclean.com/services/car-showrooms.html</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.getsarhclean.com/services/cladding.html</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.getsarhclean.com/services/commercial-centers.html</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.getsarhclean.com/services/curtain-walls.html</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.getsarhclean.com/services/dust-removal.html</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.getsarhclean.com/services/external-floors.html</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.getsarhclean.com/services/floors.html</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.getsarhclean.com/services/glass-doors.html</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.getsarhclean.com/services/glass-facade.html</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.getsarhclean.com/services/glass-roofs.html</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.getsarhclean.com/services/graffiti-removal.html</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.getsarhclean.com/services/high-rise.html</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.getsarhclean.com/services/homes.html</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.getsarhclean.com/services/hospitals.html</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.getsarhclean.com/services/hotels.html</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.getsarhclean.com/services/luxury-villas.html</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.getsarhclean.com/services/maintenance.html</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.getsarhclean.com/services/marble.html</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.getsarhclean.com/services/mirrors.html</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.getsarhclean.com/services/mosques.html</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.getsarhclean.com/services/new-buildings.html</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.getsarhclean.com/services/offices.html</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.getsarhclean.com/services/periodic-glass.html</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.getsarhclean.com/services/pools.html</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.getsarhclean.com/services/post-rain.html</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.getsarhclean.com/services/pressure-washing.html</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.getsarhclean.com/services/residential-compounds.html</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.getsarhclean.com/services/restaurants.html</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.getsarhclean.com/services/schools.html</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.getsarhclean.com/services/shades.html</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.getsarhclean.com/services/showrooms.html</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.getsarhclean.com/services/signage.html</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.getsarhclean.com/services/skylights.html</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.getsarhclean.com/services/sterilization.html</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.getsarhclean.com/services/sticker-removal.html</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.getsarhclean.com/services/stone-facade.html</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.getsarhclean.com/services/tint.html</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.getsarhclean.com/services/upholstery.html</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.getsarhclean.com/services/villas.html</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.getsarhclean.com/services/warehouses.html</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.getsarhclean.com/services/windows.html</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.getsarhclean.com/services/yards.html</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.getsarhclean.com/services.html</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.getsarhclean.com/success.html</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.getsarhclean.com/why-us.html</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
   </url>
 </urlset>
